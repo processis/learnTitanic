@@ -358,5 +358,4 @@ ggplot(NULL, aes(x = tsne.3$Y[1:891, 1], y = tsne.3$Y[1:891, 2],
 
 # Now conditional mutual information for tsne features for all training
 condinformation(data.combined$Survived[1:891], discretize(tsne.3$Y[1:891,]))
-## 加了中文 试 给 shelly 看
-##
+
