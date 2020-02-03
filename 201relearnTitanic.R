@@ -1,4 +1,5 @@
-# Load raw data
+# 展示GitHUB 给 shelly
+## Load raw data
 train <- read.csv("train.csv", header = TRUE)
 test <- read.csv("test.csv", header = TRUE)
 # Add a "Survived" variable to the test set to allow for combining data sets
