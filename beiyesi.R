@@ -74,8 +74,8 @@ list(p=0.05)
 
 model
 丨
-x`dbin(p,n)
-p`dbeta(0.1,0.9)
+x^dbin(p,n)
+p^dbeta(0.1,0.9)
 丨
 data
 list(x=20,n=253)
