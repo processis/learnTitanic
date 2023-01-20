@@ -1,0 +1,4 @@
+以下方程式可以计算过程能力指数，这个指数越大就代表过程也是中间和没有偏移
+
+<math>C_p = \cfrac{USL - LSL}{6 \sigma} </math> 不考虑是否偏移，只考虑分布范围<br>
+如果考虑偏移，计算 <math>C_{pk} = Min [ \cfrac{USL - \mu}{3 \sigma} , \cfrac{\mu - LSL}{3 \sigma} ] </math> (选其中最少值)<br>
