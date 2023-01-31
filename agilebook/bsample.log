@@ -1,0 +1,103 @@
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  7 FEB 2022 20:25
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**bsample.tex to convert it to pdf format
+(./bsample.tex
+LaTeX2e <2018-12-01>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./bsample.aux)
+\openout1 = `bsample.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <14.4> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 4.
+
+
+LaTeX Warning: Citation `Eijkhout:1991' on page 1 undefined on input line 6.
+
+
+LaTeX Warning: Citation `Roth:postscript' on page 1 undefined on input line 6.
+
+
+LaTeX Warning: Citation `Felici:1991' on page 1 undefined on input line 7.
+
+
+LaTeX Warning: Citation `Mittelbach/Schoepf:1990' on page 1 undefined on input 
+line 8.
+
+
+LaTeX Warning: Citation `Yannis:1991' on page 1 undefined on input line 9.
+
+
+LaTeX Warning: Citation `Dynatext' on page 1 undefined on input line 10.
+
+
+LaTeX Warning: Citation `Knuth:WEB' on page 1 undefined on input line 11.
+
+
+LaTeX Warning: Citation `EVH:office' on page 1 undefined on input line 12.
+
+
+LaTeX Warning: Citation `Wood:color' on page 1 undefined on input line 13.
+
+
+LaTeX Warning: Citation `Liang:1983' on page 1 undefined on input line 13.
+
+
+LaTeX Warning: Citation `Eijkhout:1991' on page 1 undefined on input line 14.
+
+
+LaTeX Warning: Citation `Roth:postscript' on page 1 undefined on input line 14.
+
+
+(./bsample.bbl
+
+! LaTeX Error: File `bibnames.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: x
+
+ ) )
+(\end occurred when \ifx on line 1 was incomplete)
+(\end occurred when \ifx on line 1 was incomplete) 
+Here is how much of TeX's memory you used:
+ 217 strings out of 494900
+ 2469 string characters out of 6177140
+ 58613 words of memory out of 5000000
+ 4211 multiletter control sequences out of 15000+600000
+ 3680 words of font info for 19 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 22i,1n,20p,160b,107s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+No pages of output.

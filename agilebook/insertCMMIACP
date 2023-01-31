@@ -1,0 +1,80 @@
+=如何对应敏捷原则=
+下面借用前面提过的ACP 原则，看如何对应：
+
+{| class="wikitable"
+|-
+! Domain 1 !! 描述  !! 对应
+|-
+|Task 4 ||信息可视化，让大家即时收到性能的反馈 Practice visualization by maintaining highly visible information radiators showing real progress and real team performance in order to enhance transparency and trust. || 每个迭代的缺陷绿各阶段画出来，让大家可以知道哪个阶段的缺陷排除率低以及分布情况。
+|-
+| Task 5 || 相互信任与安全的团队环境：让每个人都可以放心地做试验，甚至犯错。Contribute to a safe and trustful learn environment by allowing everyone to experiment and make mistakes so that each can learn and continuously improve the way he works || 在回顾复盘时，用KJ方式、便利贴大白纸方式，让每个团队成员都可以体验，自由提意见而非项目经理一言堂。
+|-
+| Task 6 ||强调试验、创新的重要性，最终希望提高工作效率和是否有效。 Enhance creativity by experimenting with new techniques and process ideas in order to discover more efficient and effective ways of working || 制定缺陷目标范围时，不仅仅是听公司EPG的指导或按模型要求，而是欢迎每一个团队成员一起探索问题根基所在，发挥创造力，在下一个迭代用一些新的方法做来改进。
+|-
+| Task 7 ||互利团队成员分享知识，互相协作，避免各部门变成一个个知识孤岛。 Encourage team members to share knowledge by collaborating and working together in order to lower risks around knowledge silos and reduce bottlenecks. || 因为在回顾复盘时，代价把所有本迭代的缺陷系统测试，评审、单元测试等写在大白纸上，一起分析缺陷。让所有团队是针对缺陷来分析，而不是想尽办法保护自己，解释问题不是出在自己这边。
+|-
+| Task 8 ||鼓励那些团队的领袖，制作一个放心大家互信、互相尊重的环境，让团队自己一句改进的需要，自己组合，和有自己的赋予他们一定的权利。 Encourage emergent leadership within the team by establishing a safe and respectful environment in which new approaches can be tried in order to make improvements and foster self-organization and empowerment. || 让团队可以独立思考。让团队自己决定很重要，而不是让团队只是听管理层的指挥。
+|-
+| Task 9 ||团队的领袖应自视为团队的仆人，支持和鼓励团队的其他成员，让他们发挥到最高的境界，和持续改进。 Fractice servant leadership by supporting and encouraging others in their endeavors so that they can perform at their highest level and continue to improve. || 管理者的角色，不是分析数据找出答案，而是作为老师辅导团队如何利用学过的技巧自己动脑筋做实验、找答案。
+
+|}
+
+=如何对应 CMMI ML4 要求=
+== MPM 4.4  使用统计与其他量化技术来建立和分析过程性能模型并保持更新。Use statistical and other quantitative techniques to develop and analyze process performance models and keep them updated. ==
+其他必需信息 Additional Required Information
+:PPM 过程性能模型：
+*是根据历史过程性能数据（如过程性能基线中包含的数据）开发的
+**依据每一个过程需求评审，开发，等系统导出数据，依据数据中的缺陷建立的模型
+*以可度量的属性值和术语描述、描绘变动或对其进行建模 
+**有一个度量定义表，蒙特卡洛中的变量定义在度量定义表中定义;变量与预测结果都有分布
+*预测中间或最终过程性能 
+**蒙特卡洛可以预测出QPPO范围与过程（如需求评审）缺陷范围
+*估算预测结果的预期范围和变动 
+**蒙特卡洛预测出中间或最终过程QPPO的预期范围和变动
+*包含至少一个表示与子过程相关的可控输入的可度量属性
+**可控因素：各阶段的评审方法（如，用走查 或 审查）
+
+*Establish PPM - Monte Carlo analysis
+*Validate PPM - build PPM using historical iteration defect escape data, check and calibrate with the recent iteration defect results
+*Review PPM with affected stakeholders - whole team review in Sprint retrospective
+*Revise PPM - team review and revise (if needed) the PPM using the current Sprint defect data in Sprint retrospective
+
+
+== MPM 4.5 使用统计与其他量化技术来确定或预测质量与过程性能目标的实现情况Use statistical and other quantitative techniques to determine or predict achievement of quality and process performance objectives.  ==
+*分析选定过程的变动和稳定性并解决缺陷
+**使用了方差分析和控制图
+**通过趋势图，控制图判断历史数据是否作为基线，保证模型的稳定性。详见基线PPB截图。
+**对各种方法进行方差分析，识别是否有显著区分
+*实施必要的行动来解决在实现质量与过程性能目标方面的缺陷
+**P4 系统缺陷密度波动范围很广， 暂时不能预测，先对团队培训过程
+*使用经数据校准并已确认的过程性能模型来评估质量与过程性能目标的实现进度
+**使用过程性能模型来预测下一轮冲刺的各阶段缺陷密度范围
+*识别和管理与实现质量与过程性能目标有关的风险
+**利用PPM预测下一轮达到目标范围的概率
+*记录并传达分析结果、决策以及确定的行动
+**把以上记录在量化项目管理计划
+
+== MPM 4.1 使用统计与其他量化技术来制定、持续更新并传达可追溯到业务目标的质量与过程性能目标Use statistical and other quantitative techniques to develop, keep updated, and communicate quality and process performance objectives that are traceable to business objectives.  ==
+
+*QPPO
+**Org: Use CC, Monte Carlo simulation, ANOVA, to estimate SMART QPPO
+**Project: Use PPM, PPB to predict  QPPO for the next Sprint
+*Derive interim  objectives to monitor progress
+**Project: Use PPM, to also predict Req review, Code review, UT defect density range for the next Sprint
+*Determine and record risk
+**Use PPM to predict the % of achieving QPPO
+*Resolve conflicts among QPPOs
+**PPM use overall cost to optimize, can balance the conflict between quality (minimize ST / AT  defects density) and productivity objective
+
+== PLAN 4.1 使用统计与其他量化技术来开发项目过程并保持更新，以实现质量与过程性能目标。Use statistical and other quantitative techniques to develop and keep the project processes updated to enable achievement of the quality and process performance objectives.  ==
+
+*制定用于评价项目过程备选方案的准则
+**总成本最低。
+*识别或开发可用来完成工作和实现目标的替代过程
+**模型中已进行体现，通过不同的评审方法互相替换。
+*根据记录的评价标准分析和评价备选过程
+**参考蒙特卡洛Optimize 仿真选择最佳配搭。
+*选择最符合准则的备选过程
+**同上，在模型中体现。
+*评价无法实现项目的质量与过程性能目标的风险
+**利用PPM预测结果的分布，分析概率

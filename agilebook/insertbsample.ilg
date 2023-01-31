@@ -1,0 +1,43 @@
+This is makeindex, version 2.15 [TeX Live 2019/dev] (kpathsea + Thai support).
+Scanning input file insertbsample.tex...
+!! Input index error (file = insertbsample.tex, line = 1):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = insertbsample.tex, line = 2):
+   -- Unknown index keyword \documentclass.
+!! Input index error (file = insertbsample.tex, line = 4):
+   -- Unknown index keyword \usepackage[utf8].
+!! Input index error (file = insertbsample.tex, line = 5):
+   -- Unknown index keyword \usepackage[T1].
+!! Input index error (file = insertbsample.tex, line = 6):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = insertbsample.tex, line = 7):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = insertbsample.tex, line = 9):
+   -- Unknown index keyword \begin.
+!! Input index error (file = insertbsample.tex, line = 10):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = insertbsample.tex, line = 11):
+   -- Unknown index keyword \section.
+!! Input index error (file = insertbsample.tex, line = 12):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = insertbsample.tex, line = 13):
+   -- Unknown index keyword \index.
+!! Input index error (file = insertbsample.tex, line = 14):
+   -- Unknown index keyword by\index.
+!! Input index error (file = insertbsample.tex, line = 15):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = insertbsample.tex, line = 16):
+   -- Unknown index keyword \section.
+!! Input index error (file = insertbsample.tex, line = 17):
+   -- Unknown index keyword Theprimary\index.
+!! Input index error (file = insertbsample.tex, line = 18):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = insertbsample.tex, line = 19):
+   -- Unknown index keyword \index.
+!! Input index error (file = insertbsample.tex, line = 21):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = insertbsample.tex, line = 23):
+   -- Unknown index keyword \end.
+done (0 entries accepted, 19 rejected).
+Nothing written in insertbsample.ind.
+Transcript written in insertbsample.ilg.
