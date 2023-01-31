@@ -9,3 +9,4 @@ after added ssh keys, added folder python4matrix and py files in it
 login to let Shelly upload
 ## 2023.1.31
 after succeeded CLI, create agileBook dir
+in /media/user/1907USB/RonGitHUB  >gh repo clone processis/learnTitanic  to clone and created learnTitanic project in Rstudio
