@@ -10,3 +10,4 @@ login to let Shelly upload
 ## 2023.1.31
 after succeeded CLI, create agileBook dir
 in /media/user/1907USB/RonGitHUB  >gh repo clone processis/learnTitanic  to clone and created learnTitanic project in Rstudio
+can pull and push ok fr Rstudio
