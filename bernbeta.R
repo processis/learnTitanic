@@ -466,6 +466,23 @@ plotPost=function(paramSampleVec,credMass=0.95,compVal=NULL,
 }
 
 
+#23.3.2 HDIofMCMC.R
+
+HDIofMCMC=function(sampleVec,credMass=0.95){
+  sortedPts=sort(sampleVec)
+  ciIdxInc=floor(credMass*length(sortedPts))
+  nCIs=length(sortedPts)-ciIdxInc
+  ciwidth=rep(0,nCIs){
+    for(i in 1:nCIs){
+      ciwidth[i]=sortedPts[i+ciIdxInc]-sortedPts[i]
+    }
+    HDImin=sortedPts[which.min(ciwidth)]
+    HDImax=sortedPts[which.min(ciwidth)+ciIdxInc]
+    HDIlim=c(HDImin,HDImax)
+    return(HDIlim)
+  }
+}
+
 #chapter 7 bernmetropolistemplate.r
 
 myData=c(1,1,1,1,1,1,1,1,1,0,0,0)
