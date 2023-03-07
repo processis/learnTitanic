@@ -38,7 +38,10 @@
 \end{description}
 \end{description}
 
-先举个比比较两组数据更简单的实例：
+
+
+因A与B都包含非常多样本数据，我们只可以利用A的随机抽样，和B的随机抽样数值，来判断A与B是否有显著差异，这便是双样本T检验。 \\
+要深入了解便要与数据，先举个比较简单的假设检验实例：\\
 
 \hypertarget{ux68c0ux9a8cux5355ux4e2aux6b63ux6001ux603bux4f53ux7684ux5747ux503c}{%
 \subsection{检验单个正态总体的均值}\label{ux68c0ux9a8cux5355ux4e2aux6b63ux6001ux603bux4f53ux7684ux5747ux503c}}
@@ -218,7 +221,7 @@ test)}\label{ux65b9ux5deeux5206ux67901-anova-test}}
 %2022-07-24 105955.jpg}\\
 \includegraphics[width=6cm]{5anovaDataScreenshot_2022-07-24_105955.jpg}\\
 用统计工具跑单因子方差分析
-得出P值是0.0385，低于0.05，所以我们便可以拒绝人假设
+得出P值是0.0385，低于0.05，所以我们便可以拒绝零假设 
 
 %\href{文件:5anovaResultScreenshot_2022-07-24_104352.jpg}{400px}\\
 
@@ -296,9 +299,7 @@ test)}\label{ux65b9ux5deeux5206ux67902-anova-test}}
   21.16\textbar{} = 1.68
 \end{enumerate}
 
-从 \(Q_U\)分布表，按分子自由度为4（=c）,分母自由度为16
-(=n-c=20-4)，找出F对应0.05 的临界值为4.05。用上面方程式，得出临界范围为
-4.47，所以判断唯一供货商1与2的布料拉力是有显著差异。
+用Tukey-Kramer 相关方程式（详见附件），得出临界范围为 4.47，所以判断唯一供货商1与2的布料拉力是有显著差异。 
 
 %\hypertarget{ux5206ux7ec4ux5206ux7c7bux6570ux636e}{%
 %\section{分组（分类）数据}\label{ux5206ux7ec4ux5206ux7c7bux6570ux636e}}
@@ -408,4 +409,175 @@ Value)，
 
 \(t = \cfrac{ \sqrt{n}(\overline{D} - \mu _0) }{S_D} = \cfrac{ \sqrt{6}(16.7 - 0) }{25.4}\)\\
 = 1.61\\
+
+
+
+
+\hypertarget{tukey-kramer-ux76f8ux5173ux65b9ux7a0bux5f0f}{%
+\subsection{Tukey-Kramer
+相关方程式}\label{tukey-kramer-ux76f8ux5173ux65b9ux7a0bux5f0f}}
+
+\begin{itemize}
+\tightlist
+\item
+  计算显著差异的临界值：
+\end{itemize}
+
+\begin{description}
+\item[]
+\begin{description}
+\tightlist
+\item[]
+Critical range=
+\(Q_u \sqrt{{MSW \over 2} ({1\over n_j} - {1\over n_j '})}\)
+
+对应布料拉力例子：\(\alpha\) = 0.05， c = 4 , n - c= 20-4 = 16\\
+从统计表 得出对应 \(Q_u\) = 4.05 ; MSW =6.1 (如何计算MSW,
+详见下面"如何计算 MSW")
+
+代入上面方程式：
+
+\begin{description}
+\item[]
+\begin{description}
+\tightlist
+\item[]
+Critical range=
+\(4.05 \sqrt{({6.1 \over 2}) ({1\over 5} - {1\over 5 })}\)
+\end{description}
+\end{description}
+
+\begin{description}
+\item[]
+\begin{description}
+\tightlist
+\item[]
+= 4.47
+\end{description}
+\end{description}
+
+\hypertarget{ux5982ux4f55ux8ba1ux7b97-mswux53c2ux8003anovaux65b9ux7a0bux5f0f}{%
+\subsubsection{如何计算
+MSW，参考ANOVA方程式}\label{ux5982ux4f55ux8ba1ux7b97-mswux53c2ux8003anovaux65b9ux7a0bux5f0f}}
+
+\begin{itemize}
+\tightlist
+\item
+  总离差平方和 Total Variation = Sum of Squares for Total (SST)：
+\end{itemize}
+
+\begin{itemize}
+\tightlist
+\item
+  SST 由 组内离差平方和(SSW)， 和 组间离差平方和(SSA)， 双加出来：
+\end{itemize}
+
+\begin{itemize}
+\tightlist
+\item
+  组间离差平方和 (SSA)
+\end{itemize}
+
+\begin{itemize}
+\tightlist
+\item
+  组内离差平方和 (SSW)
+\end{itemize}
+
+\begin{itemize}
+\tightlist
+\item
+  如果组间离差远远大于组内离差，表示组间差异大，应拒绝零假设；反之，如差异不大，便难以拒绝零假设，没有显著差异。
+\end{itemize}
+
+\begin{itemize}
+\tightlist
+\item
+  单因素方差分析 计算 F = MSA / MSW , 如果F值大于临界值，拒绝零假设
+\end{itemize}
+
+能直接算出下面总结报告：\\
+
+%Screenshotfrom2023-02-1401-07-07.png
+
+\includegraphics[width=6cm]{Screenshotfrom2023-02-1401-07-07.png}
+
+\textbf{相关方程式}\\
+* 总离差平方和\\
+SST =
+\(\sum_{j=1}^c \sum_{i=1}^{n_j} (X_{ij} - \overline{\overline{X}})^2\)
+\end{description}
+\end{description}
+
+\begin{description}
+\item[]
+\begin{description}
+\tightlist
+\item[]
+注： 总体平均数
+\(\overline{\overline{X}} = {\sum_{j=1}^c \sum_{i=1}^{n_j} X_{ij} \over n }\)
+\end{description}
+\end{description}
+
+\begin{itemize}
+\tightlist
+\item
+  组间离差平方和\\
+\end{itemize}
+
+\texttt{SSA~=~}\(\sum_{j=1}^c n_j(\overline{X_j} - \overline{\overline{X}})^2\)
+
+\begin{description}
+\item[]
+\begin{description}
+\tightlist
+\item[]
+注： 组j的平均值 \(\overline{X_j}\)
+\end{description}
+\end{description}
+
+\begin{itemize}
+\tightlist
+\item
+  组内离差平方和\\
+\end{itemize}
+
+\texttt{SSW~=~}\(\sum_{j=1}^c \sum_{i=1}^{n_j} (X_{ij} - \overline{X_j})^2\)
+
+\begin{description}
+\item[]
+\begin{description}
+\tightlist
+\item[]
+注： 组j的平均值 \(\overline{X_j}\)
+\end{description}
+\end{description}
+
+\begin{itemize}
+\tightlist
+\item
+  单因素方差分析 均方和
+\end{itemize}
+
+\texttt{MSA~=~}\({SSA \over c -1}\)
+
+\texttt{MSW~=~~}\({SSW \over n -c}\)
+
+\texttt{MST~=~}\({SST \over n -1}\)
+
+\textbf{实例}（比较4供货商布料的拉力）：
+
+\begin{itemize}
+\tightlist
+\item
+  组间自由度 = c - 1 = 4 - 1 =3
+\item
+  组内自由度 = n - c = 20 - 4 =16
+\item
+  总自由度 = n - 1 = 20-1 = 19
+\item
+  MSA = \({SSA \over c-1}\) = \({63.28 \over 4-1}\) = 21.1
+\item
+  MSW = 6.1 (F = MSA/MSW = 21.1 / 6.1 = 3.46)
+\end{itemize}
 

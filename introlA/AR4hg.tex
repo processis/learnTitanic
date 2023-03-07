@@ -1,4 +1,4 @@
-\chapter{回顾 - 从定性到定量} % Introduction chapter suppressed from the table of contents
+\chapter{从定性到定量} % Introduction chapter suppressed from the table of contents
 
 当团队已经掌握好迭代回顾根因分析后，便可以尝试利用蒙地卡罗(Monte
 Carlo)预测模型做定量分析。
@@ -19,6 +19,12 @@ Carlo)预测模型做定量分析。
 
 如果要最终质量好，缺陷排除率就要高。但计算缺陷排除率，必须要等到整个开发完成才可以计算，我们可以建立预测模型，模拟这个过程：\\
 需求会引入缺陷，然后需求评审排除缺陷等等。把各引入缺陷数，排除率输进蒙地卡罗预测模型，然后使用它估计每个阶段的缺陷数量范围。
+
+参照前面提过的缺陷排除率(DRE) 计算公式:
+
+%Ma3_10.png
+
+\includegraphics[width=10cm]{Ma3_10.png}
 
 %\href{文件:1113correctEgScreenshot_2021-11-13_212414.png}{400px}
 
@@ -43,6 +49,8 @@ Rayleigh 曲线。
 培训能让团队能先了解利用模拟工具量化管理的原理，也让团队为收集迭代数据做准备，所以建议先做模拟互动培训。下面是一天互动培训的时间安排：（上午是做上一章迭代回顾的互动练习，下午是使用蒙地卡罗预测模型预测下迭代的互动练习。）
 
 \href{文件:712trainingAgendaScreenshot_2022-07-12_125030.jpg}{500px}
+
+\includegraphics[width=10cm]{712trainingAgendaScreenshot_2022-07-12_125030.jpg}
 
 \hypertarget{ux65f6ux95f4ux5b89ux6392}{%
 \subsubsection{时间安排}\label{ux65f6ux95f4ux5b89ux6392}}
@@ -95,11 +103,11 @@ Rayleigh 曲线。
 
 %\href{文件:缺陷表4.jpg}{500px}
 
-\includegraphics[width=10cm]{缺陷表4.jpg}
+\includegraphics[width=10cm]{缺陷表41.jpg}
 
 %\href{文件:微信截图_20211228095232.png}{500px}
 
-\includegraphics[width=10cm]{微信截图_20211228095232.png}
+\includegraphics[width=10cm]{缺陷表51.jpg}
 
 \hypertarget{ux51c6ux5907ux5de5ux5177}{%
 \subsubsection{准备工具}\label{ux51c6ux5907ux5de5ux5177}}
@@ -122,7 +130,10 @@ Rayleigh 曲线。
   团队分析迭代缺陷数据，缺陷是源自需求/设计/编码，得出以下分布表：
 \end{itemize}
 
-\url{文件:微信截图_20220316093044.jpg}
+%\url{文件:微信截图_20220316093044.jpg}
+
+
+\includegraphics[width=10cm]{微信截图_20220316093044.jpg}
 
 \begin{itemize}
 \tightlist
@@ -132,7 +143,7 @@ Rayleigh 曲线。
 
 %\href{文件:2DreEstimateScreenshot_2021-12-01_212049.png}{400px}\\
 
-\includegraphics[width=10cm]{2DreEstimateScreenshot_2021-12-01_212049.png}
+\includegraphics[width=10cm]{2DreEstimateScreenshot_2021-12-01_2120491.jpg}
 
 \begin{itemize}
 \tightlist
@@ -142,7 +153,7 @@ Rayleigh 曲线。
 
 %\href{文件:4reworkByPhaseScreenshot_2021-12-01_214838.png}{450px}
 
-\includegraphics[width=10cm]{4reworkByPhaseScreenshot_2021-12-01_214838.png}
+\includegraphics[width=10cm]{4reworkByPhaseScreenshot_2021-12-01_2148381.jpg}
 
 \begin{itemize}
 \tightlist
@@ -152,7 +163,7 @@ Rayleigh 曲线。
 
 %\href{文件:2AxtalBallPredictScreenshot_2021-12-01_212455.png}{400px}\\
 
-\includegraphics[width=10cm]{2AxtalBallPredictScreenshot_2021-12-01_212455.png}
+\includegraphics[width=10cm]{2AxtalBallPredictScreenshot_2021-12-01_2124551.jpg}
 
 \begin{itemize}
 \tightlist
@@ -166,7 +177,7 @@ Rayleigh 曲线。
 
 %\url{文件:微信截图_20211207132712.png}
 
-\includegraphics[width=10cm]{微信截图_20211207132712.png}
+\includegraphics[width=10cm]{微信截图_202112071327121.jpg}
 
 可看到大部分缺陷都前移，系统测试缺陷下降。
 
