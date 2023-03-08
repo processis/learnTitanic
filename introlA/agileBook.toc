@@ -354,13 +354,13 @@
 \contentsline {subsection}{过程能力(Process Capability)}{282}{section*.327}% 
 \contentsline {subsection}{细分例子}{283}{section*.328}% 
 \contentsline {section}{References}{285}{section*.329}% 
-\contentsline {part}{VII\hspace {1em}总结}{287}{part.7}% 
-\contentsline {chapter}{\numberline {26}领导的工作}{291}{chapter.26}% 
-\contentsline {subsection}{我们很注重质量与客户满意度}{291}{section*.330}% 
-\contentsline {subsection}{拉吉夫终生受用的一件事}{293}{section*.331}% 
-\contentsline {subsubsection}{拉吉夫被邀请到一名校演讲，他用了5分钟分享了一位日本顾问对他终生受用的一件事：}{293}{section*.332}% 
-\contentsline {subsection}{团队根因分析}{296}{section*.333}% 
-\contentsline {subsubsection}{总结}{296}{section*.334}% 
-\contentsline {subsection}{从定性提升到定量管理}{296}{section*.335}% 
-\contentsline {chapter}{\numberline {27}东北虎}{299}{chapter.27}% 
-\contentsline {subsection}{Epilogue 结语}{299}{section*.336}% 
+\contentsline {part}{VII\hspace {1em}总结 \\-管理者应如何支持团队做好敏捷开发，为公司增值}{287}{part.7}% 
+\contentsline {chapter}{\numberline {26}领导的工作}{289}{chapter.26}% 
+\contentsline {subsection}{我们很注重质量与客户满意度}{289}{section*.330}% 
+\contentsline {subsection}{拉吉夫终生受用的一件事}{291}{section*.331}% 
+\contentsline {subsubsection}{拉吉夫被邀请到一名校演讲，他用了5分钟分享了一位日本顾问对他终生受用的一件事：}{291}{section*.332}% 
+\contentsline {subsection}{团队根因分析}{294}{section*.333}% 
+\contentsline {subsubsection}{总结}{294}{section*.334}% 
+\contentsline {subsection}{从定性提升到定量管理}{294}{section*.335}% 
+\contentsline {chapter}{\numberline {27}东北虎}{297}{chapter.27}% 
+\contentsline {subsection}{Epilogue 结语}{297}{section*.336}% 
