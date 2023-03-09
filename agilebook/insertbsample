@@ -1,0 +1,26 @@
+\documentclass {article}
+\pagestyle{empty}
+\begin{document}
+\section*{Example of Citations of Kind \texttt{plain}}
+
+Citation of a normal book~\cite{Eijkhout:1991} and an edited book~\cite{Roth:postscript}
+
+
+\bibliographystyle{plain}
+\bibliography{bsample}
+
+\cite{Eijkhout:1991}
+\cite{Roth:postscript}
+
+
+
+\section(Reference}
+
+\begin{the bibliography}{widest_entry}
+
+\bibitem[1]{Eijkhout:1991} Victor Eijkhout. TEX by Topic, a TEnicians Reference. Addison-Wesley, Reading, Massachusetts, 1991.
+\bibitem[2]{Roth:postscript} Electronic Book Technology Inc., Providence, Rhode Island. Dynatext, ElectronicBook IndexerlBrowser, 1991.
+
+\end(thebibliography}
+
+\end{document}

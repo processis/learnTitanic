@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/dev/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: bsample.aux
+The style file: plain.bst
+Database file #1: bsample.bib
+Warning--empty publisher in Wood:color
+Warning--empty year in Wood:color
+You've used 10 entries,
+            2118 wiz_defined-function locations,
+            568 strings with 5429 characters,
+and the built_in function-call counts, 2719 in all, are:
+= -- 272
+> -- 75
+< -- 4
++ -- 31
+- -- 21
+* -- 163
+:= -- 458
+add.period$ -- 29
+call.type$ -- 10
+change.case$ -- 37
+chr.to.int$ -- 0
+cite$ -- 12
+duplicate$ -- 126
+empty$ -- 242
+format.name$ -- 21
+if$ -- 582
+int.to.chr$ -- 0
+int.to.str$ -- 10
+missing$ -- 8
+newline$ -- 53
+num.names$ -- 21
+pop$ -- 44
+preamble$ -- 2
+purify$ -- 31
+quote$ -- 0
+skip$ -- 82
+stack$ -- 0
+substring$ -- 165
+swap$ -- 28
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 34
+warning$ -- 2
+while$ -- 26
+width$ -- 12
+write$ -- 114
+(There were 2 warnings)

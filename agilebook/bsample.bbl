@@ -1,0 +1,58 @@
+\input{bibnames.sty}\hyphenation{Post-Script Sprin-ger}
+\begin{thebibliography}{10}
+
+\bibitem{Knuth:WEB}
+Knuth Donald~E.
+\newblock {The \textsf{WEB} System of Structured Documentation}.
+\newblock Technical Report STAN-CS-83-980, Department of Computer
+  Science,Stanford University, Stanford,CA 94305, September 1983.
+
+\bibitem{Eijkhout:1991}
+Victor Eijkhout.
+\newblock {\em {\TeX{} by Topic,a{\TeX}nicians Reference}}.
+\newblock {Ad\-di\-son-Wes\-ley}, Reading, Massachusetts, 1991.
+
+\bibitem{Dynatext}
+Electromic Book Technology Inc., Proxidence, Rhode Island.
+\newblock {\em { Dynatext,Electromic Book Indexer/Browser}}, 1991.
+
+\bibitem{Felici:1991}
+James Felici.
+\newblock {PostScript veraus TrueType}.
+\newblock {\em Macworld}, 8:195—201, September 1991.
+
+\bibitem{Yannis:1991}
+Yannis Haralambous.
+\newblock {\TeX} and those other languages.
+\newblock In Hope Hasilton, editor, {\em 1991 Annual Meeting Proceedings,part
+  2,\TeX{}Users Group,Twelfth Anhual Meeting,Dedhan,Massachusetts,July
+  15—18,1991}, volume~12, pages 539--548, Providence,Rhode Island, December
+  1991.
+
+\bibitem{Liang:1983}
+Franklin~Mark Liang.
+\newblock {\em {Word Hy-phen-a-tion by Con –pu-ter}}.
+\newblock PhD thesis, Stanford University, Stanford , CA 94305, June 1983.
+\newblock Also available as Stanford University,Department of Computer Science
+  Reprot No:STAN-CS-83-977.
+
+\bibitem{Mittelbach/Schoepf:1990}
+Frank Mittelbanch and Rainer Sch{\”o}pf.
+\newblock {The New Font Selection --- User Interface to Standard \LaTeX}.
+\newblock {\em TUGboat}, 11(2):297—305, 1990.
+
+\bibitem{Roth:postscript}
+Stephen~E. Roth, editor.
+\newblock {\em {Real World PostScript}}.
+\newblock {Ad\-di\-son-Wes\-ley}, Reading, Massachusetts, 1988.
+
+\bibitem{EVH:office}
+Eric van Hervijean.
+\newblock {Future Office Systems Requirements}.
+\newblock Technical report, CERN DO Internal Note, November 1988.
+
+\bibitem{Wood:color}
+Pat Wood.
+\newblock {\em PostScript Color Separation}, pages 201--225.
+
+\end{thebibliography}
