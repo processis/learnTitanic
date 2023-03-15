@@ -121,7 +121,7 @@
 \hypertarget{ux9884ux4f30ux4e0bux4e00ux5e74ux5ea6ux7684ux7ef4ux62a4ux6210ux672c}{%
 \subsubsection{3.预估下一年度的维护成本}\label{ux9884ux4f30ux4e0bux4e00ux5e74ux5ea6ux7684ux7ef4ux62a4ux6210ux672c}}
 
-统计分析，除了帮我们洞察那些主要影响因素外，也可以帮我们预测:
+统计分析，除了帮我们洞察那些主要影响因素外，也可以帮我们做预测:
 
 %\href{文件:maxwell_t5.5.jpg}{文件:maxwell t5.5.jpg}
 
@@ -129,9 +129,7 @@
 
 但从上表看到预测的准确度低，预测1994年的工作量为例，用模型预测的准确度还不如直接使用1993的数字。
 
-在前面估算章节讨论过， 很多因素影响软件开发的工作量难以准确预估\\
-
-（注：MMRE = Mean Magnitude of Relative Error, MedMRE = Median MRE , Pred(.25)=偏差少于0.25之比例）\\
+在前面估算章节讨论过， 很多因素影响软件开发的工作量难以准确预估
 
 \hypertarget{ux6570ux636eux5206ux6790ux6b65ux9aa4}{%
 \subsection{数据分析步骤}\label{ux6570ux636eux5206ux6790ux6b65ux9aa4}}
@@ -170,8 +168,8 @@
 \includegraphics[width=6cm]{maxwell_e51.jpg}
 
 \hypertarget{creation-of-new-variablesux5efaux7acbux65b0ux53d8ux91cf}{%
-\subsubsection{建立新变量Creation of New
-Variables}\label{creation-of-new-variablesux5efaux7acbux65b0ux53d8ux91cf}}
+\subsubsection{Creation of New
+Variables建立新变量}\label{creation-of-new-variablesux5efaux7acbux65b0ux53d8ux91cf}}
 
 例：有些项目是在1993年一月份以后才开始维护，
 为了要与其他1993年一月份或者以前已开始的项目可以比较，
@@ -179,7 +177,7 @@ Variables}\label{creation-of-new-variablesux5efaux7acbux65b0ux53d8ux91cf}}
 就要换成36小时{[}=(30/10)*12{]}
 
 \hypertarget{histogramsux7528ux76f4ux65b9ux56feux521dux6b65ux5206ux6790}{%
-\subsubsection{用直方图(Histograms)初步分析}\label{histogramsux7528ux76f4ux65b9ux56feux521dux6b65ux5206ux6790}}
+\subsubsection{Histograms用直方图初步分析}\label{histogramsux7528ux76f4ux65b9ux56feux521dux6b65ux5206ux6790}}
 
 \begin{itemize}
 \tightlist
@@ -198,8 +196,8 @@ Variables}\label{creation-of-new-variablesux5efaux7acbux65b0ux53d8ux91cf}}
 \includegraphics[width=6cm]{maxwell_f58.jpg}
 
 \hypertarget{scatter-plotux6563ux70b9ux56fe}{%
-\subsubsection{散点图Scatter
-plot}\label{scatter-plotux6563ux70b9ux56fe}}
+\subsubsection{Scatter
+plot散点图}\label{scatter-plotux6563ux70b9ux56fe}}
 
 \begin{itemize}
 \tightlist
@@ -523,11 +521,11 @@ call、pall、tall三组数据:
 \begin{enumerate}
 \tightlist
 \item
-  确定研究哪些关系
+  确定哪些关系将被研究。
 \item
-  收集x和y变量的数据
+  收集x和y变量的数据。
 \item
-  通过在x轴绘制独立变量和在y轴绘制因变量，设立一条拟合线图
+  通过在x轴绘制独立变量和在y轴绘制因变量，设立一条拟合线图。
 \item
   创建拟合线
 \end{enumerate}
@@ -542,14 +540,14 @@ call、pall、tall三组数据:
 
 %\url{文件:相关性09.png}
 
-\includegraphics[width=6cm]{相关性09.png}\\
+\includegraphics[width=6cm]{相关性09.png}
 
 \begin{enumerate}
 \tightlist
 \item
-  计算相关系数r (x和y之间的相关性，从 -1 到 +1)
+  计算相关系数r,使用本章中早先定义的方程式。
 \item
-  通过使用方程式y=mx+b,确定斜率或线的y轴截距
+  通过使用方程式y=mx+b,确定斜率或线的y轴截距。
 \end{enumerate}
 
 \begin{itemize}
@@ -563,7 +561,7 @@ call、pall、tall三组数据:
 \begin{enumerate}
 \tightlist
 \item
-  计算残差(residuals)
+  计算残差
 \end{enumerate}
 
 \begin{itemize}
@@ -571,25 +569,25 @@ call、pall、tall三组数据:
 \item
   在对于任何给定的x的预测反应变量（叫做
   \(\hat y\)）和实验值或者实际响应（y）之间的区别叫做残差（e=y -
-  \(\hat y\)）。残差用来确定模型是否好使用。残差的估算标准差是关于回归线的错误项的度量
+  \(\hat y\)）。残差用来确定模型是否好使用。残差的估算标准差是关于回归线的错误项的度量。
 \end{itemize}
 
 \begin{enumerate}
 \tightlist
 \item
-  确定重要性，执行t-检验（在计算机的帮助下）并为每个因素计算p-值
+  确定重要性，执行t-检验（在计算机的帮助下）并为每个因素计算p-值。
 \end{enumerate}
 
 \begin{itemize}
 \tightlist
 \item
-  少于α (通常是0.05)的p-值表示统计上有显著关系
+  少于α (通常是0.05)的p-值将指示一个统计上的重要关系。
 \end{itemize}
 
 \begin{enumerate}
 \tightlist
 \item
-  使用方差分析法(ANOVA)分析整个模型是否具备显著关系，分析报告包括F-检验结果与相关p-值
+  使用方差分析法为重要性分析整个的模型，这个模型显示带有相关p-值的F-检验的结果。
 \item
   计算R\textsuperscript{2}和R\_adj\textsuperscript{2}。
 \end{enumerate}
@@ -620,12 +618,9 @@ call、pall、tall三组数据:
 
 注意：不像R\textsuperscript{2}，当增加提供很少新信息的条款并且随着模型条款的数量越靠近总样本大小时，R\_adj\textsuperscript{2}可能变得更小，。理想上，R\_adj\textsuperscript{2}应该是最大化，尽可能靠近R\textsuperscript{2}。
 
-使用历史数据验证回归模型。
+结论应该被验证，尤其当历史数据已经被使用时。
 
-\hypertarget{row-pruning}{%
-\subsubsection{例子}\label{row-pruning}}
-
-想确定在为每一个特定产品分配的货架空间的数量和对同样的产品的销售量之间是否存在关系。她调查同样链的30个不同的商店，所有的都有相似的人口统计资料。比较分配的货架空间（x）和销售（y）收集数据。使用一个计算机程序来运行方差分析显示了下面的结果：
+例子：想确定在为每一个特定产品分配的货架空间的数量和对同样的产品的销售量之间是否存在关系。她调查同样链的30个不同的商店，所有的都有相似的人口统计资料。比较分配的货架空间（x）和销售（y）收集数据。使用一个计算机程序来运行方差分析显示了下面的结果：
 
 %\url{文件:相关性12.png}
 

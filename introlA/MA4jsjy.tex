@@ -84,7 +84,7 @@
 \end{description}
 
 这例子，可以使用正态分布相关方程式，估计概率， 如概率低于 5\%
-，拒绝零假设（折断力 \(> 285\)) \\
+，拒绝零假设 ，（折断力 \(> 285\)) （详见附件）\\
 如果不想研究相关方程式，可利用概率分布图``看''到：\\
 %\href{文件:M4SingleMean1Screenshot_2022-09-11_201026.jpg}{600px}
 
@@ -133,7 +133,7 @@
 我们可以简单理解P值为发生第一类错误的概率，如果低于5\%我们就有信心拒绝零假设。\strut
 \end{minipage}}
 
-假设检验用于比较两组数据有没有显著差异的例子:
+假设检验用于比较两组数据有没有显著差异的例子；
 
 \hypertarget{ux6bd4ux8f83ux4e24ux4e2aux6b63ux6001ux603bux4f53ux7684ux5747ux503c}{%
 \subsection{比较两个正态总体的均值}\label{ux6bd4ux8f83ux4e24ux4e2aux6b63ux6001ux603bux4f53ux7684ux5747ux503c}}
@@ -210,14 +210,11 @@
 也可以利用工具，计算双样本T检验(Paired T test)
 的P值，因P值=0.165,大于0.05， 判断不能拒绝零假设
 
-上面都是比较两组数据，如果想比较超过两组数据便要用方差分析(ANOVA)
+如果想比较比较超过两组数据便要用方差分析(ANOVA)
 
 \hypertarget{ux65b9ux5deeux5206ux67901-anova-test}{%
 \subsection{方差分析(ANOVA
 test)}\label{ux65b9ux5deeux5206ux67901-anova-test}}
-
-\hypertarget{ux65b9ux5deeux5206ux67902-anova-test}{%
-\subsubsection{例子一}\label{ux65b9ux5deeux5206ux67902-anova-test}}
 
 比较三种车型（小轿车，舒适型 ， 豪华车）的省油系数有没有显著差异？\\
 %\href{文件:5anovaDataScreenshot_2022-07-24_105955.jpg}{文件:5anovaDataScreenshot
@@ -238,7 +235,8 @@ test)}\label{ux65b9ux5deeux5206ux67901-anova-test}}
 Tukey-Kramer 做多组之间比较
 
 \hypertarget{ux65b9ux5deeux5206ux67902-anova-test}{%
-\subsubsection{例子二}\label{ux65b9ux5deeux5206ux67902-anova-test}}
+\subsubsection{方差分析2 (ANOVA
+test)}\label{ux65b9ux5deeux5206ux67902-anova-test}}
 
 某降落伞工厂想比较4家布料供货商的布料拉力
 （因拉力不足会影响使用者的性命安全）\\
@@ -301,7 +299,7 @@ Tukey-Kramer 做多组之间比较
   21.16\textbar{} = 1.68
 \end{enumerate}
 
-用Tukey-Kramer 相关方程式（详见附件），得出临界范围(Critical Range)为 4.47，所以判断唯一供货商1与2的布料拉力是有显著差异。 
+用Tukey-Kramer 相关方程式（详见附件），得出临界范围为 4.47，所以判断唯一供货商1与2的布料拉力是有显著差异。 
 
 %\hypertarget{ux5206ux7ec4ux5206ux7c7bux6570ux636e}{%
 %\section{分组（分类）数据}\label{ux5206ux7ec4ux5206ux7c7bux6570ux636e}}
@@ -309,7 +307,7 @@ Tukey-Kramer 做多组之间比较
 \hypertarget{ux65b9ux5deeux5206ux67901-anova-test}{%
 \subsection{分组（分类）数据}\label{ux65b9ux5deeux5206ux67901-anova-test}}
 
-上面都是用于连续数据的例子,
+上面都是用于连续数据的例子
 
 假设检验也可以用于分组（分类）数据
 
@@ -341,8 +339,9 @@ Pneumonia， 血液 Bloodstream） 最终导致病人死亡
 
 \includegraphics[width=6cm]{6chiSquareTstResultScreenshot_2022-07-24_103606.jpg}
 
+1:零假设:医院(Hospitals) 与 感染种类(Infections) 之间没有相关
 
-为了计算卡方值(Chi-square)，首先使用以下公式计算每个列联表的预计值E(Expected
+2:为了计算卡方值(Chi-square)，首先使用以下公式计算每个列联表的预计值E(Expected
 Value)，
 
 \(E = \frac{(row \ sum) * (column \ sum)} {grand \ total}\)
@@ -351,8 +350,8 @@ Value)，
 
 \(\chi ^2 = \sum \frac{(O - E)^2} {E}\)
 
-3:计算得出卡方值=30，696 ，比 关键值 9.5 高，所以拒绝零假设，医院(Hospitals)
-与 感染种类(Infections) 之间相关（注：对应 Minitab 工具自动算出的 30.755）\\
+3:得出卡方=30，696 ，比 DF=4 的关键值高，所以拒绝零假设，医院(Hospitals)
+与 感染种类(Infections) 之间相关\\
 
 \hypertarget{ux9644ux4ef6}{%
 \section{附件}\label{ux9644ux4ef6}}
@@ -433,8 +432,7 @@ Critical range=
 \(Q_u \sqrt{{MSW \over 2} ({1\over n_j} - {1\over n_j '})}\)
 
 对应布料拉力例子：\(\alpha\) = 0.05， c = 4 , n - c= 20-4 = 16\\
-从统计表 得出对应 \(Q_u\) = 4.05\\
- MSW =6.1 (如何计算MSW,
+从统计表 得出对应 \(Q_u\) = 4.05 ; MSW =6.1 (如何计算MSW,
 详见下面"如何计算 MSW")
 
 代入上面方程式：
@@ -445,7 +443,7 @@ Critical range=
 \tightlist
 \item[]
 Critical range=
-\(4.05 \sqrt{({6.1 \over 2}) ({1\over 5} + {1\over 5 })}\)
+\(4.05 \sqrt{({6.1 \over 2}) ({1\over 5} - {1\over 5 })}\)
 \end{description}
 \end{description}
 
@@ -583,107 +581,3 @@ SST =
   MSW = 6.1 (F = MSA/MSW = 21.1 / 6.1 = 3.46)
 \end{itemize}
 
-从F分布表，按分子自由度为3（=4-1),分母自由度为16 (=20-4)，找出F对应0.05
-的临界值为3.24。因3.46 大于 3.24，所以判断4供货商的布料拉力是有差异。
-
-如果不想查看F的分布大表，工具也计算出对应 3.46 的
-P值，如P值低于0.05，能拒绝零假设。
-
-\hypertarget{ux7528-minitab-ux505aux65b9ux5deeux5206ux6790}{%
-\subsubsection{用 Minitab
-做方差分析}\label{ux7528-minitab-ux505aux65b9ux5deeux5206ux6790}}
-
-\begin{itemize}
-\tightlist
-\item
-  输入数据，在统计里，选单因素方差分析（默认的数据格式是：所有反应都放在一栋里，然后数据对应那个行与栋，写在旁边
-\end{itemize}
-
-%\href{文件:AnovaSuppliersDataScreenshot_2022-08-07_125537.jpg}{400px}
-
-\includegraphics[width=6cm]{AnovaSuppliersDataScreenshot_2022-08-07_125537.jpg}
-
-\begin{itemize}
-\tightlist
-\item
-  Minitab 出来方差分析结果表，与上面的总结表能一一对应；
-\end{itemize}
-
-%\href{文件:AnovaParachutes807Screenshot_2022-08-07_124737.jpg}{400px}
-
-\includegraphics[width=6cm]{AnovaParachutes807Screenshot_2022-08-07_124737.jpg}
-
-%\href{文件:AnovaBoxplots807.jpg}{400px}
-
-\includegraphics[width=6cm]{AnovaBoxplots807.jpg}
-
-%\href{文件:Anova3inOneScreenshot_2022-08-07_125131.jpg}{400px}
-
-\includegraphics[width=6cm]{Anova3inOneScreenshot_2022-08-07_125131.jpg}
-
-\begin{itemize}
-\tightlist
-\item
-  从4组的分布，你可能看出第一组与第二组的差异很明显，其他差不多。但当差异没有这么明显，便需要用统计分析判断。
-\end{itemize}
-
-\hypertarget{tukey-kramer-ux591aux7ec4ux6bd4ux8f83}{%
-\subsubsection{Tukey-Kramer
-多组比较}\label{tukey-kramer-ux591aux7ec4ux6bd4ux8f83}}
-
-\begin{itemize}
-\tightlist
-\item
-  用下面方程式计算显著差异的临界值：
-\end{itemize}
-
-\begin{description}
-\item[]
-\begin{description}
-\tightlist
-\item[]
-\textless{}\textgreater{}
-\end{description}
-\end{description}
-
-临界值 Critical range=
-\(Q_u \sqrt{{MSN \over 2} ({1\over n_j} - {1\over n_j '})}\)
-
-%\url{文件:微信截图_20221107134835.png}
-
-\includegraphics[width=6cm]{微信截图_20221107134835.png}
-
-%\href{文件:微信截图_20221109095118.png}{500px}
-
-\includegraphics[width=6cm]{微信截图_20221109095118.png}
-
-%\href{文件:微信截图_20221109095038.png}{500px}
-
-\includegraphics[width=6cm]{微信截图_20221109095038.png}
-
-\textbf{实例}（比较4供货商布料的拉力）：\\
-\#\(|\overline{X_1} - \overline{X_2}\) = \textbar{}19.52 --
-24.26\textbar{} = 4.74
-
-\begin{enumerate}
-\tightlist
-\item
-  \(|\overline{X_1} - \overline{X_3}\) = \textbar{}19.52 --
-  22.84\textbar{} = 3.32
-\item
-  \(|\overline{X_1} - \overline{X_4}\) = \textbar{}19.52 --
-  21.16\textbar{} = 1.64
-\item
-  \(|\overline{X_2} - \overline{X_3}\) = \textbar{}24.26 --
-  22.84\textbar{} = 1.42
-\item
-  \(|\overline{X_2} - \overline{X_4}\) = \textbar{}24.26 --
-  21.16\textbar{} = 3.10
-\item
-  \(|\overline{X_3} - \overline{X_4}\) = \textbar{}22.84 --
-  21.16\textbar{} = 1.68
-\end{enumerate}
-
-从 \(Q_U\)分布表，按分子自由度为4（=c）,分母自由度为16
-(=n-c=20-4)，找出F对应0.05 的临界值为4.05。用上面方程式，得出临界范围为
-4.47，所以判断唯一供货商1与2的布料拉力是有显著差异。
