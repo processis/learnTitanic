@@ -387,13 +387,8 @@ Value)，
 \hypertarget{ux6bd4ux8f83ux4e24ux4e2aux6b63ux6001ux603bux4f53ux7684ux5747ux503c-1}{%
 \subsection{比较两个正态总体的均值}\label{ux6bd4ux8f83ux4e24ux4e2aux6b63ux6001ux603bux4f53ux7684ux5747ux503c-1}}
 
-\begin{description}
-\tightlist
-\item[]
-男生：
-\end{description}
 
-\(\overline{X_1} = 8.6\) ； \(\overline{\sigma_1} = 3.3\)\\
+男生：\(\overline{X_1} = 8.6\) ； \(\overline{\sigma_1} = 3.3\)\\
 女生： \(\overline{X_2} = 7.9\) ； \(\overline{\sigma_2} = 3.3\)\\
 
 \[\cfrac{ (\overline{X_1} - \overline{X_2}) - ({\mu}_1  - {\mu}_2)}{\sqrt{\cfrac{\sigma_1^2}{n_1} + \cfrac{\sigma_2^2}{n_2}}} = \cfrac{ (8.6 - 7.9) - 0 }{\sqrt{\cfrac{(3.3)^2}{50} + \cfrac{(3.3)^2}{50}}} = 1.06\]
@@ -492,18 +487,6 @@ MSW，参考ANOVA方程式}\label{ux5982ux4f55ux8ba1ux7b97-mswux53c2ux8003anovau
 \begin{itemize}
 \tightlist
 \item
-  组间离差平方和 (SSA)
-\end{itemize}
-
-\begin{itemize}
-\tightlist
-\item
-  组内离差平方和 (SSW)
-\end{itemize}
-
-\begin{itemize}
-\tightlist
-\item
   如果组间离差远远大于组内离差，表示组间差异大，应拒绝零假设；反之，如差异不大，便难以拒绝零假设，没有显著差异。
 \end{itemize}
 
@@ -513,7 +496,7 @@ MSW，参考ANOVA方程式}\label{ux5982ux4f55ux8ba1ux7b97-mswux53c2ux8003anovau
   单因素方差分析 计算 F = MSA / MSW , 如果F值大于临界值，拒绝零假设
 \end{itemize}
 
-能直接算出下面总结报告：\\
+统计工具，如 Minitab，能直接算出下面总结报告：\\
 
 %Screenshotfrom2023-02-1401-07-07.png
 
@@ -525,6 +508,8 @@ SST =
 \(\sum_{j=1}^c \sum_{i=1}^{n_j} (X_{ij} - \overline{\overline{X}})^2\)
 \end{description}
 \end{description}
+
+\texttt{SST~=~}\(\sum_{j=1}^c \sum_{i=1}^{n_j} (X_{ij} - \overline{\overline{X}})^2\)
 
 \begin{description}
 \item[]
