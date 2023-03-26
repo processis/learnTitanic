@@ -931,3 +931,915 @@ theta2<-mu-deflect
 mu~dbeta(16,6)
 delta~dbeta(1,1)
 deflext<-(delta-.5)*2*min(mu,1-mu)
+
+
+
+#ANOVAonewayBRugs.R   18.4.1
+
+graphics.off()
+rm(list=ls(all=TRUE))
+fnroot="ANOVAonewayBRugs"
+
+modelstring="
+"
+model{
+  for(i in 1:Ntotal){
+    y[i]~dnorm(mu[i],tau)
+    mu[i]<-a0+a[x[i]]
+  }
+  tau<-pow(sigma,-2)
+  sigma~dunif(0,10)
+  a0~dnorm(0,0.001)
+  for(j in 1:NxLv1){a[j]~dnorm(0.0,atau)}
+  atau<-1/pow(aSD,2)
+  aSD<-abs(aSDunabs)+.1
+  aSDunabs~dt(0,0.001,2)
+}
+
+writeLines(modelstring,con="model.txt")
+modelCheck("model.txt")
+
+
+dataSource=c("McDonaldSK1991","SolariLS2008","Random")[1]
+
+if(dataSource=="McDonaldSK1991"){
+  fnroot=paste(fnroot,dataSource,sep="")
+  datarecord=read.table("McDonaldSK1991data.txt",header=T,
+                        colCLasses=c("factor","numeric"))
+  
+  y=as.numeric(datarecord$Size)
+  Ntotal=length(datarecord$Size)
+  x=as.numeric(datarecord$Group)
+  xnames=levels(datarecord$Group)
+  NxLvl=length(unique(datarecord$Group))
+  
+  contrastList=list(BIGvSMALL=c(-1/3,-1/3,1/2,-1/3,1/2),
+                    ORE1vORE2=c(1,-1,0,0,0),
+                    ALAvORE=c(-1/2,-1/2,1/2,1/2,0),
+                    NPACvORE=c(-1/2,-1/2,1/2,1/2,0),
+                    USAvRUS=c(1/3,1/3,1/3,-1,0),
+                    FINvPAC=c(-1/4,-1/4,-1/4,-1/4,1),
+                    ENGvOTH=c(1/3,1/3,1/3,-1/2,-1/2),
+                    FINvRUS=c(0,0,0,-1,1))
+}
+
+
+if(dataSOurce=="SolariLS2008"){
+  fnroot=paste(fnroot,dataSource,sep="")
+  datarecord=read.table("SolariLS2008data.txt",header=T,
+                        colClasses=c("factor","numeric"))
+  
+  y=as.numeric(datarecord$Acid)
+  Ntotal=length(datarecord$Acid)
+  x=as.numeric(datarecord$Type)
+  xnames=levels(datarecord$Type)
+  NxLvl=length(unique(datarecord$Type))
+  contrastList=list(G3vOTHER=c(-1/8,-1/8,1,-1/8,-1/8,-1/8,-1/8,-1/8,-1/8))
+}
+
+
+
+if(dataSource=="Random"){
+  fnroot=paste(fnroot,dataSource,sep="")
+  ysdtrue=4.0
+  a0true=100
+  atrue=c(2,-2)
+  npercell=8
+  datarecord=mareix(0,ncol=2,nrow=length(atrue)*npercell)
+  colnames(datarecord)=c("y","x")
+  rowidx=0
+  for(xidx in 1:length(atrue)){
+    for(subjidx in 1:npercell){
+      rowidx=rowidx+1
+      datarecord[rowidx,"x"]=xidx
+      datarecord[rowidx,"y"]=(a0true+atrue[xidx]+rnorm(1,0,ysdtrue))
+    }
+  }
+  
+  datarecord=data.frame(y=datarecord[,"y"],x=as.factor(datarecord[,"x"]))
+  y=as.numeric(datarecord$y)
+  Ntotal=length(y)
+  x=as.numeric(datarecord$x)
+  xnames=levels(datarecord$x)
+  NxLvl=length(unique(x))
+  
+  
+  contrastList=NULL
+  for(glidx in 1:(NxLvl-1)){
+    for(g2idx in (glidx+1):NxLvl){
+      cmpVec=rep(0,NxLvl)
+      cmpVec[g1idx]=-1
+      cmpVec[g2idx]=1
+      contrastList=c(contrastList,list(cmpVec))
+    }
+  }
+}
+
+
+ySDorig=sd(y)
+yMorig=mean(y)
+z=(y-yMorig)/ySDorig
+datalist=list(
+  y=z,
+  x=x,
+  Ntotal=Ntotal,
+  NxLc1=NxLc1
+)
+
+modelData(bugsData(datalist))
+
+nchain=5
+modelCompile=(numChains=nchain)
+
+if(F){
+  modelGenInits()
+}else{
+  theData=data.frame(y=datalist$y,x=factor(x,labels=xnames))
+  a0=mean(theData$y)
+  a=aggregate(theData$y,list(theData$x),mean)[,2]-a0
+  ssw=aggregate(theData$y,list(theData$x),
+                function(x){var(x)*(length(x)-1)})[,2]
+  sp=sqrt(sum(ssw)/length(theData$y))
+  genInitList<-function(){
+    return(
+      list(
+        a0=a0,
+        a=a,
+        sigma=sp,
+        aSDunabs=sd(a)
+      )
+    )
+  }
+  
+  for(chainIdx in 1:nchain){
+    modelInits(bugsInits(genInitList))
+  }
+}
+
+
+BurninSteps=10000
+modelUpdate(BurninSteps)
+samplesSet(c("a0","a","sigma","aSD"))
+stepsPerChain=ceiling(5000/nchain)
+thinStep=750
+modelUpdate(stepsPerChain,thin=thinStep)
+
+
+source("plotChains.R")
+source("plotPost.R")
+
+checkConvergence=T
+if(checkConvergence){
+  sumInfo=plotChains("a0",saveplot=T,filenameroot=fnroot)
+  sumInfo=plotChains("a",saveplot=T,filenameroot=fnroot)
+  sumInfo=plotChains("sigma",saveplot=T,filenameroot=fnroot)
+  sumInfo=plotChains("aSD",saveplot=T,filenameroot=fnroot)
+}
+
+sigmaSample=samplesSample("sigma")
+aSDSample=samplesSample("aSD")
+windows()
+layout(matrix(1:2,nrow=2))
+par(mar=c(3,1,2,5,0),mgp=c(2,0.7,0))
+plotPost(sigmaSample,xlab="sigma",main="Cell SD",breaks=30)
+plotPost(aSDSample,xlab="aSD",main="a SD",breaks=30)
+dev.copy2eps(file=paste(fnroot,"SD.eps",sep=""))
+
+a0Sample=samplesSample("a0")
+chainLength=length(a0Sample)
+aSample=array(0,dim=c(datalist$NxLvl,chainLength))
+
+for(xidx in 1:datalist$NxLv1){
+  aSample[xidx,]=samplesSample(paste("a[",xidx,"]",sep=""))
+}
+
+
+nSample=array(0,dim=c(datalist$NxLv1,chainLength))
+for(stepIdx in i:chainLength){
+  mSample[,stepIdx]=(a0Sample[stepIdx]+aSample[,stepIdx])
+}
+
+b0Sample=apply(mSample,2,mean)
+bSample=mSample-matrix(rep(b0Sample,NxLv1),nrow=NxLvl,byrow=T)
+
+b0Sample=b0Sample*ySDorig+yMorig
+bSample=bSample*ySDorig
+
+windows(datalist$NxLv1*2.75,2.5)
+layout(matrix(1:datalist$NxLv1,nrow=1))
+par(mar=c(3,1,2.5,0),mgp=c(2,0.7,0))
+for(xidx in 1:datalist$NxLv1){
+  plotPOst(bSample[xidx,],breaks=30,
+           xlab=bquote(beta*1[.(xidx)]),
+           main=paste("x:",xnames[xidx]))
+}
+
+dev.copy2eps(file=paste(fnroot,"b.eps",sep=""))
+
+nContrasts=length(contrastList)
+if(nContrasts>0){
+  nPlotPerROW=5
+  nPlotRow=ceiling(nContrasts/nPlotPerROW)
+  nPlotCol=ceiling(nContrasts/nPlotRow)
+  windows(3.75*nPlotCol,2.5*nPlotRow)
+  
+  layout(matrix(1:(nPlotRow*nPlotCol),nrow=nPlotRow,ncol=nPlotCol,byrow=T))
+  par(mar=c(4,0.5,2.5,0.5),mgp=c(2.0,7.0))
+  
+  for(mar=c(4,0.5,2.5,0.5),mgp=c(2,0.7,0)){
+    contrast=matrix(contrastList[[cIdx]],nrow=1)
+    incIdx=contrast!=0
+    histInfo=plotPost(contrast %*% bSample,compVal=0,breaks=30,
+                      xlab=paste(round(contrast[incIdx],2),xnames[incIdx],
+                                 c(rep("+",sum(incIdx)-1),""),collapse=""),
+                      cex.lab=1.0,
+                      main=paste("X Contrast:",names(contrastList[cIdx])))
+  }
+  dev.copy2eps(file=paste(fnroot,"xContrasts.eps",sep=""))
+}
+
+
+
+theData=data.frame(y=y,x=factor(x,labels=xnames))
+aovresult=aov(y~x,data=theData)
+
+cat("\n--------------------------------------------------------\n\n")
+print(summary(aovresult))
+cat("\n--------------------------------------------------------\n\n")
+print(model.tables(aovresult,"means"),digits=4)
+windows()
+boxplot(y~x,data=theData)
+cat("\n--------------------------------------------------------\n\n")
+
+print(TukeyHSD(aovresult,"x",ordered=FALSE))
+windows()
+
+plot(TukeyHSD(aovresult,"x"))
+
+if(T){
+  for(xIdx1 in 1:(NxLv1~1)){
+    for(xIdx2 in (xIdx1+1):NxLv1){
+      cat("\n--------------------------------------------------------\n\n")
+      cat("xIdx1=",xIdx1,",xIdx2=",xIdx2,
+          ",M2-M1=",mean(y[x==xIdx2])-mean(y[x==xIdx1]),"\n")
+      print(t.test(y[x==xIdx2],y[x==xIdx1],var.equal=T))
+    }
+  }
+}
+
+cat("\n--------------------------------------------------------\n\n")
+
+
+
+
+#plotPost.R
+
+plotPost=function(paramSampleVec,credMass=0.95,compVal=NULL,
+                  HDItextPLace=0.7,ROPE=NULL,yaxt=NULL,ylab=NULL,
+                  xlab=NULL,cex.lab=NULL,cex=NULL,xlim=NULL,main=NULL,
+                  showMOde=F,...){
+  if(is.null(xlab))xlab="Parameter"
+  if(is.null(cex.lab))cex.lab=1.5
+  if(is.null(cex))cex=1.4
+  if(is.null(xlim))xlim=range(c(compVal,paramSampleVec))
+  if(is.null(main))main=""
+  if(is.null(yaxt))yaxt="n"
+  if(is.null(ylab))ylab=""
+  
+  
+  par(xpd=NA)
+  histinfo=hist(paramSampleVec,xlab=xlab,yaxt=yaxt,ylab=ylab,
+                freq=F,col="lightgrey",border="white",
+                xlim=xlim,main=main,cex=cex,cex.lab=cex.lab,
+                ...)
+  
+  if(showMode==F){
+    meanParam=mean(paramSampleVec)
+    text(meanParam,.9*max(histinfo$density),
+         bquote(mean==.(signif(meanParam,3))),adj=c(.5,0),cex=cex)
+  }else{
+    dres=density(paramSampleVec)
+    modeParam=dres$x[which.max(dres$y),
+                     bquote(mode==.(signif(modeParam,3))),adj=c(.5,0),cex=cex)
+  }
+  
+  if(!is.null(compVal)){
+    pcgtCompVal=round(100*sum(paramSampleVec>compVal)
+                      /length(paramSampleVec),1)
+    pcltCompVal=100-pcgtCompVal
+    lines(c(compVal,compVal),c(.5*max(histinfo$density),0),
+          lty="dashed",lwd=2)
+    text(compVal,.5*max(histinfo$density),
+         bquote(.(pcltCompVal)*"%<="*
+                  .(signif(compVal,3))*"<"*.(pcgtCompVal)*"%"),
+         adj=c(pcltCompVal/100,-0.2),cex=cex)
+  }
+  
+  if(!is.null(ROPE)){
+    pcInROPE=(sum(paramSampleVec>ROPE[1]&paramSampleVec<ROPE[2])
+              /length(paramSampleVec))
+    
+    ROPEtextHt=.35*max(histinfo$density)
+    lines(c(ROPE[1],ROPE[1]),c(ROPEtextHt,0),lty="dotted",lwd=2)
+    lines(c(ROPE[2],ROPE[2]),c(ROPEtextHt,0),lty="dotted",lwd=2)
+    text(mean(ROPE),ROPEtextHt,
+         bquote(.(round(100*pcInROPE))*"% in ROPE"),
+         adj=c(.5,-0.2),cex=1)
+  }
+  
+  source("HDIofMCMC.R")
+  HDI=HDIofMCMC(paramSampleVec,credMass)
+  lines(HDI,c(0,0),lwd=4)
+  text(mean(HDI),0,bquote(.(100*credMass)*"% hdi"),
+       adj=c(.5,-1.9),cex=cex)
+  text(HDI[1],0,bquote(.(signif(HDI[1],3))),
+       adj=c(HDItextPLace,-0.5),cex=cex)
+  text(HDI[2],0,bquote(.(signif(HDI[2],3))),
+       adj=c(1.0-HDItextPLace,-0.5),cex=cex)
+  par(xpd=F)
+  return(histinfo)
+}
+
+##19.3.1 ANOVAtwowayBRugs.R
+
+graphics.off()
+rm(list=ls(all=TRUE))
+fnroot="ANOVAtwowayBrugs"
+library(BRugs)
+
+modelstring=""
+
+model{
+  for(i in 1:Ntotal){
+    y[i]~dnorm(mu[i],tau)
+    mu[i]<-a0+a1[x1[i]]+a2[x2[i]]+a1a2[x1[i],x2[i]]
+  }
+  tau<-pow(sigma,-2)
+  sigma~dunnif(0,10)
+  
+  a0~dnorm(0,0.001)
+  
+  for(j1 in 1:Nx1Lvl){a1[j1]~dnorm(0.0,altua)}
+  
+  a1tau<-1/pow(a1SD,2)
+  a1SD<-abs(a1SDunabs)+.1
+  alSDunabs~dt(0,0.001,2)
+  
+  for(j1 in 1:Nx1Lvl){for(j1 in 1:Nx2Lvl){
+    a1a2[j1,j2]~dnorm(0.0,a1a2tua)
+  }}
+  a1a2tua<-1/pow(a1a2SD,2)
+  a1a2SD<-abs(a1a2SDunabs)+.1
+  a1a2SDunabs~dt(0,0.001,2)
+}
+writeLines(modelstring,con="model.txt")
+modelCheck("model.txt")
+
+
+dataSource=c("QianS2007","Salary","Random","Ex19.3")[4]
+
+if(dataSource=="QianS2007"){
+  fnroot=paste(fnroot,dataSource,sep="")
+  datarecord=read.table("QianS2007SeaweedData,txt",header=TRUE,sep=",")
+  
+  datarecord$COVER=-log((100/datarecord$COVER)-1)
+  y=as.numeric(datarecord$COVER)
+  x1=as.numeric(datarecord$TREAT)
+  x1names=levels(datarecord$TREAT)
+  x2=as.numeric(datarecord$BLOCK)
+  x2names=levels(datarecord$BLOCK)
+  Ntotal=length(y)
+  Nx1Lvl=length(unique(x1))
+  Nx2Lvl=length(unique(x2))
+  
+  x1contrastList=list(f_Effect=c(1/2,-1/2,0,1/2,-1/2,0),
+                      f_Effect=c(0,1/2,-1/2,0,1/2,-1/2),
+                      L_Effect=c(1/3,1/3,1/3,-1/3,-1/3,-1/3))
+  x2contrastList=NULL
+  x1x2contrastList=NULL
+}
+
+if(dataSOurce=="Salary"){
+  fnroot=paste(fnroot,dataSource,sep="")
+  
+  datarecord=read.table("Salary.csv",header = TRUE,sep=",")
+  y=as.numeric(datarecord$Salary)
+  if(F){
+    y=log10(y)
+    fnroot=paste(fnroot,"Log10",sep="")
+  }
+  x1=as.numeric(datarecord$Org)
+  x1names=levels(datarecord$Org)
+  x2=as.numeric(datarecord$Post)
+  x2names=levels(datarecord$Post)
+  Ntotal=length(y)
+  Nx1Lvl=length(unique(x1))
+  Nx2Lvl=length(unique(x2))
+  
+  x1contrastList=list(BFINvCEDP=c(1,-1,0,0),
+                      CEDPvTHTR=c(0,1,0,-1))
+  x2contrastList=list(FT1vFT2=c(1,-1,0),FT2vFT3=c(0,1,-1))
+  x1x2contrastList=list(
+    CHEMvTHTRxFT1vFT3=outer(c(0,0,+1,-1),c(+1,0,-1)),
+    BFINvOTHxFT1vOTH=outer(c(+1,-1/3,-1/3,-1/3),c(+1,-1/2,-1/2))
+  )
+}
+
+if(dataSource=="Random"){
+  fnroot=paste(fnroot,dataSource,sep="")
+  set.seed(47405)
+  ysdtrue=3.0
+  a0true=100
+  a1true=c(2,0,-2)
+  a2true=c(3,1,-1,-3)
+  a1a2true=matrix(c(1,-1,0,-1,1,0,0,0,0,0,0,0),
+                  nrow=length(a1true),ncol=length(a2true),byrow=F)
+  
+  npercell=8
+  datarecord=matrix(0,ncol=3,nrow=length(a1true)*length(a2true)*npercell)
+  colnames(datarecord)=c("y","x1","x2")
+  rowidx=0
+  for(x1idx in 1:length(a1true)){
+    for(x2idx in 1:length(a2true)){
+      for(subjidx in 1:npercell){
+        rowidx=rowidx+1
+        datarecord[rowidx,"x1"]=x1idx
+        datarecord[rowidx,"x2"]=x2idx
+        datarecord[rowidx,"y"]=(a0true+a1true[x1idx]+a2true[x2idx]
+                                +a1a2true[x1idx,x2idx]+rnorm(1,0,ysdtrue))
+      }
+    }
+  }
+  
+  datarecord=data.frame(y=datarecord[,"y"],
+                        x1=as.factor(datarecord[,"x1"]),
+                        x2=as.factor(datarecord[,"x2"]))
+  
+  y=as.numeric(datarecord$y)
+  x1=as.numeric(datarecord$x1)
+  x1names=levels(datarecord$x1)
+  x2=as.numeric(datarecord$x2)
+  x2names=levels(datarecord$x2)
+  Ntotal=length(y)
+  Nx1Lvl=length(unique(x1))
+  Nx2Lvl=length(unique(x2))
+  x1contrastList=list(X1_1v3=c(1,0,-1))
+  x2contrastList=list(X2_11v34=c(1/2,1/2,-1/2,-1/2))
+  x1x2contrastList=list(
+    IC_11v22=outer(c(1,-1,0),c(1,-1,0,0)),
+    IC_23v34=outer(c(0,1,-1),c(0,0,1,-1))
+  )
+                        
+}
+
+if(dataSource=="Ex19.3"){
+  fnroot=paste(fnroot,dataSource,sep="")
+  y=c(101,102,103,105,104, 104,105,107,106,108, 105,107,106,108,109, 109,108,110,111,112)
+  x1=c(1,1,1,1,1, 1,1,1,1,1, 2,2,2,2,2, 2,2,2,2,2)
+  x2=c(1,1,1,1,1, 2,2,2,2,2, 1,1,1,1,1, 2,2,2,2,2)
+  
+  x1names=c("x1.1","x1.2")
+  x2names=c("x2.1","x2.2")
+  
+  Ntotal=length(y)
+  Nx1Lvl=length(unique(x1))
+  Nx2Lvl=length(unique(x2))
+  
+  x1contrastList=list(X1.2vX1.1=c(-1,1))
+  x2contrastList=list(X2.2vX2.1=c(-1,1))
+  x1x2contrastList=NULL
+}
+
+ySDorig=sd(y)
+yMorig=mean(y)
+z=(y-yMorig)/ySDorig
+datalist=list(
+  y=z,
+  x1=x1,
+  x2=x2,
+  Ntotal=Ntotal,
+  Nx1Lvl=Nx1Lvl,
+  Nx2Lvl=Nx2Lvl
+)
+
+modelData(bugsData(datalist))
+
+nchain=10
+modelCompile(numChains=nchain)
+
+if(F){
+  modelGenInits()
+}else{
+  theData=data.frame(y=datalist$y,x1=factor(x1,labels=x1names),
+                     x2=factor(x2,labels=x2names))
+  a0=mean(theData$y)
+  a1=aggregate(theData$y,list(theData$x1),mean)[,2]-a0
+  a2=aggregate(theData$y,list(theData$x2),mean)[,2]-a0
+  linpred=as.vector(outer(a1,a2,"+")+a0)
+  a1a2=aggregate(theData$y,list(theData$x1,theData$x2),mean)[,3]-linpred
+  
+  genInitList<-function(){
+    return(
+      list(
+        a0=a0,
+        a1=a1,
+        a2=a2,
+        a1a2=matrix(a1a2,nrow = Nx1Lv1,ncol = Nx2Lv1),
+        sigma=sd(theData$y)/2,
+        a1SDunads=sd(a1),
+        a1a2SDunabs=sd(a1a2)
+      )
+    )
+  }
+  for(chainIdx in 1:nchain){
+    modelInits(bugsInits(genInitList))
+  }
+}
+
+
+BurninSteps=10000
+modelUpdate(BurninSteps)
+
+samplesSet(c("a0","a1","a2","a1a2",
+             "sigma","a1SD","a2SD","a1a2SD"))
+stepsPerChain=ceiling(2000/nchain)
+thinStep=500
+modelUpdate(stepsPerChain,thin=thinStep)
+
+
+source("plotChains.R")
+source("plotPost.R")
+
+checkConvergence=F
+if(checkConvergence){
+  sumInfo=plotChains("a0",saveplots=F,filenameroot=fnroot)
+  sumInfo=plotChains("a1",saveplots=F,filenameroot=fnroot)
+  sumInfo=plotChains("a2",saveplots=F,filenameroot=fnroot)
+  sumInfo=plotChains("a1a2",saveplots=F,filenameroot=fnroot)
+  readline("Press any key to clear graphics and continue")
+  
+  graphics.off()
+  sumInfo=plotChains("sigma",saveplots=F,filenameroot=fnroot)
+  sumInfo=plotChains("a1SD",saveplots=F,filenameroot=fnroot)
+  sumInfo=plotChains("a2SD",saveplots=F,filenameroot=fnroot)
+  sumInfo=plotChains("a1a2SD",saveplots=F,filenameroot=fnroot)
+  readline("Press any key to clear graphics and continue")
+  
+  graphics.off()
+}
+
+sigmaSample=samplesSample("sigma")
+a1SDSample=samplesSample("a1SD")
+a2SDSample=samplesSample("a2SD")
+a1a2SDSample=samplesSample("a1a2SD")
+
+windows()
+layout(matrix(1:4,nrow=2))
+par(mar=c(3,1,2.5,0),mgp=c(2,0.7,0))
+plotPost(sigmaSample,xlab="sigma",main="Cell SD",breaks=30)
+plotPost(a1SDSample,xlab="a1SD",main="a1 SD",breaks=30)
+plotPost(a2SDSample,xlab="a2SD",main="a2 SD",breaks=30)
+plotPost(a1a2SDSample,xlab="a1a2SD",main="Interaction SD",breaks=30)
+dev.copy2eps(file=paste(fnroot,"SD.eps",sep=""))
+
+a0Sample=samplesSample("a0")
+chainLength=length(a0Sample)
+a1Sample=array(0,dim=c(datalist$Nx1Lv1,chainLength))
+for(x1idx in 1:datalist$Nx1Lv1){
+  a1Sample[xlidx,]=samplesSample(paste("a1[",xlidx,"]",sep=""))
+}
+a2Sample=array(0,dim=c(datalist$Nx2Lv1,chainLength))
+
+for(x2idx in 1:datalist$Nx2Lv1){
+  a2Sample[x2idx,]=samplesSample(paste("a2[",x2idx,"]",sep=""))
+  
+}
+a1a2Sample=array(0,dim=c(datalist$Nx1Lv1,datalist$Nx2Lv1,chainLength))
+for(x1idx in 1:datalist$Nx1Lv1){
+  for(x2idx in 1:datalist$Nx2Lv1){
+    a1a2Sample[x1idx,x2idx]=samplesSample(paste("a1a2[",x2idx,",",x2idx,"]",
+                                                sep=""))
+  }
+}
+
+
+m12Sample=array(0,dim=c(datalist$Nx1Lv1,datalist$Nx2Lv1,chainLength))
+for(stepIdx in 1:chainLength){
+  m12Sample[.,stepIdx]=(a0Sample[stepIdx]
+                        +outer(a1Sample[,stepIdx],
+                               a2Sample[,stepIdx],"+")
+                        +a1a2Sample[.,stepIdx])
+}
+b0Sample=apply(m12Sample,3,mean)
+b1Sample=(apply(m12Sample,c(1,3),mean)
+          -matrix(rep(b0Sample,Nx1Lv1),nrow=Nx1Lv1,byrow=T))
+b1Sample=(apply(m12Sample,c(2,3),mean)
+          -matrix(rep(b0Sample,Nx2Lv1),nrow=Nx2Lv1,byrow=T))
+
+linpredSample=array(0,dim=c(datalist$Nx1Lv1,datalist$Nx2Lv1,chainLength))
+
+for(stepIdx in 1:chainLength){
+  linpredSample[.,stepIdx]=(b0Sample[stepIdx]
+                            +outer(b1Sample[,stepIdx],
+                                   b2Sample[,stepIdx],"+"))
+}
+
+b1b2Sample=m12Sample-linpredSample
+b0Sample=b0Sample*ySDorig+yMorig
+b1Sample=b1Sample*ySDorig
+b2Sample=b2Sample*ySDorig
+b1b2Sample=b1b2Sample*ySDorig
+
+windows((datalist$Nx1Lv1+1)*2.75,(datalist$Nx2Lv1+1)*2.0)
+layoutMat=matrix(0,nrow=(datalist$Nx2Lv1+1),ncol=(datalist$Nx1Lv1+1))
+
+layoutMat[1,1]=1
+layoutMat[1,2:(datalist$Nx1Lv1+1)]=1:datalist$Nx1Lv1+1
+
+layoutMat[2:(datalist$Nx2Lv1+1),1]=1:datalist$Nx2Lv1+(datalist$Nx1Lv1+1)
+layoutMat[2:(datalist$Nx2Lv1+1),2:(datalist$Nx1Lv1+1)]=matrix(
+  1:(datalist$Nx1Lv1*datalist$Nx2Lv1)+(datalist$Nx2Lv1+datalist$Nx1Lv1+1),
+  ncol=datalist$Nx1Lv1,byrow=T)
+
+layout(layoutMat)
+par(mar=c(4,0.5,2.5,0.5),mgp=c(2,0.7,0))
+
+histinfo=plotPost(b0Sample,xlab=expression(beta*0),main="Baseline",
+                  breaks=30)
+
+for(x1idx in 1:datalist$Nx1Lv1){
+  histinfo=plotPost(b1Sample[x1idx,],xlab=bquote(beta*1[.(x1idx)]),
+                    main=paste("x1:",x1names[x1idx]),breaks=30)
+}
+for(x2idx in 1:datalist$Nx2Lv1){
+  histinfo=plotPost(b2Sample[x2idx,],xlab=bquote(beta*2[.(x2idx)]),
+                    main=paste("x2:",x2names[x2idx]),breaks=30)
+}
+
+for(x2idx in 1:datalist$Nx2Lv1){
+  for(x1idx in 1:datalist$Nx1Lv1){
+    histinfo=plotPost(b1b2Sample[x1idx,x2idx,],breaks=30,
+                      xlab=bquote(beta*12[.(x1idx)*","*.(x2idx)]),
+                      main=paste("x1:",x1names[x1idx],",x2:",x2names[x2idx]))
+  }
+}
+
+dev.copy2eps(file=paste(fnroot,"b.eps",sep=""))
+
+nContrasts=length(x1contrastList)
+if(nCOntrasts>0){
+  nPlotPerRow=5
+  nPlotRow=ceiling(nContrasts/nPlotPerRow)
+  nPlotCol=ceiling(nContrasts/nPlotPerRow)
+  windows(3.75*nPlotCol,2.5*nPlotRow)
+  layout(matrix(1:(nPlotRow*nPlotCol),nrow=nPlotRow,ncol=nPlotCol,byrow=T))
+  par(mar=c(4,0.5,2.5,0.5),mgp=c(2,0.7,0))
+  
+  for(cIdx in 1:nContrasts){
+    contrast = matrix(x1contrastList[[cIdx]],nrow=1)
+    incIdx=contrast!=0
+    histInfo=plotPost(contrast %*% b1Sample,compVal = 0,breaks=30,
+                      xlab=paste(round(contrast[incIdx],2),x1names[incIdx],
+                                 c(rep("+",sum(incIdx)-1),""),collapse=""),
+                      cex.lab=1.0,
+                      main=paste("X1 Contrast:",names(x1contrastList)[cIdx]))
+  }
+  
+  dev.copy2eps(file=paste(fnroot,"x1Contrasts.eps",sep=""))
+}
+
+nContrasts=length(x2contrastList)
+if(nContrasts>0){
+  nPLotPerRow=5
+  nPlotRow=ceiling(nContrasts/nPLotPerRow)
+  nPLotCol=ceiling(nContrasts/nPlotRow)
+  
+  windows(3.75*nPLotCol,2.5*nPlotRow)
+  layout(matrix(1:(nPlotRow*nPLotCol),nrow=nPlotRow,ncol=nPLotCol,byrow = T))
+  par(mar=c(4,0.5,2.5,0.5),mgp=c(2,0.7,0))
+  
+  for(cIdx in 1:nContrasts){
+    contrast=matrix(x2contrastList[[cIdx]],nrow=1)
+    incIdx=contrast!=0
+    histInfo=plotPost(contrast %*% b2Sample,compVal=0,breaks=30,
+                      xlab=paste(round(constrast[incIdx],2),x2names[incIdx],
+                                 c(rep("+",sum(incIdx)-1),""),collapse=""),
+                      cex.lab=1.0,
+                      main=paste("X2 Contrast:",names(x2contrastList)[cIdx]))
+  }
+  dev.copy2eps(file=paste(fnroot,"x2Contrasts.eps",sep=""))
+}
+
+theData=data.frame(y=y,x1=factor(x1,labels=x1names),
+                   x2=factor(x2,labels=x2names))
+
+windows()
+interaction.plot(theData$x1,theData$x2,theData$y,type="b")
+dev.copy2eps(file=paste(fnroot,"DataPlot.eps",sep=""))
+aobresuit=aov(y~x1*x2,data=theData)
+
+cat("\n-------------------------------------------------------\n\n")
+print(summary(aobresuit))
+cat("\n-------------------------------------------------------\n\n")
+print(model.tables(aovresult,type="effects",se=TRUE),digits = 3)
+cat("\n-------------------------------------------------------\n\n")
+
+
+
+##20.5.1  MultipleLogisticRegressionBrugs.R
+
+graphics.off()
+rm(list=ls(all=TRUE))
+fname="MultipleLogisticRegressionBrugs"
+library(Brugs)
+
+model{
+  for(i in 1:nData){
+    y[i]~dbern(mu[i])
+    mu[i]<-1/(1+exp(-(b0+inprod(b[],x[1,]))))
+    
+  }
+  b0~dnorm(0,1.0E-12)
+  for(j in i:nPredictors){
+    b[j]~dnorm(0,1.0E-12)
+  }
+}
+
+writeLines(modelstring.con="model.txt")
+modelCheck("model.txt")
+
+dataSource=c("HtWt","Cars","HeartAttack")[3]
+
+if(dataSource=="HtWt"){
+  fname=paste(fname,dataSource,sep="")
+  
+  source("HtWtDataGenerator.R")
+  
+  dataMat=HtWtDataGenerator(nSubj=70,rndsd=474)
+  predictedName="male"
+  predictorNames=c("height","weight")
+  nData=NROW(dataMat)
+  y=as.matrix(dataMat[,predictedName])
+  x=as.matrix(dataMat[,predictorNames])
+  nPredictors=NCOL(x)
+}
+
+if(dataSource=="Cars"){
+  fname=paste(fname,dataSource,sep="")
+  dataMat=read.table(file="Lock1993data.txt",header=T,sep="")
+  predictedName="AirBag"
+  predictorNames=c("MidPrice","RPM","Uturn")
+  nData=NROW(dataMat)
+  y=as.matrix(as.numeric(dataMat[,predictedName]>0))
+  x=as.matrix(dataMat[,predictorNames])
+  nPredictors=NCOL(x)
+  
+}
+
+if(dataSource=="HeartAttack"){
+  fname=paste(fname,dataSource,sep="")
+  dataMat=read.table(file="BloodDataGeneratorOutput.txt",header=T,sep="")
+  predictedName="HeartAttack"
+  predictorNames=c("Systolic","Diastolic","Weight","Cholesterol",
+                   "Height","Age")
+  nData=NROW(dataMat)
+  y=as.matrix(as.numeric(dataMat[,predictedName]>0))
+  x=as.matrix(dataMat[,predictorNames])
+  nPredictors=NCOL(x)
+  
+}
+
+standardizeCols=function(dataMat){
+  zDataMat=dataMat
+  for(colIdx in 1:NCOL(dataMat)){
+    mCol=mean(dataMat[,colIdx])
+    sdCol=sd(dataMat[,colIdx])
+    zDataMat[,colIdx]=(dataMat[,colIdx]-mCol)/sdCol
+  }
+  return(zDataMat)
+}
+zx=standardizeCols(x)
+zy=y
+
+datalist=list(
+  x=zx
+  y=as.vector(zy)
+  nPredictors=nPredictors,
+  nData=nData
+)
+modelData(bugsData(datalist))
+
+
+nchain=3
+modelCompile(numChain=nchain)
+
+genInitList<-function(){
+  glmInfo=glm(datalist$y~datalist$x,family=binomial(logit))
+  show(glmInfo)
+  b0Init=glmInfo$coef[1]
+  bInit=glmInfo$coef[-1]
+  return(list(
+    b0=b0Init,
+    b=bInit
+  ))
+}
+
+for(chainIdx in 1:nchain){
+  modelInit(bugsInits(genInitList))
+}
+
+BurninSteps=1000
+modelUpdate(BurninSteps)
+samplesSet(c("b0","b"))
+stepsPerChain=ceiling(5000/nchain)
+thinStep=50
+modelUpdate(stepsPerChain,thin=thinStep)
+
+
+source("plotChains.R")
+source("plotPost.R")
+
+checkConvergence=T
+if(checkConvergence){
+  b0Sum=plotChains("b0",saveplots=F,filenameroot=fname)
+  bSum=plotChains("b",saveplots=F,filenameroot=fname)
+}
+
+zb0Sample=matrix(samplesSample("b0"))
+chainLength=length(zb0Sample)
+zbSample=NULL
+for(j in 1:nPredictors){
+  zbSample=cbind(zbSample,samplesSample(paste("b[".j."]",sep="")))
+}
+
+x=dataMat[,predictorNames]
+y=dataMat[,predictedName]
+My=mean(y)
+SDy=sd(y)
+Mx=apply(x,2,mean)
+SDx=apply(x,2,sd)
+b0Sample=0*zb0Sample
+bSample=0*zbSample
+for(stepIdx in 1:chainLength){
+  b0Sample[stepIdx]=(zb0Sample[stepIdx]
+                     -sum(Mx/SDx*zbSample[stepIdx,]))
+  for(j in 1:nPredictors){
+    bSample[stepIdx,j]=zbSample[stepIdx,j]/SDx[j]
+  }
+}
+
+windows()
+pairs(cbind(b0Sample[thinIdx],bSample[thinIdx,]),
+      labels=c("b0",paste("b_",predictorNames,sep="")))
+dev.copy2eps(file=paste(fname,"PostPairs.eps",sep=""))
+
+windows(3.5*(1+nPredictors),2.75)
+layout(matrix(1:(1+npredictors),nrow=1))
+
+histInfo=plotPost(b0Sample,xlab = "b0 Value",compVal = NULL,breaks=30,
+                  main=paste("logit(p(",predictedName,
+                             "=1))when predictors=zero",sep=""))
+                             
+
+for(bIdx in 1:nPredictors){
+  histInfo=plotPost(bSample[,bIdx],xlab=paste("b",bIdx,"Value",sep=""),
+                    compVal = 0.0,breaks=30,
+                    main=paste(predictorNames[bIdx]))
+}
+
+dev.copy2eps(file=paste(fname,"PostHist.eps",sep=""))
+
+for(p1idx in 1:(nPredictors-1)){
+  for(p2idx in (p1idx+1):nPredictors){
+    windows()
+    xRange=range(x[,p1idx])
+    yRange=range(x[,p2idx])
+    
+    plot(NULL,NULL,main=predictedName,xlim=xRange,ylim=yRange,
+         xlab=predictorName[p1idx],ylab=predictorNames[p2idx])
+    
+    for(chainIdx in ceiling(seq(1,chainLength,length=20))){
+      abline(-(b0Sample[chainIdx]
+               +if(nPredictor>2){
+                 bSample[chainIdx,c(-p1idx,-p2idx)]*Mx[c(-p1idx,-p2idx)]
+               }else{0})
+             /bSample[chainIdx,p2idx],
+             -bSample[chainIdx,p1idx]/bSample[chainIdx,p2idx],
+             col="grey",lwd=2)
+    }
+    
+    for(yVal in 0:1){
+      rowIdx=(y==yVal)
+      points(x[rowIdx,p1odx],x[rowIdx,p2idx],pch=as.character(yVal),
+             cex=1.75)
+    }
+    
+    dev.copy2eps(file=paste(fname,"PostContours",p1idx,p2idx,".eps",sep=""))
+  }
+}
+
+glmRes=glm(datalist$y~as.matrix(x),family=binomial(logit))
+show(glmRes)
+                             
+                             
+  
