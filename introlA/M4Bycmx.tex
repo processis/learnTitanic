@@ -1,14 +1,18 @@
 \chapter{预测模型} % Introduction chapter suppressed from the table of contents
 
-有数据才可以做统计分析，下面利用案例简单介绍统计分析的步骤与结果：
+有数据才可以做统计分析，下面利用一个案例，芬兰某商业银行的软件维护数据统计分析，简单介绍统计分析的步骤与结果。
 
-\hypertarget{ux82acux5170ux67d0ux5546ux4e1aux94f6ux884cux7684ux8f6fux4ef6ux7ef4ux62a4ux6570ux636eux7edfux8ba1ux5206ux6790}{%
-\section{芬兰某商业银行的软件维护数据统计分析}\label{ux82acux5170ux67d0ux5546ux4e1aux94f6ux884cux7684ux8f6fux4ef6ux7ef4ux62a4ux6570ux636eux7edfux8ba1ux5206ux6790}}
+先看总体分析结论，再看从原始数据到分析结果的步骤。 
+%\hypertarget{ux82acux5170ux67d0ux5546ux4e1aux94f6ux884cux7684ux8f6fux4ef6ux7ef4ux62a4ux6570ux636eux7edfux8ba1ux5206ux6790}{%
+%\section{芬兰某商业银行的软件维护数据统计分析}\label{ux82acux5170ux67d0ux5546ux4e1aux94f6ux884cux7684ux8f6fux4ef6ux7ef4ux62a4ux6570ux636eux7edfux8ba1ux5206ux6790}}
 
-先看总体分析结论，再看从原始数据到分析结果的步骤。
+%\hypertarget{ux603bux7ed3ux62a5ux544a}{%
+%\subsection{芬兰某商业银行的软件维护数据统计分析}\label{ux603bux7ed3ux62a5ux544a}}
+
+%先看总体分析结论，再看从原始数据到分析结果的步骤。
 
 \hypertarget{ux603bux7ed3ux62a5ux544a}{%
-\subsection{总结报告}\label{ux603bux7ed3ux62a5ux544a}}
+\subsection{银行案例总结报告}\label{ux603bux7ed3ux62a5ux544a}}
 
 \hypertarget{ux80ccux666f}{%
 \subsubsection{背景}\label{ux80ccux666f}}
@@ -43,7 +47,7 @@
 
 %\href{文件:maxwell_t5.4.jpg}{文件:maxwell t5.4.jpg}
 
-\includegraphics[width=6cm]{maxwell_t54.jpg}
+\includegraphics[width=10cm]{maxwell_t54.jpg}
 
 五个因素代表了62\%的原因:
 
@@ -74,7 +78,7 @@
 
 %\href{文件:maxwell_f5.2.jpg}{文件:maxwell f5.2.jpg}
 
-\includegraphics[width=6cm]{maxwell_f52.jpg}
+\includegraphics[width=10cm]{maxwell_f52.jpg}
 
 股票买卖相关的维护工作量最高 一般银行应用，例如捐款转钱最低
 原因：股票买卖的规则很复杂，大家都想高竞争力，导致没有标准的模式
@@ -113,7 +117,7 @@
 
 %\href{文件:maxwell_t5.6.jpg}{文件:maxwell t5.6.jpg}
 
-\includegraphics[width=6cm]{maxwell_t56.jpg}
+\includegraphics[width=10cm]{maxwell_t56.jpg}
 
 \hypertarget{ux9884ux4f30ux4e0bux4e00ux5e74ux5ea6ux7684ux7ef4ux62a4ux6210ux672c}{%
 \subsubsection{3.预估下一年度的维护成本}\label{ux9884ux4f30ux4e0bux4e00ux5e74ux5ea6ux7684ux7ef4ux62a4ux6210ux672c}}
@@ -122,14 +126,14 @@
 
 %\href{文件:maxwell_t5.5.jpg}{文件:maxwell t5.5.jpg}
 
-\includegraphics[width=6cm]{maxwell_t55.jpg}
+\includegraphics[width=10cm]{maxwell_t55.jpg}
 
 但从上表看到预测的准确度低，预测1994年的工作量为例，用模型预测的准确度还不如直接使用1993的数字。
 
 在前面估算章节讨论过， 很多因素影响软件开发的工作量难以准确预估
 
 \hypertarget{ux6570ux636eux5206ux6790ux6b65ux9aa4}{%
-\subsection{数据分析步骤}\label{ux6570ux636eux5206ux6790ux6b65ux9aa4}}
+\subsection{银行案例数据分析步骤}\label{ux6570ux636eux5206ux6790ux6b65ux9aa4}}
 
 不用误以为只要有统计分析工具，把项目数据输入，便自动得出上面分析结果。
 以下对应每个步骤，用简单例子说明，如想自己动手，使用案例数据，完成整个数据分析过程，请参照Maxwell书里第5章(详见Reference)。
@@ -162,7 +166,7 @@
 
 %\href{文件:maxwell_e5.1.jpg}{文件:maxwell e5.1.jpg}
 
-\includegraphics[width=6cm]{maxwell_e51.jpg}
+\includegraphics[width=10cm]{maxwell_e51.jpg}
 
 \hypertarget{creation-of-new-variablesux5efaux7acbux65b0ux53d8ux91cf}{%
 \subsubsection{Creation of New
@@ -186,11 +190,11 @@ Variables建立新变量}\label{creation-of-new-variablesux5efaux7acbux65b0ux53d
 
 %\href{文件:maxwell_f5.6.jpg}{文件:maxwell f5.6.jpg}
 
-\includegraphics[width=6cm]{maxwell_f56.jpg}
+\includegraphics[width=10cm]{maxwell_f56.jpg}
 
 %\href{文件:maxwell_f5.8.jpg}{文件:maxwell f5.8.jpg}
 
-\includegraphics[width=6cm]{maxwell_f58.jpg}
+\includegraphics[width=10cm]{maxwell_f58.jpg}
 
 \hypertarget{scatter-plotux6563ux70b9ux56fe}{%
 \subsubsection{Scatter
@@ -205,7 +209,7 @@ plot散点图}\label{scatter-plotux6563ux70b9ux56fe}}
 
 %\href{文件:maxwell_f529.jpg}{文件:maxwell f5.29.jpg}
 
-\includegraphics[width=6cm]{maxwell_f529.jpg}
+\includegraphics[width=10cm]{maxwell_f529.jpg}
 
 \hypertarget{ux9488ux5bf9ux67d0ux4e2aux53d8ux91cfux770bux5404ux79cdux5206ux7ec4ux7684ux6570ux91cfux548cux7ef4ux62a4ux5de5ux4f5cux91cf}{%
 \subsubsection{针对某个变量看各种分组的数量和维护工作量}\label{ux9488ux5bf9ux67d0ux4e2aux53d8ux91cfux770bux5404ux79cdux5206ux7ec4ux7684ux6570ux91cfux548cux7ef4ux62a4ux5de5ux4f5cux91cf}}
@@ -214,7 +218,7 @@ plot散点图}\label{scatter-plotux6563ux70b9ux56fe}}
 
 %\href{文件:maxwell_e5.14.jpg}{文件:maxwell e5.14.jpg}
 
-\includegraphics[width=6cm]{maxwell_e514.jpg}
+\includegraphics[width=10cm]{maxwell_e514.jpg}
 
 \begin{itemize}
 \tightlist
@@ -289,7 +293,7 @@ Adj. R-square = 0.619
 
 %\href{文件:maxwell_e5.14.jpg}{文件:maxwell e5.14.jpg}
 
-\includegraphics[width=6cm]{maxwell_e514.jpg}
+\includegraphics[width=10cm]{maxwell_e514.jpg}
 
 \hypertarget{ux7528ux56deux5f52ux6a21ux578bux9884ux6d4b}{%
 \subsubsection{用回归模型预测}\label{ux7528ux56deux5f52ux6a21ux578bux9884ux6d4b}}
@@ -300,7 +304,7 @@ Adj. R-square = 0.619
 
 %\href{文件:maxwell_t5.15.jpg}{550px}
 
-\includegraphics[width=6cm]{maxwell_t515.jpg}
+\includegraphics[width=10cm]{maxwell_t515.jpg}
 
 同样，如果用模型来预测这17个项目的工作量，它能预测在25\%之内的百分比更低，只有29.4\%。(Pred(.25)=29.4\%,
 MMRE=101.4, MedMRE=56.0)
@@ -316,23 +320,23 @@ MMRE=47.6, MedMRE=47.6)
 
 %\href{文件:maxwell_e5.31.jpg}{550px}
 
-\includegraphics[width=6cm]{maxwell_e531.jpg}
+\includegraphics[width=10cm]{maxwell_e531.jpg}
 
 再针对11个Telon应用软件，发现Telon使用\%与维护工作量有显著的线性关系(看下面的散点图)，也可以得出一个回归方程。
 
 %\href{文件:maxwell_f5.53.jpg}{550px}
 
-\includegraphics[width=6cm]{maxwell_f553.jpg}
+\includegraphics[width=10cm]{maxwell_f553.jpg}
 
 如果用MDRATE来比较，也可以得出有线性关系的散点图和回归方程，表示不仅仅是Telon占比越多工作量越小，并可以利用回归方程预估维护工作量。
 
 %\href{文件:maxwell_f5.54.jpg}{550px}
 
-\includegraphics[width=6cm]{maxwell_f554.jpg}
+\includegraphics[width=10cm]{maxwell_f554.jpg}
 
 \href{文件:maxwell_e5.34.jpg}{550px}
 
-\includegraphics[width=6cm]{maxwell_e534.jpg}
+\includegraphics[width=10cm]{maxwell_e534.jpg}
 
 \hypertarget{ux56deux987eux4e0eux603bux7ed3}{%
 \section{回顾与总结}\label{ux56deux987eux4e0eux603bux7ed3}}
@@ -341,7 +345,7 @@ MMRE=47.6, MedMRE=47.6)
 
 %Screenshotfrom2023-01-0420-18-25.png
 
-\includegraphics[width=6cm]{Screenshotfrom2023-01-0420-18-25.png}
+\includegraphics[width=10cm]{Screenshotfrom2023-01-0420-18-25.png}
 
 也可以用作预测， 例如， 预估来年（1994年）项目维护工作量。
 
@@ -349,7 +353,7 @@ MMRE=47.6, MedMRE=47.6)
 
 %Screenshotfrom2023-01-0420-19-06.png
 
-\includegraphics[width=6cm]{Screenshotfrom2023-01-0420-19-06.png}
+\includegraphics[width=10cm]{Screenshotfrom2023-01-0420-19-06.png}
 
 虽然银行在八年时间内收集了两百多个项目的数据，
 但最终只有67个项目数据可用。 所以当初的度量计划很重要，
@@ -367,25 +371,25 @@ MMRE=47.6, MedMRE=47.6)
 \subsection{案例部分变量列表}\label{ux6848ux4f8bux90e8ux5206ux53d8ux91cfux5217ux8868}}
 
 \hypertarget{ux6848ux4f8bux90e8ux5206ux53d8ux91cfux8be6ux79f0ux4e0eux5b9aux4e49}{%
-\subsubsection{案例部分变量详称与定义}\label{ux6848ux4f8bux90e8ux5206ux53d8ux91cfux8be6ux79f0ux4e0eux5b9aux4e49}}
+\subsubsection{案例部分变量列表}\label{ux6848ux4f8bux90e8ux5206ux53d8ux91cfux8be6ux79f0ux4e0eux5b9aux4e49}}
 
 %Screenshotfrom2023-01-0420-19-59.png
 
-\includegraphics[width=6cm]{Screenshotfrom2023-01-0420-19-59.png}
+\includegraphics[width=10cm]{Screenshotfrom2023-01-0420-19-59.png}
 
 \hypertarget{ux8fd9ux4e9bux53d8ux91cfux7684ux5f52ux7c7b}{%
-\subsubsection{这些变量的归类}\label{ux8fd9ux4e9bux53d8ux91cfux7684ux5f52ux7c7b}}
+\subsubsection{变量的归类}\label{ux8fd9ux4e9bux53d8ux91cfux7684ux5f52ux7c7b}}
 
 %Screenshotfrom2023-01-0420-20-52.png
 
-\includegraphics[width=6cm]{Screenshotfrom2023-01-0420-20-52.png}
+\includegraphics[width=10cm]{Screenshotfrom2023-01-0420-20-52.png}
 
 \hypertarget{ux6309ux53d8ux91cfux5f52ux7c7bux5e38ux7528ux5206ux6790ux5de5ux5177}{%
 \subsubsection{按变量归类，常用分析工具}\label{ux6309ux53d8ux91cfux5f52ux7c7bux5e38ux7528ux5206ux6790ux5de5ux5177}}
 
 %\href{文件:maxwell_t6.8.jpg}{文件:maxwell t6.8.jpg}
 
-\includegraphics[width=6cm]{maxwell_t68.jpg}
+\includegraphics[width=10cm]{maxwell_t68.jpg}
 
 \hypertarget{x-ux4e0e-y-ux76f8ux5173ux6027ux56fe}{%
 \subsection{X 与 Y 相关性图}\label{x-ux4e0e-y-ux76f8ux5173ux6027ux56fe}}
@@ -398,7 +402,7 @@ MMRE=47.6, MedMRE=47.6)
 
 %\href{文件:maxwell_f6.7.jpg}{文件:maxwell f6.7.jpg}
 
-\includegraphics[width=6cm]{maxwell_f67.jpg}
+\includegraphics[width=10cm]{maxwell_f67.jpg}
 
 \begin{itemize}
 \tightlist
@@ -408,7 +412,7 @@ MMRE=47.6, MedMRE=47.6)
 
 %\href{文件:maxwell_f6.9.jpg}{文件:maxwell f6.9.jpg}
 
-\includegraphics[width=6cm]{maxwell_f69.jpg}
+\includegraphics[width=10cm]{maxwell_f69.jpg}
 
 \begin{itemize}
 \tightlist
@@ -418,7 +422,7 @@ MMRE=47.6, MedMRE=47.6)
 
 %\href{文件:maxwell_f6.8.jpg}{文件:maxwell f6.8.jpg}
 
-\includegraphics[width=6cm]{maxwell_f68.jpg}
+\includegraphics[width=10cm]{maxwell_f68.jpg}
 
 \hypertarget{ux5229ux7528-wrapper-ux964dux4f4eux6a21ux578bux7684ux53d8ux91cf}{%
 \subsection{利用 Wrapper
@@ -433,7 +437,7 @@ MMRE=47.6, MedMRE=47.6)
 
 %\href{文件:M4BrowPruningGraphScreenshot_2023-01-04_203004.jpg}{550px}
 
-\includegraphics[width=6cm]{M4BrowPruningGraphScreenshot_2023-01-04_203004.jpg}
+\includegraphics[width=10cm]{M4BrowPruningGraphScreenshot_2023-01-04_203004.jpg}
 
 \hypertarget{column-pruning}{%
 \subsubsection{Column pruning}\label{column-pruning}}
@@ -473,14 +477,16 @@ p03和p04，tall包括t02和t03，因为每组都是由几个数据包合成，�
 
 %\href{文件:chen_f3.jpg}{600px}
 
-\includegraphics[width=6cm]{chen_f3.jpg}
+\includegraphics[width=10cm]{chen_f3.jpg}
 
 从对这些公开数据的小实验看到，利用数据裁剪不会因为减少了列和栋，影响预测的准确度，反而会提升，而且如果不仅裁剪栋(column
 pruning)，同时也裁剪列(row pruning)，预测的准确度提升可能越多。
 
 \framebox{%
 \begin{minipage}[t]{0.97\columnwidth}\raggedright
-数据包说明： cii0是COCOMO-II模型的数据包
+数据包说明：
+
+cii0是COCOMO-II模型的数据包
 
 cii4包括cii0的7个项目，加上47个1990年后新项目
 
@@ -515,17 +521,15 @@ call、pall、tall三组数据:
 \hypertarget{ux5982ux4f55ux505aux56deux5f52ux5206ux6790}{%
 \subsection{如何做回归分析}\label{ux5982ux4f55ux505aux56deux5f52ux5206ux6790}}
 
-\begin{enumerate}
-\tightlist
-\item
-  确定哪些关系将被研究。
-\item
-  收集x和y变量的数据。
-\item
-  通过在x轴绘制独立变量和在y轴绘制因变量，设立一条拟合线图。
-\item
-  创建拟合线
-\end{enumerate}
+
+1.确定哪些关系将被研究。\\
+
+2.收集x和y变量的数据。\\
+
+3.通过在x轴绘制独立变量和在y轴绘制因变量，设立一条拟合线图。\\
+
+4.创建拟合线\\
+
 
 \begin{itemize}
 \tightlist
@@ -537,15 +541,12 @@ call、pall、tall三组数据:
 
 %\url{文件:相关性09.png}
 
-\includegraphics[width=6cm]{相关性09.png}
+\includegraphics[width=10cm]{相关性09.png}\\
 
-\begin{enumerate}
-\tightlist
-\item
-  计算相关系数r,使用本章中早先定义的方程式。
-\item
-  通过使用方程式y=mx+b,确定斜率或线的y轴截距。
-\end{enumerate}
+5.计算相关系数r (x和y之间的相关性，从 -1 到 +1)\\
+
+6.通过使用方程式y=mx+b,确定斜率或线的y轴截距。\\
+
 
 \begin{itemize}
 \tightlist
@@ -555,25 +556,21 @@ call、pall、tall三组数据:
   线的斜率（m）按照y的变化除以x的变化来计算（m=∆y/∆x）。斜率m也认作预测变量x的系数。
 \end{itemize}
 
-\begin{enumerate}
-\tightlist
-\item
-  计算残差
-\end{enumerate}
+
+7.计算残差(residuals)\\
+
 
 \begin{itemize}
 \tightlist
 \item
   在对于任何给定的x的预测反应变量（叫做
   \(\hat y\)）和实验值或者实际响应（y）之间的区别叫做残差（e=y -
-  \(\hat y\)）。残差用来确定模型是否好使用。残差的估算标准差是关于回归线的错误项的度量。
+  \(\hat y\)）。残差用来确定模型是否好使用。残差的估算标准差是关于回归线的错误项的度量
 \end{itemize}
 
-\begin{enumerate}
-\tightlist
-\item
-  确定重要性，执行t-检验（在计算机的帮助下）并为每个因素计算p-值。
-\end{enumerate}
+
+8.确定重要性 (significance)，执行t-检验（在计算机的帮助下）并为每个因素计算p-值。\\
+
 
 \begin{itemize}
 \tightlist
@@ -581,13 +578,10 @@ call、pall、tall三组数据:
   少于α (通常是0.05)的p-值将指示一个统计上的重要关系。
 \end{itemize}
 
-\begin{enumerate}
-\tightlist
-\item
-  使用方差分析法为重要性分析整个的模型，这个模型显示带有相关p-值的F-检验的结果。
-\item
-  计算R\textsuperscript{2}和R\_adj\textsuperscript{2}。
-\end{enumerate}
+9.使用方差分析法(ANOVA)分析整个模型是否具备显著关系，分析报告包括F-检验结果与相关p-值
+
+10.计算R\textsuperscript{2}和R\_adj\textsuperscript{2}。
+
 
 \begin{itemize}
 \tightlist
@@ -597,7 +591,7 @@ call、pall、tall三组数据:
 
 %\url{文件:相关性10.png}
 
-\includegraphics[width=6cm]{相关性10.png}
+\includegraphics[width=10cm]{相关性10.png}
 
 其中SS=平方和
 
@@ -609,7 +603,7 @@ call、pall、tall三组数据:
 
 %\url{文件:相关性11.png}
 
-\includegraphics[width=6cm]{相关性11.png}
+\includegraphics[width=10cm]{相关性11.png}
 
 其中n=数据点的数量并且p=模型中的项数。模型中的项数也包括常数。
 
@@ -617,23 +611,30 @@ call、pall、tall三组数据:
 
 结论应该被验证，尤其当历史数据已经被使用时。
 
-例子：想确定在为每一个特定产品分配的货架空间的数量和对同样的产品的销售量之间是否存在关系。她调查同样链的30个不同的商店，所有的都有相似的人口统计资料。比较分配的货架空间（x）和销售（y）收集数据。使用一个计算机程序来运行方差分析显示了下面的结果：
+使用历史数据验证回归模型。
+
+%例子：想确定在为每一个特定产品分配的货架空间的数量和对同样的产品的销售量之间是否存在关系。她调查同样链的30个不同的商店，所有的都有相似的人口统计资料。比较分配的货架空间（x）和销售（y）收集数据。使用一个计算机程序来运行方差分析显示了下面的结果：
+
+\hypertarget{ux80ccux666f}{%
+\subsubsection{例子}\label{ux80ccux666f}}
+
+想确定在为每一个特定产品分配的货架空间的数量和对同样的产品的销售量之间是否存在关系。调查同样链的30个不同的商店，所有的都有相似的人口统计资料。比较分配的货架空间（x）和销售（y）收集数据。使用一个计算机程序来运行方差分析显示了下面的结果：
 
 %\url{文件:相关性12.png}
 
-\includegraphics[width=6cm]{相关性12.png}
+\includegraphics[width=10cm]{相关性12.png}
 
 相关性分析显示一个强的正相关（r=+0.931）。
 
 %\url{文件:相关性13.png}
 
-\includegraphics[width=6cm]{相关性13.png}
+\includegraphics[width=10cm]{相关性13.png}
 
-用以下4图分析残差来验证回归/方差分析是否满足回归分析的假设条件：\\
+用以下4图分析残差以验证回归/方差分析是否满足回归分析的假设条件：\\
 %\url{文件:相关性15.png}~\\
 
-\includegraphics[width=6cm]{相关性15.png}
-例如，右面两残差图是否平均上下分散？左面两图看是否正态分布？
+\includegraphics[width=10cm]{相关性15.png}
+例右面两残差图是否平均上下分散？左面两图看是否正态分布？
 
 \hypertarget{references}{%
 \section{References}\label{references}}
