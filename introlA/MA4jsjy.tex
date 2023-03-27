@@ -4,7 +4,7 @@
 
 %\href{文件:CompareAB1Screenshot_2022-11-06_211947.jpg}{600px}
 
-\includegraphics[width=6cm]{CompareAB1Screenshot_2022-11-06_211947.jpg}\\
+\includegraphics[width=10cm]{CompareAB1Screenshot_2022-11-06_211947.jpg}\\
 
 想比较A B两组 实验结果是否有显著差异。如果像上图
 应该看到B很明显比A高。\\
@@ -13,7 +13,7 @@
 
 %CompareAB2Screenshot_2022-11-06_212036.jpg
 
-\includegraphics[width=6cm]{CompareAB2Screenshot_2022-11-06_212036.jpg}\\
+\includegraphics[width=10cm]{CompareAB2Screenshot_2022-11-06_212036.jpg}\\
 假设检验利用统计分析方法帮我们区分 - 两组数据是否有显著的差异。
 
 \hypertarget{ux5047ux8bbeux68c0ux9a8cux7684ux6b65ux9aa4}{%
@@ -23,9 +23,9 @@
 
 备选假设: A 与 B 有显著差异
 
-挑选对应的检验方法
+挑选对应的检验方法后，
 
-数据分析得出P值：
+可以利用工具计算出的P值来判断：
 
 \begin{description}
 \item[]
@@ -61,7 +61,7 @@
 从下面样本钢丝折断力柱状图看到10个样本中有七个接近285,有3个是明显大于285，应如何判断是否有显著差异呢？
 
 %\href{文件:1sigmaUnknownHistogram_of_strength.jpg}{500px}\\
-\includegraphics[width=6cm]{1sigmaUnknownHistogram_of_strength.jpg}
+\includegraphics[width=10cm]{1sigmaUnknownHistogram_of_strength.jpg}
 
 按假设检验步骤：
 
@@ -88,7 +88,7 @@
 如果不想研究相关方程式，可利用概率分布图``看''到：\\
 %\href{文件:M4SingleMean1Screenshot_2022-09-11_201026.jpg}{600px}
 
-\includegraphics[width=6cm]{M4SingleMean1Screenshot_2022-09-11_201026.jpg}
+\includegraphics[width=10cm]{M4SingleMean1Screenshot_2022-09-11_201026.jpg}
 
 利用正态概率分布图，抽样的平均值是287.6\\
 历史的平均值是285，之间 的差异超出了95\%置信区间,
@@ -116,7 +116,7 @@
 
 %\href{文件:TypeOneTwoErrorScreenshot_2022-07-23_151744.jpg}{thumb\textbar{}none\textbar{}500px\textbar{}图19}
 
-\includegraphics[width=6cm]{TypeOneTwoErrorScreenshot_2022-07-23_151744.jpg}
+\includegraphics[width=10cm]{TypeOneTwoErrorScreenshot_2022-07-23_151744.jpg}
 
 %这两类错误α与β之间是有关系：\\
 %如果α风险（概率从本来0.05 降低）下降， 便会引起
@@ -128,7 +128,7 @@
 
 %\url{文件:2类错误.jpg}
 
-\includegraphics[width=6cm]{2类错误.jpg}
+\includegraphics[width=10cm]{2类错误.jpg}
 
 我们可以简单理解P值为发生第一类错误的概率，如果低于5\%我们就有信心拒绝零假设。\strut
 \end{minipage}}
@@ -144,7 +144,7 @@
 
 %Screenshotfrom2022-12-2822-35-57.png
 
-\includegraphics[width=6cm]{Screenshotfrom2022-12-2822-35-57.png}
+\includegraphics[width=10cm]{Screenshotfrom2022-12-2822-35-57.png}
 
 
 \begin{enumerate}
@@ -164,7 +164,7 @@
 
 %\href{文件:M4twoPopulationScreenshot_2022-09-11_201946.jpg}{600px}
 
-\includegraphics[width=6cm]{M4twoPopulationScreenshot_2022-09-11_201946.jpg}
+\includegraphics[width=10cm]{M4twoPopulationScreenshot_2022-09-11_201946.jpg}
 
 （有关计算 1.06 的方程式，详见附件）\\
 使用工具跑出来的P值是 0.146 ， 大于 0.05 ，所以不能拒绝零假设
@@ -184,7 +184,7 @@
 
 %Screenshotfrom2022-12-2822-37-19.png
 
-\includegraphics[width=6cm]{Screenshotfrom2022-12-2822-37-19.png}
+\includegraphics[width=10cm]{Screenshotfrom2022-12-2822-37-19.png}
 
 \begin{enumerate}
 \tightlist
@@ -203,7 +203,7 @@
 
 %\href{文件:CholesterolEg2022-07-23_195121.jpg}{thumb\textbar{}none\textbar{}500px\textbar{}图20}
 
-\includegraphics[width=6cm]{CholesterolEg2022-07-23_195121.jpg}
+\includegraphics[width=10cm]{CholesterolEg2022-07-23_195121.jpg}
 
 从上图看到 1.61 落在90\%置信区间(2.016)之内，所以不能拒绝零假设。
 
@@ -213,26 +213,32 @@
 如果想比较比较超过两组数据便要用方差分析(ANOVA)
 
 \hypertarget{ux65b9ux5deeux5206ux67901-anova-test}{%
-\subsection{方差分析1 (ANOVA
+\subsection{方差分析(ANOVA
 test)}\label{ux65b9ux5deeux5206ux67901-anova-test}}
+
+\hypertarget{ux65b9ux5deeux5206ux67902-anova-test}{%
+\subsubsection{例子一}\label{ux65b9ux5deeux5206ux67902-anova-test}}
 
 比较三种车型（小轿车，舒适型 ， 豪华车）的省油系数有没有显著差异？\\
 %\href{文件:5anovaDataScreenshot_2022-07-24_105955.jpg}{文件:5anovaDataScreenshot
 %2022-07-24 105955.jpg}\\
-\includegraphics[width=6cm]{5anovaDataScreenshot_2022-07-24_105955.jpg}\\
+\includegraphics[width=10cm]{5anovaDataScreenshot_2022-07-24_105955.jpg}\\
 用统计工具跑单因子方差分析
 得出P值是0.0385，低于0.05，所以我们便可以拒绝零假设 
 
 %\href{文件:5anovaResultScreenshot_2022-07-24_104352.jpg}{400px}\\
 
-\includegraphics[width=6cm]{5anovaResultScreenshot_2022-07-24_104352.jpg}\\
+\includegraphics[width=10cm]{5anovaResultScreenshot_2022-07-24_104352.jpg}\\
 从下面工具的简单画图的也看到豪华型的系数范围比其他两种有显著差异：
 
 %\href{文件:5anovaBoxplot_of_small,_sedans,_luxury.jpg}{500px}\\
 
-\includegraphics[width=6cm]{5anovaBoxplot_of_small_sedans_luxury.jpg}\\
+\includegraphics[width=10cm]{5anovaBoxplot_of_small_sedans_luxury.jpg}\\
 方差分析只能识别有没有显著差异，但若要要明确哪些地方有差异，便要用
 Tukey-Kramer 做多组之间比较
+
+%\hypertarget{ux65b9ux5deeux5206ux67902-anova-test}{%
+%\subsubsection{例子二}\label{ux65b9ux5deeux5206ux67902-anova-test}}
 
 \hypertarget{ux65b9ux5deeux5206ux67902-anova-test}{%
 \subsubsection{方差分析2 (ANOVA
@@ -244,7 +250,7 @@ test)}\label{ux65b9ux5deeux5206ux67902-anova-test}}
 
 %Screenshotfrom2022-12-2822-39-42.png
 
-\includegraphics[width=6cm]{Screenshotfrom2022-12-2822-39-42.png}
+\includegraphics[width=10cm]{Screenshotfrom2022-12-2822-39-42.png}
 
 用工具跑方差分析P值是0.042，少于0.05， 判断拒绝零假设
 
@@ -256,15 +262,15 @@ test)}\label{ux65b9ux5deeux5206ux67902-anova-test}}
 
 %\href{文件:AnovaParachutes807Screenshot_2022-08-07_124737.jpg}{400px}
 
-\includegraphics[width=6cm]{AnovaParachutes807Screenshot_2022-08-07_124737.jpg}
+\includegraphics[width=10cm]{AnovaParachutes807Screenshot_2022-08-07_124737.jpg}
 
 %\href{文件:AnovaBoxplots807.jpg}{400px}
 
-\includegraphics[width=6cm]{AnovaBoxplots807.jpg}
+\includegraphics[width=10cm]{AnovaBoxplots807.jpg}
 
 %\href{文件:Anova3inOneScreenshot_2022-08-07_125131.jpg}{400px}
 
-\includegraphics[width=6cm]{Anova3inOneScreenshot_2022-08-07_125131.jpg}
+\includegraphics[width=10cm]{Anova3inOneScreenshot_2022-08-07_125131.jpg}
 
 \begin{itemize}
 \tightlist
@@ -350,8 +356,18 @@ Value)，
 
 \(\chi ^2 = \sum \frac{(O - E)^2} {E}\)
 
-3:得出卡方=30，696 ，比 DF=4 的关键值高，所以拒绝零假设，医院(Hospitals)
-与 感染种类(Infections) 之间相关\\
+3:计算得出卡方值 = 30.696 （注） ，比 关键值 9.5 高
+
+\begin{description}
+\tightlist
+\item[]
+(对应 DF=4 (=(3-1)*(3-1))
+，\(\alpha = 0.05\)，从\(\chi ^2\)统计表得出9.5)，\\
+\end{description}
+
+所以拒绝零假设，医院(Hospitals) 与 感染种类(Infections) 之间相关。\\
+
+（注：对应 Minitab 工具自动算出的 30.755）\\
 
 \hypertarget{ux9644ux4ef6}{%
 \section{附件}\label{ux9644ux4ef6}}
@@ -371,13 +387,8 @@ Value)，
 \hypertarget{ux6bd4ux8f83ux4e24ux4e2aux6b63ux6001ux603bux4f53ux7684ux5747ux503c-1}{%
 \subsection{比较两个正态总体的均值}\label{ux6bd4ux8f83ux4e24ux4e2aux6b63ux6001ux603bux4f53ux7684ux5747ux503c-1}}
 
-\begin{description}
-\tightlist
-\item[]
-男生：
-\end{description}
 
-\(\overline{X_1} = 8.6\) ； \(\overline{\sigma_1} = 3.3\)\\
+男生：\(\overline{X_1} = 8.6\) ； \(\overline{\sigma_1} = 3.3\)\\
 女生： \(\overline{X_2} = 7.9\) ； \(\overline{\sigma_2} = 3.3\)\\
 
 \[\cfrac{ (\overline{X_1} - \overline{X_2}) - ({\mu}_1  - {\mu}_2)}{\sqrt{\cfrac{\sigma_1^2}{n_1} + \cfrac{\sigma_2^2}{n_2}}} = \cfrac{ (8.6 - 7.9) - 0 }{\sqrt{\cfrac{(3.3)^2}{50} + \cfrac{(3.3)^2}{50}}} = 1.06\]
@@ -429,10 +440,11 @@ Value)，
 \tightlist
 \item[]
 Critical range=
-\(Q_u \sqrt{{MSW \over 2} ({1\over n_j} - {1\over n_j '})}\)
+\(Q_u \sqrt{{MSW \over 2} ({1\over n_j} +{1\over n_j '})}\)
 
-对应布料拉力例子：\(\alpha\) = 0.05， c = 4 , n - c= 20-4 = 16\\
-从统计表 得出对应 \(Q_u\) = 4.05 ; MSW =6.1 (如何计算MSW,
+对应布料拉力例子：\\
+\(\alpha\) = 0.05， c = 4 , n - c= 20-4 = 16\\
+从统计表 得出对应 \(Q_u\) = 4.05 ;\\ MSW =6.1 (如何计算MSW,
 详见下面"如何计算 MSW")
 
 代入上面方程式：
@@ -443,7 +455,7 @@ Critical range=
 \tightlist
 \item[]
 Critical range=
-\(4.05 \sqrt{({6.1 \over 2}) ({1\over 5} - {1\over 5 })}\)
+\(4.05 \sqrt{({6.1 \over 2}) ({1\over 5} + {1\over 5 })}\)
 \end{description}
 \end{description}
 
@@ -475,18 +487,6 @@ MSW，参考ANOVA方程式}\label{ux5982ux4f55ux8ba1ux7b97-mswux53c2ux8003anovau
 \begin{itemize}
 \tightlist
 \item
-  组间离差平方和 (SSA)
-\end{itemize}
-
-\begin{itemize}
-\tightlist
-\item
-  组内离差平方和 (SSW)
-\end{itemize}
-
-\begin{itemize}
-\tightlist
-\item
   如果组间离差远远大于组内离差，表示组间差异大，应拒绝零假设；反之，如差异不大，便难以拒绝零假设，没有显著差异。
 \end{itemize}
 
@@ -496,7 +496,7 @@ MSW，参考ANOVA方程式}\label{ux5982ux4f55ux8ba1ux7b97-mswux53c2ux8003anovau
   单因素方差分析 计算 F = MSA / MSW , 如果F值大于临界值，拒绝零假设
 \end{itemize}
 
-能直接算出下面总结报告：\\
+统计工具，如 Minitab，能直接算出下面总结报告：\\
 
 %Screenshotfrom2023-02-1401-07-07.png
 
@@ -508,6 +508,17 @@ SST =
 \(\sum_{j=1}^c \sum_{i=1}^{n_j} (X_{ij} - \overline{\overline{X}})^2\)
 \end{description}
 \end{description}
+
+\texttt{SST~=~}\(\sum_{j=1}^c \sum_{i=1}^{n_j} (X_{ij} - \overline{\overline{X}})^2\)
+
+\begin{itemize}
+\tightlist
+\item
+  总离差平方和\\
+\end{itemize}
+
+\texttt{SST~=~}\(\sum_{j=1}^c \sum_{i=1}^{n_j} (X_{ij} - \overline{\overline{X}})^2\)
+
 
 \begin{description}
 \item[]
@@ -575,9 +586,35 @@ SST =
   组内自由度 = n - c = 20 - 4 =16
 \item
   总自由度 = n - 1 = 20-1 = 19
-\item
-  MSA = \({SSA \over c-1}\) = \({63.28 \over 4-1}\) = 21.1
-\item
-  MSW = 6.1 (F = MSA/MSW = 21.1 / 6.1 = 3.46)
 \end{itemize}
+
+总体平均数
+\(\overline{\overline{X}} = {\sum_{j=1}^c \sum_{i=1}^{n_j} X_{ij} \over n} = {438.9 \over 20}= 21.945\)
+
+SSA = \(\sum_{j=1}^c n_j(\overline{X_j} - \overline{\overline{X}})^2\)
+
+\[= (5)(19.52 - 21.945)^2 + (5)(24.26 - 21.945)^2 + (5)(22.84 - 21.945)^2 + (50(21.16 - 21.945)^2\]
+
+\[= 63.285\]
+
+SSW = \(\sum_{j=1}^c \sum_{i=1}^{n_j} (X_{ij} - \overline{X_j})^2\)
+
+\[=(18.5 - 19.52)^2 + . . + (18.0 - 19.52)^2 + (26.3 - 24.26)^2 + . . + (24.5 - 24.26)^2\]
+
+\[+(25.4 - 21.16)^2 + . . + (20.4 - 21.16)^2\]
+
+\[= 97.5\]
+
+SST =
+\(\sum_{j=1}^c \sum_{i=1}^{n_j} (X_{ij} - \overline{\overline{X}})^2\)
+
+\[= (18.5 - 21.945)^2 + (24 - 21.945)^2 + ..+ (20.4 - 21.945)^2\]
+
+\[= 160.7895\]
+
+MSA = \({SSA \over c-1}\) = \({63.285 \over 4-1}\) = 21.1\\
+MSW = \({SSW \over n -c} = {97.5 \over 16}= 6.1\)\\
+F = MSA / MSW = 21.1 / 6.1 = 3.46\\
+能对应文中 Minitab 出来的结果：\\
+MSA = 21.16, MSW = 6.12, F = 3.45\\
 
