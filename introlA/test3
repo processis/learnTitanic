@@ -1,0 +1,22 @@
+:<math> {R}^2 = {SS}_{regression} / {SS}_{total}</math> <br>
+:<math>= ( {SS}_{total} - {SS}_{error} ) / {SS}_{total} </math>  <br>
+:<math>= 1 - [ {SS}_{error} / {SS}_{total} ]</math>  <br>
+
+
+:<math> {R}_{adj}^2 = 1 - [{SS}_{error} / (n - p)] / [{SS}_{total} / (n - 1)] </math>
+
+
+[[文件:Ch24rrScreenshot 2023-04-02 094408.jpg|450px]]
+
+:<math> {R}^2 = {SS}_{regression} / {SS}_{total} = 23.3107 / 26.9121 = 86.6%</math> <br>
+:注： 销售变化的 86.6% 与 货架空间有关<br>
+
+:<math> {R}_{adj}^2 = 1 - [{SS}_{error} / (n - p)] / [{SS}_{total} / (n - 1)] </math> <br>
+:<math> = 1 - [3.6014 / (30 - 2)] / [26.9121 / (30 - 1)]</math> <br>
+:<math> = 1 - 0.1286 / 0.928 = 86.1% </math> <br>
+
+:DF = Degrees of freedom (自由度)
+:SS = Sum of squares (平方和)
+:MS = Mean Square (均方)
+:s = Standard deviation (标准差)
+:P = p-value ( P值)
