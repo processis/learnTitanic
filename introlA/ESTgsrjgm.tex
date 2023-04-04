@@ -203,7 +203,11 @@ FPA太复杂。针对这问题，国际功能点协会简化本来的功能点�
 我：你们的功能点估算表没有明确区分新的迭代怎么处理变更与删除。
 也没有明确动态功能点与静态功能点。\\
 客户：我们表中有计算每次迭代的总功能点数。\\
-我：你们可能有算每迭代的功能点，但难以看清后面迭代对应之前的变化。动态功能点是用来估算本本迭代的工作量，而静态功能点就是迭代后产品的功能点数。而且应该用表格形式把变更和删除累加在原本上一轮的功能上面，才可以更好看到迭代与迭代之间，功能上的变化。\\
+我：你们可能有算每迭代的功能点，但难以看清后面迭代对应之前的变化。动态功能点是用来估算本本迭代的工作量，而静态功能点就是迭代后产品的功能点数。而且应该用表格形式把变更和删除累加在原本上一轮的功能上面，才可以更好看到迭代与迭代之间，功能上的变化。\strut
+\end{minipage}}
+
+\framebox{%
+\begin{minipage}[t]{0.97\columnwidth}\raggedright
 所以不要误以为可以像之前故事点估算，按个人理解写上各种不同复杂程度的故事点例子便可。国际功能点手册里包含很多计算实例，来解释功能点计算，才能确保对同一套需求，每个人，依据用户需求，都能估算出同样的功能点数。我刚刚的例子全都可以从国际功能点手册里找到，你们不需要再发明车轮(reinvent
 the wheel)。学功能点估算与写程序类似，必须多动手试。
 
@@ -405,6 +409,8 @@ File}\label{ux903bux8f91ux6587ux4ef6-logical-file}}
 功能性数据是用来满足用户功能需求的数据。例如，销售、银行账号、供应商、人员等信息。\\
 非功能数据主要是为了满足易用性（支撑下拉菜单所需的数据，可输入数据的上下范围等）；或性能方面（用于查询数据的索引index）；或可维护性（配置参数）。\\
 只有第一类功能性数据才算是逻辑文件。\\
+
+功能点估算只包括功能性需求，国际功能点(IFPUG)有SNAP，专门针对非功能需求估算。\\
 
 \hypertarget{ux57faux672cux8fc7ux7a0b-elementary-process}{%
 \subsection{基本过程 Elementary
@@ -918,6 +924,6 @@ ESFP = (64.6 + 20.8 + 9.2) + 4.6 = 94.6 + 4.6 = 99.2 SiFP
 \hypertarget{references}{%
 \section{References}\label{references}}
 
-1. BRIGIDO, Sergio: "FPA Rules interpretations for Elementary Processes " , IFPUG Whit paper, 2022
-2. IFPUG: "Simple Function Point Counting Practices Manual" Rel. 2.1 , Oct. 2021\\
+1. BRIGIDO, Sergio: "FPA Rules interpretations for Elementary Processes " , IFPUG Whit paper, 2022\\
+2. SiFPA Assoc.: "Simple Function Point Functional Size Measurement Method, Measurement Examples " , SiFP-0.1.00-EX-EN-01.01 (2014)\\
 
