@@ -84,15 +84,16 @@
 \end{description}
 
 这例子，可以使用正态分布相关方程式，估计概率， 如概率低于 5\%
-，拒绝零假设 ，（折断力 \(> 285\)) \\
+，拒绝零假设 ，（折断力 \(> 285\))\\
 
 利用正态概率分布图，抽样的平均值是287.6\\
+历史的平均值是285，并考虑样本平均值，样本方差，样本数量得出
+检验统计量计算值\(Z_n\)为 2.06 （计算方程式详见附件） 超出了95\%置信区间
+\(\pm 1.96\) 范围, 所以我们拒绝零假设，样本与285 有显著差异（提升）。\\
 
 %\href{文件:M4SingleMean1Screenshot_2022-09-11_201026.jpg}{600px}
 
 \includegraphics[width=10cm]{M4SingleMean1Screenshot_2022-09-11_201026.jpg}
-
-历史的平均值是285，得出检验统计量值为2.06(计算方程式详见附件) 超出了95%置信区间土1.96范围,所以我们拒绝零假设,样本与285有显著差异（提升）\\
 
 也可以利用工具，得出单样本Z检验(one-sample Z test)
 的P值，因P值=0.04,少于0.05， 判断拒绝零假设，新供货商的钢丝折断力比原本
@@ -107,10 +108,10 @@
 \begin{enumerate}
 \tightlist
 \item
-  实际情况是\(\mathbf{H}_0\)成立,从检验结果选择了\(\mathbf{H}_1\)不成立,即拒绝了\(\mathbf{H}_0\)，这时称该检验犯了第一类错误(Type
+  实际情况是\(\mathbf{H}_0\)成立,从检验结果选择了\(\mathbf{H}_a\)不成立,即拒绝了\(\mathbf{H}_0\)，犯了第一类错误(Type
   I error)或``弃真''错误
 \item
-  实际情况是\(\mathbf{H}_0\)不成立,\(\mathbf{H}_1\)成立,而从检验结果选择了\(\mathbf{H}_0\),这时犯了第二类错误(Type II error),或称“取伪”错误
+  实际情况是\(\mathbf{H}_0\)不成立,\(\mathbf{H}_1\)成立,而从检验结果选择了\(\mathbf{H}_0\),犯了第二类错误(Type II error),或称“取伪”错误
 \end{enumerate}
 
 %\href{文件:TypeOneTwoErrorScreenshot_2022-07-23_151744.jpg}{thumb\textbar{}none\textbar{}500px\textbar{}图19}
@@ -289,22 +290,22 @@ test)}\label{ux65b9ux5deeux5206ux67902-anova-test}}
 \begin{enumerate}
 \tightlist
 \item
-  \(|\overline{X_1} - \overline{X_2}\) = \textbar{}19.52 --
+  \(|\overline{X_1} - \overline{X_2} |\) = \textbar{}19.52 --
   24.26\textbar{} = 4.74
 \item
-  \(|\overline{X_1} - \overline{X_3}\) = \textbar{}19.52 --
+  \(|\overline{X_1} - \overline{X_3} |\) = \textbar{}19.52 --
   22.84\textbar{} = 3.32
 \item
-  \(|\overline{X_1} - \overline{X_4}\) = \textbar{}19.52 --
+  \(|\overline{X_1} - \overline{X_4} |\) = \textbar{}19.52 --
   21.16\textbar{} = 1.64
 \item
-  \(|\overline{X_2} - \overline{X_3}\) = \textbar{}24.26 --
+  \(|\overline{X_2} - \overline{X_3} |\) = \textbar{}24.26 --
   22.84\textbar{} = 1.42
 \item
-  \(|\overline{X_2} - \overline{X_4}\) = \textbar{}24.26 --
+  \(|\overline{X_2} - \overline{X_4} |\) = \textbar{}24.26 --
   21.16\textbar{} = 3.10
 \item
-  \(|\overline{X_3} - \overline{X_4}\) = \textbar{}22.84 --
+  \(|\overline{X_3} - \overline{X_4} |\) = \textbar{}22.84 --
   21.16\textbar{} = 1.68
 \end{enumerate}
 
