@@ -84,23 +84,23 @@
 \end{description}
 
 这例子，可以使用正态分布相关方程式，估计概率， 如概率低于 5\%
-，拒绝零假设 ，（折断力 \(> 285\)) （详见附件）\\
-如果不想研究相关方程式，可利用概率分布图``看''到：\\
+，拒绝零假设 ，（折断力 \(> 285\)) \\
+
+利用正态概率分布图，抽样的平均值是287.6\\
+
 %\href{文件:M4SingleMean1Screenshot_2022-09-11_201026.jpg}{600px}
 
 \includegraphics[width=10cm]{M4SingleMean1Screenshot_2022-09-11_201026.jpg}
 
-利用正态概率分布图，抽样的平均值是287.6\\
-历史的平均值是285，之间 的差异超出了95\%置信区间,
-所以我们拒绝零假设，样本与285 有显著差异（提升）。
+历史的平均值是285，得出检验统计量值为2.06(计算方程式详见附件) 超出了95%置信区间土1.96范围,所以我们拒绝零假设,样本与285有显著差异（提升）\\
 
-也可以利用工具，计算单样本Z检验(one-sample Z test)
+也可以利用工具，得出单样本Z检验(one-sample Z test)
 的P值，因P值=0.04,少于0.05， 判断拒绝零假设，新供货商的钢丝折断力比原本
 285 高。
 
 \framebox{%
 \begin{minipage}[t]{0.97\columnwidth}\raggedright
-要了解P值是什么？为什么低于0.05可以拒绝？ 首先要理解假设检验会发生两类错误。
+要了解P值是什么？为什么低于0.05可以拒绝？ 首先要理解会发生两类错误。
 
 检验可能犯错误,所谓犯错误就是检验的结论与实际情况不符,有两种情况:
 
@@ -168,7 +168,7 @@
 （有关计算 1.06 的方程式，详见附件）\\
 也可使用工具跑出来的P值是 0.146 ， 大于 0.05 ，不能拒绝零假设。
 
-以上两个例子都是假定：分布的方差已知
+以上两个例子都是假定：分布的方差已知。
 
 但很多时候，我们不一定知道分布的方差或标准差是多少？
 我们便需要从样本数估计分布的方差（或标准差）。
@@ -224,8 +224,7 @@ test)}\label{ux65b9ux5deeux5206ux67901-anova-test}}
 %\href{文件:5anovaDataScreenshot_2022-07-24_105955.jpg}{文件:5anovaDataScreenshot
 %2022-07-24 105955.jpg}\\
 \includegraphics[width=10cm]{5anovaDataScreenshot_2022-07-24_105955.jpg}\\
-用统计工具跑单因子方差分析
-得出P值是0.0385，低于0.05，所以我们便可以拒绝零假设 
+用统计工具跑单因子方差分析 得出P值是0.0385，低于0.05，所以我们便可以拒绝零假设，三车型有显著差异。\\
 
 %\href{文件:5anovaResultScreenshot_2022-07-24_104352.jpg}{400px}\\
 
@@ -309,7 +308,7 @@ test)}\label{ux65b9ux5deeux5206ux67902-anova-test}}
   21.16\textbar{} = 1.68
 \end{enumerate}
 
-用Tukey-Kramer 相关方程式（详见附件），得出临界范围为 4.47，所以判断只有供货商1与2之间的布料拉力是有显著差异。 
+用Tukey-Kramer 相关方程式（详见附件），得出临界范围为 4.47，所以判断只有供货商1与2之间的布料拉力之间是有显著差异。 
 
 %\hypertarget{ux5206ux7ec4ux5206ux7c7bux6570ux636e}{%
 %\section{分组（分类）数据}\label{ux5206ux7ec4ux5206ux7c7bux6570ux636e}}
@@ -342,15 +341,15 @@ test)}\label{ux5361ux65b9ux68c0ux9a8cchi-square-test}}
   备选假设：两者有显著关系
 \end{enumerate}
 
-卡方检验得出P值等于零，所以可以拒绝零假设，医院与感染主因有关系
+卡方检验得出P值等于零，所以可以拒绝零假设，医院与感染主因有关系。
 
 %\href{文件:6chiSquareTstResultScreenshot_2022-07-24_103606.jpg}{500px}\\
 
 \includegraphics[width=6cm]{6chiSquareTstResultScreenshot_2022-07-24_103606.jpg}
 
-1:零假设:医院(Hospitals) 与 感染种类(Infections) 之间没有相关
+%1:零假设:医院(Hospitals) 与 感染种类(Infections) 之间没有相关
 
-2:为了计算卡方值(Chi-square)，首先使用以下公式计算每个列联表的预计值E(Expected
+为了计算卡方值(Chi-square)，首先使用以下公式计算每个列联表的预计值E(Expected
 Value)，
 
 \(E = \frac{(row \ sum) * (column \ sum)} {grand \ total}\)
@@ -359,7 +358,7 @@ Value)，
 
 \(\chi ^2 = \sum \frac{(O - E)^2} {E}\)
 
-3:计算得出卡方值 = 30.696 （注） ，比 关键值 9.5 高
+计算得出卡方值 = 30.696 （注） ，比 关键值 9.5 高
 
 \begin{description}
 \tightlist
@@ -376,7 +375,7 @@ Value)，
 \section{附件}\label{ux9644ux4ef6}}
 
 \hypertarget{ux4e2dux5fc3ux6781ux9650ux5b9aux91cf-central-limit-theorem-clt}{%
-\subsection{中心极限定量 (Central Limit Theorem
+\subsection{中心极限定理 (Central Limit Theorem
 CLT)}\label{ux4e2dux5fc3ux6781ux9650ux5b9aux91cf-central-limit-theorem-clt}}
 
 当总体(Population) 均值为 \(\mu\) ， 标准差为 \(\sigma\)
@@ -408,7 +407,7 @@ CLT)}\label{ux4e2dux5fc3ux6781ux9650ux5b9aux91cf-central-limit-theorem-clt}}
 
 检验统计量计算值
 \(Z_n = \cfrac{ \sqrt{n}(\overline{X_n} - \mu) }{\sigma}\)
-接近正态分布：\\
+接近正态分布。\\
 %\href{文件:!NormalDistributionBlankScreenshot_2023-04-16_201559.jpg}{600px}
 
 %\includegraphics[width=6cm]{NormalDistributionBlankScreenshot_2023-04-16_201559.jpg}
