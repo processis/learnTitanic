@@ -122,15 +122,17 @@
 \hypertarget{ux9884ux4f30ux4e0bux4e00ux5e74ux5ea6ux7684ux7ef4ux62a4ux6210ux672c}{%
 \subsubsection{3.预估下一年度的维护成本}\label{ux9884ux4f30ux4e0bux4e00ux5e74ux5ea6ux7684ux7ef4ux62a4ux6210ux672c}}
 
-统计分析，除了帮我们洞察那些主要影响因素外，也可以帮我们做预测:
+统计分析，除了帮我们洞察那些主要影响因素外，也可以帮我们预测:
 
 %\href{文件:maxwell_t5.5.jpg}{文件:maxwell t5.5.jpg}
 
 \includegraphics[width=10cm]{maxwell_t55.jpg}
 
-但从上表看到预测的准确度低，预测1994年的工作量为例，用模型预测的准确度还不如直接使用1993的数字。
+但从上表看到模型预测的准确度(Pred(.25)\%)较低，以预测1994年的工作量为例，使用模型预测的准确度还不如直接使用1993年的数据。\\
+在前面估算的章节讨论过，有很多因素影响软件开发的工作量，也导致难以准确预估。\\
 
-在前面估算章节讨论过， 很多因素影响软件开发的工作量难以准确预估
+（注：MMRE = Mean Magnitude of Relative Error, MedMRE = Median MRE ,
+Pred(.25)=偏差少于0.25之比例）
 
 \hypertarget{ux6570ux636eux5206ux6790ux6b65ux9aa4}{%
 \subsection{银行案例数据分析步骤}\label{ux6570ux636eux5206ux6790ux6b65ux9aa4}}
@@ -214,7 +216,7 @@ plot)}\label{scatter-plotux6563ux70b9ux56fe}}
 \hypertarget{ux9488ux5bf9ux67d0ux4e2aux53d8ux91cfux770bux5404ux79cdux5206ux7ec4ux7684ux6570ux91cfux548cux7ef4ux62a4ux5de5ux4f5cux91cf}{%
 \subsubsection{针对某个变量看各种分组的数量和维护工作量}\label{ux9488ux5bf9ux67d0ux4e2aux53d8ux91cfux770bux5404ux79cdux5206ux7ec4ux7684ux6570ux91cfux548cux7ef4ux62a4ux5de5ux4f5cux91cf}}
 
-例如，在内部业务部门分组：
+例如，在内部业务部门(Internal Business Unit)里再细分：
 
 %\href{文件:maxwell_e5.14.jpg}{文件:maxwell e5.14.jpg}
 
@@ -667,7 +669,7 @@ P = p-value ( P值)\\
 %\url{文件:相关性15.png}~\\
 
 \includegraphics[width=10cm]{相关性15.png}
-例右面两残差图是否平均上下分散？左面两图看是否正态分布？
+例:右面两残差图是否平均上下分散？左面两图看是否正态分布？
 
 \hypertarget{references}{%
 \section{References}\label{references}}
