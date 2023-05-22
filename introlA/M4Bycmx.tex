@@ -122,15 +122,17 @@
 \hypertarget{ux9884ux4f30ux4e0bux4e00ux5e74ux5ea6ux7684ux7ef4ux62a4ux6210ux672c}{%
 \subsubsection{3.预估下一年度的维护成本}\label{ux9884ux4f30ux4e0bux4e00ux5e74ux5ea6ux7684ux7ef4ux62a4ux6210ux672c}}
 
-统计分析，除了帮我们洞察那些主要影响因素外，也可以帮我们做预测:
+统计分析，除了帮我们洞察那些主要影响因素外，也可以帮我们预测:
 
 %\href{文件:maxwell_t5.5.jpg}{文件:maxwell t5.5.jpg}
 
 \includegraphics[width=10cm]{maxwell_t55.jpg}
 
-但从上表看到预测的准确度低，预测1994年的工作量为例，用模型预测的准确度还不如直接使用1993的数字。
+但从上表看到模型预测的准确度(Pred(.25)\%)较低，以预测1994年的工作量为例，使用模型预测的准确度还不如直接使用1993年的数据。\\
+在前面估算的章节讨论过，有很多因素影响软件开发的工作量，也导致难以准确预估。\\
 
-在前面估算章节讨论过， 很多因素影响软件开发的工作量难以准确预估
+（注：MMRE = Mean Magnitude of Relative Error, MedMRE = Median MRE ,
+Pred(.25)=偏差少于0.25之比例）
 
 \hypertarget{ux6570ux636eux5206ux6790ux6b65ux9aa4}{%
 \subsection{银行案例数据分析步骤}\label{ux6570ux636eux5206ux6790ux6b65ux9aa4}}
@@ -214,7 +216,7 @@ plot)}\label{scatter-plotux6563ux70b9ux56fe}}
 \hypertarget{ux9488ux5bf9ux67d0ux4e2aux53d8ux91cfux770bux5404ux79cdux5206ux7ec4ux7684ux6570ux91cfux548cux7ef4ux62a4ux5de5ux4f5cux91cf}{%
 \subsubsection{针对某个变量看各种分组的数量和维护工作量}\label{ux9488ux5bf9ux67d0ux4e2aux53d8ux91cfux770bux5404ux79cdux5206ux7ec4ux7684ux6570ux91cfux548cux7ef4ux62a4ux5de5ux4f5cux91cf}}
 
-例如，在内部业务部门分组：
+例如，在内部业务部门(Internal Business Unit)里再细分：
 
 %\href{文件:maxwell_e5.14.jpg}{文件:maxwell e5.14.jpg}
 
@@ -597,11 +599,11 @@ call、pall、tall三组数据:
 
 %\url{文件:相关性10.png}
 
-\includegraphics[width=10cm]{相关性10.png}
+%\includegraphics[width=10cm]{相关性10.png}
 
-%\[{R}^2 = {SS}_{regression} / {SS}_{total}\]\\
-%\[= ( {SS}_{total} - {SS}_{error} ) / {SS}_{total}\]\\
-%\[= 1 - [ {SS}_{error} / {SS}_{total} ]\]\\
+\[{R}^2 = {SS}_{regression} / {SS}_{total}\]\\
+\[= ( {SS}_{total} - {SS}_{error} ) / {SS}_{total}\]\\
+\[= 1 - [ {SS}_{error} / {SS}_{total} ]\]\\
 
 其中SS=平方和
 
@@ -613,9 +615,9 @@ call、pall、tall三组数据:
 
 %\url{文件:相关性11.png}
 
-\includegraphics[width=10cm]{相关性11.png}
+%\includegraphics[width=10cm]{相关性11.png}
 
-%\[{R}_{adj}^2 = 1 - [{SS}_{error} / (n - p)] / [{SS}_{total} / (n - 1)]\]
+\[{R}_{adj}^2 = 1 - [{SS}_{error} / (n - p)] / [{SS}_{total} / (n - 1)]\]
 
 其中n=数据点的数量并且p=模型中的项数。模型中的项数也包括常数。
 
@@ -634,18 +636,18 @@ call、pall、tall三组数据:
 
 %\url{文件:相关性12.png}
 
-\includegraphics[width=10cm]{相关性12.png}
+%\includegraphics[width=10cm]{相关性12.png}
 
 %\href{文件:Ch24rrScreenshot_2023-04-02_094408.jpg}{450px}
 
 \includegraphics[width=10cm]{Ch24rrScreenshot2023-04-02094408.jpg}
 
-%\[{R}^2 = {SS}_{regression} / {SS}_{total} = 23.3107 / 26.9121 = 86.6%\]\\
-%:注： 销售变化的 86.6\% 与 货架空间有关\\
+\[{R}^2 = {SS}_{regression} / {SS}_{total} = 23.3107 / 26.9121 = 0.866\]\\
+注： 销售变化的 0.866与 货架空间有关\\
 
-%\[{R}_{adj}^2 = 1 - [{SS}_{error} / (n - p)] / [{SS}_{total} / (n - 1)]\]\\
-%\[= 1 - [3.6014 / (30 - 2)] / [26.9121 / (30 - 1)]\]\\
-%\[= 1 - 0.1286 / 0.928 = 86.1%\]\\
+\[{R}_{adj}^2 = 1 - [{SS}_{error} / (n - p)] / [{SS}_{total} / (n - 1)]\]\\
+\[= 1 - [3.6014 / (30 - 2)] / [26.9121 / (30 - 1)]\]\\
+\[= 1 - 0.1286 / 0.928 = 0.861\]\\
 
 \begin{description}
 \tightlist
@@ -667,7 +669,7 @@ P = p-value ( P值)\\
 %\url{文件:相关性15.png}~\\
 
 \includegraphics[width=10cm]{相关性15.png}
-例右面两残差图是否平均上下分散？左面两图看是否正态分布？
+例:右面两残差图看残差是否平均上下分散？左面两图看是否正态分布？
 
 \hypertarget{references}{%
 \section{References}\label{references}}
@@ -675,7 +677,8 @@ P = p-value ( P值)\\
 1. Maxwell, Katrina: \emph{Applied Statistics for Software Managers}
 Prentice-Hall 2002.\\
 2. Chen, Zhihao: "Finding the Right Data for Software Cost Modeling"
-IEEE Software Nov/Dec 2005
+IEEE Software Nov/Dec 2005\\
+3. Six Sigma Academy:''The Black Belt Memory Jogger'' GOAL/QPC 2002.\\
 
 
 

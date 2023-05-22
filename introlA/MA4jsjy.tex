@@ -84,34 +84,34 @@
 \end{description}
 
 这例子，可以使用正态分布相关方程式，估计概率， 如概率低于 5\%
-，拒绝零假设 ，（折断力 \(> 285\)) （详见附件）\\
-如果不想研究相关方程式，可利用概率分布图``看''到：\\
+，拒绝零假设 ，（折断力 \(> 285\))\\
+
+利用正态概率分布图，抽样的平均值是287.6\\
+历史的平均值是285，并考虑样本平均值，样本方差，样本数量得出
+检验统计量计算值\(Z_n\)为 2.06 （计算方程式详见附件） 超出了95\%置信区间
+\(\pm 1.96\) 范围, 所以我们拒绝零假设，样本与285 有显著差异（提升）。\\
+
 %\href{文件:M4SingleMean1Screenshot_2022-09-11_201026.jpg}{600px}
 
 \includegraphics[width=10cm]{M4SingleMean1Screenshot_2022-09-11_201026.jpg}
 
-利用正态概率分布图，抽样的平均值是287.6\\
-历史的平均值是285，之间 的差异超出了95\%置信区间,
-所以我们拒绝零假设，样本与285 有显著差异（提升）。
-
-也可以利用工具，计算单样本Z检验(one-sample Z test)
+也可以利用工具，得出单样本Z检验(one-sample Z test)
 的P值，因P值=0.04,少于0.05， 判断拒绝零假设，新供货商的钢丝折断力比原本
 285 高。
 
 \framebox{%
 \begin{minipage}[t]{0.97\columnwidth}\raggedright
-要了解P值是什么？为什么低于0.05可以拒绝？ 首先要理解的会发生两类错误
+要了解P值是什么？为什么低于0.05可以拒绝？ 首先要理解会发生两类错误。
 
 检验可能犯错误,所谓犯错误就是检验的结论与实际情况不符,有两种情况:
 
 \begin{enumerate}
 \tightlist
 \item
-  实际情况是\(\mathbf{H}_0\)成立,而检验的结果表明\(\mathbf{H}_0\)不成立,即拒绝了\(\mathbf{H}_0\)，这时称该检验犯了第一类错误(Type
+  实际情况是\(\mathbf{H}_0\)成立,从检验结果选择了\(\mathbf{H}_a\)不成立,即拒绝了\(\mathbf{H}_0\)，犯了第一类错误(Type
   I error)或``弃真''错误
 \item
-  实际情况是\(\mathbf{H}_0\)不成立,\(\mathbf{H}_1\)成立,而检验的结果表明\(\mathbf{H}_0\)成立,即接受了\(\mathbf{H}_0\),这时称该检验犯了第二类错误(Type
-  II error),或称``取伪''错误
+  实际情况是\(\mathbf{H}_0\)不成立,\(\mathbf{H}_1\)成立,而从检验结果选择了\(\mathbf{H}_0\),犯了第二类错误(Type II error),或称“取伪”错误
 \end{enumerate}
 
 %\href{文件:TypeOneTwoErrorScreenshot_2022-07-23_151744.jpg}{thumb\textbar{}none\textbar{}500px\textbar{}图19}
@@ -133,14 +133,15 @@
 我们可以简单理解P值为发生第一类错误的概率，如果低于5\%我们就有信心拒绝零假设。\strut
 \end{minipage}}
 
-假设检验用于比较两组数据有没有显著差异的例子；
+使用假设检验比较两组数据有没有显著差异的例子；
 
 \hypertarget{ux6bd4ux8f83ux4e24ux4e2aux6b63ux6001ux603bux4f53ux7684ux5747ux503c}{%
 \subsection{比较两个正态总体的均值}\label{ux6bd4ux8f83ux4e24ux4e2aux6b63ux6001ux603bux4f53ux7684ux5747ux503c}}
 
-一名研究人员假设，大学为男生提供的运动项目的平均数量大于大学为女生提供的运动项目的平均数量。对大学为男生和女生提供的体育项目的随机抽样显示，设定临界概率为5\%
-（Alpha \(\alpha\)=0.05），是否有足够的证据支持这种说法? （假设方差都一样，
-\(\sigma\) = 3.3）。
+一名研究人员假设，大学为男生提供的运动项目的平均数量大于大学为女生提供的运动项目的平均数量。下表是对大学为男生和女生提供的体育项目数量的随机抽样结果 （大学男女生的各50个数据成一组，\\
+
+两组50个数之间没有对应关系），设定临界概率为5% （Alpha \(\alpha\)=0.05），是否有足够的证据支持这种说法? （假设方差都一样， \(\sigma\) = 3.3）。
+
 
 %Screenshotfrom2022-12-2822-35-57.png
 
@@ -159,32 +160,31 @@
 
 男生的均值是 8.6 ; 女生是 7.9 ; 相差是 0.7\\
 假定使用90\%置信区间:\\
-正态分布 \(\pm 1.65{\sigma}\) (标准差)内的面积是总面积的90\%，从下图看到
-1.06 落在90\%置信区间之内，所以不能拒绝零假设。
+正态分布 \(\pm 1.65{\sigma}\) (标准差)内的面积是总面积的90\%，计算出检验统计量计算值为1.06， 从下图看到 1.06 落在90%置信区间之内，所以不能拒绝零假设。\\
 
 %\href{文件:M4twoPopulationScreenshot_2022-09-11_201946.jpg}{600px}
 
 \includegraphics[width=10cm]{M4twoPopulationScreenshot_2022-09-11_201946.jpg}
 
 （有关计算 1.06 的方程式，详见附件）\\
-使用工具跑出来的P值是 0.146 ， 大于 0.05 ，所以不能拒绝零假设
+也可使用工具跑出来的P值是 0.146 ， 大于 0.05 ，不能拒绝零假设。
 
-以上两个例子都是假定：分布的方差已知
+以上两个例子都是假定：分布的方差已知。
 
-但很多时，我们不一定知道分布的方差或标准差是多少？
+但很多时候，我们不一定知道分布的方差或标准差是多少？
 我们便需要从样本数估计分布的方差（或标准差）。
 下面是一个结对T检验(Paired T test)例子
 
 \hypertarget{ux68c0ux9a8cux5355ux4e2aux6b63ux6001ux603bux4f53ux7684ux5747ux503cux65b9ux5deeux672aux77e5}{%
 \subsection{检验单个正态总体的均值,方差未知}\label{ux68c0ux9a8cux5355ux4e2aux6b63ux6001ux603bux4f53ux7684ux5747ux503cux65b9ux5deeux672aux77e5}}
 
-营养师正在观察如果每天饮食都添加某类矿物质，是否会改变人的胆固醇水平。对随机选取6位对象在实验之前进行了水平测试。然后对他们进行为期6周的测试，在它们大食物里添加矿物质补充，实验之后再测试，结果显示在下表
+营养师正在观察如果每天饮食都添加某类矿物质，是否会改变人的胆固醇水平。对随机选取6位对象在实验之前进行了测试。然后对他们进行为期6周的测试，在他们的食物里添加矿物质补充，实验之后再测试，结果显示在下表
 (胆固醇水平以每分升毫克为单位)。能否得出结论，在α=
 0.1时，胆固醇水平是否发生了变化。
 
 %Screenshotfrom2022-12-2822-37-19.png
 
-\includegraphics[width=10cm]{Screenshotfrom2022-12-2822-37-19.png}
+\includegraphics[width=10cm]{Screenshotfrom2023-04-1622-04-35.png}
 
 \begin{enumerate}
 \tightlist
@@ -194,18 +194,20 @@
   备选假设：有显著变化 （\(\mathbf{H}_1: \mu _D \neq 0\)）
 \end{enumerate}
 
-注意：与上面大学男女生的各50个数据成一组， 两组50个数之间没有对应关系
+注意：\\
 
-这例子不一样， 因前后是一一对应， 我们需要用结对T检验 (Paired T test)。
+这例子与上面男女学生例子不一样，
+
+因前后是一一对应， 我们需要用结对T检验 (Paired T test)。
 因标准差不是已知，是从样本估算，所以要用 T检验，非 Z检验。
 
-可以使用相关方程式，计算出 T值 =1.61 ,
+可以使用相关方程式，计算出 t值 =1.61 （计算过程，详见附件）
 
 %\href{文件:CholesterolEg2022-07-23_195121.jpg}{thumb\textbar{}none\textbar{}500px\textbar{}图20}
 
 \includegraphics[width=10cm]{CholesterolEg2022-07-23_195121.jpg}
 
-从上图看到 1.61 落在90\%置信区间(2.016)之内，所以不能拒绝零假设。
+从图看到 1.61 落在90\%置信区间(2.016)之内，所以不能拒绝零假设。
 
 也可以利用工具，计算双样本T检验(Paired T test)
 的P值，因P值=0.165,大于0.05， 判断不能拒绝零假设
@@ -223,8 +225,7 @@ test)}\label{ux65b9ux5deeux5206ux67901-anova-test}}
 %\href{文件:5anovaDataScreenshot_2022-07-24_105955.jpg}{文件:5anovaDataScreenshot
 %2022-07-24 105955.jpg}\\
 \includegraphics[width=10cm]{5anovaDataScreenshot_2022-07-24_105955.jpg}\\
-用统计工具跑单因子方差分析
-得出P值是0.0385，低于0.05，所以我们便可以拒绝零假设 
+用统计工具跑单因子方差分析 得出P值是0.0385，低于0.05，所以我们便可以拒绝零假设，三车型有显著差异。\\
 
 %\href{文件:5anovaResultScreenshot_2022-07-24_104352.jpg}{400px}\\
 
@@ -234,8 +235,8 @@ test)}\label{ux65b9ux5deeux5206ux67901-anova-test}}
 %\href{文件:5anovaBoxplot_of_small,_sedans,_luxury.jpg}{500px}\\
 
 \includegraphics[width=10cm]{5anovaBoxplot_of_small_sedans_luxury.jpg}\\
-方差分析只能识别有没有显著差异，但若要要明确哪些地方有差异，便要用
-Tukey-Kramer 做多组之间比较
+方差分析只能识别有没有显著差异，但若要要明确差异在哪里，便要用
+Tukey-Kramer 做多组之间比较。
 
 %\hypertarget{ux65b9ux5deeux5206ux67902-anova-test}{%
 %\subsubsection{例子二}\label{ux65b9ux5deeux5206ux67902-anova-test}}
@@ -275,7 +276,7 @@ test)}\label{ux65b9ux5deeux5206ux67902-anova-test}}
 \begin{itemize}
 \tightlist
 \item
-  从4组的分布，你可能看出第一组与第二组的差异很明显，其他差不多。但当差异没有这么明显，便需要用统计分析判断。
+  从4组的分布，你可能看出第一组与第二组的差异很明显，其他差不多。如要明确哪里有差异，便需要用统计分析来判断。
 \end{itemize}
 
 \hypertarget{tukey-kramer-ux591aux7ec4ux6bd4ux8f83}{%
@@ -289,23 +290,26 @@ test)}\label{ux65b9ux5deeux5206ux67902-anova-test}}
 \begin{enumerate}
 \tightlist
 \item
-  \(|\overline{X_1} - \overline{X_3}\) = \textbar{}19.52 --
+  \(|\overline{X_1} - \overline{X_2} |\) = \textbar{}19.52 --
+  24.26\textbar{} = 4.74
+\item
+  \(|\overline{X_1} - \overline{X_3} |\) = \textbar{}19.52 --
   22.84\textbar{} = 3.32
 \item
-  \(|\overline{X_1} - \overline{X_4}\) = \textbar{}19.52 --
+  \(|\overline{X_1} - \overline{X_4} |\) = \textbar{}19.52 --
   21.16\textbar{} = 1.64
 \item
-  \(|\overline{X_2} - \overline{X_3}\) = \textbar{}24.26 --
+  \(|\overline{X_2} - \overline{X_3} |\) = \textbar{}24.26 --
   22.84\textbar{} = 1.42
 \item
-  \(|\overline{X_2} - \overline{X_4}\) = \textbar{}24.26 --
+  \(|\overline{X_2} - \overline{X_4} |\) = \textbar{}24.26 --
   21.16\textbar{} = 3.10
 \item
-  \(|\overline{X_3} - \overline{X_4}\) = \textbar{}22.84 --
+  \(|\overline{X_3} - \overline{X_4} |\) = \textbar{}22.84 --
   21.16\textbar{} = 1.68
 \end{enumerate}
 
-用Tukey-Kramer 相关方程式（详见附件），得出临界范围为 4.47，所以判断唯一供货商1与2的布料拉力是有显著差异。 
+用Tukey-Kramer 相关方程式（详见附件），得出临界范围为 4.47，所以判断只有供货商1与2之间的布料拉力之间是有显著差异。 
 
 %\hypertarget{ux5206ux7ec4ux5206ux7c7bux6570ux636e}{%
 %\section{分组（分类）数据}\label{ux5206ux7ec4ux5206ux7c7bux6570ux636e}}
@@ -321,10 +325,9 @@ test)}\label{ux65b9ux5deeux5206ux67902-anova-test}}
 \subsubsection{卡方检验(Chi Square
 test)}\label{ux5361ux65b9ux68c0ux9a8cchi-square-test}}
 
-想研究三家医院针在 三类病人感染的主因:（外科手术 Surgical Site ， 肺炎
-Pneumonia， 血液 Bloodstream） 最终导致病人死亡
+研究三家医院(A, B, C) 在 三类最终导致病人死亡感染的主因（外科手术 Surgical Site ， 肺炎 Pneumonia， 血液 Bloodstream）  
 
-是否有显著差异？
+分布是否有显著差异？
 
 %\href{文件:4chiSquareDataScreenshot_2022-07-24_110053.jpg}{文件:4chiSquareDataScreenshot
 %2022-07-24 110053.jpg}\\
@@ -336,18 +339,18 @@ Pneumonia， 血液 Bloodstream） 最终导致病人死亡
 \item
   零假设：那家医院与感染主因没有关系
 \item
-  备选假设：有显著关系
+  备选假设：两者有显著关系
 \end{enumerate}
 
-卡方检验得出P值等于零，所以可以拒绝零假设，医院与感染主因有关系
+卡方检验得出P值等于零，所以可以拒绝零假设，医院与感染主因有关系。
 
 %\href{文件:6chiSquareTstResultScreenshot_2022-07-24_103606.jpg}{500px}\\
 
 \includegraphics[width=6cm]{6chiSquareTstResultScreenshot_2022-07-24_103606.jpg}
 
-1:零假设:医院(Hospitals) 与 感染种类(Infections) 之间没有相关
+%1:零假设:医院(Hospitals) 与 感染种类(Infections) 之间没有相关
 
-2:为了计算卡方值(Chi-square)，首先使用以下公式计算每个列联表的预计值E(Expected
+为了计算卡方值(Chi-square)，首先使用以下公式计算每个列联表的预计值E(Expected
 Value)，
 
 \(E = \frac{(row \ sum) * (column \ sum)} {grand \ total}\)
@@ -356,7 +359,7 @@ Value)，
 
 \(\chi ^2 = \sum \frac{(O - E)^2} {E}\)
 
-3:计算得出卡方值 = 30.696 （注） ，比 关键值 9.5 高
+计算得出卡方值 = 30.696 （注） ，比 关键值 9.5 高
 
 \begin{description}
 \tightlist
@@ -372,10 +375,50 @@ Value)，
 \hypertarget{ux9644ux4ef6}{%
 \section{附件}\label{ux9644ux4ef6}}
 
+\hypertarget{ux4e2dux5fc3ux6781ux9650ux5b9aux91cf-central-limit-theorem-clt}{%
+\subsection{中心极限定理 (Central Limit Theorem
+CLT)}\label{ux4e2dux5fc3ux6781ux9650ux5b9aux91cf-central-limit-theorem-clt}}
+
+当总体(Population) 均值为 \(\mu\) ， 标准差为 \(\sigma\)
+
+\begin{description}
+\tightlist
+\item[]
+随机样本均值
+\end{description}
+
+\(\overline{X_n} = {\sum_i X_i \over n}\) 的： (n 为每轮抽样样本数量)
+
+\begin{description}
+\item[]
+\begin{description}
+\tightlist
+\item[]
+均值 = \(\mu\)
+
+标准差 = \(\sigma \over \sqrt{n}\)
+\end{description}
+\end{description}
+
+\begin{itemize}
+\tightlist
+\item
+  样本均值的分布随样本数量增加越来越接近正态分布
+\end{itemize}
+
+检验统计量计算值
+\(Z_n = \cfrac{ \sqrt{n}(\overline{X_n} - \mu) }{\sigma}\)
+接近正态分布。\\
+%\href{文件:!NormalDistributionBlankScreenshot_2023-04-16_201559.jpg}{600px}
+
+%\includegraphics[width=6cm]{NormalDistributionBlankScreenshot_2023-04-16_201559.jpg}
+
+（正态分布图形，详见25章控制图里的噪音还是信号）\\
+
 \hypertarget{ux68c0ux9a8cux5355ux4e2aux6b63ux6001ux6574ux4f53ux5747ux503cux76f8ux5173ux65b9ux7a0bux5f0f}{%
 \subsection{检验单个正态整体均值相关方程式}\label{ux68c0ux9a8cux5355ux4e2aux6b63ux6001ux6574ux4f53ux5747ux503cux76f8ux5173ux65b9ux7a0bux5f0f}}
 
-平均值分布的方 = 样本方差 / n ，并可以用以下方程式估算（如果样本数n
+样本平均值分布的方 = 样本方差 / n ，并可以用以下方程式估算（如果样本数n
 越大，样本均值的方差就越少)：
 
 \(Z_n = \cfrac{ \sqrt{n}(\overline{X_n} - \mu) }{\sigma}\)\\
@@ -409,7 +452,8 @@ Value)，
   从样本估计方差\\
 \end{itemize}
 
-\(s_D^2 = \cfrac{\sum {(D_i - \overline{D})}^2  }{(n - 1)}= \cfrac{\sum D_i^2 - n \times \overline{D}^2  }{(n - 1)} = \cfrac{4890 - 6 \times (16.7)^2  }{(6 - 1)} = 645\)\\
+\(s_D^2 = \cfrac{\sum {(D_i - \overline{D})}^2  }{(n - 1)}= \cfrac{\sum D_i^2 - n \times \overline{D}^2  }{(n - 1)} = \cfrac{(20^2 + 65^2 + (-2)^2 + 2^2 + (-1)^2 + 16^2) - 6 \times (16.7)^2  }{(6 - 1)}\)\\
+\[= \cfrac{4890 - 6 \times 278.9  }{5} = 645\]\\
 \(s_D = 25.4\)\\
 
 \begin{itemize}
@@ -593,7 +637,7 @@ MSW，参考ANOVA方程式}\label{ux5982ux4f55ux8ba1ux7b97-mswux53c2ux8003anovau
 
 SSA = \(\sum_{j=1}^c n_j(\overline{X_j} - \overline{\overline{X}})^2\)
 
-\[= (5)(19.52 - 21.945)^2 + (5)(24.26 - 21.945)^2 + (5)(22.84 - 21.945)^2 + (50(21.16 - 21.945)^2\]
+\[= (5)(19.52 - 21.945)^2 + (5)(24.26 - 21.945)^2 + (5)(22.84 - 21.945)^2 + (5(21.16 - 21.945)^2\]
 
 \[= 63.285\]
 

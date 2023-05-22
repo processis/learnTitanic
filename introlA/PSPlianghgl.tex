@@ -57,7 +57,7 @@
 
 因觉得单点估算很难定一个点数，便用三点估算法。每一行估计都有三点：最差、最佳、最可能，用
 PERT方程式估计预计(Expected) 和 标准差(Sigma)。\\
-:（实际顺序可能会有变，以上是已调整版本，原本 MGR 章节是放在后面。。。）
+（实际顺序可能会有变，以上是已调整版本，原本 MGR 章节是放在后面。。。）
 
 挣值析法所有东西 -- EV, PV, AC
 都是用钱来结算（这个例子我们就是用所花工时），例如我们估计了每个章节所需要的工时，利用三点估算计算出每个章节预计的工时，加起来得出预计总工时是80.33工时（用PERT公式计算）。例如第一个章节TDD，预期工时是2.5，除以80.33就得出0.031，我们就用3.1作为TDD的PV（所有任务完成的总PV大概是100）。同样方式算出MGR章节的PV是6.6。（我本来也犯错，以为PV是和产出多少，或页数，成比例，但如用页数作为PV单位的话，就跟其它挣值分析法的系数，如EV，对不上了，导致错误。）得出每一个章节对应的PV后，我们就可以计算累计的PV数:
@@ -234,7 +234,7 @@ EXCEL 公式为：SQRT(SUM(所有方差范围)) = SQRT(SUM(H3:H15))\\
 \begin{description}
 \tightlist
 \item[]
-EXCEL 公式为：SUM(所有Expected范围)-2*总Sigma = SUM(F3:F15)-2*I15
+EXCEL 公式为：SUM(所有Expected范围)-2*总方差  = SUM(F3:F15)-2*I15
 \end{description}
 
 95\%范围上限(=62.5)
@@ -242,7 +242,7 @@ EXCEL 公式为：SUM(所有Expected范围)-2*总Sigma = SUM(F3:F15)-2*I15
 \begin{description}
 \tightlist
 \item[]
-EXCEL 公式为: SUM(所有Expected范围)+2*总Sigma = SUM(F3:F15)+2*I15
+EXCEL 公式为: SUM(所有Expected范围)+2*总方差  = SUM(F3:F15)+2*I15
 \end{description}
 \end{description}
 

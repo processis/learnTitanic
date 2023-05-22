@@ -105,9 +105,22 @@ Figure7.1，从需求到设计、编码、单元测试、系统测试、验收�
 
 %Screenshotfrom20221221203231.png
 
-\includegraphics[width=10cm]{Screenshotfrom20221221203231.png}
+%\includegraphics[width=10cm]{Screenshotfrom20221221203231.png}
+
+\framebox{%
+\begin{minipage}[t]{0.97\columnwidth}\raggedright
+假设：每项任务的固定成本都是25人时；测试前的缺陷修复：每缺陷用 0.5人时；测试缺陷修复，上面计算假定每缺陷用1人时，详见下表： \\
+\begin{tabular}{|c|c|c}\hline
+\multicolumn{2}{c}{\mbox{每缺陷修正工时}}\\ \hline
+\mbox{扫描/评审}&0.5 \\ \hline
+\mbox{单元/功能测试}&1 \\ \hline
+\mbox{系统/性能测试}&1 \\ \hline
+\mbox{验收测试}&1 \\ \hline
 
 
+\end{tabular}
+\strut
+\end{minipage}}
 
 因为缺陷已经提前被排除系统测试的缺陷减少，测试阶段的工作量减少大于前面扫描评审上的投入。
 
@@ -120,7 +133,7 @@ Figure7.1，从需求到设计、编码、单元测试、系统测试、验收�
 
 \texttt{注：你可能会质疑使用原型方法不只25人时，但即使加大到100人时，还是不亏。因它能预防缺陷，整体缺陷数下降20\%，使总质量成本下降超过100人时。}
 
-正如质量大师Dr JURAN 强调，过程改进必须从认同必须改善质量(Proof of the
+正如质量大师Dr JURAN 强调，过程改进应从认同必须改善质量(Proof of the
 Need)开始。如果大家都觉得现在的缺陷水平（例如，系统测试超过200个缺陷）是常态，任何公司级质量改进计划都不会有好结果。\\
 但如果管理层了解现在未能尽早发现并排除缺陷是最好的改进方向（80/20原则），并开始重视，但应如何开始?\\
 ``如何能收集到修复缺陷相关工时数据？因没有度量，便无法谈改进。我们现在只有缺陷数据，与测试工作量数据。''\\
