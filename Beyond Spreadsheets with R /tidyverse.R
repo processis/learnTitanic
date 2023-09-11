@@ -141,3 +141,9 @@ flights_with_airline_names %>%
 flights_with_airline_names %>%
   group_by(carrier) %>%
   summary(c(air_time, arr_delay))
+
+
+remove.packages("Dplyr")
+remove.packages("tidyr")
+remove.packages("stringr")
+remove.packages("tibble")

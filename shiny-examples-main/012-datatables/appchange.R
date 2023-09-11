@@ -24,6 +24,9 @@ ui <- fluidPage(
         id = 'dataset',
         tabPanel("diamonds", DT::dataTableOutput("mytable1")),
         tabPanel("mtcars", DT::dataTableOutput("mytable2")),
+        h4("Summary Stat:"),
+        textOutput("toprands_txt"),
+        textOutput("gpcars_txt"),
         tabPanel("iris", DT::dataTableOutput("mytable3"))
       )
     )
@@ -31,24 +34,27 @@ ui <- fluidPage(
 )
 
 server <- function(input, output) {
-
+  
   # choose columns to display
   diamonds2 = diamonds[sample(nrow(diamonds), 1000), ]
   output$mytable1 <- DT::renderDataTable({
     DT::datatable(diamonds2[, input$show_vars, drop = FALSE])
   })
-
+  
   # sorted columns are colored now because CSS are attached to them
   output$mytable2 <- DT::renderDataTable({
     DT::datatable(mtcars, options = list(orderClasses = TRUE))
   })
-
+  
   # customize the length drop-down menu; display 5 rows per page by default
   output$mytable3 <- DT::renderDataTable({
     DT::datatable(iris, options = list(lengthMenu = c(5, 30, 50), pageLength = 5))
   })
   
-
+  output$sumtats_txt <- DT::renderDataTable({
+    DT::datatable(iris, options = list(lengthMenu = c(5, 30, 50), pageLength = 5))
+  })
+  
 }
 
 shinyApp(ui, server)

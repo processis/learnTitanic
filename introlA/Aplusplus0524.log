@@ -1,0 +1,4137 @@
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  30 AUG 2023 01:08
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Aplusplus0524 to convert it to pdf format
+(./Aplusplus0524.tex
+LaTeX2e <2018-12-01>
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 99.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2019-02-15 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2019-02-15 L3 programming layer (code)
+\c_max_int=\count89
+\l_tmpa_int=\count90
+\l_tmpb_int=\count91
+\g_tmpa_int=\count92
+\g_tmpb_int=\count93
+\g__kernel_prg_map_int=\count94
+\c_log_iow=\count95
+\l_iow_line_count_int=\count96
+\l__iow_line_target_int=\count97
+\l__iow_one_indent_int=\count98
+\l__iow_indent_int=\count99
+\c_zero_dim=\dimen105
+\c_max_dim=\dimen106
+\l_tmpa_dim=\dimen107
+\l_tmpb_dim=\dimen108
+\g_tmpa_dim=\dimen109
+\g_tmpb_dim=\dimen110
+\c_zero_skip=\skip43
+\c_max_skip=\skip44
+\l_tmpa_skip=\skip45
+\l_tmpb_skip=\skip46
+\g_tmpa_skip=\skip47
+\g_tmpb_skip=\skip48
+\c_zero_muskip=\muskip10
+\c_max_muskip=\muskip11
+\l_tmpa_muskip=\muskip12
+\l_tmpb_muskip=\muskip13
+\g_tmpa_muskip=\muskip14
+\g_tmpb_muskip=\muskip15
+\l_keys_choice_int=\count100
+\l__intarray_loop_int=\count101
+\c__intarray_sp_dim=\dimen111
+\g__intarray_font_int=\count102
+\c__fp_leading_shift_int=\count103
+\c__fp_middle_shift_int=\count104
+\c__fp_trailing_shift_int=\count105
+\c__fp_big_leading_shift_int=\count106
+\c__fp_big_middle_shift_int=\count107
+\c__fp_big_trailing_shift_int=\count108
+\c__fp_Bigg_leading_shift_int=\count109
+\c__fp_Bigg_middle_shift_int=\count110
+\c__fp_Bigg_trailing_shift_int=\count111
+\g__fp_array_int=\count112
+\l__fp_array_loop_int=\count113
+\l__sort_length_int=\count114
+\l__sort_min_int=\count115
+\l__sort_top_int=\count116
+\l__sort_max_int=\count117
+\l__sort_true_max_int=\count118
+\l__sort_block_int=\count119
+\l__sort_begin_int=\count120
+\l__sort_end_int=\count121
+\l__sort_A_int=\count122
+\l__sort_B_int=\count123
+\l__sort_C_int=\count124
+\l__tl_analysis_normal_int=\count125
+\l__tl_analysis_index_int=\count126
+\l__tl_analysis_nesting_int=\count127
+\l__tl_analysis_type_int=\count128
+\l__regex_internal_a_int=\count129
+\l__regex_internal_b_int=\count130
+\l__regex_internal_c_int=\count131
+\l__regex_balance_int=\count132
+\l__regex_group_level_int=\count133
+\l__regex_mode_int=\count134
+\c__regex_cs_in_class_mode_int=\count135
+\c__regex_cs_mode_int=\count136
+\l__regex_catcodes_int=\count137
+\l__regex_default_catcodes_int=\count138
+\c__regex_catcode_L_int=\count139
+\c__regex_catcode_O_int=\count140
+\c__regex_catcode_A_int=\count141
+\c__regex_all_catcodes_int=\count142
+\l__regex_show_lines_int=\count143
+\l__regex_min_state_int=\count144
+\l__regex_max_state_int=\count145
+\l__regex_left_state_int=\count146
+\l__regex_right_state_int=\count147
+\l__regex_capturing_group_int=\count148
+\l__regex_min_pos_int=\count149
+\l__regex_max_pos_int=\count150
+\l__regex_curr_pos_int=\count151
+\l__regex_start_pos_int=\count152
+\l__regex_success_pos_int=\count153
+\l__regex_curr_char_int=\count154
+\l__regex_curr_catcode_int=\count155
+\l__regex_last_char_int=\count156
+\l__regex_case_changed_char_int=\count157
+\l__regex_curr_state_int=\count158
+\l__regex_step_int=\count159
+\l__regex_min_active_int=\count160
+\l__regex_max_active_int=\count161
+\l__regex_replacement_csnames_int=\count162
+\l__regex_match_count_int=\count163
+\l__regex_min_submatch_int=\count164
+\l__regex_submatch_int=\count165
+\l__regex_zeroth_submatch_int=\count166
+\g__regex_trace_regex_int=\count167
+\c_empty_box=\box27
+\l_tmpa_box=\box28
+\l_tmpb_box=\box29
+\g_tmpa_box=\box30
+\g_tmpb_box=\box31
+\l__box_top_dim=\dimen112
+\l__box_bottom_dim=\dimen113
+\l__box_left_dim=\dimen114
+\l__box_right_dim=\dimen115
+\l__box_top_new_dim=\dimen116
+\l__box_bottom_new_dim=\dimen117
+\l__box_left_new_dim=\dimen118
+\l__box_right_new_dim=\dimen119
+\l__box_internal_box=\box32
+\l__coffin_internal_box=\box33
+\l__coffin_internal_dim=\dimen120
+\l__coffin_offset_x_dim=\dimen121
+\l__coffin_offset_y_dim=\dimen122
+\l__coffin_x_dim=\dimen123
+\l__coffin_y_dim=\dimen124
+\l__coffin_x_prime_dim=\dimen125
+\l__coffin_y_prime_dim=\dimen126
+\c_empty_coffin=\box34
+\l__coffin_aligned_coffin=\box35
+\l__coffin_aligned_internal_coffin=\box36
+\l_tmpa_coffin=\box37
+\l_tmpb_coffin=\box38
+\g_tmpa_coffin=\box39
+\g_tmpb_coffin=\box40
+\c__coffin_empty_coffin=\box41
+\l__coffin_display_coffin=\box42
+\l__coffin_display_coord_coffin=\box43
+\l__coffin_display_pole_coffin=\box44
+\l__coffin_display_offset_dim=\dimen127
+\l__coffin_display_x_dim=\dimen128
+\l__coffin_display_y_dim=\dimen129
+\g__file_internal_ior=\read1
+\l__coffin_bounding_shift_dim=\dimen130
+\l__coffin_left_corner_dim=\dimen131
+\l__coffin_right_corner_dim=\dimen132
+\l__coffin_bottom_corner_dim=\dimen133
+\l__coffin_top_corner_dim=\dimen134
+\l__coffin_scaled_total_height_dim=\dimen135
+\l__coffin_scaled_width_dim=\dimen136
+\l__seq_internal_a_int=\count168
+\l__seq_internal_b_int=\count169
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
+File: l3xdvipdfmx.def 2019-02-15 v L3 Experimental driver: xdvipdfmx
+\g__driver_image_int=\count170
+\g__driver_pdf_object_int=\count171
+))
+Package: xeCJK 2018/04/30 v3.7.1 Typesetting CJK scripts with XeLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+Package: xtemplate 2018-10-17 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen137
+\l__xtemplate_tmp_int=\count172
+\l__xtemplate_tmp_muskip=\muskip16
+\l__xtemplate_tmp_skip=\skip49
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2018-10-17 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count173
+\g__xparse_grabber_int=\count174
+\l__xparse_m_args_int=\count175
+\l__xparse_mandatory_args_int=\count176
+\l__xparse_v_nesting_int=\count177
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2018-10-17 LaTeX2e option processing using LaTeX3 keys
+)
+\l__xeCJK_tmp_int=\count178
+\l__xeCJK_tmp_box=\box45
+\l__xeCJK_tmp_dim=\dimen138
+\l__xeCJK_tmp_skip=\skip50
+\g__xeCJK_space_factor_int=\count179
+\l__xeCJK_begin_int=\count180
+\l__xeCJK_end_int=\count181
+\c__xeCJK_CJK_class_int=\XeTeXcharclass1
+\c__xeCJK_FullLeft_class_int=\XeTeXcharclass2
+\c__xeCJK_FullRight_class_int=\XeTeXcharclass3
+\c__xeCJK_HalfLeft_class_int=\XeTeXcharclass4
+\c__xeCJK_HalfRight_class_int=\XeTeXcharclass5
+\c__xeCJK_NormalSpace_class_int=\XeTeXcharclass6
+\c__xeCJK_CM_class_int=\XeTeXcharclass7
+\c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
+\l__xeCJK_last_skip=\skip51
+\g__xeCJK_node_int=\count182
+\c__xeCJK_CJK_node_dim=\dimen139
+\c__xeCJK_CJK-space_node_dim=\dimen140
+\c__xeCJK_default_node_dim=\dimen141
+\c__xeCJK_default-space_node_dim=\dimen142
+\c__xeCJK_CJK-widow_node_dim=\dimen143
+\c__xeCJK_normalspace_node_dim=\dimen144
+\l__xeCJK_ccglue_skip=\skip52
+\l__xeCJK_ecglue_skip=\skip53
+\l__xeCJK_punct_kern_skip=\skip54
+\l__xeCJK_last_penalty_int=\count183
+\l__xeCJK_last_bound_dim=\dimen145
+\l__xeCJK_last_kern_dim=\dimen146
+\l__xeCJK_widow_penalty_int=\count184
+
+Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
+(xtemplate)             argument(s) on line 2362.
+
+\l__xeCJK_fixed_punct_width_dim=\dimen147
+\l__xeCJK_mixed_punct_width_dim=\dimen148
+\l__xeCJK_middle_punct_width_dim=\dimen149
+\l__xeCJK_fixed_margin_width_dim=\dimen150
+\l__xeCJK_mixed_margin_width_dim=\dimen151
+\l__xeCJK_middle_margin_width_dim=\dimen152
+\l__xeCJK_bound_punct_width_dim=\dimen153
+\l__xeCJK_bound_margin_width_dim=\dimen154
+\l__xeCJK_margin_minimum_dim=\dimen155
+\l__xeCJK_kerning_total_width_dim=\dimen156
+\l__xeCJK_same_align_margin_dim=\dimen157
+\l__xeCJK_different_align_margin_dim=\dimen158
+\l__xeCJK_kerning_margin_width_dim=\dimen159
+\l__xeCJK_kerning_margin_minimum_dim=\dimen160
+\l__xeCJK_bound_dim=\dimen161
+\l__xeCJK_reverse_bound_dim=\dimen162
+\l__xeCJK_minimum_bound_dim=\dimen163
+\l__xeCJK_kerning_margin_dim=\dimen164
+\l__xeCJK_original_margin_dim=\dimen165
+\g__xeCJK_family_int=\count185
+\l__xeCJK_fam_int=\count186
+\g__xeCJK_fam_allocation_int=\count187
+\l__xeCJK_verb_case_int=\count188
+\l__xeCJK_verb_exspace_skip=\skip55
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2019/02/12 v2.7b Font selection for XeLaTeX and LuaLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2019/02/12 v2.7b Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count189
+\l__fontspec_language_int=\count190
+\l__fontspec_strnum_int=\count191
+\l__fontspec_tmp_int=\count192
+\l__fontspec_tmpa_int=\count193
+\l__fontspec_tmpb_int=\count194
+\l__fontspec_tmpc_int=\count195
+\l__fontspec_em_int=\count196
+\l__fontspec_emdef_int=\count197
+\l__fontspec_strong_int=\count198
+\l__fontspec_strongdef_int=\count199
+\l__fontspec_tmpa_dim=\dimen166
+\l__fontspec_tmpb_dim=\dimen167
+\l__fontspec_tmpc_dim=\dimen168
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/tuenc.def
+File: tuenc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)
+LaTeX Info: Redefining \itshape on input line 4044.
+LaTeX Info: Redefining \slshape on input line 4049.
+LaTeX Info: Redefining \scshape on input line 4054.
+LaTeX Info: Redefining \upshape on input line 4059.
+LaTeX Info: Redefining \em on input line 4089.
+LaTeX Info: Redefining \emph on input line 4114.
+))
+(/usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
+File: xeCJK.cfg 2018/04/30 v3.7.1 Configuration file for xeCJK package
+))
+
+Package fontspec Info: Could not resolve font "SimSun/BI" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Could not resolve font "SimSun/B" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Could not resolve font "SimSun/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Font family 'SimSun(0)' created for font 'SimSun' with
+(fontspec)             options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"SimSun/OT:script=hani;language=DFLT;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+
+(/usr/share/texmf/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks15
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip56
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen169
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen170
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count266
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count267
+\leftroot@=\count268
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count269
+\DOTSCASE@=\count270
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box46
+\strutbox@=\box47
+\big@size=\dimen171
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count271
+\c@MaxMatrixCols=\count272
+\dotsspace@=\muskip17
+\c@parentequation=\count273
+\dspbrk@lvl=\count274
+\tag@help=\toks17
+\row@=\count275
+\column@=\count276
+\maxfields@=\count277
+\andhelp@=\toks18
+\eqnshift@=\dimen172
+\alignsep@=\dimen173
+\tagshift@=\dimen174
+\tagwidth@=\dimen175
+\totwidth@=\dimen176
+\lineht@=\dimen177
+\@envbody=\toks19
+\multlinegap=\skip57
+\multlinetaggap=\skip58
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
+Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+Already applied: [0000/00/00] Old fixltx2e package on input line 53.
+) (/usr/share/texlive/texmf-dist/tex/latex/unicode-math/unicode-math.sty
+Package: unicode-math 2019/02/15 v0.8n Unicode maths in XeLaTeX and LuaLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
+Package: unicode-math-xetex 2019/02/15 v0.8n Unicode maths in XeLaTeX and LuaLa
+TeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/filehook/filehook.sty
+Package: filehook 2011/10/12 v0.5d Hooks for input files
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+))
+\g__um_fam_int=\count278
+\g__um_fonts_used_int=\count279
+\l__um_primecount_int=\count280
+\g__um_primekern_muskip=\muskip18
+
+(/usr/share/texlive/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex)
+
+Package unicode-math Info: I'm going to patch macro \subarray.
+
+
+Package unicode-math Info: I'm going to patch macro \r@@t.
+
+)) (/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+)
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2019/02/28 v2.7b Micro-typographical refinements (RS)
+\MT@toks=\toks21
+\MT@count=\count281
+LaTeX Info: Redefining \textls on input line 790.
+\MT@outer@kern=\dimen178
+LaTeX Info: Redefining \textmicrotypecontext on input line 1336.
+\MT@listname@count=\count282
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-xetex.def
+File: microtype-xetex.def 2019/02/28 v2.7b Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 258.
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2019/02/28 v2.7b microtype main configuration file (RS)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2019-01-16 v2.0c non-zero parskip adjustments
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count283
+))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen179
+\Hy@linkcounter=\count284
+\Hy@pagecounter=\count285
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count286
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4393.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2018/11/30 v6.88e Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 4519.
+Package hyperref Info: Link nesting OFF on input line 4524.
+Package hyperref Info: Hyper index ON on input line 4527.
+Package hyperref Info: Plain pages OFF on input line 4534.
+Package hyperref Info: Backreferencing OFF on input line 4539.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4772.
+\c@Hy@tempcnt=\count287
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip19
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5125.
+\XeTeXLinkMargin=\dimen180
+\Fld@menulength=\count288
+\Field@Width=\dimen181
+\Fld@charsize=\dimen182
+Package hyperref Info: Hyper figures OFF on input line 6380.
+Package hyperref Info: Link nesting OFF on input line 6385.
+Package hyperref Info: Hyper index ON on input line 6388.
+Package hyperref Info: backreferencing OFF on input line 6395.
+Package hyperref Info: Link coloring OFF on input line 6400.
+Package hyperref Info: Link coloring with OCG OFF on input line 6405.
+Package hyperref Info: PDF/A mode OFF on input line 6410.
+LaTeX Info: Redefining \ref on input line 6450.
+LaTeX Info: Redefining \pageref on input line 6454.
+\Hy@abspage=\count289
+\c@Item=\count290
+\c@Hfootnote=\count291
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2018/11/30 v6.88e Hyperref driver for XeTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/stringenc.sty
+Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box48
+\c@Hy@AnnotLevel=\count292
+\HyField@AnnotCount=\count293
+\Fld@listcount=\count294
+\c@bookmark@seq@number=\count295
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip59
+)
+Package hyperref Info: Option `breaklinks' set `true' on input line 41.
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
+\LTleft=\skip60
+\LTright=\skip61
+\LTpre=\skip62
+\LTpost=\skip63
+\LTchunksize=\count296
+\LTcapwidth=\dimen183
+\LT@head=\box49
+\LT@firsthead=\box50
+\LT@foot=\box51
+\LT@lastfoot=\box52
+\LT@cols=\count297
+\LT@rows=\count298
+\c@LT@tables=\count299
+\c@LT@chunks=\count300
+\LT@p@ftn=\toks22
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen184
+\lightrulewidth=\dimen185
+\cmidrulewidth=\dimen186
+\belowrulesep=\dimen187
+\belowbottomsep=\dimen188
+\aboverulesep=\dimen189
+\abovetopsep=\dimen190
+\cmidrulesep=\dimen191
+\cmidrulekern=\dimen192
+\defaultaddspace=\dimen193
+\@cmidla=\count301
+\@cmidlb=\count302
+\@aboverulesep=\dimen194
+\@belowrulesep=\dimen195
+\@thisruleclass=\count303
+\@lastruleclass=\count304
+\@thisrulewidth=\dimen196
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mdwtools/footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box53
+\fn@width=\dimen197
+)
+(./Aplusplus0524.aux (./xuzhang.aux) (./qianyan.aux) (./RHGSMJKFZL.aux)
+(./INNOVgeren.aux) (./PORDkefutuoyan.aux
+
+LaTeX Warning: Label `references' multiply defined.
+
+) (./PERT3diangusuan.aux
+
+LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
+
+) (./PSPlianghgl.aux
+
+LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
+
+
+LaTeX Warning: Label `references' multiply defined.
+
+) (./ESTgsrjgm.aux
+
+LaTeX Warning: Label `ux603bux7ed3' multiply defined.
+
+
+LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
+
+
+LaTeX Warning: Label `ux63a5ux4e58ux5ba2' multiply defined.
+
+
+LaTeX Warning: Label `ux63a5ux4e58ux5ba2' multiply defined.
+
+
+LaTeX Warning: Label `ux63a5ux4e58ux5ba2' multiply defined.
+
+
+LaTeX Warning: Label `ux63a5ux4e58ux5ba2' multiply defined.
+
+
+LaTeX Warning: Label `ux63a5ux4e58ux5ba2' multiply defined.
+
+
+LaTeX Warning: Label `ux63a5ux4e58ux5ba2' multiply defined.
+
+
+LaTeX Warning: Label `ux63a5ux4e58ux5ba2' multiply defined.
+
+
+LaTeX Warning: Label `ux4e0eux56fdux9645ux529fux80fdux70b9ifpugux7684ux504fux5d
+ee' multiply defined.
+
+
+LaTeX Warning: Label `references' multiply defined.
+
+) (./EST2gjgm.aux
+
+LaTeX Warning: Label `ux603bux7ed3' multiply defined.
+
+
+LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
+
+
+LaTeX Warning: Label `references' multiply defined.
+
+) (./AP1lygc.aux
+
+LaTeX Warning: Label `ux7b2cux4e00ux7248ux65b9ux6848ux4e66' multiply defined.
+
+
+LaTeX Warning: Label `ux603bux7ed3' multiply defined.
+
+) (./CMMIlypg.aux
+
+LaTeX Warning: Label `ux603bux7ed3ux8bbfux8c08ux7684ux95eeux9898ux53d1ux73b0' m
+ultiply defined.
+
+
+LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
+
+
+LaTeX Warning: Label `ux9644ux4ef6ux6848ux4f8b' multiply defined.
+
+) (./AR1zhzb.aux
+
+LaTeX Warning: Label `ux603bux7ed3' multiply defined.
+
+
+LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
+
+) (./AR2gyfx.aux
+
+LaTeX Warning: Label `ux603bux7ed3' multiply defined.
+
+
+LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
+
+
+LaTeX Warning: Label `references' multiply defined.
+
+) (./RHZH.aux
+
+LaTeX Warning: Label `ux4eceux9879ux76eeux51b2ux523aux7684ux56deux987eux590dux7
+6d8ux5f00ux59cb' multiply defined.
+
+
+LaTeX Warning: Label `ux4eceux9879ux76eeux51b2ux523aux7684ux56deux987eux590dux7
+6d8ux5f00ux59cb' multiply defined.
+
+
+LaTeX Warning: Label `ux603bux7ed3' multiply defined.
+
+
+LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
+
+
+LaTeX Warning: Label `ux63cfux8ff0' multiply defined.
+
+
+LaTeX Warning: Label `references' multiply defined.
+
+) (./AR4hg.aux
+
+LaTeX Warning: Label `ux600eux6837ux5f00ux59cb' multiply defined.
+
+
+LaTeX Warning: Label `ux603bux7ed3' multiply defined.
+
+
+LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
+
+) (./TDDcsqdkf.aux
+
+LaTeX Warning: Label `ux6bcfux5c0fux6b65ux9a8cux8bc1' multiply defined.
+
+
+LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
+
+) (./TS1refact.aux
+
+LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
+
+
+LaTeX Warning: Label `references' multiply defined.
+
+) (./CIcxjc.aux
+
+LaTeX Warning: Label `ux5e38ux89c1ux95eeux9898' multiply defined.
+
+
+LaTeX Warning: Label `ux7ecfux9a8cux6559ux8bad' multiply defined.
+
+
+LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
+
+
+LaTeX Warning: Label `ux6280ux672fux503aux52a1ux4f8bux5b50' multiply defined.
+
+
+LaTeX Warning: Label `references' multiply defined.
+
+) (./PR1jdpc.aux
+
+LaTeX Warning: Label `ux603bux7ed3' multiply defined.
+
+
+LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
+
+) (./RDM1rjxq.aux
+
+LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
+
+) (./ICincludec.aux
+
+LaTeX Warning: Label `ux5e38ux89c1ux95eeux9898' multiply defined.
+
+
+LaTeX Warning: Label `ux6539ux8fdbux6548ux679c' multiply defined.
+
+
+LaTeX Warning: Label `ux603bux7ed3' multiply defined.
+
+
+LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
+
+
+LaTeX Warning: Label `references' multiply defined.
+
+) (./TSteam.aux
+
+LaTeX Warning: Label `ux603bux7ed3' multiply defined.
+
+
+LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
+
+
+LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
+
+) (./M1zwjdc.aux
+
+LaTeX Warning: Label `ux4eceux5206ux6790ux5230ux884cux52a8' multiply defined.
+
+
+LaTeX Warning: Label `ux4eceux5206ux6790ux5230ux884cux52a8' multiply defined.
+
+
+LaTeX Warning: Label `ux603bux7ed3' multiply defined.
+
+) (./MAjxh.aux
+
+LaTeX Warning: Label `ux6bd4ux8f83ux4e09ux79cdux6559ux5b66ux65b9ux6cd5' multipl
+y defined.
+
+
+LaTeX Warning: Label `ux5982ux4f55ux753bux830eux53f6ux56festem-and-leaf-plot' m
+ultiply defined.
+
+
+LaTeX Warning: Label `ux5982ux4f55ux753bux830eux53f6ux56festem-and-leaf-plot' m
+ultiply defined.
+
+
+LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
+
+
+LaTeX Warning: Label `ux5982ux4f55ux753bux830eux53f6ux56festem-and-leaf-plot' m
+ultiply defined.
+
+
+LaTeX Warning: Label `references' multiply defined.
+
+) (./MA4jsjy.aux
+
+LaTeX Warning: Label `ux65b9ux5deeux5206ux67902-anova-test' multiply defined.
+
+
+LaTeX Warning: Label `ux65b9ux5deeux5206ux67901-anova-test' multiply defined.
+
+
+LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
+
+) (./M4Bycmx.aux
+
+LaTeX Warning: Label `ux603bux7ed3ux62a5ux544a' multiply defined.
+
+
+LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
+
+
+LaTeX Warning: Label `ux80ccux666f' multiply defined.
+
+
+LaTeX Warning: Label `references' multiply defined.
+
+) (./M3CC.aux
+
+LaTeX Warning: Label `ux603bux7ed3' multiply defined.
+
+
+LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
+
+
+LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
+
+) (./MGRcjhdyj.aux
+
+LaTeX Warning: Label `ux6211ux4eecux5f88ux6ce8ux91cdux8d28ux91cfux4e0eux5ba2ux6
+237ux6ee1ux610fux5ea6' multiply defined.
+
+
+LaTeX Warning: Label `ux6211ux4eecux5f88ux6ce8ux91cdux8d28ux91cfux4e0eux5ba2ux6
+237ux6ee1ux610fux5ea6' multiply defined.
+
+
+LaTeX Warning: Label `ux603bux7ed3' multiply defined.
+
+
+LaTeX Warning: Label `ux603bux7ed3' multiply defined.
+
+) (./EOIdbh.aux))
+\openout1 = `Aplusplus0524.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 68.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 68.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 68.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 68.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 68.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 68.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 68.
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Ligatures=TeX,Scale=MatchLowercase,BoldItalicFont={},It
+alicFont={},SmallCapsFont={},Script=Math,BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[latinmodern-math.otf]/OT:script=math;language=
+DFLT;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (bx/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[latinmodern-math.otf]/OT:script=math;language=
+DFLT;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 68.
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Ligatures=TeX,Scale=MatchLowercase,BoldItalicFont={},It
+alicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,
+Font=latinmodern-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,
+Style=MathScriptScript}},BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->s*[1]"[latinmodern-math.otf]/OT:script=math;langua
+ge=DFLT;mapping=tex-text;"<6-8.5>s*[1]"[latinmodern-math.otf]/OT:script=math;la
+nguage=DFLT;+ssty=0;mapping=tex-text;"<-6>s*[1]"[latinmodern-math.otf]/OT:scrip
+t=math;language=DFLT;+ssty=1;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (bx/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[latinmodern-math.otf]/OT:script=math;language=
+DFLT;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 68.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 68.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input
+ line 68.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 68.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/bx/n on inp
+ut line 68.
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 1.00001.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 1.00001.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 1.00001.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 1.00001.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 1.00001.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(2)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Ligatures=TeX,Scale=MatchLowercase,BoldItalicFont={},It
+alicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,
+Font=latinmodern-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,
+Style=MathScriptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=1.00001,Fon
+tAdjustment={\fontdimen
+(fontspec)             8\font =6.77pt\relax \fontdimen 9\font =3.94pt\relax
+(fontspec)             \fontdimen 10\font =4.44pt\relax \fontdimen 11\font
+(fontspec)             =6.86pt\relax \fontdimen 12\font =3.45pt\relax
+(fontspec)             \fontdimen 13\font =3.63pt\relax \fontdimen 14\font
+(fontspec)             =3.63pt\relax \fontdimen 15\font =2.89pt\relax
+(fontspec)             \fontdimen 16\font =2.47pt\relax \fontdimen 17\font
+(fontspec)             =2.47pt\relax \fontdimen 18\font =2.5pt\relax
+(fontspec)             \fontdimen 19\font =2.0pt\relax \fontdimen 22\font
+(fontspec)             =2.5pt\relax \fontdimen 20\font =0pt\relax \fontdimen
+(fontspec)             21\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->s*[1.00001]"[latinmodern-math.otf]/OT:script=math;
+language=DFLT;mapping=tex-text;"<6-8.5>s*[1.00001]"[latinmodern-math.otf]/OT:sc
+ript=math;language=DFLT;+ssty=0;mapping=tex-text;"<-6>s*[1.00001]"[latinmodern-
+math.otf]/OT:script=math;language=DFLT;+ssty=1;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =6.77pt\relax \fontdimen 9\font
+(fontspec)             =3.94pt\relax \fontdimen 10\font =4.44pt\relax
+(fontspec)             \fontdimen 11\font =6.86pt\relax \fontdimen 12\font
+(fontspec)             =3.45pt\relax \fontdimen 13\font =3.63pt\relax
+(fontspec)             \fontdimen 14\font =3.63pt\relax \fontdimen 15\font
+(fontspec)             =2.89pt\relax \fontdimen 16\font =2.47pt\relax
+(fontspec)             \fontdimen 17\font =2.47pt\relax \fontdimen 18\font
+(fontspec)             =2.5pt\relax \fontdimen 19\font =2.0pt\relax \fontdimen
+(fontspec)             22\font =2.5pt\relax \fontdimen 20\font =0pt\relax
+(fontspec)             \fontdimen 21\font =0pt\relax 
+(fontspec)             - 'bold' (bx/n) with NFSS spec.:
+(fontspec)             <->s*[1.00001]"[latinmodern-math.otf]/OT:script=math;lan
+guage=DFLT;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =6.77pt\relax \fontdimen 9\font
+(fontspec)             =3.94pt\relax \fontdimen 10\font =4.44pt\relax
+(fontspec)             \fontdimen 11\font =6.86pt\relax \fontdimen 12\font
+(fontspec)             =3.45pt\relax \fontdimen 13\font =3.63pt\relax
+(fontspec)             \fontdimen 14\font =3.63pt\relax \fontdimen 15\font
+(fontspec)             =2.89pt\relax \fontdimen 16\font =2.47pt\relax
+(fontspec)             \fontdimen 17\font =2.47pt\relax \fontdimen 18\font
+(fontspec)             =2.5pt\relax \fontdimen 19\font =2.0pt\relax \fontdimen
+(fontspec)             22\font =2.5pt\relax \fontdimen 20\font =0pt\relax
+(fontspec)             \fontdimen 21\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 68.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
+t line 68.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 68.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/bx/n on inp
+ut line 68.
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 0.99999.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 0.99999.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 0.99999.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 0.99999.
+
+
+Package fontspec Info: latinmodern-math scale = 1.
+
+
+Package fontspec Info: latinmodern-math scale = 0.99999.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(3)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Ligatures=TeX,Scale=MatchLowercase,BoldItalicFont={},It
+alicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,
+Font=latinmodern-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,
+Style=MathScriptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=0.99999,Fon
+tAdjustment={\fontdimen
+(fontspec)             8\font =0.4pt\relax \fontdimen 9\font =2.0pt\relax
+(fontspec)             \fontdimen 10\font =1.67pt\relax \fontdimen 11\font
+(fontspec)             =1.11pt\relax \fontdimen 12\font =6.0pt\relax
+(fontspec)             \fontdimen 13\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->s*[0.99999]"[latinmodern-math.otf]/OT:script=math;
+language=DFLT;mapping=tex-text;"<6-8.5>s*[0.99999]"[latinmodern-math.otf]/OT:sc
+ript=math;language=DFLT;+ssty=0;mapping=tex-text;"<-6>s*[0.99999]"[latinmodern-
+math.otf]/OT:script=math;language=DFLT;+ssty=1;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =0.4pt\relax \fontdimen 9\font
+(fontspec)             =2.0pt\relax \fontdimen 10\font =1.67pt\relax
+(fontspec)             \fontdimen 11\font =1.11pt\relax \fontdimen 12\font
+(fontspec)             =6.0pt\relax \fontdimen 13\font =0pt\relax 
+(fontspec)             - 'bold' (bx/n) with NFSS spec.:
+(fontspec)             <->s*[0.99999]"[latinmodern-math.otf]/OT:script=math;lan
+guage=DFLT;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =0.4pt\relax \fontdimen 9\font
+(fontspec)             =2.0pt\relax \fontdimen 10\font =1.67pt\relax
+(fontspec)             \fontdimen 11\font =1.11pt\relax \fontdimen 12\font
+(fontspec)             =6.0pt\relax \fontdimen 13\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 6
+8.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
+t line 68.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 68.
+
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/bx/n on inp
+ut line 68.
+LaTeX Info: Redefining \microtypecontext on input line 68.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using protrusion set `basicmath'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
+File: mt-LatinModernRoman.cfg 2013/03/13 v1.0 microtype config. file: Latin Mod
+ern Roman (RS)
+)
+\AtBeginShipoutBox=\box54
+Package hyperref Info: Link coloring OFF on input line 68.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count305
+)
+LaTeX Info: Redefining \ref on input line 68.
+LaTeX Info: Redefining \pageref on input line 68.
+LaTeX Info: Redefining \nameref on input line 68.
+
+(./Aplusplus0524.out) (./Aplusplus0524.out)
+\@outlinefile=\write3
+\openout3 = `Aplusplus0524.out'.
+
+ [1
+
+
+] [2
+
+] [3
+
+] [4
+
+]
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 85.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 85.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 85.
+
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.0001pt on input line 85.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00008pt on input line 85.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.9999pt on input line 85.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99992pt on input line 85.
+LaTeX Font Info:    Try loading font information for U+msa on input line 85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00015pt on input line 85.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99985pt on input line 85.
+ [5] [6
+
+
+]
+(./Aplusplus0524.toc
+
+LaTeX Font Warning: Font shape `TU/SimSun(0)/bx/n' undefined
+(Font)              using `TU/SimSun(0)/m/n' instead on input line 1.
+
+[7
+
+] [8] [9] [10] [11] [12])
+\tf@toc=\write4
+\openout4 = `Aplusplus0524.toc'.
+
+ [13]
+\openout2 = `xuzhang.aux'.
+
+ (./xuzhang.tex [14
+
+
+] [15] [16
+
+]) [17]
+\openout2 = `qianyan.aux'.
+
+
+(./qianyan.tex [18
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 8--12
+
+ []
+
+[19]) [20]
+\openout2 = `RHGSMJKFZL.aux'.
+
+ (./RHGSMJKFZL.tex
+Chapter 1.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 10.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--29
+
+ []
+
+[21
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 33--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--49
+
+ []
+
+
+LaTeX Font Warning: Font shape `TU/SimSun(0)/m/sl' undefined
+(Font)              using `TU/SimSun(0)/m/n' instead on input line 51.
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+
+ []
+
+[23]
+File: cleanagile_f18.jpg Graphic file (type bmp)
+<cleanagile_f18.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24]
+File: jobs1Screenshot_2022-06-12_082703.jpg Graphic file (type bmp)
+<jobs1Screenshot_2022-06-12_082703.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25]
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+
+ []
+
+File: finAnalogyScreenshot_2022-10-07_212149.jpg Graphic file (type bmp)
+<finAnalogyScreenshot_2022-10-07_212149.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26]
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
+
+ []
+
+File: JuranImprovementScreenshot_2022-10-23_211444.jpg Graphic file (type bmp)
+<JuranImprovementScreenshot_2022-10-23_211444.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27]
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
+
+ []
+
+File: IntroXPnJuranStepsScreenshot_2022-10-27_194505.jpg Graphic file (type bmp
+)
+<IntroXPnJuranStepsScreenshot_2022-10-27_194505.jpg>
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--229
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--326
+
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--422
+
+ []
+
+)
+Underfull \vbox (badness 4846) has occurred while \output is active []
+
+ [31]
+[32] [33
+
+
+] [34]
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+[35]
+\openout2 = `INNOVgeren.aux'.
+
+ (./INNOVgeren.tex [36
+
+
+]
+Chapter 2.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 65.
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 83--87
+
+ []
+
+File: Bdf.jpg Graphic file (type bmp)
+<Bdf.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39]
+File: liuct.jpg Graphic file (type bmp)
+<liuct.jpg>
+
+Overfull \hbox (224.05511pt too wide) in paragraph at lines 118--119
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40]
+File: mingyant.jpg Graphic file (type bmp)
+<mingyant.jpg>
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 131--136
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41]
+File: mubiaozhungt.jpg Graphic file (type bmp)
+<mubiaozhungt.jpg>
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 141--144
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42]
+[43])
+Underfull \hbox (badness 10000) in paragraph at lines 215--131
+
+ []
+
+[44]
+\openout2 = `PORDkefutuoyan.aux'.
+
+ (./PORDkefutuoyan.tex
+Chapter 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--6
+
+ []
+
+File: 小李图.png Graphic file (type bmp)
+<小李图.png>
+File: 超效率目录.png Graphic file (type bmp)
+<超效率目录.png>
+
+Underfull \vbox (badness 4254) has occurred while \output is active []
+
+ [45
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+
+ []
+
+File: 紧迫非紧迫30.png Graphic file (type bmp)
+<紧迫非紧迫30.png>
+
+Underfull \vbox (badness 2426) has occurred while \output is active []
+
+ [46]
+Underfull \vbox (badness 1424) has occurred while \output is active []
+
+ [47]
+Underfull \hbox (badness 10000) in paragraph at lines 169--174
+
+ []
+
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 189--191
+
+ []
+
+) [49] [50
+
+
+] [51] [52]
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+
+ []
+
+[53]
+\openout2 = `PERT3diangusuan.aux'.
+
+ (./PERT3diangusuan.tex [54
+
+
+]
+Chapter 4.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 11.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--43
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [55]
+File: Screenshotfrom20221215004629.png Graphic file (type bmp)
+<Screenshotfrom20221215004629.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--49
+
+ []
+
+File: pert31.png Graphic file (type bmp)
+<pert31.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--66
+
+ []
+
+File: pert32.png Graphic file (type bmp)
+<pert32.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [56]
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+File: Screenshotfrom20221215004743.png Graphic file (type bmp)
+<Screenshotfrom20221215004743.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [57]
+File: HMTTv13s77.png Graphic file (type bmp)
+<HMTTv13s77.png>
+File: Screenshotfrom20221215004901.png Graphic file (type bmp)
+<Screenshotfrom20221215004901.png>
+File: 10stepsPertScreenshot20221024205007.jpg Graphic file (type bmp)
+<10stepsPertScreenshot20221024205007.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [58]
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
+
+ []
+
+[59]
+File: 捕获21.PNG Graphic file (type bmp)
+<捕获21.PNG>
+File: 捕获2.PNG Graphic file (type bmp)
+<捕获2.PNG>
+File: 捕获11.PNG Graphic file (type bmp)
+<捕获11.PNG>
+File: 捕获1.PNG Graphic file (type bmp)
+<捕获1.PNG>
+) [60]
+\openout2 = `PSPlianghgl.aux'.
+
+ (./PSPlianghgl.tex
+Chapter 5.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 11.
+
+[61
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 24--27
+
+ []
+
+[62]
+File: PSPfig72.jpg Graphic file (type bmp)
+<PSPfig72.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+
+ []
+
+File: psp3.jpg Graphic file (type bmp)
+<psp3.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [63]
+[64]
+File: psp11.jpg Graphic file (type bmp)
+<psp11.jpg>
+File: PSP3wksPlanScreenshot20221126085813.jpg Graphic file (type bmp)
+<PSP3wksPlanScreenshot20221126085813.jpg>
+ [65]
+File: PSPend2ndWkEvScreenshot20221126091326.jpg Graphic file (type bmp)
+<PSPend2ndWkEvScreenshot20221126091326.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+[66]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [67]
+Overfull \vbox (14.45003pt too high) has occurred while \output is active []
+
+
+[68]
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
+
+ []
+
+
+Overfull \hbox (27.80281pt too wide) in paragraph at lines 245--246
+[]\TU/lmr/m/n/10 EXCEL \TU/SimSun(0)/m/n/10 公 式 为\TU/lmr/m/n/10 : SUM(\TU/SimSu
+n(0)/m/n/10 所 有 \TU/lmr/m/n/10 Expected \TU/SimSun(0)/m/n/10 范 围\TU/lmr/m/n/10 
+)+2* \TU/SimSun(0)/m/n/10 总 方 差 \TU/lmr/m/n/10 = SUM(F3:F15)+2*I15 
+ []
+
+File: PSPcalculate3wks95rangeScreenshot20221126105325.jpg Graphic file (type bm
+p)
+<PSPcalculate3wks95rangeScreenshot20221126105325.jpg>
+[69]
+File: Psp手工时间表12.jpg Graphic file (type bmp)
+<Psp手工时间表12.jpg>
+ [70] [71]
+Underfull \hbox (badness 10000) in paragraph at lines 339--342
+
+ []
+
+) [72]
+\openout2 = `ESTgsrjgm.aux'.
+
+ (./ESTgsrjgm.tex
+Chapter 6.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 5.
+
+File: Screenshotfrom20221220202712.png Graphic file (type bmp)
+<Screenshotfrom20221220202712.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [73
+
+
+
+]
+File: Screenshotfrom20221220202832.png Graphic file (type bmp)
+<Screenshotfrom20221220202832.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [74]
+[75]
+File: sifpp50图.jpg Graphic file (type bmp)
+<sifpp50图.jpg>
+ [76]
+Overfull \vbox (105.75395pt too high) has occurred while \output is active []
+
+
+[77]
+File: 功能点计数过程.jpg Graphic file (type bmp)
+<功能点计数过程.jpg>
+ [78]
+File: Screenshotfrom2022122020-31-37.png Graphic file (type bmp)
+<Screenshotfrom2022122020-31-37.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--344
+
+ []
+
+File: 功能点计数P6220.jpg Graphic file (type bmp)
+<功能点计数P6220.jpg>
+[79]
+Underfull \hbox (badness 10000) in paragraph at lines 409--412
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 413--414
+
+ []
+
+[80]
+Underfull \hbox (badness 10000) in paragraph at lines 434--437
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 437--440
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 440--443
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 443--445
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--449
+
+ []
+
+File: Screenshotfrom20221220203338.png Graphic file (type bmp)
+<Screenshotfrom20221220203338.png>
+[81]
+File: Screenshotfrom2022122020-34-37.png Graphic file (type bmp)
+<Screenshotfrom2022122020-34-37.png>
+ [82]
+Underfull \hbox (badness 10000) in paragraph at lines 538--540
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--545
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 570--571
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 572--573
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 575--576
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 582--583
+
+ []
+
+[83]
+Underfull \hbox (badness 10000) in paragraph at lines 602--604
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 608--609
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 628--629
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 633--635
+
+ []
+
+[84] [85]
+File: Ex1SoluScreenshot_2022-04-05_115926.jpg Graphic file (type bmp)
+<Ex1SoluScreenshot_2022-04-05_115926.jpg>
+File: 微信截图_20230324091110.png Graphic file (type bmp)
+<微信截图_20230324091110.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [86]
+[87] [88]
+File: Ex2XlsScreenshot_2022-04-05_143941.jpg Graphic file (type bmp)
+<Ex2XlsScreenshot_2022-04-05_143941.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [89]
+File: Ex2XlsPt2of2Screenshot_2022-04-05_143941.jpg Graphic file (type bmp)
+<Ex2XlsPt2of2Screenshot_2022-04-05_143941.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [90]
+[91]
+File: FPAS11.jpg Graphic file (type bmp)
+<FPAS11.jpg>
+
+Underfull \hbox (badness 1371) in paragraph at lines 916--920
+[]\TU/lmr/m/n/10 IFPUG / SiFP \TU/SimSun(0)/m/n/10 得 出 的 实 体 数 量，|  与 行 为 数 量 都
+ 一 样 　  |（实 体
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 927--929
+
+ []
+
+) [92]
+\openout2 = `EST2gjgm.aux'.
+
+ (./EST2gjgm.tex
+Chapter 7.
+File: 估算专家.png Graphic file (type bmp)
+<估算专家.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
+ []
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 20.
+
+[93
+
+
+
+]
+File: 估算3.png Graphic file (type bmp)
+<估算3.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+File: ABC模型.jpg Graphic file (type bmp)
+<ABC模型.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+
+ []
+
+File: Screenshotfrom2023-01-0602-48-18.png Graphic file (type bmp)
+<Screenshotfrom2023-01-0602-48-18.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+[94]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [95]
+File: Google_Agile_stories_V12esFinal(engCh)v12.png Graphic file (type bmp)
+<Google_Agile_stories_V12esFinal(engCh)v12.png>
+
+[96]
+File: 微信图片_20230105131327.jpg Graphic file (type bmp)
+<微信图片_20230105131327.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--148
+
+ []
+
+[97]
+File: 敏捷非敏捷1.jpg Graphic file (type bmp)
+<敏捷非敏捷1.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+
+ []
+
+File: Lego1.jpg Graphic file (type bmp)
+<Lego1.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+
+ []
+
+
+Underfull \vbox (badness 4341) has occurred while \output is active []
+
+ [98]
+File: Lego_2.png Graphic file (type bmp)
+<Lego_2.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [99]
+File: Lego3.jpg Graphic file (type bmp)
+<Lego3.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
+
+ []
+
+[100]
+File: Screenshotfrom2023-01-0602-54-00.png Graphic file (type bmp)
+<Screenshotfrom2023-01-0602-54-00.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--325
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [101]
+File: Screenshotfrom2023-01-0602-54-26.png Graphic file (type bmp)
+<Screenshotfrom2023-01-0602-54-26.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
+
+ []
+
+File: Screenshotfrom2023-01-0602-55-33.png Graphic file (type bmp)
+<Screenshotfrom2023-01-0602-55-33.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--348
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [102])
+[103] [104
+
+
+] [105] [106]
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+
+ []
+
+[107]
+\openout2 = `AP1lygc.aux'.
+
+ (./AP1lygc.tex [108
+
+
+]
+Chapter 8.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 14.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--23
+
+ []
+
+[109]
+Underfull \hbox (badness 10000) in paragraph at lines 27--29
+
+ []
+
+File: 方案书1.jpg Graphic file (type bmp)
+<方案书1.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--40
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
+
+ []
+
+[110]
+File: JiangJingFinal2presentScreenshot20220912092535.jpg Graphic file (type bmp
+)
+<JiangJingFinal2presentScreenshot20220912092535.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--55
+
+ []
+
+File: 三角形.jpg Graphic file (type bmp)
+<三角形.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [111]
+Underfull \hbox (badness 10000) in paragraph at lines 89--94
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [112])
+[113]
+\openout2 = `CMMIlypg.aux'.
+
+ (./CMMIlypg.tex [114
+
+
+
+]
+Chapter 9.
+[115]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 34.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--57
+
+ []
+
+[116]
+File: IssuesScreenshot20221019205655.jpg Graphic file (type bmp)
+<IssuesScreenshot20221019205655.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [117]
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
+
+ []
+
+[118]
+Underfull \hbox (badness 10000) in paragraph at lines 161--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--176
+
+ []
+
+File: 000.jpg Graphic file (type bmp)
+<000.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [119]
+Underfull \hbox (badness 10000) in paragraph at lines 179--183
+
+ []
+
+File: 3个关键点图1.png Graphic file (type bmp)
+<3个关键点图1.png>
+) [120] [121
+
+
+] [122]
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
+ []
+
+[123]
+\openout2 = `AR1zhzb.aux'.
+
+ (./AR1zhzb.tex [124
+
+
+]
+Chapter 10.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 4.
+
+[125]
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+File: AR1缺陷数.jpg Graphic file (type bmp)
+<AR1缺陷数.jpg>
+[126]
+Underfull \hbox (badness 10000) in paragraph at lines 106--112
+
+ []
+
+[127]
+File: Diagram20.png Graphic file (type bmp)
+<Diagram20.png>
+ [128]
+File: MGR_f11.jpg Graphic file (type bmp)
+<MGR_f11.jpg>
+
+Underfull \vbox (badness 6284) has occurred while \output is active []
+
+ [129]
+Underfull \hbox (badness 10000) in paragraph at lines 235--239
+
+ []
+
+File: jaloteemm7110.png Graphic file (type bmp)
+<jaloteemm7110.png>
+File: Ma310.png Graphic file (type bmp)
+<Ma310.png>
+[130]
+File: AR1FixVarCostScreenshot20221210144400.jpg Graphic file (type bmp)
+<AR1FixVarCostScreenshot20221210144400.jpg>
+File: est缺陷表3.jpg Graphic file (type bmp)
+<est缺陷表3.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [131]
+
+Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
+(xeCJK)                
+(xeCJK)                Try to use `\setCJKmonofont[...]{...}' to define it.
+
+File: AR1成本占比.jpg Graphic file (type bmp)
+<AR1成本占比.jpg>
+)
+Underfull \hbox (badness 10000) in paragraph at lines 344--169
+
+ []
+
+[132]
+\openout2 = `AR2gyfx.aux'.
+
+ (./AR2gyfx.tex
+Chapter 11.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 14.
+
+File: club55.png Graphic file (type bmp)
+<club55.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [133
+
+
+
+]
+File: Club61.jpg Graphic file (type bmp)
+<Club61.jpg>
+File: club71.jpg Graphic file (type bmp)
+<club71.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [134]
+File: club72.jpg Graphic file (type bmp)
+<club72.jpg>
+File: club81.jpg Graphic file (type bmp)
+<club81.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [135]
+File: club91.jpg Graphic file (type bmp)
+<club91.jpg>
+
+Underfull \vbox (badness 2376) has occurred while \output is active []
+
+ [136]
+File: club111.png Graphic file (type bmp)
+<club111.png>
+File: club121.jpg Graphic file (type bmp)
+<club121.jpg>
+File: club131.jpg Graphic file (type bmp)
+<club131.jpg>
+
+[137]
+File: club141.jpg Graphic file (type bmp)
+<club141.jpg>
+File: club151.jpg Graphic file (type bmp)
+<club151.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [138]
+[139]
+File: club191.jpg Graphic file (type bmp)
+<club191.jpg>
+File: club201.jpg Graphic file (type bmp)
+<club201.jpg>
+File: club202.jpg Graphic file (type bmp)
+<club202.jpg>
+ [140]
+File: club211.jpg Graphic file (type bmp)
+<club211.jpg>
+File: club221.jpg Graphic file (type bmp)
+<club221.jpg>
+ [141]
+File: Ar2_缺陷类型造成的损失.jpg Graphic file (type bmp)
+<Ar2_缺陷类型造成的损失.jpg>
+ [142]
+File: 5whyScreenshot20221203092224.jpg Graphic file (type bmp)
+<5whyScreenshot20221203092224.jpg>
+ [143]
+File: 风险与机会1.png Graphic file (type bmp)
+<风险与机会1.png>
+File: 风险与机会2_FMEA.png Graphic file (type bmp)
+<风险与机会2_FMEA.png>
+File: 风险与机会3_打分参考_1.png Graphic file (type bmp)
+<风险与机会3_打分参考_1.png>
+ [144]
+File: 风险与机会4.png Graphic file (type bmp)
+<风险与机会4.png>
+ [145]
+File: 风险与机会5_闹钟.png Graphic file (type bmp)
+<风险与机会5_闹钟.png>
+)
+Underfull \hbox (badness 10000) in paragraph at lines 376--170
+
+ []
+
+[146]
+\openout2 = `RHZH.aux'.
+
+ (./RHZH.tex
+Chapter 12.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--8
+
+ []
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 10.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--29
+
+ []
+
+[147
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 30--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--36
+
+ []
+
+File: DefectsBySourceScreenshot_2021-09-20_155232.png Graphic file (type bmp)
+<DefectsBySourceScreenshot_2021-09-20_155232.png>
+
+Underfull \vbox (badness 7649) has occurred while \output is active []
+
+ [148]
+Underfull \hbox (badness 10000) in paragraph at lines 67--70
+
+ []
+
+File: reqKJfinal微信图片_20210920125228.jpg Graphic file (type bmp)
+<reqKJfinal微信图片_20210920125228.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [149]
+[150]
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
+
+ []
+
+File: RetrospectiveScreenshot_2021-09-21_173119.png Graphic file (type bmp)
+<RetrospectiveScreenshot_2021-09-21_173119.png>
+File: Screenshotfrom2022-12-2921-12-44.png Graphic file (type bmp)
+<Screenshotfrom2022-12-2921-12-44.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
+
+ []
+
+File: 1498.png Graphic file (type bmp)
+<1498.png>
+[151]
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+
+ []
+
+File: 1499.png Graphic file (type bmp)
+<1499.png>
+[152]
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--236
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--240
+
+ []
+
+[153]
+File: Derby_42.png Graphic file (type bmp)
+<Derby_42.png>
+
+Underfull \vbox (badness 1436) has occurred while \output is active []
+
+ [154]
+Underfull \hbox (badness 10000) in paragraph at lines 321--325
+
+ []
+
+[155]
+File: Timeline20.jpg Graphic file (type bmp)
+<Timeline20.jpg>
+ [156]
+File: 便利贴1.jpg Graphic file (type bmp)
+<便利贴1.jpg>
+File: Asch0Screenshot_2022-07-09_161023.jpg Graphic file (type bmp)
+<Asch0Screenshot_2022-07-09_161023.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [157]
+File: Asch2Screenshot2.png Graphic file (type bmp)
+<Asch2Screenshot2.png>
+File: Asch3Screenshot_2022-07-08_2013411.png Graphic file (type bmp)
+<Asch3Screenshot_2022-07-08_2013411.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [158]
+File: Asch4Screenshot_2022-07-08_2015021.png Graphic file (type bmp)
+<Asch4Screenshot_2022-07-08_2015021.png>
+
+
+LaTeX Font Warning: Font shape `TU/SimSun(0)/m/it' undefined
+(Font)              using `TU/SimSun(0)/m/n' instead on input line 528.
+
+[159]
+File: KJ_10.png Graphic file (type bmp)
+<KJ_10.png>
+) [160]
+\openout2 = `AR4hg.aux'.
+
+ (./AR4hg.tex
+Chapter 13.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 9.
+
+File: Ma3_10.png Graphic file (type bmp)
+<Ma3_10.png>
+File: 1113correctEgScreenshot_2021-11-13_212414.png Graphic file (type bmp)
+<1113correctEgScreenshot_2021-11-13_212414.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [161
+
+
+
+]
+File: 1113corrDreScreenshot_2021-11-13_212509.png Graphic file (type bmp)
+<1113corrDreScreenshot_2021-11-13_212509.png>
+File: jalote_emm_72.png Graphic file (type bmp)
+<jalote_emm_72.png>
+
+Underfull \vbox (badness 7851) has occurred while \output is active []
+
+ [162]
+File: 712trainingAgendaScreenshot_2022-07-12_125030.jpg Graphic file (type bmp)
+
+<712trainingAgendaScreenshot_2022-07-12_125030.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [163]
+[164]
+File: 缺陷表41.jpg Graphic file (type bmp)
+<缺陷表41.jpg>
+File: 缺陷表51.jpg Graphic file (type bmp)
+<缺陷表51.jpg>
+File: 微信截图_20220316093044.jpg Graphic file (type bmp)
+<微信截图_20220316093044.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [165]
+File: 2DreEstimateScreenshot_2021-12-01_2120491.jpg Graphic file (type bmp)
+<2DreEstimateScreenshot_2021-12-01_2120491.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [166]
+File: 4reworkByPhaseScreenshot_2021-12-01_2148381.jpg Graphic file (type bmp)
+<4reworkByPhaseScreenshot_2021-12-01_2148381.jpg>
+File: 2AxtalBallPredictScreenshot_2021-12-01_2124551.jpg Graphic file (type bmp
+)
+<2AxtalBallPredictScreenshot_2021-12-01_2124551.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [167]
+File: 微信截图_202112071327121.jpg Graphic file (type bmp)
+<微信截图_202112071327121.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [168]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [169]
+File: 微信截图_20211027011246.png Graphic file (type bmp)
+<微信截图_20211027011246.png>
+File: 微信截图_20211027011403.png Graphic file (type bmp)
+<微信截图_20211027011403.png>
+
+[170]
+File: 微信截图_20211027012006.png Graphic file (type bmp)
+<微信截图_20211027012006.png>
+File: HmttDistScreenshot_2021-10-08_165836.png Graphic file (type bmp)
+<HmttDistScreenshot_2021-10-08_165836.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [171]
+Underfull \hbox (badness 10000) in paragraph at lines 258--260
+
+ []
+
+File: HmttOptScreenshot_2021-10-08_165653.png Graphic file (type bmp)
+<HmttOptScreenshot_2021-10-08_165653.png>
+File: 微信截图_20211103023018.png Graphic file (type bmp)
+<微信截图_20211103023018.png>
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [172]
+[173] [174
+
+
+] [175] [176] [177]
+\openout2 = `TDDcsqdkf.aux'.
+
+ (./TDDcsqdkf.tex [178
+
+
+]
+Chapter 14.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 6.
+
+File: 树莓派2.jpg Graphic file (type bmp)
+<树莓派2.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [179]
+[180]
+File: 测试.jpg Graphic file (type bmp)
+<测试.jpg>
+ [181] [182]) [183] [184]
+\openout2 = `TS1refact.aux'.
+
+ (./TS1refact.tex
+Chapter 15.
+File: Screenshotfrom2022-12-2822-14-39.png Graphic file (type bmp)
+<Screenshotfrom2022-12-2822-14-39.png>
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 16.
+
+[185
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 29--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--38
+
+ []
+
+File: 环形图1.jpg Graphic file (type bmp)
+<环形图1.jpg>
+[186]
+Underfull \hbox (badness 10000) in paragraph at lines 61--66
+
+ []
+
+[187]
+File: mindstorm_p5.jpg Graphic file (type bmp)
+<mindstorm_p5.jpg>
+File: 微信截图_20230323093342.png Graphic file (type bmp)
+<微信截图_20230323093342.png>
+
+Underfull \vbox (badness 1430) has occurred while \output is active []
+
+ [188]
+File: 微信截图_20230323093355.png Graphic file (type bmp)
+<微信截图_20230323093355.png>
+File: mindstorm_p951.jpg Graphic file (type bmp)
+<mindstorm_p951.jpg>
+File: mindstorm_p952.jpg Graphic file (type bmp)
+<mindstorm_p952.jpg>
+File: mindstorm_p96.jpg Graphic file (type bmp)
+<mindstorm_p96.jpg>
+File: mindstorm_p97.jpg Graphic file (type bmp)
+<mindstorm_p97.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--114
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [189]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [190]
+Underfull \hbox (badness 10000) in paragraph at lines 124--128
+
+ []
+
+) [191]
+\openout2 = `CIcxjc.aux'.
+
+ (./CIcxjc.tex [192
+
+
+
+]
+Chapter 16.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 6.
+
+[193] [194]
+File: !DeployPipelineScreenshot_2022-05-20_210104.jpg Graphic file (type bmp)
+<!DeployPipelineScreenshot_2022-05-20_210104.jpg>
+ [195]
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+
+ []
+
+[196] [197]
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
+
+ []
+
+[198]
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
+
+ []
+
+
+Overfull \hbox (13.40704pt too wide) in paragraph at lines 304--308
+\TU/lmr/m/n/10 2. Shore, James: ”Continuous integration on a dollar a day” (www
+.jamesshore.com) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--308
+
+ []
+
+) [199]
+\openout2 = `PR1jdpc.aux'.
+
+ (./PR1jdpc.tex [200
+
+
+
+]
+Chapter 17.
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--44
+
+ []
+
+[201]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 46.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
+
+ []
+
+[202]
+Underfull \hbox (badness 10000) in paragraph at lines 88--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--92
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
+
+ []
+
+File: leip381.jpg Graphic file (type bmp)
+<leip381.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--105
+
+ []
+
+File: leip382.png Graphic file (type bmp)
+<leip382.png>
+File: leip51.jpg Graphic file (type bmp)
+<leip51.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--120
+
+ []
+
+[203]
+File: acp3-13.jpg Graphic file (type bmp)
+<acp3-13.jpg>
+ [204]
+File: leip17.jpg Graphic file (type bmp)
+<leip17.jpg>
+File: leip18.jpg Graphic file (type bmp)
+<leip18.jpg>
+File: leip19.jpg Graphic file (type bmp)
+<leip19.jpg>
+) [205]
+\openout2 = `RDM1rjxq.aux'.
+
+ (./RDM1rjxq.tex [206
+
+
+
+]
+Chapter 18.
+[207] [208]
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
+
+ []
+
+File: langwall-修改56.jpg Graphic file (type bmp)
+<langwall-修改56.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [209]
+File: langwall2-修改5.jpg Graphic file (type bmp)
+<langwall2-修改5.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [210]
+[211]
+File: 长壁1.jpg Graphic file (type bmp)
+<长壁1.jpg>
+ [212]
+File: Screenshotfrom2022-12-2806-56-48.png Graphic file (type bmp)
+<Screenshotfrom2022-12-2806-56-48.png>
+File: Screenshotfrom2022-12-2806-57-58.png Graphic file (type bmp)
+<Screenshotfrom2022-12-2806-57-58.png>
+File: Screenshotfrom2022-12-2806-58-22.png Graphic file (type bmp)
+<Screenshotfrom2022-12-2806-58-22.png>
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [213]
+[214]
+\openout2 = `ICincludec.aux'.
+
+ (./ICincludec.tex
+Chapter 19.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 4.
+
+[215
+
+
+
+]
+File: 9_用户故事1.png Graphic file (type bmp)
+<9_用户故事1.png>
+File: 9_用户故事2.png Graphic file (type bmp)
+<9_用户故事2.png>
+ [216]
+Underfull \hbox (badness 10000) in paragraph at lines 113--115
+
+ []
+
+File: 9_用户故事3.png Graphic file (type bmp)
+<9_用户故事3.png>
+[217]
+File: CI场景图.jpg Graphic file (type bmp)
+<CI场景图.jpg>
+
+Underfull \vbox (badness 5847) has occurred while \output is active []
+
+ [218]
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--175
+
+ []
+
+File: 12_场景5.png Graphic file (type bmp)
+<12_场景5.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
+
+ []
+
+[219]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [220]
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--283
+
+ []
+
+File: 7_利益相关者1.png Graphic file (type bmp)
+<7_利益相关者1.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--295
+
+ []
+
+[221]
+File: CustomerMatrixScreenshot_2022-12-16_180326.jpg Graphic file (type bmp)
+<CustomerMatrixScreenshot_2022-12-16_180326.jpg>
+File: Screenshotfrom2023-03-2701-17-51.png Graphic file (type bmp)
+<Screenshotfrom2023-03-2701-17-51.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [222]
+File: IcKanoDiagramScreenshot_2022-12-17_120845.jpg Graphic file (type bmp)
+<IcKanoDiagramScreenshot_2022-12-17_120845.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--405
+
+ []
+
+[223]) [224]
+\openout2 = `TSteam.aux'.
+
+ (./TSteam.tex
+Chapter 20.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+[225
+
+
+
+]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 23.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
+
+ []
+
+File: cleanagile_f33.jpg Graphic file (type bmp)
+<cleanagile_f33.jpg>
+File: cleanagile_f34.jpg Graphic file (type bmp)
+<cleanagile_f34.jpg>
+[226]
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--55
+
+ []
+
+File: TC6stagesNioScreenshot_2022-10-27_192322.jpg Graphic file (type bmp)
+<TC6stagesNioScreenshot_2022-10-27_192322.jpg>
+[227] [228]
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--96
+
+ []
+
+[229]
+Underfull \hbox (badness 10000) in paragraph at lines 105--111
+
+ []
+
+[230]
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
+
+ []
+
+) [231] [232
+
+
+] [233] [234]
+Underfull \hbox (badness 10000) in paragraph at lines 198--200
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--205
+
+ []
+
+[235]
+\openout2 = `M1zwjdc.aux'.
+
+ (./M1zwjdc.tex [236
+
+
+]
+Chapter 21.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 9.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
+
+ []
+
+[237]
+File: WeisbordP2182.jpg Graphic file (type bmp)
+<WeisbordP2182.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+
+ []
+
+File: WeisbordP2191.jpg Graphic file (type bmp)
+<WeisbordP2191.jpg>
+[238]
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+File: tys51_10.png Graphic file (type bmp)
+<tys51_10.png>
+[239]) [240]
+\openout2 = `MAjxh.aux'.
+
+ (./MAjxh.tex
+Chapter 22.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 9.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--27
+
+ []
+
+File: MA_FA2_10.png Graphic file (type bmp)
+<MA_FA2_10.png>
+[241
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 36--40
+
+ []
+
+File: MA_FA1_10.png Graphic file (type bmp)
+<MA_FA1_10.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--49
+
+ []
+
+File: Screenshotfrom2023-01-0222-13-24.png Graphic file (type bmp)
+<Screenshotfrom2023-01-0222-13-24.png>
+[242]
+Underfull \hbox (badness 10000) in paragraph at lines 80--83
+
+ []
+
+File: 图片61-3.png Graphic file (type bmp)
+<图片61-3.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--105
+
+ []
+
+File: MA_FA4_10.png Graphic file (type bmp)
+<MA_FA4_10.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--110
+
+ []
+
+[243]
+File: WW2Screenshot_2021-04-07_222054.png Graphic file (type bmp)
+<WW2Screenshot_2021-04-07_222054.png>
+File: 儿童MA.jpg Graphic file (type bmp)
+<儿童MA.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [244]
+Underfull \hbox (badness 10000) in paragraph at lines 136--140
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--154
+
+ []
+
+File: Stat_f22-1_11.png Graphic file (type bmp)
+<Stat_f22-1_11.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [245]
+File: AverageSalaryScreenshot_2021-07-31_171502.png Graphic file (type bmp)
+<AverageSalaryScreenshot_2021-07-31_171502.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--204
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--204
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [246]
+File: 图片61-11.png Graphic file (type bmp)
+<图片61-11.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+ []
+
+File: Screenshotfrom2023-01-0222-19-18.png Graphic file (type bmp)
+<Screenshotfrom2023-01-0222-19-18.png>
+[247]
+File: Screenshotfrom2023-01-0222-20-05.png Graphic file (type bmp)
+<Screenshotfrom2023-01-0222-20-05.png>
+File: Screenshotfrom2023-01-0222-21-11.png Graphic file (type bmp)
+<Screenshotfrom2023-01-0222-21-11.png>
+File: Screenshotfrom2023-04-1621-32-07.png Graphic file (type bmp)
+<Screenshotfrom2023-04-1621-32-07.png>
+ [248]
+File: BoxWhiskerScreenshot_2021-08-02_214603.png Graphic file (type bmp)
+<BoxWhiskerScreenshot_2021-08-02_214603.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--319
+
+ []
+
+) [249]
+\openout2 = `MA4jsjy.aux'.
+
+ (./MA4jsjy.tex [250
+
+
+
+]
+Chapter 23.
+File: CompareAB1Screenshot_2022-11-06_211947.jpg Graphic file (type bmp)
+<CompareAB1Screenshot_2022-11-06_211947.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--13
+
+ []
+
+File: CompareAB2Screenshot_2022-11-06_212036.jpg Graphic file (type bmp)
+<CompareAB2Screenshot_2022-11-06_212036.jpg>
+[251]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 20.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--45
+
+ []
+
+File: 1sigmaUnknownHistogram_of_strength.jpg Graphic file (type bmp)
+<1sigmaUnknownHistogram_of_strength.jpg>
+[252]
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--93
+
+ []
+
+File: M4SingleMean1Screenshot_2022-09-11_201026.jpg Graphic file (type bmp)
+<M4SingleMean1Screenshot_2022-09-11_201026.jpg>
+File: TypeOneTwoErrorScreenshot_2022-07-23_151744.jpg Graphic file (type bmp)
+<TypeOneTwoErrorScreenshot_2022-07-23_151744.jpg>
+File: 2类错误.jpg Graphic file (type bmp)
+<2类错误.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [253]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [254]
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+
+ []
+
+File: Screenshotfrom2022-12-2822-35-57.png Graphic file (type bmp)
+<Screenshotfrom2022-12-2822-35-57.png>
+File: M4twoPopulationScreenshot_2022-09-11_201946.jpg Graphic file (type bmp)
+<M4twoPopulationScreenshot_2022-09-11_201946.jpg>
+
+Underfull \vbox (badness 4660) has occurred while \output is active []
+
+ [255]
+Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
+File: Screenshotfrom2023-04-1622-04-35.png Graphic file (type bmp)
+<Screenshotfrom2023-04-1622-04-35.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+
+ []
+
+File: CholesterolEg2022-07-23_195121.jpg Graphic file (type bmp)
+<CholesterolEg2022-07-23_195121.jpg>
+[256]
+File: 5anovaDataScreenshot_2022-07-24_105955.jpg Graphic file (type bmp)
+<5anovaDataScreenshot_2022-07-24_105955.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--229
+
+ []
+
+File: 5anovaResultScreenshot_2022-07-24_104352.jpg Graphic file (type bmp)
+<5anovaResultScreenshot_2022-07-24_104352.jpg>
+[257]
+File: 5anovaBoxplot_of_small_sedans_luxury.jpg Graphic file (type bmp)
+<5anovaBoxplot_of_small_sedans_luxury.jpg>
+File: Screenshotfrom2022-12-2822-39-42.png Graphic file (type bmp)
+<Screenshotfrom2022-12-2822-39-42.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [258]
+File: AnovaParachutes807Screenshot_2022-08-07_124737.jpg Graphic file (type bmp
+)
+<AnovaParachutes807Screenshot_2022-08-07_124737.jpg>
+File: AnovaBoxplots807.jpg Graphic file (type bmp)
+<AnovaBoxplots807.jpg>
+File: Anova3inOneScreenshot_2022-08-07_125131.jpg Graphic file (type bmp)
+<Anova3inOneScreenshot_2022-08-07_125131.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [259]
+File: 4chiSquareDataScreenshot_2022-07-24_110053.jpg Graphic file (type bmp)
+<4chiSquareDataScreenshot_2022-07-24_110053.jpg>
+
+[260]
+File: 6chiSquareTstResultScreenshot_2022-07-24_103606.jpg Graphic file (type bm
+p)
+<6chiSquareTstResultScreenshot_2022-07-24_103606.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--374
+
+ []
+
+
+Package amsmath Warning: Foreign command \over;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 390.
+
+[261]
+Underfull \hbox (badness 10000) in paragraph at lines 409--413
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--425
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--429
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 434--436
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 442--446
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 452--453
+
+ []
+
+
+Overfull \hbox (70.13394pt too wide) in paragraph at lines 455--456
+[]$[][] [] [] [] [] [] []$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
+
+ []
+
+[262]
+Underfull \hbox (badness 10000) in paragraph at lines 456--458
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--467
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--544
+
+ []
+
+File: Screenshotfrom2023-02-1401-07-07.png Graphic file (type bmp)
+<Screenshotfrom2023-02-1401-07-07.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--553
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 561--562
+
+ []
+
+[263]
+Underfull \hbox (badness 10000) in paragraph at lines 580--581
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 597--598
+
+ []
+
+
+Overfull \hbox (18.53976pt too wide) detected at line 640
+[] [][][][][][][][][] [] [][][][][][][][] [] [][][][][][][][][] [] [][][][][][]
+[][] [] [][][][][][][][][] [] [][][][][][][][] [] [][][][][][][][] [] [][][][][
+][][][]
+ []
+
+[264]
+Underfull \hbox (badness 10000) in paragraph at lines 659--664
+
+ []
+
+) [265]
+\openout2 = `M4Bycmx.aux'.
+
+ (./M4Bycmx.tex [266
+
+
+
+]
+Chapter 24.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 15.
+
+File: maxwell_t54.jpg Graphic file (type bmp)
+<maxwell_t54.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [267]
+File: maxwell_f52.jpg Graphic file (type bmp)
+<maxwell_f52.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+
+ []
+
+[268]
+File: maxwell_t56.jpg Graphic file (type bmp)
+<maxwell_t56.jpg>
+File: maxwell_t55.jpg Graphic file (type bmp)
+<maxwell_t55.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--133
+
+ []
+
+[269]
+File: maxwell_e51.jpg Graphic file (type bmp)
+<maxwell_e51.jpg>
+ [270]
+File: maxwell_f56.jpg Graphic file (type bmp)
+<maxwell_f56.jpg>
+File: maxwell_f58.jpg Graphic file (type bmp)
+<maxwell_f58.jpg>
+File: maxwell_f529.jpg Graphic file (type bmp)
+<maxwell_f529.jpg>
+
+Underfull \vbox (badness 3158) has occurred while \output is active []
+
+ [271]
+File: maxwell_e514.jpg Graphic file (type bmp)
+<maxwell_e514.jpg>
+
+Underfull \vbox (badness 3942) has occurred while \output is active []
+
+ [272]
+File: Maxwell_t514.jpg Graphic file (type bmp)
+<Maxwell_t514.jpg>
+File: maxwell_t515.jpg Graphic file (type bmp)
+<maxwell_t515.jpg>
+
+Underfull \vbox (badness 4036) has occurred while \output is active []
+
+ [273]
+File: maxwell_e531.jpg Graphic file (type bmp)
+<maxwell_e531.jpg>
+
+[274]
+File: maxwell_f553.jpg Graphic file (type bmp)
+<maxwell_f553.jpg>
+File: maxwell_f554.jpg Graphic file (type bmp)
+<maxwell_f554.jpg>
+File: maxwell_e534.jpg Graphic file (type bmp)
+<maxwell_e534.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [275]
+File: Screenshotfrom2023-01-0420-18-25.png Graphic file (type bmp)
+<Screenshotfrom2023-01-0420-18-25.png>
+File: Screenshotfrom2023-01-0420-19-06.png Graphic file (type bmp)
+<Screenshotfrom2023-01-0420-19-06.png>
+File: Screenshotfrom2023-01-0420-19-59.png Graphic file (type bmp)
+<Screenshotfrom2023-01-0420-19-59.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [276]
+File: Screenshotfrom2023-01-0420-20-52.png Graphic file (type bmp)
+<Screenshotfrom2023-01-0420-20-52.png>
+File: maxwell_t68.jpg Graphic file (type bmp)
+<maxwell_t68.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [277]
+File: maxwell_f67.jpg Graphic file (type bmp)
+<maxwell_f67.jpg>
+
+[278]
+File: maxwell_f69.jpg Graphic file (type bmp)
+<maxwell_f69.jpg>
+File: maxwell_f68.jpg Graphic file (type bmp)
+<maxwell_f68.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [279]
+Underfull \hbox (badness 10000) in paragraph at lines 439--440
+
+ []
+
+File: M4BrowPruningGraphScreenshot_2023-01-04_203004.jpg Graphic file (type bmp
+)
+<M4BrowPruningGraphScreenshot_2023-01-04_203004.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [280]
+Underfull \hbox (badness 10000) in paragraph at lines 462--463
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 472--473
+
+ []
+
+[281]
+File: chen_f3.jpg Graphic file (type bmp)
+<chen_f3.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--534
+
+ []
+
+
+Underfull \vbox (badness 3281) has occurred while \output is active []
+
+ [282]
+Underfull \hbox (badness 10000) in paragraph at lines 535--536
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--538
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--540
+
+ []
+
+File: 相关性09.png Graphic file (type bmp)
+<相关性09.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 552--553
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 554--555
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 556--557
+
+ []
+
+Missing character: There is no ∆ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ∆ in font [lmroman10-regular]:mapping=tex-text;!
+
+Underfull \hbox (badness 10000) in paragraph at lines 568--569
+
+ []
+
+[283]
+Underfull \hbox (badness 10000) in paragraph at lines 580--581
+
+ []
+
+Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
+
+Underfull \hbox (badness 10000) in paragraph at lines 604--605
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 605--606
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 606--607
+
+ []
+
+[284]
+File: Ch24rrScreenshot2023-04-02094408.jpg Graphic file (type bmp)
+<Ch24rrScreenshot2023-04-02094408.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 645--647
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 648--649
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 649--650
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 650--651
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 655--660
+
+ []
+
+File: 相关性13.png Graphic file (type bmp)
+<相关性13.png>
+[285]
+Underfull \hbox (badness 10000) in paragraph at lines 668--670
+
+ []
+
+File: 相关性15.png Graphic file (type bmp)
+<相关性15.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [286]
+Underfull \hbox (badness 10000) in paragraph at lines 677--682
+
+ []
+
+) [287]
+\openout2 = `M3CC.aux'.
+
+ (./M3CC.tex [288
+
+
+
+]
+Chapter 25.
+File: The_key_fig111.png Graphic file (type bmp)
+<The_key_fig111.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--8
+
+ []
+
+File: Screenshotfrom2023-02-1703-04-26.png Graphic file (type bmp)
+<Screenshotfrom2023-02-1703-04-26.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+File: The_key_fig131.png Graphic file (type bmp)
+<The_key_fig131.png>
+File: The_key_fig151.png Graphic file (type bmp)
+<The_key_fig151.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--21
+
+ []
+
+[289]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 24.
+
+File: DistillWaterCC.jpg Graphic file (type bmp)
+<DistillWaterCC.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--49
+
+ []
+
+[290]
+File: NormalDistPicture1.jpg Graphic file (type bmp)
+<NormalDistPicture1.jpg>
+File: The_key_fig281.png Graphic file (type bmp)
+<The_key_fig281.png>
+File: The_key_fig2101.png Graphic file (type bmp)
+<The_key_fig2101.png>
+File: The_key_fig2111.png Graphic file (type bmp)
+<The_key_fig2111.png>
+ [291]
+File: 控制图08.png Graphic file (type bmp)
+<控制图08.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--86
+
+ []
+
+File: P2CcScreenshot_2021-09-25_111304.png Graphic file (type bmp)
+<P2CcScreenshot_2021-09-25_111304.png>
+File: P10CcScreenshot_2021-09-25_104057.png Graphic file (type bmp)
+<P10CcScreenshot_2021-09-25_104057.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [292]
+Underfull \hbox (badness 10000) in paragraph at lines 90--93
+
+ []
+
+File: M3_CC_figure1.jpg Graphic file (type bmp)
+<M3_CC_figure1.jpg>
+[293]
+File: 控制图0.jpg Graphic file (type bmp)
+<控制图0.jpg>
+ [294]
+Underfull \hbox (badness 10000) in paragraph at lines 257--259
+
+ []
+
+File: 微信截图_20210929131748.png Graphic file (type bmp)
+<微信截图_20210929131748.png>
+
+Underfull \vbox (badness 1874) has occurred while \output is active []
+
+ [295]
+File: 微信截图_20210927084548.png Graphic file (type bmp)
+<微信截图_20210927084548.png>
+File: 微信截图_20210927084434.png Graphic file (type bmp)
+<微信截图_20210927084434.png>
+
+[296]
+Underfull \hbox (badness 10000) in paragraph at lines 291--294
+
+ []
+
+File: 控制图01.png Graphic file (type bmp)
+<控制图01.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 301--303
+
+ []
+
+File: DAD_p9.jpg Graphic file (type bmp)
+<DAD_p9.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--308
+
+ []
+
+File: DAD_p57.jpg Graphic file (type bmp)
+<DAD_p57.jpg>
+
+Underfull \vbox (badness 4013) has occurred while \output is active []
+
+ [297]
+Underfull \hbox (badness 10000) in paragraph at lines 317--321
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--327
+
+ []
+
+File: DAD_p55.jpg Graphic file (type bmp)
+<DAD_p55.jpg>
+File: DAD_p591.jpg Graphic file (type bmp)
+<DAD_p591.jpg>
+File: DAD_p65.jpg Graphic file (type bmp)
+<DAD_p65.jpg>
+[298]
+File: Screenshotfrom2022-12-2821-23-27.png Graphic file (type bmp)
+<Screenshotfrom2022-12-2821-23-27.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--345
+
+ []
+
+File: DAD_p67.jpg Graphic file (type bmp)
+<DAD_p67.jpg>
+)
+Underfull \hbox (badness 10000) in paragraph at lines 353--210
+
+ []
+
+[299] [300
+
+
+] [301] [302]
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+ []
+
+[303]
+\openout2 = `MGRcjhdyj.aux'.
+
+ (./MGRcjhdyj.tex [304
+
+
+]
+Chapter 26.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 6.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--25
+
+ []
+
+[305]
+File: MGR_f11.jpg Graphic file (type bmp)
+<MGR_f11.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [306]
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
+ []
+
+File: Rajia1.png Graphic file (type bmp)
+<Rajia1.png>
+
+LaTeX Warning: Float too large for page by 24.11665pt on input line 65.
+
+[307] [308]
+File: Screenshotfrom2022-12-2820-57-58.png Graphic file (type bmp)
+<Screenshotfrom2022-12-2820-57-58.png>
+ [309]
+Underfull \vbox (badness 3417) has occurred while \output is active []
+
+ [310])
+[311]
+\openout2 = `EOIdbh.aux'.
+
+ (./EOIdbh.tex [312
+
+
+
+]
+Chapter 27.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 4.
+
+[313]) [314]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 221.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
+ (./Aplusplus0524.aux (./xuzhang.aux) (./qianyan.aux)
+(./RHGSMJKFZL.aux) (./INNOVgeren.aux) (./PORDkefutuoyan.aux)
+(./PERT3diangusuan.aux) (./PSPlianghgl.aux) (./ESTgsrjgm.aux) (./EST2gjgm.aux)
+(./AP1lygc.aux) (./CMMIlypg.aux) (./AR1zhzb.aux) (./AR2gyfx.aux) (./RHZH.aux)
+(./AR4hg.aux) (./TDDcsqdkf.aux) (./TS1refact.aux) (./CIcxjc.aux) (./PR1jdpc.aux
+) (./RDM1rjxq.aux) (./ICincludec.aux) (./TSteam.aux) (./M1zwjdc.aux)
+(./MAjxh.aux) (./MA4jsjy.aux) (./M4Bycmx.aux) (./M3CC.aux) (./MGRcjhdyj.aux)
+(./EOIdbh.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 221.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 221.
+Package rerunfilecheck Info: File `Aplusplus0524.out' has not changed.
+(rerunfilecheck)             Checksum: A02D58C4082571EE39CB11A7210D939C.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 29991 strings out of 494900
+ 609830 string characters out of 6177140
+ 808803 words of memory out of 5000000
+ 33132 multiletter control sequences out of 15000+600000
+ 535938 words of font info for 71 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 57i,10n,115p,845b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on Aplusplus0524.pdf (314 pages).
