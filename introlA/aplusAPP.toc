@@ -1,0 +1,103 @@
+\contentsline {chapter}{\numberline {1}如何改善敏捷开发质量}{15}{chapter.1}% 
+\contentsline {subsection}{某软件开发公司敏捷开发过程改进案例}{15}{section*.5}% 
+\contentsline {subsubsection}{5月}{15}{section*.6}% 
+\contentsline {subsubsection}{8月}{16}{section*.7}% 
+\contentsline {subsubsection}{9月}{16}{section*.8}% 
+\contentsline {subsubsection}{10月}{16}{section*.9}% 
+\contentsline {subsubsection}{11月}{17}{section*.10}% 
+\contentsline {subsection}{如何改善}{17}{section*.11}% 
+\contentsline {section}{附件}{24}{section*.12}% 
+\contentsline {subsection}{XP}{24}{section*.13}% 
+\contentsline {subsubsection}{编码实践 Coding Practices}{24}{section*.14}% 
+\contentsline {paragraph}{CP1:简单地编码和设计 Code and Design Simply}{24}{section*.15}% 
+\contentsline {paragraph}{CP2:无情地重构 Refactor Mercilessly}{24}{section*.16}% 
+\contentsline {paragraph}{CP3:制定编码标准 Develop Coding Standards}{24}{section*.17}% 
+\contentsline {paragraph}{CP4:共同的词汇 Develop a Common Vocabulary}{24}{section*.18}% 
+\contentsline {subsubsection}{开发实践 Develop Practices}{24}{section*.19}% 
+\contentsline {paragraph}{DP1:测试驱动开发TDD Test-Driven-Development}{24}{section*.20}% 
+\contentsline {paragraph}{DP2:结对编程 Pair Programming}{24}{section*.21}% 
+\contentsline {paragraph}{DP3:集体负责写好代码(vs 只顾虑自己的代码) Collective Code Ownership (vs individual own code)}{24}{section*.22}% 
+\contentsline {paragraph}{DP4:持续集成 Integrate Continually}{25}{section*.23}% 
+\contentsline {subsubsection}{商务实践 Business Practices}{25}{section*.24}% 
+\contentsline {paragraph}{BP1:将客户添加进团队 Add a Customer to the Team}{25}{section*.25}% 
+\contentsline {paragraph}{BP2:计划游戏 Play the Planning Game}{25}{section*.26}% 
+\contentsline {paragraph}{BP3:定期发布 Release Regularly}{25}{section*.27}% 
+\contentsline {paragraph}{BP4:以可持久的速度工作 Work at a Sustainable Pace}{25}{section*.28}% 
+\contentsline {subsection}{乔布斯谈Dr.Juran}{26}{section*.29}% 
+\contentsline {part}{I\hspace {1em}个人提升}{27}{part.1}% 
+\contentsline {chapter}{\numberline {2}克服拖延症}{31}{chapter.2}% 
+\contentsline {subsection}{结束语}{35}{section*.30}% 
+\contentsline {section}{附件}{35}{section*.31}% 
+\contentsline {subsection}{5S法}{35}{section*.32}% 
+\contentsline {subsection}{锻炼之道 The Truth about EXERCISE}{35}{section*.33}% 
+\contentsline {section}{参考 References}{36}{section*.34}% 
+\contentsline {part}{II\hspace {1em}自我管理开发过程}{37}{part.2}% 
+\contentsline {part}{III\hspace {1em}利用评估开始过程改进}{41}{part.3}% 
+\contentsline {part}{IV\hspace {1em}从做好迭代回顾开始 }{45}{part.4}% 
+\contentsline {chapter}{\numberline {3}根因分析}{49}{chapter.3}% 
+\contentsline {subsection}{分析事故根因：上集}{49}{section*.35}% 
+\contentsline {subsection}{香港南丫海难}{50}{section*.36}% 
+\contentsline {subsection}{根因分析的主要元素}{53}{section*.37}% 
+\contentsline {subsubsection}{根因分析误解案例}{53}{section*.38}% 
+\contentsline {subsubsection}{怎样才能做好根因分析}{55}{section*.39}% 
+\contentsline {subsection}{技术总监经验之谈}{55}{section*.40}% 
+\contentsline {subsection}{结束语}{56}{section*.41}% 
+\contentsline {section}{附件}{56}{section*.42}% 
+\contentsline {subsection}{二八原则与数据分类}{56}{section*.43}% 
+\contentsline {subsection}{大野耐一先生`` 5 Why ''实例}{57}{section*.44}% 
+\contentsline {chapter}{\numberline {4}如何降低软件开发质量成本}{59}{chapter.4}% 
+\contentsline {subsection}{数据收集}{59}{section*.45}% 
+\contentsline {subsection}{自动化统计分析}{59}{section*.46}% 
+\contentsline {subsection}{数据收集频率}{61}{section*.47}% 
+\contentsline {subsection}{哪里最耗工作量}{62}{section*.48}% 
+\contentsline {subsection}{分析缺陷排除率降低质量成本}{63}{section*.49}% 
+\contentsline {subsection}{结束语}{65}{section*.50}% 
+\contentsline {section}{附件}{65}{section*.51}% 
+\contentsline {subsection}{质量成本 COQ (Cost of Quality)}{65}{section*.52}% 
+\contentsline {subsection}{公司高层不一定关注质量}{66}{section*.53}% 
+\contentsline {subsection}{开发项目工作量（成本）分布}{66}{section*.54}% 
+\contentsline {chapter}{\numberline {5}如何做好准备}{67}{chapter.5}% 
+\contentsline {subsection}{分析事故根因：下集}{67}{section*.55}% 
+\contentsline {subsection}{回顾流程}{69}{section*.56}% 
+\contentsline {subsection}{做好回顾4原则}{69}{section*.57}% 
+\contentsline {subsection}{团队迭代回顾根因分析常见问题}{72}{section*.58}% 
+\contentsline {subsection}{培训：策划与准备}{74}{section*.59}% 
+\contentsline {subsubsection}{时间安排}{74}{section*.60}% 
+\contentsline {subsubsection}{培训对象}{74}{section*.61}% 
+\contentsline {subsubsection}{准备数据，让团队模拟}{75}{section*.62}% 
+\contentsline {subsubsection}{准备工具}{75}{section*.63}% 
+\contentsline {subsection}{使用二八原则与KJ分析根因实例}{75}{section*.64}% 
+\contentsline {subsubsection}{公司背景}{75}{section*.65}% 
+\contentsline {subsubsection}{从项目冲刺的回顾复盘开始}{76}{section*.66}% 
+\contentsline {subsubsection}{分析问题 - 根因 - 行动}{77}{section*.67}% 
+\contentsline {subsection}{经验教训}{78}{section*.68}% 
+\contentsline {subsection}{结束语}{78}{section*.69}% 
+\contentsline {section}{附件}{78}{section*.70}% 
+\contentsline {subsection}{游戏:应与否}{78}{section*.71}% 
+\contentsline {subsubsection}{目的}{79}{section*.72}% 
+\contentsline {subsubsection}{所需的时间}{79}{section*.73}% 
+\contentsline {subsubsection}{描述}{79}{section*.74}% 
+\contentsline {subsubsection}{步骤}{79}{section*.75}% 
+\contentsline {subsubsection}{用角色扮演为做好回顾打基础}{79}{section*.76}% 
+\contentsline {subsection}{如何在迭代回顾时分析缺陷数据得出预测模型参数}{79}{section*.77}% 
+\contentsline {subsection}{Asch 1951 群众压力实验}{81}{section*.78}% 
+\contentsline {subsection}{Brehm 1956 决策影响实验}{83}{section*.79}% 
+\contentsline {subsection}{粮食分配实验}{83}{section*.80}% 
+\contentsline {subsection}{KJ分析方法步骤}{84}{section*.81}% 
+\contentsline {subsection}{水晶球蒙特卡洛预测模型}{85}{section*.82}% 
+\contentsline {chapter}{\numberline {6}实施与维护}{89}{chapter.6}% 
+\contentsline {subsection}{准备迭代回顾 Q\&A}{89}{section*.83}% 
+\contentsline {subsubsection}{做好现场辅导}{89}{section*.84}% 
+\contentsline {subsubsection}{分析全过程}{90}{section*.85}% 
+\contentsline {subsubsection}{团队第一轮回顾实例}{91}{section*.86}% 
+\contentsline {subsection}{建立团队标杆（基线）}{94}{section*.87}% 
+\contentsline {subsection}{从迭代复盘到持续改进}{94}{section*.88}% 
+\contentsline {subsection}{结束语}{94}{section*.89}% 
+\contentsline {section}{个人经验教训}{97}{section*.90}% 
+\contentsline {section}{附件}{97}{section*.91}% 
+\contentsline {subsection}{FMEA 实例}{97}{section*.92}% 
+\contentsline {subsection}{功能性分组帮助团队成长实例}{100}{section*.93}% 
+\contentsline {section}{参考 Reference}{101}{section*.94}% 
+\contentsline {part}{V\hspace {1em}基础：代码质量}{103}{part.5}% 
+\contentsline {part}{VI\hspace {1em}度量与分析}{107}{part.6}% 
+\contentsline {part}{VII\hspace {1em}总结}{111}{part.7}% 

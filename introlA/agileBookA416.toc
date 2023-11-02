@@ -1,0 +1,376 @@
+\contentsline {chapter}{\numberline {1}如何改善敏捷开发质量}{21}{chapter.1}% 
+\contentsline {subsection}{某软件开发公司敏捷开发过程改进案例}{21}{section*.5}% 
+\contentsline {subsubsection}{5月}{21}{section*.6}% 
+\contentsline {subsubsection}{8月}{22}{section*.7}% 
+\contentsline {subsubsection}{9月}{22}{section*.8}% 
+\contentsline {subsubsection}{10月}{22}{section*.9}% 
+\contentsline {subsubsection}{11月}{23}{section*.10}% 
+\contentsline {subsection}{如何改善}{23}{section*.11}% 
+\contentsline {section}{附件}{30}{section*.12}% 
+\contentsline {subsection}{XP}{30}{section*.13}% 
+\contentsline {subsubsection}{编码实践 Coding Practices}{30}{section*.14}% 
+\contentsline {paragraph}{CP1:简单地编码和设计 Code and Design Simply}{30}{section*.15}% 
+\contentsline {paragraph}{CP2:无情地重构 Refactor Mercilessly}{30}{section*.16}% 
+\contentsline {paragraph}{CP3:制定编码标准 Develop Coding Standards}{30}{section*.17}% 
+\contentsline {paragraph}{CP4:共同的词汇 Develop a Common Vocabulary}{30}{section*.18}% 
+\contentsline {subsubsection}{开发实践 Develop Practices}{30}{section*.19}% 
+\contentsline {paragraph}{DP1:测试驱动开发TDD Test-Driven-Development}{30}{section*.20}% 
+\contentsline {paragraph}{DP2:结对编程 Pair Programming}{30}{section*.21}% 
+\contentsline {paragraph}{DP3:集体负责写好代码(vs 只顾虑自己的代码) Collective Code Ownership (vs individual own code)}{30}{section*.22}% 
+\contentsline {paragraph}{DP4:持续集成 Integrate Continually}{31}{section*.23}% 
+\contentsline {subsubsection}{商务实践 Business Practices}{31}{section*.24}% 
+\contentsline {paragraph}{BP1:将客户添加进团队 Add a Customer to the Team}{31}{section*.25}% 
+\contentsline {paragraph}{BP2:计划游戏 Play the Planning Game}{31}{section*.26}% 
+\contentsline {paragraph}{BP3:定期发布 Release Regularly}{31}{section*.27}% 
+\contentsline {paragraph}{BP4:以可持久的速度工作 Work at a Sustainable Pace}{31}{section*.28}% 
+\contentsline {subsection}{乔布斯谈Dr.Juran}{32}{section*.29}% 
+\contentsline {part}{I\hspace {1em}个人提升}{33}{part.1}% 
+\contentsline {chapter}{\numberline {2}如何创新}{37}{chapter.2}% 
+\contentsline {subsubsection}{目录节选}{37}{section*.30}% 
+\contentsline {subsection}{创新 Creativity}{38}{section*.31}% 
+\contentsline {subsection}{创造的精神 Spirit of Creating}{38}{section*.32}% 
+\contentsline {subsection}{目标怎样设？ 什么样的目标才算理想?}{41}{section*.33}% 
+\contentsline {subsection}{FRITZ 把这改变过程简单分为三步}{43}{section*.34}% 
+\contentsline {subsubsection}{继续下一步是帮你消化现在这步的最佳方法。}{43}{section*.35}% 
+\contentsline {subsubsection}{心人合一}{44}{section*.36}% 
+\contentsline {section}{References}{44}{section*.37}% 
+\contentsline {chapter}{\numberline {3}克服拖延症}{45}{chapter.3}% 
+\contentsline {subsubsection}{杭州高级经理的反馈和高见}{49}{section*.38}% 
+\contentsline {section}{References}{49}{section*.39}% 
+\contentsline {part}{II\hspace {1em}自我管理开发过程}{51}{part.2}% 
+\contentsline {chapter}{\numberline {4}三点估算}{55}{chapter.4}% 
+\contentsline {subsection}{估算是一个范围，不是一个数}{55}{section*.40}% 
+\contentsline {subsection}{从单点到三点估算}{56}{section*.41}% 
+\contentsline {subsection}{总结 + 解读分析结果}{57}{section*.42}% 
+\contentsline {subsection}{利用蒙特卡洛模拟10个步骤（三角形分布）的总分布}{57}{section*.43}% 
+\contentsline {subsection}{分析10步骤模拟结果}{59}{section*.44}% 
+\contentsline {section}{附件}{59}{section*.45}% 
+\contentsline {subsection}{蒙特卡洛(Monte Carlo) 模拟}{59}{section*.46}% 
+\contentsline {chapter}{\numberline {5}个人量化管理}{61}{chapter.5}% 
+\contentsline {subsection}{如何降低项目进度偏差}{61}{section*.47}% 
+\contentsline {subsection}{从量化培训开始}{62}{section*.48}% 
+\contentsline {subsection}{互动培训}{62}{section*.49}% 
+\contentsline {subsection}{从估算、策划到监控}{63}{section*.50}% 
+\contentsline {subsubsection}{监控}{65}{section*.51}% 
+\contentsline {subsection}{总结}{66}{section*.52}% 
+\contentsline {subsection}{应该如何改善}{67}{section*.53}% 
+\contentsline {section}{附件}{69}{section*.54}% 
+\contentsline {subsection}{挣值分析法（Earned Value）}{69}{section*.55}% 
+\contentsline {subsection}{Tips：如何简单记录工时}{70}{section*.56}% 
+\contentsline {subsection}{PSP - 个体软件过程 Personal Software Process 简介}{70}{section*.57}% 
+\contentsline {subsubsection}{PSP 0.1}{71}{section*.58}% 
+\contentsline {subsubsection}{PSP1}{71}{section*.59}% 
+\contentsline {subsubsection}{PSP1.1}{71}{section*.60}% 
+\contentsline {subsubsection}{PSP2}{71}{section*.61}% 
+\contentsline {subsubsection}{PSP3}{72}{section*.62}% 
+\contentsline {section}{References}{72}{section*.63}% 
+\contentsline {chapter}{\numberline {6}估算软件规模}{73}{chapter.6}% 
+\contentsline {subsection}{为什么要估规模}{73}{section*.64}% 
+\contentsline {subsection}{为什么不应用代码行数(LOC)}{73}{section*.65}% 
+\contentsline {subsubsection}{只适用于编码}{74}{section*.66}% 
+\contentsline {subsubsection}{与功能点比较}{75}{section*.67}% 
+\contentsline {subsection}{怎样估SiFP}{75}{section*.68}% 
+\contentsline {subsection}{从故事点转简化功能点}{76}{section*.69}% 
+\contentsline {subsubsection}{总结}{78}{section*.70}% 
+\contentsline {section}{附件}{78}{section*.71}% 
+\contentsline {subsection}{简化功能点(SiFP) 简介}{78}{section*.72}% 
+\contentsline {subsubsection}{简化功能点估算步骤：}{78}{section*.73}% 
+\contentsline {subsubsection}{1:三种SiFP计算类型}{79}{section*.74}% 
+\contentsline {subsubsection}{2:识别分析范围和应用边界}{79}{section*.75}% 
+\contentsline {subsubsection}{3:计算逻辑文件数}{80}{section*.76}% 
+\contentsline {subsubsection}{4:计算基本过程数}{80}{section*.77}% 
+\contentsline {subsubsection}{5:计算功能点}{80}{section*.78}% 
+\contentsline {subsection}{逻辑文件 Logical File}{80}{section*.79}% 
+\contentsline {paragraph}{注意}{80}{section*.80}% 
+\contentsline {subsection}{基本过程 Elementary Process}{80}{section*.81}% 
+\contentsline {subsubsection}{识别基本过程}{81}{section*.82}% 
+\contentsline {subsubsection}{识别基本过程主要目的}{81}{section*.83}% 
+\contentsline {subsection}{实例：识别基本过程 (EP elementary process)}{81}{section*.84}% 
+\contentsline {subsubsection}{预约申请}{82}{section*.85}% 
+\contentsline {subsubsection}{分派司机}{82}{section*.86}% 
+\contentsline {subsubsection}{接乘客}{82}{section*.87}% 
+\contentsline {subsection}{1.潜水学校:开发项目 }{82}{section*.88}% 
+\contentsline {subsubsection}{描述}{82}{section*.89}% 
+\contentsline {subsubsection}{功能需求}{83}{section*.90}% 
+\contentsline {subsubsection}{RF01}{83}{section*.91}% 
+\contentsline {subsubsection}{RF02}{83}{section*.92}% 
+\contentsline {subsubsection}{RF03}{84}{section*.93}% 
+\contentsline {subsubsection}{RF04}{84}{section*.94}% 
+\contentsline {subsubsection}{RF05}{84}{section*.95}% 
+\contentsline {subsection}{例子一： 答案与解读}{85}{section*.96}% 
+\contentsline {subsubsection}{计算功能规模}{87}{section*.97}% 
+\contentsline {subsection}{2.潜水学校:FEM项目}{87}{section*.98}% 
+\contentsline {subsubsection}{描述}{87}{section*.99}% 
+\contentsline {subsubsection}{功能需求}{87}{section*.100}% 
+\contentsline {paragraph}{RF01}{87}{section*.101}% 
+\contentsline {paragraph}{RF02}{88}{section*.102}% 
+\contentsline {paragraph}{RF03}{88}{section*.103}% 
+\contentsline {paragraph}{RF04}{88}{section*.104}% 
+\contentsline {paragraph}{RF05}{88}{section*.105}% 
+\contentsline {paragraph}{RF06}{88}{section*.106}% 
+\contentsline {subsection}{例子二： 答案与解读}{88}{section*.107}% 
+\contentsline {subsubsection}{计算功能规模}{91}{section*.108}% 
+\contentsline {subsection}{与国际功能点(IFPUG)的偏差}{91}{section*.109}% 
+\contentsline {section}{References}{92}{section*.110}% 
+\contentsline {chapter}{\numberline {7}估算工作量}{93}{chapter.7}% 
+\contentsline {subsection}{估算：靠模型，还是靠专家？(Model-based Vs Expert-based estimation)}{93}{section*.111}% 
+\contentsline {subsection}{为什么估算开发工作量/工期这么困难？}{95}{section*.112}% 
+\contentsline {subsection}{估算软件开发的困难}{95}{section*.113}% 
+\contentsline {subsubsection}{总结}{98}{section*.114}% 
+\contentsline {section}{附件}{98}{section*.115}% 
+\contentsline {subsection}{估算砌乐高积木时长 - 2015年学生实验数据}{98}{section*.116}% 
+\contentsline {subsubsection}{实验结果与讨论}{100}{section*.117}% 
+\contentsline {subsubsection}{经验教训}{101}{section*.118}% 
+\contentsline {section}{References}{103}{section*.119}% 
+\contentsline {part}{III\hspace {1em}利用评估开始过程改进}{105}{part.3}% 
+\contentsline {chapter}{\numberline {8}获取高层支持}{109}{chapter.8}% 
+\contentsline {subsection}{案例}{109}{section*.120}% 
+\contentsline {subsection}{第一版方案书}{110}{section*.121}% 
+\contentsline {subsection}{第二版与中层确认， 然后向高层汇报}{110}{section*.122}% 
+\contentsline {subsubsection}{反馈}{112}{section*.123}% 
+\contentsline {subsubsection}{总结}{113}{section*.124}% 
+\contentsline {chapter}{\numberline {9}寻找改进机会}{115}{chapter.9}% 
+\contentsline {subsection}{评估中访谈公司培训专员}{116}{section*.125}% 
+\contentsline {subsection}{总结访谈的问题发现}{116}{section*.126}% 
+\contentsline {subsection}{管理层的理解与支持}{118}{section*.127}% 
+\contentsline {subsection}{总结}{118}{section*.128}% 
+\contentsline {section}{附件}{119}{section*.129}% 
+\contentsline {subsection}{CMMI评估案例}{119}{section*.130}% 
+\contentsline {part}{IV\hspace {1em}从做好迭代回顾开始 }{121}{part.4}% 
+\contentsline {chapter}{\numberline {10}做好准备}{125}{chapter.10}% 
+\contentsline {subsection}{缺陷排除率 (DRE)}{126}{section*.131}% 
+\contentsline {subsection}{自动化统计分析}{128}{section*.132}% 
+\contentsline {subsubsection}{总结}{130}{section*.133}% 
+\contentsline {section}{附件}{131}{section*.134}% 
+\contentsline {subsection}{质量成本 COQ (Cost of Quality)}{131}{section*.135}% 
+\contentsline {subsection}{Brehm 1956 决策影响实验}{131}{section*.136}% 
+\contentsline {subsection}{粮食分配实验}{131}{section*.137}% 
+\contentsline {subsection}{开发项目工作量（成本）分布}{132}{section*.138}% 
+\contentsline {section}{Reference}{132}{section*.139}% 
+\contentsline {chapter}{\numberline {11}根因分析}{135}{chapter.11}% 
+\contentsline {subsection}{Esquire QC圈}{135}{section*.140}% 
+\contentsline {subsection}{用二八原则 （Pareto图） 识别主要源头}{135}{section*.141}% 
+\contentsline {subsection}{建立目标}{138}{section*.142}% 
+\contentsline {subsection}{根因分析 Root Cause analysis ( 鱼骨图分析 )}{139}{section*.143}% 
+\contentsline {subsection}{改进措施}{141}{section*.144}% 
+\contentsline {subsection}{改进效果}{142}{section*.145}% 
+\contentsline {subsection}{A3报告}{143}{section*.146}% 
+\contentsline {subsection}{技术总监经验之谈}{144}{section*.147}% 
+\contentsline {subsection}{总结}{144}{section*.148}% 
+\contentsline {section}{附件}{145}{section*.149}% 
+\contentsline {subsection}{5 Why 例子}{145}{section*.150}% 
+\contentsline {subsection}{FMEA 实例}{145}{section*.151}% 
+\contentsline {section}{References}{148}{section*.152}% 
+\contentsline {chapter}{\numberline {12}如何做好迭代回顾}{149}{chapter.12}% 
+\contentsline {subsection}{公司背景}{149}{section*.153}% 
+\contentsline {subsection}{以降低质量成本为目标}{150}{section*.154}% 
+\contentsline {subsection}{从项目冲刺的回顾复盘开始}{150}{section*.155}% 
+\contentsline {subsubsection}{从问题分析到根本原因到行动}{151}{section*.156}% 
+\contentsline {subsection}{回顾流程}{153}{section*.157}% 
+\contentsline {subsection}{怎样开始}{153}{section*.158}% 
+\contentsline {subsection}{常见问题}{154}{section*.159}% 
+\contentsline {subsection}{客户反馈}{155}{section*.160}% 
+\contentsline {subsection}{总结}{156}{section*.161}% 
+\contentsline {section}{附件}{156}{section*.162}% 
+\contentsline {subsection}{游戏1:应与否}{156}{section*.163}% 
+\contentsline {subsubsection}{目的}{156}{section*.164}% 
+\contentsline {subsubsection}{所需的时间}{156}{section*.165}% 
+\contentsline {subsubsection}{描述}{156}{section*.166}% 
+\contentsline {subsubsection}{步骤}{156}{section*.167}% 
+\contentsline {subsubsection}{材料和准备}{156}{section*.168}% 
+\contentsline {subsection}{游戏2:时间表}{157}{section*.169}% 
+\contentsline {subsubsection}{目的}{157}{section*.170}% 
+\contentsline {subsubsection}{描述}{157}{section*.171}% 
+\contentsline {subsubsection}{步骤}{157}{section*.172}% 
+\contentsline {subsubsection}{功能性泳道}{158}{section*.173}% 
+\contentsline {subsubsection}{材料和准备}{158}{section*.174}% 
+\contentsline {subsection}{游戏3:颜色点}{158}{section*.175}% 
+\contentsline {subsubsection}{目的}{158}{section*.176}% 
+\contentsline {subsubsection}{描述}{159}{section*.177}% 
+\contentsline {subsubsection}{步骤}{159}{section*.178}% 
+\contentsline {subsubsection}{材料和准备}{159}{section*.179}% 
+\contentsline {subsection}{Asch 1951 群众压力实验}{160}{section*.180}% 
+\contentsline {subsection}{KJ分析方法步骤}{161}{section*.181}% 
+\contentsline {section}{References}{162}{section*.182}% 
+\contentsline {chapter}{\numberline {13}从定性到定量}{163}{chapter.13}% 
+\contentsline {subsection}{使用缺陷排除率，配合蒙特卡洛预测模型做定量分析}{163}{section*.183}% 
+\contentsline {subsection}{怎样开始}{165}{section*.184}% 
+\contentsline {subsubsection}{时间安排}{166}{section*.185}% 
+\contentsline {subsubsection}{培训对象}{166}{section*.186}% 
+\contentsline {subsubsection}{准备数据，让团队模拟}{166}{section*.187}% 
+\contentsline {subsubsection}{准备工具}{167}{section*.188}% 
+\contentsline {subsection}{某公司经过培训后第一轮回顾例子}{167}{section*.189}% 
+\contentsline {subsection}{总结}{171}{section*.190}% 
+\contentsline {section}{附件}{172}{section*.191}% 
+\contentsline {subsection}{蒙特卡洛预测模型}{172}{section*.192}% 
+\contentsline {part}{V\hspace {1em}基础：代码质量}{177}{part.5}% 
+\contentsline {chapter}{\numberline {14}测试驱动开发}{181}{chapter.14}% 
+\contentsline {subsection}{为什么我们要测试驱动开发}{181}{section*.193}% 
+\contentsline {subsection}{每小步验证}{182}{section*.194}% 
+\contentsline {subsection}{用TDD开发程序}{183}{section*.195}% 
+\contentsline {subsubsection}{守 破 离}{184}{section*.196}% 
+\contentsline {subsection}{单元测试与TDD的好处}{185}{section*.197}% 
+\contentsline {section}{Reference:}{185}{section*.198}% 
+\contentsline {chapter}{\numberline {15}代码重构}{187}{chapter.15}% 
+\contentsline {subsection}{如何学好SOLID，打好基础做重构}{187}{section*.199}% 
+\contentsline {subsection}{如何提升学员的兴趣与动力}{187}{section*.200}% 
+\contentsline {subsection}{什么时候做重构}{188}{section*.201}% 
+\contentsline {subsection}{代码规范}{189}{section*.202}% 
+\contentsline {subsection}{持续集成}{189}{section*.203}% 
+\contentsline {section}{附件}{190}{section*.204}% 
+\contentsline {subsection}{小孩利用乌龟玩几何游戏(Turtle Geometry)例子}{190}{section*.205}% 
+\contentsline {subsection}{温伯格的教学实验}{193}{section*.206}% 
+\contentsline {section}{References}{193}{section*.207}% 
+\contentsline {chapter}{\numberline {16}持续集成}{195}{chapter.16}% 
+\contentsline {subsection}{验收测试}{195}{section*.208}% 
+\contentsline {subsubsection}{常见问题}{195}{section*.209}% 
+\contentsline {subsubsection}{改善方法}{195}{section*.210}% 
+\contentsline {subsection}{测试自动化}{196}{section*.211}% 
+\contentsline {subsection}{持续集成 Continuous Integration}{197}{section*.212}% 
+\contentsline {subsection}{团队协作}{198}{section*.213}% 
+\contentsline {subsubsection}{经验教训}{198}{section*.214}% 
+\contentsline {subsubsection}{信息辐射器Information Radiator}{198}{section*.215}% 
+\contentsline {subsection}{持续交付 Continuous Delivery}{199}{section*.216}% 
+\contentsline {section}{附件}{199}{section*.217}% 
+\contentsline {subsection}{持续集成步骤}{199}{section*.218}% 
+\contentsline {subsection}{技术债务例子}{200}{section*.219}% 
+\contentsline {section}{References}{201}{section*.220}% 
+\contentsline {chapter}{\numberline {17}结对编程与同行评审}{203}{chapter.17}% 
+\contentsline {subsection}{培训}{204}{section*.221}% 
+\contentsline {subsubsection}{结对编程目标}{204}{section*.222}% 
+\contentsline {subsubsection}{先用代码实例让学员了解当前编码的不足，提出以下改进目标}{204}{section*.223}% 
+\contentsline {subsubsection}{用小组互动练习，让学员体会以下原则}{205}{section*.224}% 
+\contentsline {subsubsection}{工具}{205}{section*.225}% 
+\contentsline {subsubsection}{不一定全程都是结对，可以与单独交替}{205}{section*.226}% 
+\contentsline {subsubsection}{不断替换}{206}{section*.227}% 
+\contentsline {subsubsection}{培训后的经验分享}{206}{section*.228}% 
+\contentsline {subsection}{总结}{206}{section*.229}% 
+\contentsline {section}{附件}{207}{section*.230}% 
+\contentsline {subsection}{代码可读性例子}{207}{section*.231}% 
+\contentsline {chapter}{\numberline {18}软件需求}{209}{chapter.18}% 
+\contentsline {section}{附件}{211}{section*.232}% 
+\contentsline {subsection}{英国煤矿生产问题的研究}{211}{section*.233}% 
+\contentsline {chapter}{\numberline {19}客户参与}{217}{chapter.19}% 
+\contentsline {subsection}{常见问题}{217}{section*.234}% 
+\contentsline {subsubsection}{改进方案}{217}{section*.235}% 
+\contentsline {subsubsection}{改进效果}{217}{section*.236}% 
+\contentsline {subsection}{识别利益相关者}{218}{section*.237}% 
+\contentsline {subsection}{用户故事卡}{218}{section*.238}% 
+\contentsline {subsection}{用例与场景}{219}{section*.239}% 
+\contentsline {subsection}{举例}{221}{section*.240}% 
+\contentsline {subsubsection}{总结}{222}{section*.241}% 
+\contentsline {section}{附件}{223}{section*.242}% 
+\contentsline {subsection}{利益相关者}{223}{section*.243}% 
+\contentsline {subsubsection}{利益相关者计划检查单 (Stakeholders Plan Checklist):}{223}{section*.244}% 
+\contentsline {subsubsection}{\textbf {实例/解读 (Examples / explanation)}}{223}{section*.245}% 
+\contentsline {subsection}{客户声音：Kano Diagram}{225}{section*.246}% 
+\contentsline {section}{References}{226}{section*.247}% 
+\contentsline {chapter}{\numberline {20}团队协作}{227}{chapter.20}% 
+\contentsline {subsection}{各自负责自己开发的模块}{228}{section*.248}% 
+\contentsline {subsection}{团队合作}{229}{section*.249}% 
+\contentsline {subsection}{按时上下班}{229}{section*.250}% 
+\contentsline {subsection}{什么导致系统崩溃}{230}{section*.251}% 
+\contentsline {subsection}{技术团队的持续性}{230}{section*.252}% 
+\contentsline {subsection}{驱动团队改进}{231}{section*.253}% 
+\contentsline {subsubsection}{总结}{232}{section*.254}% 
+\contentsline {subsection}{保持团队稳定}{232}{section*.255}% 
+\contentsline {section}{附件}{233}{section*.256}% 
+\contentsline {subsection}{平衡心态 Cognitive Dissonance}{233}{section*.257}% 
+\contentsline {section}{References}{233}{section*.258}% 
+\contentsline {part}{VI\hspace {1em}度量与分析}{235}{part.6}% 
+\contentsline {chapter}{\numberline {21}做问卷调查}{239}{chapter.21}% 
+\contentsline {subsection}{案例：为某全国快餐连锁做问卷调查}{239}{section*.259}% 
+\contentsline {subsubsection}{详细分析}{239}{section*.260}% 
+\contentsline {subsubsection}{研究高流失率的原因}{239}{section*.261}% 
+\contentsline {subsubsection}{从分析到行动}{240}{section*.262}% 
+\contentsline {subsubsection}{针对发现开始做实验}{240}{section*.263}% 
+\contentsline {subsubsection}{比较培训后效果}{241}{section*.264}% 
+\contentsline {subsection}{总结}{241}{section*.265}% 
+\contentsline {chapter}{\numberline {22}教小孩学统计分析}{243}{chapter.22}% 
+\contentsline {subsection}{从考试成绩到贸易逆差}{243}{section*.266}% 
+\contentsline {subsubsection}{20名学生在数学考试中的分数(满分为100分，按大小排序)}{243}{section*.267}% 
+\contentsline {subsubsection}{比较三种教学方法}{244}{section*.268}% 
+\contentsline {subsubsection}{20人一年内阅读月刊的数量}{245}{section*.269}% 
+\contentsline {subsubsection}{取样偏差 Survivor's Bias}{246}{section*.270}% 
+\contentsline {subsubsection}{20名妇女参加某种疾病研究，她们的身高(以米计)}{247}{section*.271}% 
+\contentsline {subsubsection}{美国中西部房价趋势图}{248}{section*.272}% 
+\contentsline {subsection}{分析例子：连续与分组数据}{248}{section*.273}% 
+\contentsline {subsubsection}{蚕豆植物 - 双样本T检验?}{249}{section*.274}% 
+\contentsline {subsubsection}{头发和眼睛颜色的不同组合}{249}{section*.275}% 
+\contentsline {subsection}{总结}{250}{section*.276}% 
+\contentsline {section}{附件}{250}{section*.277}% 
+\contentsline {subsection}{如何画茎叶图(Stem and leaf plot)}{250}{section*.278}% 
+\contentsline {subsection}{箱线图 (Box and Whisker Plot)}{251}{section*.279}% 
+\contentsline {section}{References}{251}{section*.280}% 
+\contentsline {chapter}{\numberline {23}假设检验}{253}{chapter.23}% 
+\contentsline {subsection}{假设检验的步骤}{254}{section*.281}% 
+\contentsline {subsection}{检验单个正态总体的均值}{254}{section*.282}% 
+\contentsline {subsection}{比较两个正态总体的均值}{257}{section*.283}% 
+\contentsline {subsection}{检验单个正态总体的均值,方差未知}{258}{section*.284}% 
+\contentsline {subsection}{方差分析(ANOVA test)}{259}{section*.285}% 
+\contentsline {subsubsection}{例子一}{259}{section*.286}% 
+\contentsline {subsubsection}{方差分析2 (ANOVA test)}{260}{section*.287}% 
+\contentsline {subsubsection}{Tukey-Kramer 多组比较}{262}{section*.288}% 
+\contentsline {subsection}{分组（分类）数据}{262}{section*.289}% 
+\contentsline {subsubsection}{卡方检验(Chi Square test)}{262}{section*.290}% 
+\contentsline {section}{附件}{263}{section*.291}% 
+\contentsline {subsection}{中心极限定理 (Central Limit Theorem CLT)}{263}{section*.292}% 
+\contentsline {subsection}{检验单个正态整体均值相关方程式}{264}{section*.293}% 
+\contentsline {subsection}{比较两个正态总体的均值}{264}{section*.294}% 
+\contentsline {subsection}{检验单个正态总体的均值,方差未知}{264}{section*.295}% 
+\contentsline {subsection}{Tukey-Kramer 相关方程式}{265}{section*.296}% 
+\contentsline {subsubsection}{如何计算 MSW，参考ANOVA方程式}{265}{section*.297}% 
+\contentsline {chapter}{\numberline {24}预测模型}{269}{chapter.24}% 
+\contentsline {subsection}{银行案例总结报告}{269}{section*.298}% 
+\contentsline {subsubsection}{背景}{269}{section*.299}% 
+\contentsline {subsubsection}{1.影响维护工作量的主因}{270}{section*.300}% 
+\contentsline {subsubsection}{2.什么办法可以降低维护成本}{271}{section*.301}% 
+\contentsline {subsubsection}{3.预估下一年度的维护成本}{271}{section*.302}% 
+\contentsline {subsection}{银行案例数据分析步骤}{272}{section*.303}% 
+\contentsline {subsubsection}{汇总数据，并明确每个变量的操作定义}{272}{section*.304}% 
+\contentsline {subsubsection}{使用描述性统计检查数据完整性和正确性}{272}{section*.305}% 
+\contentsline {subsubsection}{建立新变量 Creation of New Variables}{272}{section*.306}% 
+\contentsline {subsubsection}{用直方图(Histograms)按下表选对应系数初步分析}{273}{section*.307}% 
+\contentsline {subsubsection}{散点图(Scatter plot)}{273}{section*.308}% 
+\contentsline {subsubsection}{针对某个变量看各种分组的数量和维护工作量}{274}{section*.309}% 
+\contentsline {subsubsection}{相关(Correlation)分析}{275}{section*.310}% 
+\contentsline {subsubsection}{回归分析}{275}{section*.311}% 
+\contentsline {subsubsection}{用回归模型预测}{275}{section*.312}% 
+\contentsline {subsubsection}{分析使用Telon对维护工作量的作用}{276}{section*.313}% 
+\contentsline {subsection}{回顾与总结}{278}{section*.314}% 
+\contentsline {section}{附件}{279}{section*.315}% 
+\contentsline {subsection}{案例部分变量列表}{279}{section*.316}% 
+\contentsline {subsubsection}{案例部分变量列表}{279}{section*.317}% 
+\contentsline {subsubsection}{变量的归类}{279}{section*.318}% 
+\contentsline {subsubsection}{按变量归类，常用分析工具}{280}{section*.319}% 
+\contentsline {subsection}{X 与 Y 相关性图}{280}{section*.320}% 
+\contentsline {subsection}{利用 Wrapper 降低模型的变量}{282}{section*.321}% 
+\contentsline {subsubsection}{Row pruning}{282}{section*.322}% 
+\contentsline {subsubsection}{Column pruning}{283}{section*.323}% 
+\contentsline {subsection}{如何做回归分析}{285}{section*.324}% 
+\contentsline {subsubsection}{例子}{287}{section*.325}% 
+\contentsline {section}{References}{289}{section*.326}% 
+\contentsline {chapter}{\numberline {25}控制图}{291}{chapter.25}% 
+\contentsline {subsection}{建立基线}{292}{section*.327}% 
+\contentsline {subsection}{噪音还是信号}{292}{section*.328}% 
+\contentsline {subsection}{控制图的应用}{295}{section*.329}% 
+\contentsline {subsubsection}{1. 基线}{296}{section*.330}% 
+\contentsline {subsubsection}{2. 过程能力(Process Capability)}{297}{section*.331}% 
+\contentsline {subsubsection}{3. 细分}{297}{section*.332}% 
+\contentsline {subsection}{总结}{297}{section*.333}% 
+\contentsline {section}{附件}{297}{section*.334}% 
+\contentsline {subsection}{如何画ImR控制图}{297}{section*.335}% 
+\contentsline {subsection}{各种控制图}{298}{section*.336}% 
+\contentsline {subsection}{过程能力(Process Capability)}{299}{section*.337}% 
+\contentsline {subsection}{细分例子}{300}{section*.338}% 
+\contentsline {section}{References}{301}{section*.339}% 
+\contentsline {part}{VII\hspace {1em}总结}{303}{part.7}% 
+\contentsline {chapter}{\numberline {26}领导的工作}{307}{chapter.26}% 
+\contentsline {subsection}{我们很注重质量与客户满意度}{307}{section*.340}% 
+\contentsline {subsection}{拉吉夫终生受用的一件事}{309}{section*.341}% 
+\contentsline {subsubsection}{拉吉夫被邀请到一名校演讲，他用了5分钟分享了一位日本顾问对他终生受用的一件事：}{309}{section*.342}% 
+\contentsline {subsection}{团队根因分析}{312}{section*.343}% 
+\contentsline {subsubsection}{总结}{312}{section*.344}% 
+\contentsline {subsection}{从定性提升到定量管理}{312}{section*.345}% 
+\contentsline {chapter}{\numberline {27}东北虎}{315}{chapter.27}% 
+\contentsline {subsection}{结语(Epilogue)}{315}{section*.346}% 
