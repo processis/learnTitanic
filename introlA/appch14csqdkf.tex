@@ -106,50 +106,9 @@ Wireless)实习（当时香港的所有国际通讯都是经过大东），实�
 (这和我们工程的概念一样，把工程细分，每个子系统都要确保质量达标，尽量找出缺陷，才进行下一步。)
 \end{description}
 
-如不相信请看看我从头学编程的实例：
+如不相信请看附件“从 MIT OCW 学写程序”，我从头学编程的实例。如果老师没有提供单元测试和相关数据，学生写完代码后是无法验证代码是否通过，是编程的基本要求。为什么专业程序员的程序反而可以不需要先通过单元测试，写完直接便交给测试人员做系统测试？
 \end{description}
 
-\framebox{%
-\begin{minipage}[t]{0.97\columnwidth}\raggedright
-Shiny是专门用于制作互动看板。我看它的Gallery里有很多现成看板，也提供R代码，我就找了某些例子，都能跑通。但若想增加功能，因不熟识Shiny的
-R 编程便跑不通了。下决心按官网推荐的参考书开始学习。
-
-星期六下午开始学习如何用R语言写Shiny程序,参考一本Shiny课本学习第一章就有一个实例，Shiny
-的 App.R 代码架构分UI部分，和服务器(Server)部分。
-
-先跑两个最基本测试，验证shiny服务器平台可以在本地展示（因为有时候，配置不匹配，展示不出来，需要先重启）:
-
-\begin{description}
-\tightlist
-\item[]
-\textgreater{} library(shiny) \# 安装Shiny包
-
-\textgreater{} runExample("01\_hello") \# Shiny包自带的示范例子
-
-\textgreater{} runApp("tst\_shiny") \# 我之前按另一本R参考书打的app.R
-示例
-\end{description}
-
-16:37 练习1：本来要写最简单 "Hello
-world"，只需要在框架里加一句，我觉得太简单了，就直接跳到下一个练习，这个程序是打开页面用户输入选择其中一个现有的数据包，然后打开显示，也很简单，我基于框架(UI
-+ Server)
-加了9行代码，报错，想不到错在哪里。报语句不通，想来想去，没办法，我就把那些内容都删掉，从最基本的"Hello
-world"开始，但还是报错，我仔细看代码，原来我打错了基本框架里一个字，改正后"Hello
-world"可以跑通。我就继续写练习二"Hello
-world"，展示数据包数据，又报错。仔细看代码，原来我又打错一个字 （label
-写错了），改正后能跑通。
-
-17:16 进一步做第一章后面的其他练习，Shiny有一个很好的功能，叫 reactive
-expression: 类似 function
-功能，防止程序员重复代码，（如果重复代码，难以维护，常常会出错，重复代码都应该改成
-reactive expression
-来调用，避免拷贝粘贴代码。）所以我先按练习需求，先把本来的程序（有重复代码）跑通。我然后按练习要求，加入
-reactive , 取代重复语句。最后加了reactive
-的程序也跑通，我看看时间是17:40，刚好一个小时。
-
-总共只是写了大概三十行代码，但我每写一小部分都会测试，总共做了五轮编写测试循环。每位程序员都应该是按同样思路：软件开发项目都应该分成小步，每一步正式通过才走下一步，才避免走弯路。只是写完代码，没通过测试，不算完成；如果你写完一个模块没有通过单元测试，你是无法证明你写的代码是正确，不算负责任的程序员（单元测试与产品集成会在后面详细介绍）。
-\strut
-\end{minipage}}
 
 网上有关于是否要TDD的争论:
 
@@ -220,6 +179,201 @@ TDD测试驱动开发也一样，把TDD看成``守''，当没有概念的时候�
 破 离''成长路径。
 
 有些敏捷大师，已经累积有20年以上编程经验，例如上面提到的Thomas先生，他已经很少写单元测试，因为他觉得已经不需要依赖单元测试来验证代码是否正确。
+
+
+\hypertarget{ux9644ux4ef6}{%
+\section{附件}\label{ux9644ux4ef6}}
+
+\hypertarget{ux4ece-mit-ocw-ux5b66ux5199ux7a0bux5e8f}{%
+\subsection{从 MIT OCW
+学写程序}\label{ux4ece-mit-ocw-ux5b66ux5199ux7a0bux5e8f}}
+
+第四天早上10:00我终于把所有功能写完并通过自动单元测试！\\
+(趁十一长假做编码练习题。上次做题已经是春节后，在集中隔离期间做过两题。这次的练习题只有十个功能，本来预计可两天完成。）
+
+\framebox{%
+\begin{minipage}[t]{0.97\columnwidth}\raggedright
+练习题 (Problem
+Set)------分析美国过去温度变化，提供了美国超过20个城市的每天平均温度。（从1961年到2015年）
+
+\begin{itemize}
+\tightlist
+\item
+  先写基本功能：
+
+  \begin{itemize}
+  \tightlist
+  \item
+    画散点图，回归分析，计算标准差与决定系数 (R\textsuperscript{2} Coef.
+    of determination)
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\tightlist
+\item
+  分析过去的五六十年数据，来判断美国或全球是否在暖化
+\end{itemize}
+
+给学生的文件包：
+
+\begin{enumerate}
+\tightlist
+\item
+  ProblemSet5.pdf ： 分成 A、 B 、C、 D、
+  E部分，详细说明每部分要开发的功能
+\item
+  PS5.py 程序模板，学员填入代码
+\item
+  PS5\_test.py 自动单元测试模块，自动测写好的PS5.py
+\end{enumerate}\strut
+\end{minipage}}
+
+
+回顾一下，像我这种Python新手，因为不熟悉Python语言的属性与特性，必须按部就班，一步一步来写，欲速则不达。
+
+更重要是体会到个人如何记录数据并分析：
+
+\framebox{%
+\begin{minipage}[t]{0.97\columnwidth}\raggedright
+\hypertarget{ux8bb0ux5f55ux65f6ux95f4}{%
+\subsubsection{记录时间}\label{ux8bb0ux5f55ux65f6ux95f4}}
+
+十多年前我在美国考CMMI培训师，被观察时，
+观察老师会在培训后告诉我，每一个模块用了多少时间，与计划对比。
+从此以后每次培训我都会习惯记录每个模块所花的时间。
+
+\hypertarget{ux600eux6837ux505a}{%
+\subsubsection{怎样做}\label{ux600eux6837ux505a}}
+
+培训时，我都会在桌上放一数字电子钟，记录每一个模块的开始时间与结束时间。上完一天课，晚上在电子表单计划时间旁边写上每个模块的实际时间。
+这三天半，我也是用这种方式记录每个模块的时间。
+
+\hypertarget{ux8bb0ux5f55ux7f3aux9677}{%
+\subsubsection{记录缺陷}\label{ux8bb0ux5f55ux7f3aux9677}}
+
+因为每个功能都很小，不到20行， 所以没有正式把缺陷与返工工作量记下来。
+尤其是一些小的语法错误问题立马就改正了。
+但影响较大的重大缺陷，我会记在模块旁边，算是这个模块花的时间。
+
+个人记录实际时间没有想象中这么困难，
+只要每天晚上简单按当天本子的数据更新电子表单，避免遗忘。
+
+%\href{文件:PspLogScreenshot20211006174917.png}{500px}
+\includegraphics[width=6cm]{PspLogScreenshot20211006174917.png}
+
+\strut
+\end{minipage}}
+
+
+\hypertarget{ux56deux987eux5206ux6790}{%
+\subsubsection{回顾分析}\label{ux56deux987eux5206ux6790}}
+
+整个编程结束后，写上每一个模块的实际代码行数。注意：如果模块是复用其他模块代码，便需要注明改动的代码行数。例如：evaluate\_models\_on\_testing13行只修改了1行。
+
+分析：除了标准差模块（gen\_std\_devs）以外，其他功能都能在1-3个小时之内完成。
+
+计算标准差的功能花了 10
+小时，问题出在我编码时没有详细看需求。开始以为是求每个城市的温度标准差。
+然后再求标准差的平均数。\\
+测试不通过后,
+也没有再看需求便假定求当年几个城市所有当年每天温度的标准差，还是不对。
+到了第四天早上再看看 ProblemSet5.pdf
+需求描述才知道我一直误解了这功能需求。
+
+\framebox{%
+\begin{minipage}[t]{0.97\columnwidth}\raggedright
+gen\_std\_devs对应每一输入年份，返回一个数值，依据以下计算：\\ 1)按输入的所有城市，计算当年每一天的平均温度（所有城市的平均）\\ 
+2)计算当年每一天平均温度的标准差\strut
+\end{minipage}}
+
+
+所以如按我本来的算法，算一个城市是正确，但两个或者多个城市的时候，答案就比正确答案大。
+
+针对这个计算标准差问题，一直以为是语法问题公式计算错误问题。
+但我用一些简单的数据检验去，未能发现任何不正常。
+来来去去都没有实际的进展，差点想放弃。
+
+\framebox{%
+\begin{minipage}[t]{0.97\columnwidth}\raggedright
+经验教训
+
+\begin{itemize}
+\tightlist
+\item
+  最佳实践: 尽量用最小的行数完成功能
+
+  \begin{itemize}
+  \tightlist
+  \item
+    像Python这类成熟的语言，绝大部分的功能都已经具备
+  \item
+    尽量避免基础方法编写一个已有的功能(reinvent the
+    wheel)，除了耗费时间外,还会写多错多
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\tightlist
+\item
+  写任何程序前必须先有自动化测试用例
+
+  \begin{itemize}
+  \tightlist
+  \item
+    虽然自己可以先想一些数据自己简单测一下
+  \item
+    但替代不了另外一个人写的测试用例。跑通才有信心程序正确
+    （所以自动单元测试是使用最多的程序）
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\tightlist
+\item
+  架构与设计很重要
+
+  \begin{itemize}
+  \tightlist
+  \item
+    校方除了提供测试脚本外,还提供了写程序的模板 (PS5.py)
+  \item
+    每个功能都明确，输入是什么，什么数据类型，输出是什么
+  \item
+    学员自己只需要填写实现的代码部分
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\tightlist
+\item
+  先把握好新功能的用法与结果
+
+  \begin{itemize}
+  \tightlist
+  \item
+    前面发现不少缺陷，是因为不清楚某功能的用法
+  \item
+    在写代码之前，自己应开个沙盘，用小程序先试验一下这计算功能有什么参数，会出什么结果
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\tightlist
+\item
+  先评审后测试
+
+  \begin{itemize}
+  \tightlist
+  \item
+    在跑程序之前，屏幕展示或打印出刚写好的代码，用铅笔在白纸上按程序的逻辑，从头思考一下每个数据的种类和中间的变化
+  \item
+    盲目地去跑程序或测试，最终只得出测试失败，但还不清楚错在哪里，如何修改。所以不如在跑程序或测试前，自己先动脑筋模拟一次，仔细想通每个数据的变化
+  \end{itemize}
+\end{itemize}\strut
+\end{minipage}}
+
+
 
 \begin{description}
 \item[]
