@@ -1,0 +1,33 @@
+\contentsline {chapter}{\numberline {1}如何改善敏捷开发质量}{13}{chapter.1}% 
+\contentsline {subsection}{某软件开发公司敏捷开发过程改进案例}{13}{section*.4}% 
+\contentsline {subsubsection}{5月}{13}{section*.5}% 
+\contentsline {subsubsection}{8月}{14}{section*.6}% 
+\contentsline {subsubsection}{9月}{14}{section*.7}% 
+\contentsline {subsubsection}{10月}{14}{section*.8}% 
+\contentsline {subsubsection}{11月}{15}{section*.9}% 
+\contentsline {subsection}{如何改善}{15}{section*.10}% 
+\contentsline {section}{附件}{22}{section*.11}% 
+\contentsline {subsection}{XP}{22}{section*.12}% 
+\contentsline {subsubsection}{编码实践 Coding Practices}{22}{section*.13}% 
+\contentsline {paragraph}{CP1:简单地编码和设计 Code and Design Simply}{22}{section*.14}% 
+\contentsline {paragraph}{CP2:无情地重构 Refactor Mercilessly}{22}{section*.15}% 
+\contentsline {paragraph}{CP3:制定编码标准 Develop Coding Standards}{22}{section*.16}% 
+\contentsline {paragraph}{CP4:共同的词汇 Develop a Common Vocabulary}{22}{section*.17}% 
+\contentsline {subsubsection}{开发实践 Develop Practices}{22}{section*.18}% 
+\contentsline {paragraph}{DP1:测试驱动开发TDD Test-Driven-Development}{22}{section*.19}% 
+\contentsline {paragraph}{DP2:结对编程 Pair Programming}{22}{section*.20}% 
+\contentsline {paragraph}{DP3:集体负责写好代码(vs 只顾虑自己的代码) Collective Code Ownership (vs individual own code)}{22}{section*.21}% 
+\contentsline {paragraph}{DP4:持续集成 Integrate Continually}{23}{section*.22}% 
+\contentsline {subsubsection}{商务实践 Business Practices}{23}{section*.23}% 
+\contentsline {paragraph}{BP1:将客户添加进团队 Add a Customer to the Team}{23}{section*.24}% 
+\contentsline {paragraph}{BP2:计划游戏 Play the Planning Game}{23}{section*.25}% 
+\contentsline {paragraph}{BP3:定期发布 Release Regularly}{23}{section*.26}% 
+\contentsline {paragraph}{BP4:以可持久的速度工作 Work at a Sustainable Pace}{23}{section*.27}% 
+\contentsline {subsection}{乔布斯谈Dr.Juran}{24}{section*.28}% 
+\contentsline {part}{I\hspace {1em}个人提升}{25}{part.1}% 
+\contentsline {part}{II\hspace {1em}自我管理开发过程}{29}{part.2}% 
+\contentsline {part}{III\hspace {1em}利用评估开始过程改进}{33}{part.3}% 
+\contentsline {part}{IV\hspace {1em}从做好迭代回顾开始 }{37}{part.4}% 
+\contentsline {part}{V\hspace {1em}基础：代码质量}{41}{part.5}% 
+\contentsline {part}{VI\hspace {1em}度量与分析}{45}{part.6}% 
+\contentsline {part}{VII\hspace {1em}总结}{49}{part.7}% 
