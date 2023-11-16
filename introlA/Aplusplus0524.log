@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  30 AUG 2023 01:08
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  7 JUN 2023 11:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1694,12 +1694,12 @@ Overfull \hbox (24.88582pt too wide) in paragraph at lines 141--144
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [42]
-[43])
-Underfull \hbox (badness 10000) in paragraph at lines 215--131
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
-[44]
+) [44]
 \openout2 = `PORDkefutuoyan.aux'.
 
  (./PORDkefutuoyan.tex
@@ -1739,7 +1739,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--174
  []
 
 [48]
-Underfull \hbox (badness 10000) in paragraph at lines 189--191
+Underfull \hbox (badness 10000) in paragraph at lines 190--192
 
  []
 
@@ -2361,27 +2361,17 @@ File: 3个关键点图1.png Graphic file (type bmp)
 
 
 ] [122]
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 157--161
 
  []
 
@@ -2444,7 +2434,7 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 File: AR1成本占比.jpg Graphic file (type bmp)
 <AR1成本占比.jpg>
 )
-Underfull \hbox (badness 10000) in paragraph at lines 344--169
+Underfull \hbox (badness 10000) in paragraph at lines 344--167
 
  []
 
@@ -2537,7 +2527,7 @@ File: 风险与机会4.png Graphic file (type bmp)
 File: 风险与机会5_闹钟.png Graphic file (type bmp)
 <风险与机会5_闹钟.png>
 )
-Underfull \hbox (badness 10000) in paragraph at lines 376--170
+Underfull \hbox (badness 10000) in paragraph at lines 376--168
 
  []
 
@@ -3207,12 +3197,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--159
 
 
 ] [233] [234]
-Underfull \hbox (badness 10000) in paragraph at lines 198--200
+Underfull \hbox (badness 10000) in paragraph at lines 196--198
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--205
+Underfull \hbox (badness 10000) in paragraph at lines 200--203
 
  []
 
@@ -3223,7 +3213,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 202--205
 
 
 ]
-Chapter 21.
+Appendix A.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 9.
@@ -3254,7 +3244,7 @@ File: tys51_10.png Graphic file (type bmp)
 \openout2 = `MAjxh.aux'.
 
  (./MAjxh.tex
-Chapter 22.
+Appendix B.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 9.
@@ -3410,7 +3400,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 314--319
 
 
 ]
-Chapter 23.
+Appendix C.
 File: CompareAB1Screenshot_2022-11-06_211947.jpg Graphic file (type bmp)
 <CompareAB1Screenshot_2022-11-06_211947.jpg>
 
@@ -3646,7 +3636,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 659--664
 
 
 ]
-Chapter 24.
+Appendix D.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 15.
@@ -3895,7 +3885,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 677--682
 
 
 ]
-Chapter 25.
+Appendix E.
 File: The_key_fig111.png Graphic file (type bmp)
 <The_key_fig111.png>
 
@@ -4032,7 +4022,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 343--345
 File: DAD_p67.jpg Graphic file (type bmp)
 <DAD_p67.jpg>
 )
-Underfull \hbox (badness 10000) in paragraph at lines 353--210
+Underfull \hbox (badness 10000) in paragraph at lines 353--209
 
  []
 
@@ -4040,7 +4030,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 353--210
 
 
 ] [301] [302]
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
  []
 
@@ -4051,7 +4041,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
 
 ]
-Chapter 26.
+Appendix F.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
@@ -4097,14 +4087,14 @@ Underfull \vbox (badness 3417) has occurred while \output is active []
 
 
 ]
-Chapter 27.
+Appendix G.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 4.
 
 [313]) [314]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 221.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 220.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 220.
  (./Aplusplus0524.aux (./xuzhang.aux) (./qianyan.aux)
 (./RHGSMJKFZL.aux) (./INNOVgeren.aux) (./PORDkefutuoyan.aux)
 (./PERT3diangusuan.aux) (./PSPlianghgl.aux) (./ESTgsrjgm.aux) (./EST2gjgm.aux)
@@ -4113,10 +4103,10 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
 ) (./RDM1rjxq.aux) (./ICincludec.aux) (./TSteam.aux) (./M1zwjdc.aux)
 (./MAjxh.aux) (./MA4jsjy.aux) (./M4Bycmx.aux) (./M3CC.aux) (./MGRcjhdyj.aux)
 (./EOIdbh.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 221.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 221.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 220.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 220.
 Package rerunfilecheck Info: File `Aplusplus0524.out' has not changed.
-(rerunfilecheck)             Checksum: A02D58C4082571EE39CB11A7210D939C.
+(rerunfilecheck)             Checksum: 6C24E383F91F23C705F5D43CB9735F33.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -4126,10 +4116,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 29991 strings out of 494900
- 609830 string characters out of 6177140
- 808803 words of memory out of 5000000
- 33132 multiletter control sequences out of 15000+600000
+ 30001 strings out of 494900
+ 610437 string characters out of 6177140
+ 808703 words of memory out of 5000000
+ 33142 multiletter control sequences out of 15000+600000
  535938 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  57i,10n,115p,845b,472s stack positions out of 5000i,500n,10000p,200000b,80000s

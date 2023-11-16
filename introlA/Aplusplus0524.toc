@@ -136,7 +136,7 @@
 \contentsline {subsection}{总结}{118}{section*.128}% 
 \contentsline {section}{附件}{119}{section*.129}% 
 \contentsline {subsection}{CMMI评估案例}{119}{section*.130}% 
-\contentsline {part}{IV\hspace {1em}做好迭代回顾降低质量成本 }{121}{part.4}% 
+\contentsline {part}{IV\hspace {1em}从做好迭代回顾开始 }{121}{part.4}% 
 \contentsline {chapter}{\numberline {10}做好准备}{125}{chapter.10}% 
 \contentsline {subsection}{我们很注重质量与客户满意度}{125}{section*.131}% 
 \contentsline {subsection}{哪里最耗工作量}{126}{section*.132}% 
@@ -279,7 +279,7 @@
 \contentsline {subsection}{平衡心态 Cognitive Dissonance}{231}{section*.258}% 
 \contentsline {section}{References}{231}{section*.259}% 
 \contentsline {part}{VI\hspace {1em}度量与分析}{233}{part.6}% 
-\contentsline {chapter}{\numberline {21}做问卷调查}{237}{chapter.21}% 
+\contentsline {chapter}{\numberline {A}做问卷调查}{237}{appendix.A}% 
 \contentsline {subsection}{案例：为某全国快餐连锁做问卷调查}{237}{section*.260}% 
 \contentsline {subsubsection}{详细分析}{237}{section*.261}% 
 \contentsline {subsubsection}{研究高流失率的原因}{237}{section*.262}% 
@@ -287,7 +287,7 @@
 \contentsline {subsubsection}{针对发现开始做实验}{238}{section*.264}% 
 \contentsline {subsubsection}{比较培训后效果}{239}{section*.265}% 
 \contentsline {subsection}{总结}{239}{section*.266}% 
-\contentsline {chapter}{\numberline {22}教小孩学统计分析}{241}{chapter.22}% 
+\contentsline {chapter}{\numberline {B}教小孩学统计分析}{241}{appendix.B}% 
 \contentsline {subsection}{从考试成绩到贸易逆差}{241}{section*.267}% 
 \contentsline {subsubsection}{20名学生在数学考试中的分数(满分为100分，按大小排序)}{241}{section*.268}% 
 \contentsline {subsubsection}{比较三种教学方法}{242}{section*.269}% 
@@ -303,7 +303,7 @@
 \contentsline {subsection}{如何画茎叶图(Stem and leaf plot)}{248}{section*.279}% 
 \contentsline {subsection}{箱线图 (Box and Whisker Plot)}{249}{section*.280}% 
 \contentsline {section}{References}{249}{section*.281}% 
-\contentsline {chapter}{\numberline {23}假设检验}{251}{chapter.23}% 
+\contentsline {chapter}{\numberline {C}假设检验}{251}{appendix.C}% 
 \contentsline {subsection}{假设检验的步骤}{252}{section*.282}% 
 \contentsline {subsection}{检验单个正态总体的均值}{252}{section*.283}% 
 \contentsline {subsection}{比较两个正态总体的均值}{255}{section*.284}% 
@@ -321,7 +321,7 @@
 \contentsline {subsection}{检验单个正态总体的均值,方差未知}{262}{section*.296}% 
 \contentsline {subsection}{Tukey-Kramer 相关方程式}{263}{section*.297}% 
 \contentsline {subsubsection}{如何计算 MSW，参考ANOVA方程式}{263}{section*.298}% 
-\contentsline {chapter}{\numberline {24}预测模型}{267}{chapter.24}% 
+\contentsline {chapter}{\numberline {D}预测模型}{267}{appendix.D}% 
 \contentsline {subsection}{银行案例总结报告}{267}{section*.299}% 
 \contentsline {subsubsection}{背景}{267}{section*.300}% 
 \contentsline {subsubsection}{1.影响维护工作量的主因}{268}{section*.301}% 
@@ -351,7 +351,7 @@
 \contentsline {subsection}{如何做回归分析}{283}{section*.325}% 
 \contentsline {subsubsection}{例子}{285}{section*.326}% 
 \contentsline {section}{References}{287}{section*.327}% 
-\contentsline {chapter}{\numberline {25}控制图}{289}{chapter.25}% 
+\contentsline {chapter}{\numberline {E}控制图}{289}{appendix.E}% 
 \contentsline {subsection}{建立基线}{290}{section*.328}% 
 \contentsline {subsection}{噪音还是信号}{290}{section*.329}% 
 \contentsline {subsection}{控制图的应用}{293}{section*.330}% 
@@ -366,12 +366,12 @@
 \contentsline {subsection}{细分例子}{298}{section*.339}% 
 \contentsline {section}{References}{299}{section*.340}% 
 \contentsline {part}{VII\hspace {1em}总结}{301}{part.7}% 
-\contentsline {chapter}{\numberline {26}领导的工作}{305}{chapter.26}% 
+\contentsline {chapter}{\numberline {F}领导的工作}{305}{appendix.F}% 
 \contentsline {subsection}{我们很注重质量与客户满意度}{305}{section*.341}% 
 \contentsline {subsection}{拉吉夫终生受用的一件事}{307}{section*.342}% 
 \contentsline {subsubsection}{拉吉夫被邀请到一名校演讲，他用了5分钟分享了一位日本顾问对他终生受用的一件事：}{307}{section*.343}% 
 \contentsline {subsection}{团队根因分析}{310}{section*.344}% 
 \contentsline {subsubsection}{总结}{310}{section*.345}% 
 \contentsline {subsection}{从定性提升到定量管理}{310}{section*.346}% 
-\contentsline {chapter}{\numberline {27}东北虎}{313}{chapter.27}% 
+\contentsline {chapter}{\numberline {G}东北虎}{313}{appendix.G}% 
 \contentsline {subsection}{结语(Epilogue)}{313}{section*.347}% 
