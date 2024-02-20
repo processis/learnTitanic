@@ -1,14 +1,14 @@
 \chapter{教小孩统计分析} % Introduction chapter suppressed from the table of contents
 
-\hypertarget{ux6559ux5c0fux5b69ux7edfux8ba1ux5206ux6790}{%
-\section{教小孩统计分析}\label{ux6559ux5c0fux5b69ux7edfux8ba1ux5206ux6790}}
+%\hypertarget{ux5206ux6790ux4f8bux5b50ux8fdeux7eedux4e0eux5206ux7ec4ux6570ux636e}{%
+%\section{教小孩统计分析}\label{ux5206ux6790ux4f8bux5b50ux8fdeux7eedux4e0eux5206ux7ec4ux6570ux636e}}
 
-如果你觉得统计学很高深，可以看看 这个如何教小孩统计分析的故事。
+如果你觉得统计学很高深，可以看看这个如何教小孩统计分析的故事。
 
-\hypertarget{ux4eceux8003ux8bd5ux6210ux7ee9ux5230ux8d38ux6613ux9006ux5dee}{%
-\section{从考试成绩到贸易逆差}\label{ux4eceux8003ux8bd5ux6210ux7ee9ux5230ux8d38ux6613ux9006ux5dee}}
+\hypertarget{ux7bb1ux7ebfux56fe-box-and-whisker-plot}{%
+\subsection{从考试成绩到贸易逆差}\label{ux7bb1ux7ebfux56fe-box-and-whisker-plot}}
 
-孩子问：爸爸，你是做什么工作的？我明天要在班上介绍自己父母的工作。\\
+孩子：爸爸，你是做什么工作的？我明天要在班上介绍自己父母的工作。\\
 我：帮客户做统计分析。\\
 孩子：统计分析？\\
 我心里想你这初中孩子，要如何给你解释统计分析呢？\\
@@ -22,24 +22,21 @@
 57, 58, 60, 60, 62, 62, 65, 67, 74, 89
 
 我：任何样本数据，都可以用图加平均值、范围等来表达。\\
-举例：我们可以画茎叶图(Stem and leaf plot)(详见附件)表达这些学生成绩：\\
+举例：我们可以画茎叶图(Stem and Leaf Plot)(详见附件)表达这些学生成绩：\\
 %\href{文件:MA_FA2_1.0.1.jpg}{文件:MA FA2 1.0.1.jpg}\\
 
 \includegraphics[width=6cm]{MA_FA2_101.jpg}
 
-把20组数从最低排到最高。排在第十位的学生和第十一位的学生的平均数56，叫中位数(Median)。
-排第五名和第六名成绩的平均值 44.5,就是Q1四分之一。
-排十五名和十六名的平均值 62，就是Q3四分之三。
-
-这个例子中茎叶图再加上Q1、Q2(中位数)、Q3，{[}44.5 , 56 ,
+把20组数从最低排到最高。排在第十的学生和第十一的学生的平均数56，叫中位数(Median)。排第五和第六成绩的平均值44.5，就是Q1（1/4）。排第十五名和第十六名的平均值62，就是Q3（3/4）。\\
+这个例子中茎叶图再加上Q1、Q2(中位数)、Q3，{[}44.5 、 56 、
 62{]}便可以总括表达这二十个学生的成绩分布。 也可以用下面的柱状图 /
 直方图表达：\\
 %\href{文件:MA_FA1_1.0.png}{文件:MA FA1 1.0.png}
 
-\includegraphics[width=6cm]{MA_FA1_10.png}
+\includegraphics[width=6cm]{MA_FA1_1-1.jpg}
 
-也可以利用 Q1、Q2、Q3 (统称四分位数)画箱线图来表达(详见附件)\\
-除了中位数，也常用平均值(Mean)来表示一堆数据的中间趋势，平均值就是把所有数据加起来，然后把总数除以数量，比如上面20学生数学成绩的平均值是......\\
+也可以利用 Q1、Q2、Q3 (统称四分位数)画箱线图来表达(详见附件)。\\
+除了中位数，也常用平均值(Mean)来表示一堆数据的中间趋势，平均值就是把所有数据加起来，然后把总数除以数量，比如上面20名学生数学成绩的平均值是......\\
 孩子充满自信，打断我说：这个平均值简单，我懂。\\
 我说：好啊，你这么懂平均值，我问你一个小问题？\\
 
@@ -54,34 +51,50 @@
 我：你知道那些数是代表什么吗？\\
 孩子：不知道。\\
 如果这些数是代表角的度数，它的平均值应该是零，而不是
-180。这是统计分析很重要的概念------你必须知道那些数的背景，否则你的分析没意义。如果你把那四个数字当成是距离来算均值是
-180,与四个角度数求均值的结果就完全不一样了。\\
+180。这是统计分析很重要的概念------你必须知道那些数的背景，否则你的分析没意义。如果你把那4个数字当成是距离来算均值是
+180,与4个角度数求均值的结果就完全不一样了。\\
 从以上例子，你就知道了解问题背景(Context)很重要。
 
 孩子：这些统计分析有什么用？\\
 我：例如有了这成绩的分析，你就可以知道自己的成绩在整个班是处于什么位置？也可以帮你比较不同科目的成绩。
 
 \hypertarget{ux6bd4ux8f83ux4e09ux79cdux6559ux5b66ux65b9ux6cd5}{%
-\subsubsection{比较三种教学方法}\label{ux6bd4ux8f83ux4e09ux79cdux6559ux5b66ux65b9ux6cd5}}
+\subsubsection{比较3种教学方法}\label{ux6bd4ux8f83ux4e09ux79cdux6559ux5b66ux65b9ux6cd5}}
 
-45名学生被随机分成5个大小相同的组。两组(A、B)采用目前使用的方法(控制组)，另外三组(C、D、E)采用三种新方法。实验结束时，所有学生参加了一次标准测试，结果(满分30分)见表B.1。关于教学方法的差异，可以得出什么结论?\\
-B.1
+45名学生被随机分成5个大小相同的组。两组(A、B)采用目前使用的方法(控制组)，另外3组(C、D、E)采用3种新方法。实验结束时，所有学生参加了一次标准测试，结果(满分30分)见表1。关于教学方法的差异，可以得出什么结论?\\
+表1
 
-\includegraphics[width=6cm]{Screenshotfrom2023-11-0920-08-48.png}
+%\includegraphics[width=6cm]{Screenshotfrom2023-11-0920-08-48.png}
 
-我：你可以用刚学过的四分位数(Q1、Q2、Q3)配合箱线图表示每一组数据分布，然后看看有没有差异。这样你便可以比较五个班的成绩。\\
-他过了十五分钟就画了五个组的箱线图：\\
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multirow{10}{*}{45名学生的测试结果 }\\
+\hline
+A组(控制组)&17&14&24&20&24&23&16&15&24\\
+\hline
+B组(控制组)&21&23&13&19&13&19&20&21&16 \\
+\hline
+C组(赞赏组)&28&30&29&24&27&30&28&28&23\\
+\hline
+D组(责骂惩罚组)&19&28&26&26&19&24&24&23&22\\
+\hline
+E组(不理睬组)&21&14&13&19&15&15&10&18&20\\
+\hline
+\end{tabular}
+
+我：你可以用刚学过的四分位数(Q1、Q2、Q3)配合箱线图表示每一组数据分布，然后看看有没有差异。这样你便可以比较5个班的成绩。\\
+他过了15分钟就画了5个组的箱线图：\\
 %\href{文件:图片61-3.1.jpg}{500px}
 
 \includegraphics[width=6cm]{图片61-31.jpg}
 
 我：能看到显著区分吗？\\
 孩子：看得出是C组最好，D组也比较好，E组就比较差。\\
-我：是的，但如果我们只是比较5个组成绩的平均值，没有考虑每一班成绩范围，便不能全面比较。例如：上面数学考试成绩的Q1
-Q2 Q3是（44.5 、 56 、62）如果C组的数学成绩是（32 、57.5 、63）
+我：是的，但如果我们只是比较5个组成绩的平均值，没有考虑每一班成绩范围，便不能全面比较。例如：上面数学考试成绩的Q1、
+Q2、Q3是（44.5 、 56 、62），如果C组的数学成绩是（32 、57.5 、63），
 你会认为C组比你们好吗？虽然中位数比你们班高，但Q1比你们低很多，所以不能单看中位数（或平均值）比较。
 
-看到他对这些挺有兴趣，我便问他如何表达以下数据：\\
+看到他对这些挺有兴趣，我便问他如何表达以下数据。\\
 
 \hypertarget{ux4ebaux4e00ux5e74ux5185ux9605ux8bfbux6708ux520aux7684ux6570ux91cf}{%
 \subsubsection{20人一年内阅读月刊的数量}\label{ux4ebaux4e00ux5e74ux5185ux9605ux8bfbux6708ux520aux7684ux6570ux91cf}}
@@ -90,24 +103,22 @@ Q2 Q3是（44.5 、 56 、62）如果C组的数学成绩是（32 、57.5 、63�
 12, 1, 0, 0, 0, 0, 12, 0, 11, 0
 
 我看他开始使用同样方法，
-我便说这些统计数据跟前面学生成绩的分布不一样，它一头一尾最高，这表示大部分人要么就是不看杂志，要么就是每个月都看，这种分布就不合适用刚才那些方法去表达，只能说它有两个高峰，或者叫众数(mode)，再配上一个柱状图。如果我们用中位数或者这些数的平均值，或三分位数来表达的话，反而是误导读者，不能正确的表达那些数据的分布。\\
+我便说这些统计数据跟前面学生成绩的分布不一样，它一头一尾最高，这表示大部分人要么就是不看杂志，要么就是每个月都看，这种分布就不合适用刚才那些方法去表达，只能说它有两个高峰，或者叫众数(Mode)，再配上一个柱状图。如果我们用中位数或者这些数的平均值，或三分位数来表达的话，反而是误导读者，不能正确的表达那些数据的分布。\\
 %\href{文件:MA_FA4_1.0.png}{文件:MA FA4 1.0.png}\\
 
 \includegraphics[width=6cm]{MA_FA4_10.png}
 
-当总体(population)包含非常多数据时，就只能抽样，用抽样来估计population分布。但是要注意，如果样本不是随机抽样(random
-sample),可能会导致出来的参数偏离、产生误差。\\
+当总体(Population)包含非常多数据时，就只能抽样，用抽样来估计Population分布。但是要注意，如果样本不是随机抽样(Random Sample),可能会导致出来的参数偏离、产生误差。\\
 我看孩子一头雾水，但我记得他很喜欢研究二战的战斗机，我就用下面这个例子说明，这样抽样出来的结论是没有意义。\\
 
 \hypertarget{ux53d6ux6837ux504fux5dee-survivors-bias}{%
-\subsubsection{取样偏差 Survivor's
-Bias}\label{ux53d6ux6837ux504fux5dee-survivors-bias}}
+\subsubsection{取样偏差 （Survivor's Bias）}\label{ux53d6ux6837ux504fux5dee-survivors-bias}}
 
 错误的抽样会导致错误结论。
 
 \framebox{%
 \begin{minipage}[t]{0.97\columnwidth}\raggedright
-二战时会对那些没有被击落的战斗机，研究哪个部分被德军的攻击最多，针对这些部位去加强防护，希望增高飞机的存活率。你同意吗？我们只是抽样了未被击落的飞机，被击落的都未被抽样。一个比较正确的抽样是所有两类都抽样才比较合理。\\ 
+第二次世界大战时会对那些没有被击落的战斗机，研究哪个部分被德国军队的攻击最多，针对这些部位去加强防护，希望增高飞机的存活率。你同意吗？我们只是抽样了未被击落的飞机，被击落的都未被抽样。一个比较正确的抽样是所有两类都抽样才比较合理。\\ 
 其实被击落的飞机哪个部分被击中更重要，但是我们无法得到那些抽样，只可以从没有被击落的飞机去看，这是抽样的错误。所以分析得出的结论没有意义。\\
 %\href{文件:WW2Screenshot_2021-04-07_222054.1.jpg}{600px}}}
 
@@ -119,11 +130,11 @@ Bias}\label{ux53d6ux6837ux504fux5dee-survivors-bias}}
 
 \framebox{%
 \begin{minipage}[t]{0.97\columnwidth}\raggedright
-只挑选合"味道"的来作比较 (Picking
+只挑选合“味道”的来做比较 (Picking
 cherries)\\
 %\href{文件:儿童MA.1.jpg}{400px}}\\
 \includegraphics[width=6cm]{儿童MA1.jpg}\\
-从上面八零年代到现在全球海洋冰量的统计很明显看到地球在不断地暖软化。但你还可以抽两个时间，例如：2012年四月份的冰量比1988年六月份多，来说明``全球变冷''！
+从上面80年代到现在全球海洋冰量的统计很明显看到地球在不断地暖软化。但你还可以抽两个时间，例如：2012年4月份的冰量比1988年6月份多，来说明“全球变冷”！
 \strut
 \end{minipage}}
 
@@ -144,7 +155,7 @@ cherries)\\
 我：所以里面的2.50
 肯定是不对。你为什么没有疑问，直接去做？统计分析必须要判断数据是否正确、是否合理。\\
 如果数据本身不可靠，那么怎么分析都没用，我们称之为``垃圾进，垃圾出（Garbage
-in, garbage out）。\\
+in, Garbage out）。\\
 我：也有很多人利用图表误导读者，所以我们看一些统计专家的统计数据分析时也要小心。\\
 
 \hypertarget{ux7f8eux56fdux4e2dux897fux90e8ux623fux4ef7ux8d8bux52bfux56fe}{%
@@ -154,7 +165,7 @@ in, garbage out）。\\
 
 \includegraphics[width=6cm]{Stat_f22-1_12.jpg}
 
-上图是06年到09年每个季度，美国中西部的房价。如果我们看右面那个柱状图，你会认为房价波动很大。但是如果同样这组数据看左面柱状图的话，你就会觉得没有太多变化。所以我们要注意看左面坐标有没有标明数字。不应该仅仅看图。\\
+上图是1906年到1909年每个季度，美国中西部的房价。如果我们看右面那个柱状图，你会认为房价波动很大。但是如果同样这组数据看左面柱状图的话，你就会觉得没有太多变化。所以我们要注意看左面坐标有没有标明数字。不应该仅仅看图。\\
 虽然数据都一样，但如图形不一样，传达的信息便完全不同。\\
 孩子：你说的我都懂，很简单。\\
 我：用统计分析骗人的故事可多。你不是说要今年暑假找暑期工赚钱，下面是一个去工厂找工作的故事：\\
@@ -173,20 +184,20 @@ in, garbage out）。\\
 
 \textbar{}\}
 
-\hypertarget{ux5206ux6790ux4f8bux5b50ux8fdeux7eedux4e0eux5206ux7ec4ux6570ux636e}{%
-\section{分析例子：连续与分组数据}\label{ux5206ux6790ux4f8bux5b50ux8fdeux7eedux4e0eux5206ux7ec4ux6570ux636e}}
+\hypertarget{ux7bb1ux7ebfux56fe-box-and-whisker-plot}{%
+\subsection{分析例子：连续与分组数据}\label{ux7bb1ux7ebfux56fe-box-and-whisker-plot}}
 
 第二天，孩子乖乖地来找我,他说：爸爸，今天我跟老师说了你的工作是做统计分析，老师听到就发我一些高年级的生物实验数据，希望帮他做些分析，看两类实验有没有差异。你可以帮忙吗？\\
 
 \hypertarget{ux8695ux8c46ux690dux7269---ux53ccux6837ux672ctux68c0ux9a8c}{%
-\subsubsection{蚕豆植物 -
+\subsubsection{蚕豆植物 --
 双样本T检验}\label{ux8695ux8c46ux690dux7269---ux53ccux6837ux672ctux68c0ux9a8c}}
 
 以下数据比较10个剪枝和10个生根样本中某一化学物质的浓度：\\
 剪枝:53, 58, 48, 18, 55, 42, 50, 47, 51, 45\\
 生根:36, 33, 40, 43, 25, 38, 41, 46, 34, 29\\
 ~\\
-我:你可以同样用昨天学过的方法（如，柱状图）比较两组数。\\
+我:你可以同样用昨天学过的方法（如柱状图）比较两组数。\\
 孩子就按这个汇总了两个实验数据的分布。\\
 %\url{文件:图片61-1.1.png}
 
@@ -205,31 +216,83 @@ T
 
 592人的头发和眼睛颜色的不同组合：
 
-\includegraphics[width=6cm]{Screenshotfrom2023-11-0920-19-09.png}
+%\includegraphics[width=6cm]{Screenshotfrom2023-11-2721-53-28.png}
 
-如果我们利用 B4
-表的数，把它那些每一行、每一列进行求和，我们可以看见每列或者每行的分析结果。例如棕色(brown)眼睛的占大多数，但金发
-(blond)例外，金发的大部分是蓝(blue)眼睛。其实也看到金头发的那列跟其他的一些分布很不一样。比如我们看每行的话，也可以看到棕色眼睛跟蓝眼睛的数量差不多。但在金头发(blond)和黑头发(black)的列分布就不一样了。统计分析的卡方检验也可以帮我们分析分组数据间有没有相关。但刚才这类简单4×4
-数据表，计算出B7列联表便足够，卡方检验没有带来更多有用信息。\\
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+表1&\multirow{4}{*}{头发颜色 }\\
+\hline
+眼睛颜色&黑&深褐&红&金\\
+\hline
+棕&68&119&26&7\\
+\hline
+蓝&20&84&17&94\\
+\hline
+淡绿褐&15&54&14&10\\
+\hline
+绿&5&29&14&16\\
+\hline
+\end{tabular}
+
+如果我们利用表1的数，把它那些每一行、每一列进行求和，我们可以看见每列或者每行的分析结果。例如棕色眼睛的占大多数，但金发例外，金发的大部分是蓝眼睛。其实也看到金头发的那列跟其他的一些分布很不一样。比如我们看每行的话，也可以看到棕色眼睛跟蓝眼睛的数量差不多。但在金头发和黑头发的列分布就不一样了。统计分析的卡方检验也可以帮我们分析分组数据间有没有相关。但刚才这类简单4×4 数据表，计算出表3列联表便足够，卡方检验没有带来更多有用信息。\\
 \textbf{实际(Obs.) 数量表}:
 
-\includegraphics[width=6cm]{Screenshotfrom2023-11-0920-20-47.png}
+%\includegraphics[width=6cm]{Screenshotfrom2023-11-2721-54-09.png}
+
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+表2&\multirow{5}{*}{头发颜色 }\\
+\hline
+眼睛颜色&黑&深褐&红&金&总计\\
+\hline
+棕&68&119&26&7&220\\
+\hline
+蓝&20&84&17&94&215\\
+\hline
+淡绿褐&15&54&14&10&93\\
+\hline
+绿&5&29&14&16&64\\
+\hline
+总计&108&286&71&127&592\\
+\hline
+\end{tabular}
+
 
 \textbf{实际(Obs.) vs 预计(Exp.)数量表 Contingency Table}:
 
-\includegraphics[width=6cm]{Screenshotfrom2023-11-0920-21-37.png}
+%\includegraphics[width=6cm]{Screenshotfrom2023-11-2721-54-39.png}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+表3&\multirow{8}{*}{头发颜色 }&\:\\
+\hline
+\:&\multirow{2}{*}{黑}&\multirow{2}{*}{深褐}&\multirow{2}{*}{红}&\multirow{2}{*}{金}&\:\\
+\hline
+眼睛颜色&Obs.&Exp.&Obs.&Exp.&Obs.&Exp.&Obs.&Exp.&Total\\
+\hline
+棕&68&40&119&106&26&26&7&47&220\\
+\hline
+蓝&20&39&84&104&17&26&94&46&215\\
+\hline
+淡绿褐&15&17&54&45&14&11&10&20&93\\
+\hline
+绿&5&12&29&31&14&8&16&14&64\\
+\hline
+总计&\multirow{2}{*}{108}&\multirow{2}{*}{286}&\multirow{2}{*}{71}&\multirow{2}{*}{127}&592\\
+\hline
+\end{tabular}
 
 \begin{description}
 \item[]
 \begin{description}
 \tightlist
 \item[]
-注：双样本T检验，方差分析(ANOVA)，卡方检验等都属于假设检验，下一章会详细介绍各种假设检验方法。
+注：双样本T检验、方差分析(ANOVA)、卡方检验等都属于假设检验，下一章会详细介绍各种假设检验方法。
 \end{description}
 \end{description}
 
-\hypertarget{ux603bux7ed3}{%
-\section{总结}\label{ux603bux7ed3}}
+\hypertarget{ux7bb1ux7ebfux56fe-box-and-whisker-plot}{%
+\subsection{结束语}\label{ux7bb1ux7ebfux56fe-box-and-whisker-plot}}
 
 统计分析主要是希望利用数据分析、统计方式帮我们解决问题(Problem
 Solving)，所以度量的重点是如何分析，帮助解决问题。\\
@@ -237,14 +300,33 @@ Solving)，所以度量的重点是如何分析，帮助解决问题。\\
 
 我们也应按以上思路，协助开发团队，更好地利用数据解决问题。
 
-\includegraphics[width=6cm]{Screenshotfrom2023-11-0920-22-37.png}
+%\includegraphics[width=6cm]{Screenshotfrom2023-11-0920-22-37.png}
+
+
+\begin{tabular}{|c|c|}
+\hline
+步骤&上面实例 \\
+\hline
+\:&这些数字代表什么?什么单位（角度、还是距离）？ \\
+\hline
+策划收集数据&怎样取样？避免取样偏差 \\
+\hline
+确保数据质量&2.5米高女性？异常数据？ \\
+\hline
+初步数据分析（描述性)&平均值、四分位数(Q1、Q2、Q3)、柱状图、箱线图 \\
+\hline
+数据分析&如果能简单看出来有显著差异，便不需要用假设检验，或其他统计分析方法\\
+\hline
+解读、沟通结果&当我们读统计分析报告要小心，注意是否被骗 \\
+\hline
+\end{tabular}
+
 
 \hypertarget{ux9644ux4ef6}{%
 \section{附件}\label{ux9644ux4ef6}}
 
 \hypertarget{ux5982ux4f55ux753bux830eux53f6ux56festem-and-leaf-plot}{%
-\subsection{如何画茎叶图(Stem and leaf
-plot)}\label{ux5982ux4f55ux753bux830eux53f6ux56festem-and-leaf-plot}}
+\subsection{如何画茎叶图(Stem and Leaf Plot)}\label{ux5982ux4f55ux753bux830eux53f6ux56festem-and-leaf-plot}}
 
 以文中20名学生在数学考试分数为例：
 
@@ -288,17 +370,15 @@ Plot)}\label{ux7bb1ux7ebfux56fe-box-and-whisker-plot}}
   Maximum 最大 (Q4 , 100 percentile)
 \end{itemize}
 
-有些箱线图直接把两头指到最大与最少，不展示离散点 (outliers)。
+有些箱线图直接把两头指到最大与最少，不展示离散点 (Outliers)。
 
 Interquartile range (IQR) = Q3 - Q1
 
 \hypertarget{ux53c2ux8003references}{%
 \section{参考References}\label{ux53c2ux8003references}}
 
-1. GUTTAG, John V.: "Introduction to computation and programming using
-Python" MIT Press 2021\\
-2. CHATFIELD, Chris : "Problem Solving: a statistician's guide 2/e"
-Chapman \& Hall 1995\\
-3. BLUMAN: Elementary Statistics 10/e\\
+1. Guttag, John V. ''Introduction to computation and programming using Python.'' (2021) MIT Press \\
+2. Chatfield, Chris.  ''Problem Solving: a statistician's guide.''(1995) 2/e Chapman \& Hall \\
+3. Bluman, Allan. ''Elementary Statistics.'' 10/e\\
 
 

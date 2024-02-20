@@ -1,7 +1,15 @@
 \PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
 \PassOptionsToPackage{hyphens}{url}
 %
-\documentclass[]{article}
+\documentclass{book}        % from not too short p76 pagestyle
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%ensure chapter section headngs in lower case
+%
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.png,.jpg}
+\usepackage{xeCJK}
+\setCJKmainfont{SimSun}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -32,6 +40,10 @@
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\usepackage{multirow} %for tabular combine multirow
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -50,237 +62,676 @@
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
-
-
 \date{}
+\begin{document}               % plus the \end{document} command at the end.
+\begin{titlepage}\thispagestyle{empty} \vspace*{3em}{\centering\Huge 软件开发过程改进 \par}\clearpage
+\newpage \thispagestyle{empty} \mbox{} \cleardoublepage
+\thispagestyle{empty} \vspace*{7em}{\centering\Huge 软件开发过程改进 \par}{\centering -- from individual to team to organization \par}\cleardoublepage
 
-\begin{document}
+\thispagestyle{empty} \vspace*{\fill} \parbox{.8\textwidth}{\raggedright \scriptsize
+\textit{impossible} publisher 2022
 
-\hypertarget{ux4f8bux5b50ux4e00-ux7b54ux6848ux4e0eux89e3ux8bfb}{%
-\subsection{例子一：
-答案与解读}\label{ux4f8bux5b50ux4e00-ux7b54ux6848ux4e0eux89e3ux8bfb}}
+printed blindfolded
 
-共三个实体：
+design: \LaTeX
+}
+\end{titlepage}
+\clearpage \thispagestyle{empty}\cleardoublepage
+\newpage % Make sure the following content is on a new page
 
-\begin{enumerate}
-\tightlist
-\item
-  合同员工
-\item
-  管理设施
-\item
-  轮班
-\end{enumerate}
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
 
-你可能会问：那些合同员工的职称是否也应该是一个实体？（因需要花工夫开发）\\
-这不应该是一个实体，原因：人员的职称必须依赖人员的信息挂在一起，不可以独立存在，就好比我们要维护员工信息，假如也要维护员工的家属信息，这个家属信息就不能算另外一个实体，因为没有人员的话，家属是不能单独存在的。原则：不是根据是否要产生开发的工作量，而是从用户角度看，这个实体能否独立存在和维护。否则功能点的估算就只是根据个人对开发工作量的估计，而不是从用户角度看功能的客观判断。
+\tableofcontents % Prints the table of contents
 
-每个实体对用户来讲，都有新增、展示、修改、删除4个功能。在人员管理里，还有一个功能是显示一个可选的列表，方便用户选择，这功能是增查改删以外的第五个功能。
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION SECTION
+%----------------------------------------------------------------------------------------
 
-设施管理也同样有这个列可选设备设施的一个展示框这第五个功能。
 
-在轮班管理里面，除了增加、查看、修改、删除和展示外，它里面有两个下拉框功能：
 
-\begin{enumerate}
-\tightlist
-\item
-  让客户挑选相关设施的 Combo-box下拉框
-\item
-  让客户选人员的框
-\end{enumerate}
+\begin{tabular}{|l|l|p{5cm}|l}
+\mbox{驾轻就熟} & jià qīng jiù shú & 驾轻车，走熟路。比喻对某事有经验，很熟悉，做起来容易。 & 驾轻车，走熟路。比喻对某事有经验，很熟悉，做起来容易。 \\
+\end{tabular}
 
-你可能会问，这 2
-个下拉框功能是否不应该算额外的功能，而是属于``轮班''的增删改查基本功能的一部分？\\
-我们可以这样想：从用户的角度来看，如果没有这两个下拉框的功能，基本的增删改查功能是否可以实现；现在做了两个下拉框的功能，是额外的新增功能，更方便用户去选择，所以这两个算是额外两个功能。
 
-也可参考IFPUG关于EI/EO/EQ 的识别要求；基本操作(elementary
-process)必须符合以下三条之一：
+%\usepackage{fontspec}
+%\usepackage{array}
+%\setmainfont{NSimSun}
+%\setmainfont{SimSong}
+%\XeTeXlinebreaklocale=ZH
+%\XeTeXlinebreakskip=0pt plus 1pt
 
-\begin{enumerate}
-\tightlist
-\item
-  使用独特处理逻辑，与应用中其他`行为'（EI/EO/EQ） 的处理逻辑不同
-\item
-  在该处理中识别出来的数据元素是与应用中其他`行为'（EI/EO/EQ）
-  的数据元素不同
-\item
-  在该处理中引用的`实体'（ILF 和EIF） 与其他`行为'（EI/EO/EQ）
-  所引用的不同
-\end{enumerate}
+%\begin{tabular}{|l|l|p{5cm}|}
+%驾轻就熟 & 
+%jià qīng jiù shú & \raggedright\arraybackslash
+%驾轻车，走熟路。比喻对某事有经验，很熟悉，做起来容易。\\
+%\hline
+%驾轻就熟 & jià qīng jiù shú &
+%驾轻车，走熟路。比喻对某事有经验，很熟悉，做起来容易。
+%\end{tabular}
 
-它要列出所有合条件的数据元素进这下拉框，类似一个新的报表，所以算一个行为。基于同类原因，挑选相关设施的
-Combo-box 下拉框,选择可用合同员工 Combo-box 下拉框, 等各自也算一个行为。
+%try CSDN LaTeX (table) code
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+1.0&2.0&3.0&4.0&5.0\\
+\hline
+6.0&\multicolumn{3}{c|}{敏捷开发颜黑}&7.0\\
+\hline
+8.0&9.0&10.0&11.0&12.0\\
+\hline
+\end{tabular}
 
-在轮班里，还有一个展示可选的轮班功能，另外是分配轮班功能。还有最后的
-RF05 六个查询功能。
+\begin{tabular}{|c|c|c|}   \hline
+          &\multicolumn{2}{c|}颜黑 \\ \cline{2-3}
+\raisebox{1.5ex}[0cm][0cm] T1
+          &BLACK    &BROWN                 \\\hline
+EYE 颜黑    &68  &119X黑                \\\hline
+\end{tabular}
 
-得出共 24(=5+5+6+2+6)行为，加 3实体, 所以按简化功能点每个实体 x7，每行为
-x4.6 得出，共新增131.4(=3x7+24x4.6)简化功能点，详见下面列表：
 
-\href{文件:Ex1SoluScreenshot_2022-04-05_115926.jpg}{500px}
 
-\href{文件:微信截图_20220412130822.jpg}{550px}
+% \usepackage{multirow} %inserted beforebegin document
+\begin{tabular}{|c|c|c|}
+\hline
+1.0&2.0&3.0\\
+\hline
+6.0&\multirow{3}{*}{敏捷颜黑}&7.0\\
+\cline{1-1}
+\cline{3-3}
+8.0&&9.0\\
+\cline{1-1}
+\cline{3-3}
+10.0&&11.0\\
+\hline
+12.0&13.0&14.0\\
+\hline
+\end{tabular}
 
-\hypertarget{ux8ba1ux7b97ux529fux80fdux89c4ux6a21}{%
-\subsubsection{计算功能规模}\label{ux8ba1ux7b97ux529fux80fdux89c4ux6a21}}
+%insert 3rows 2 columns in the middle
+\begin{tabular}{|c|c|c|c|}
+\hline
+1.0&2.0&3.0&4.0\\
+\hline
+6.0&\multicolumn{2}{c|}{\multirow{3}{*}{敏捷颜黑}}&7.0\\
+\cline{1-1}
+\cline{4-4}
+8.0&\multicolumn{2}{c|}{}&9.0\\
+\cline{1-1}
+\cline{4-4}
+10.0&\multicolumn{2}{c|}{}&11.0\\
+\hline
+12.0&13.0&14.0&15.0\\
+\hline
+\end{tabular}
 
-\begin{description}
-\item[]
-\begin{description}
-\tightlist
-\item[]
-DSFP = ADD + CFP
-\end{description}
-\end{description}
+2
 
-因为没有数据转换，所以 CFP=0， 所以 DSFP = （110.4+21） +0 = 131.4 SiFP
+\begin{tabular}{|c|c|c|}
+\hline
+心态&表现&对策\\
+\hline
+满足&满足现状&不打扰\\
+\hline
+否认&你说我担忧！胡说！&提问，支持，不能提建议\\
+\hline
+迷惑&乱七八糟，救命！&放眼未来\\
+\hline
+更新&有很多改进想法/建议&支持执行\\
+\hline
+\end{tabular}
 
-因是首次开发， ASFP = ADD = 131.4 SiFP
+4
 
-\hypertarget{ux6f5cux6c34ux5b66ux6821femux9879ux76ee}{%
-\subsection{2.潜水学校:FEM项目}\label{ux6f5cux6c34ux5b66ux6821femux9879ux76ee}}
 
-\hypertarget{ux63cfux8ff0}{%
-\subsubsection{描述}\label{ux63cfux8ff0}}
+%try CSDN LaTeX (table) code
+\begin{tabular}{|c|c|c|c|}
+\hline
+Process 过程&\multicolumn{3}{c|}{天数Durations}\\
+\hline
+1&27&30&75\\
+\hline
+2&45&50&125\\
+\hline
+3&72&80&200\\
+\hline
+4&45&50&125\\
+\hline
+5&81&90&225\\
+\hline
+\end{tabular}
 
-参照之前的潜水学校系统，对功能进行了增强，并提出了该软件的功能优化维护项目(FEM)。
+%try CSDN LaTeX (table) code
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Process 过程&\multicolumn{4}{c|}{天数Durations}\\
+\hline
+1&27&30&75&37&80\\
+\hline
+2&45&50&125&61.66&13.33\\
+\hline
+3&72&80&200&98.66&21.33\\
+\hline
+4&45&50&125&61.66&13.33\\
+\hline
+5&81&90&225&111&24\\
+\hline
+6&23&25&63&31&6.66\\
+\hline
+7&32&35&88&43.33&9.33\\
+\hline
+8&41&45&113&55.66&12\\
+\hline
+9&63&70&175&86.33&18.66\\
+\hline
+10&23&25&63&31&6.66\\
+\hline
+\:&\:&500&\:&617.33&\: \\
+\hline
+\end{tabular}
 
-\hypertarget{ux529fux80fdux9700ux6c42}{%
-\subsubsection{功能需求}\label{ux529fux80fdux9700ux6c42}}
+6
 
-\hypertarget{rf01}{%
-\paragraph{RF01}\label{rf01}}
+\begin{tabular}{|c|c|c|}
+\hline
+\:&Assembly&PL/S\\
+\hline
+代码行数&17,500&5,000\\
+\hline
+工作量（月）&30&12.5\\
+\hline
+工作量（工时）&3,960&1,650\\
+\hline
+每月代码行数&583.33&400.00 \\
+\hline
+等同的Assembly代码行数&17,500&17,500\\
+\hline
+等同的Assembly人月&583.33&1,400.00\\
+\hline
+功能点&100.00&100.00\\
+\hline
+功能点/人月&3.33&8.00\\
+\hline
+\end{tabular}
 
-用户想要取消合同员工删除功能。The user wants to eliminate the Contractor
-delete function.
+\begin{tabular}{|c|c|c|}
+\hline
+\:&活动&成本（\%）\\
+\hline
+1&发现与修正缺陷&30\\
+\hline
+2&编码&25\\
+\hline
+3&支持类文档&20\\
+\hline
+4&会议沟通&15\\
+\hline
+5&项目管理&10\\
+\hline
+\:&总计&100\\
+\hline
+\end{tabular}
 
-\hypertarget{rf02}{%
-\paragraph{RF02}\label{rf02}}
 
-在短途潜水里， 在潜水设施管理中能管理船上医生的存在或缺失。The
-presence/absence of a ship doctor during excursions must be managed in
-the file DIVING FACILITIES.
+\begin{tabular}{|c|c|}
+\hline
+活动名称&描述\\
+\hline
+预约申请&客户发出预约请求到预约系统，预约信息包括：日期、时间、上车的位置和目的地位置。\\
+\hline
+接收预约&预约系统收集客户预约请求，并把预约数据记录在数据库。\\
+\hline
+检查是否有可用的车/司机&预约系统从预约数据库中查看是否有合适的车/司机，如果能找到合适的时间、日期，能配合预约请求的话，看看司机是否有空档。如能找到，在系统更新内部状态为是，否则为否。 \\
+\hline
+寻找其他可选&如果状态是没有，预约系统继续在数据库搜索有没有接近的预期时间，否则写没有合适请求的出发地点和目的地。 \\
+\hline
+提供预约信息&预约系统自动发出通知到客户，是否有合适空档或者提供接近的日期时间。 \\
+\hline
+处理预约&客户回复预约系统接受或拒绝，预约系统把反馈记录在预约数据库。如果反馈是接受，预约系统会继续统计客户详细预约信息。如果客户拒绝，预约系统就会回复收到，并终止过程。 \\
+\hline
+分派司机&如果客户接受，预约系统会指派司机到已确认的日期、时间、上车地点和目的地。预约系统把这个记录在数据库中，并发信息通知相关司机。 \\
+\hline
+接乘客&司机按约好的日期时间、上车的地点接乘客，然后发信息到预约系统，通知乘客已经上车。\\
+\hline
+完成预约请求&预约系统在数据库中记录已经完成整个过程。\\
+\hline
+\end{tabular}
 
-\hypertarget{rf03}{%
-\paragraph{RF03}\label{rf03}}
+7
 
-出于税收和安全原因，不再需要删除可用轮班这项功能 For tax and safety
-reasons the function to delete availability shifts will no longer be
-required.
+\begin{tabular}{|c|c|c|}
+\hline
+估算步骤&专家估算&模型\\
+\hline
+评判不同信息的比重&主观判断&基于对历史数据的统计分析\\
+\hline
+从信息估算工作量&主观判断&基于正式重复性的过程和方程式 \\
+\hline
+回顾/讨论工作量估算/主观判断+分析过程，参考检查单、指南和专家意见&主观判断+分析过程，参考检查单、指南和专家意见，可能再主观判断更新工作量估算 \\
+\hline
+\end{tabular}
 
-\hypertarget{rf04}{%
-\paragraph{RF04}\label{rf04}}
 
-用户还需要管理课程参与者信息和他们参加的那个短途潜水信息：\\
-*管理参与者的信息包括:参与者ID，姓，名，出生日期，潜水执照，执照日期。\\
-参加短途潜水:参与者ID。轮班编号，出游日，天数，最终考试是/否通过\\
-*用列表框 （包括：参与者ID，姓，名）来选择轮班中的参与者。\\
-*使用原本应用程序中已经有的列表框选择轮班。\\
-*用功能键将激活这功能，并最终生成错误信息/结果。
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+学生ID&经验水平（自估）&I&II&III&IV\\
+\hline
+1&0&14.3&3.7&2.25&2.25\\
+\hline
+2&Low&10&4&2.5&2.5 \\
+\hline
+3&Low&20&4.5&3.75&3.75 \\
+\hline
+4&Medium&3&5&4.5&3\\
+\hline
+5&Medium&2.5&4&3.2&3.2\\
+\hline
+6&Low&8&4.1&4.1&3\\
+\hline
+7&0&20&7&5&3.5\\
+\hline
+8&Medium&20&5&4&2.75\\
+\hline
+9&Medium&4.5&5&4.5&3.5\\
+\hline
+10&Medium&3&3&3&2.5\\
+\hline
+11&High&4.6&3.8&2.8&2.4\\
+\hline
+12&Medium&2&2.5&2.7&2.3\\
+\hline
+13&Low&6.5&3.5&2.5&2.5\\
+\hline
+14&0&18&6&5&3\\
+\hline
+15&Low&20&3&3&3\\
+\hline
+16&High&5&5.5&2.3&2.5\\
+\hline
+17&High&15&3.8&2.7&2.4\\
+\hline
+Mean 均值&-&10.4&4.3&3.4&2.8\\
+\hline
+Median&-&8&4&3&2.8\\
+\hline
+SD 标准差&-&7&1.1&0.9&0.4\\
+\hline
+\end{tabular}
 
-用功能键初始填充课程参与者信息，参与者信息源自以前参与者信息的备份数据。
+\begin{tabular}{|c|c|c|c|}
+\hline
+团队 ID&II（团队）&III（团队）&IV（团队）\\
+\hline
+1&3.8&2.7&2.4\\
+\hline
+2&3.7&3.4&3.16\\
+\hline
+3&4&4.3&2.85\\
+\hline
+Mean 均值&3.8&3.5&2.8\\
+\hline
+Median&3.8&3.4&2.9\\
+\hline
+SD 标准差&0.1&0.7&0.3\\
+\hline
+\end{tabular}
 
-\hypertarget{rf05}{%
-\paragraph{RF05}\label{rf05}}
 
-用户还需要能够在课程结束时颁发出席证书给在短途潜水中登记的所有参与者。除了管理参与者基础数据外，还需要管理:参与者所登记的轮班、轮班日期、时长、教练的姓名和医生（如在场）的姓名。该功能使用原本应用程序中已经可用的功能：选择轮班。用功能键将激活这些功能，并最终生成错误/结果消息。
 
-\hypertarget{rf06}{%
-\paragraph{RF06}\label{rf06}}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+Team ID&\# Pieces&对象人群岁数&团队人数&实际总工作量(分钟)&模型估计总工作量 (分钟)&偏差 MRE \\
+\hline
+1&346&12+&1&37&46.21&0.25\\
+\hline
+2&321&12+&1&48&45.39&0.05\\
+\hline
+3&261&7 to 12&1&32&43.19&0.35\\
+\hline
+4&345&12+&1&45&46.18&0.03\\
+\hline
+5&261&7 to 12&1&59&43.19&0.27\\
+\hline
+6&345&12+&2&114&73.48&0.36\\
+\hline
+7&346&12+&3&84&96.48&0.15\\
+\hline
+8&321&12+&4&104&114.90&0.10\\
+\hline
+\end{tabular}
 
-用户还需要能够向合同员工颁发``教员身份参与证书''，其中的信息除了基础数据外还包括:轮班ID、教练ID、出游日、船医(如果有的话)。对于轮班选择，将使用原本应用程序中已经有的列表框。用功能键将激活这功能，并最终生成错误信息/结果。
 
-\hypertarget{ux4f8bux5b50ux4e8c-ux7b54ux6848ux4e0eux89e3ux8bfb}{%
-\subsection{例子二：
-答案与解读}\label{ux4f8bux5b50ux4e8c-ux7b54ux6848ux4e0eux89e3ux8bfb}}
+12
 
-RF02 变动了潜水设施的内容，所以设施实体有变更。\\
-因为设施的信息有变更，导致跟这实体相关的行为，包括新增、编辑、和展示这三行为都会有变更。
+\begin{tabular}{|c|c|c|}
+\hline
+项目组&原因&投票数\\
+\hline
+**雄&建议使用FindBugs代码扫描工具&1\\
+\hline
+张**&缺少系统业务培训&基1\\
+\hline
+高**&没有合适的代码扫描工具&2 \\
+\hline
+李*&希望公司制定缺陷数据分析标准&1\\
+\hline
+韩**&公司应提供合适的代码扫描工具&3\\
+\hline
+高*&公司应加强相关业务培训&2\\
+\hline
+*一铭&没有合适的代码扫描工具&4\\
+\hline
+孙**&建议使用有力的代码扫描工具&5\\
+\hline
+\end{tabular}
 
-另外加了两个要管理的实体：
 
-\begin{enumerate}
-\tightlist
-\item
-  参与者
-\item
-  短途潜水
-\end{enumerate}
+\begin{tabular}{|c|c|}
+\hline
+Process Stage 过程阶段&Percentage of Total Defects 占总缺陷数百分比\\
+\hline
+RR + DR Requirements review需求评审+ HLD + detailed design review 概要/详细设计评审&15\% (15\% - 20\%) \\
+\hline
+CR+UT Code reviews代码评审 + unit testing单元测试&55\% (50\% - 70\%) \\
+\hline
+IT+ST Integration testing集成测试 + system testing系统测试&22\% (20\% - 28\%)  \\
+\hline
+AT Acceptance testing验收测试&8\% (5\% - 10\%) \\
+\hline
+\end{tabular}
 
-不需要合同员工的删除功能，所以是个行为删除。
 
-在参与者的管理，除了增加，改动，展示和删除四个功能以外，还有可以挑选参与者的下拉框功能。
+15
 
-两个证书的功能
 
-\begin{enumerate}
-\tightlist
-\item
-  给教练的证书
-\item
-  给参与者发证书
-\end{enumerate}
 
-对应每个短途潜水也需要有添加、改动、展示、删除的四功能。
-那个删除轮班功能也被删掉了。
+\begin{tabular}{|c|c|}
+\hline
+SRP 单一职责原则&Single Responsibility Principle \\
+\hline
+OCP 开放封闭原则&Open Closed Principle \\
+\hline
+LSP 里氏替换原则&Liskov Substitution Principle \\
+\hline
+ISP 接口分离原则&Interface Segregation Principle \\
+\hline
+DIP 依赖倒置原则&Dependency Inversion Principle\\
+\hline
+\end{tabular}
 
-增加了两个实体 -\/-参与者 与 短途潜水旅行登记\\
-Q: 为什么短途潜水旅行登记算一个实体？\\
-A: 因它包括的信息都不能归入已有的 【参与者】 【合同员工】 【设施
-】【轮班】实体里，例如那位参与者参加了那个班，考试分数等。
-也可参考IFPUG关于ILF/EIF (实体)的识别要求；必须符合以下条件：
+18
 
-\begin{enumerate}
-\tightlist
-\item
-  数据的集合必须是逻辑相关的并且是用户可以识别
-\item
-  这些数据或者控制信息必须是在本应用的边界内被维护
-\end{enumerate}
 
-总结：
+\begin{tabular}{|c|c|c|}
+\hline
+\:&Conventional传统分工&Composite自主团队\\
+\hline
+Number of men人数&41&41\\
+\hline
+Number of segregated tasks 任务数&14&1 \\
+\hline
+\multirow{3}{*}{Mean job variation for members 每成员的平均任务/变化数: }\\
+\hline
+Tasks work with 要处理的任务:&1.0&5.5\\
+\hline
+Main tasks worked 主要任务:&1.0&3.6\\
+\hline
+Diff. shifts worked 不同的轮班:&2.0&2.9\\
+\hline
+\end{tabular}
 
-\begin{itemize}
-\tightlist
-\item
-  实体方面增加了2 实体; 设施实体有变更。
-\item
-  行为方面主要的在短途潜水旅行方面增加了4 增删改查的功能和。5
-  参与者的功能(因为在里面加了一个下拉框功能)，增加了2
-  证书功能。改动了设施的增加、编辑、和展示，三个行为，删掉了两个行为。
-\end{itemize}
 
-所以动态功能点是增加的功能点64.6 (=2x7 +(4+2+5)x4.6)，变更 20.8
-(=3x4.6)，删除9.2 (=2x4.6)，总共的动态简化功能点 94.6。
 
-静态功能点依据上面练习一那的131.4，加上增加的功能点 64.6，减掉
-删除功能点 9.2，得出变更后静态功能点 186.8。
+\begin{tabular}{|c|c|c|}
+\hline
+\:&Conventional传统分工&Composite自主团队\\
+\hline
+Productivity(\%) 生产率&78&95\\
+\hline
+Ancillary work at face(hrs per man-shift) 辅助工作(小时/每轮班)&1.32&0.03 \\
+\hline
+平均后备人力/总人力 (\%)&6&no\\
+\hline
+Shifts with cycle lag 轮班延迟 (\%)&69&5\\
+\hline
+最长连续轮班数（没有轮班有问题导致取消）&12&65\\
+\hline
+\multirow{3}{*}{average per cent of coal won each day平均每天获得的煤炭\%}\\
+\hline
+\end{tabular}
 
-\href{文件:Ex2XlsScreenshot_2022-04-05_143941.jpg}{550px}
 
-\href{文件:Ex2XlsPt2of2Screenshot_2022-04-05_143941.jpg}{550px}
+\begin{tabular}{|c|c|c|}
+\hline
+\:&Conventional传统分工&Composite自主团队\\
+\hline
+\multirow{3}{*}{Absenteeism (\% of possible shifts)旷工率(可能轮班数之百分比) }\\
+\hline
+Without reason 没有理由&4.3&0.4 \\
+\hline
+Sickness or other 病或其他&8.9&4.6\\
+\hline
+Accidents 意外&6.8&3.2\\
+\hline
+Total 总数&20.0&8.2\\
+\hline
+\end{tabular}
 
-\hypertarget{ux8ba1ux7b97ux529fux80fdux89c4ux6a21-1}{%
-\subsubsection{计算功能规模}\label{ux8ba1ux7b97ux529fux80fdux89c4ux6a21-1}}
+19
 
-\begin{description}
-\item[]
-\begin{description}
-\tightlist
-\item[]
-ESFP = ADD + CHG + DEL + CFP
-\end{description}
-\end{description}
+\begin{tabular}{|c|c|c|}
+\hline
+干系人&角色/概况&质量关注重点\\
+\hline
+商业用户&长期出差者
+-坐长途飞机
+-做演示
+-保护某些秘密文档&-待机时长
+-屏幕清晰度
+-安全性 \\
+\hline
+专业媒体&创造性工作；并要协同。
+录音和录视频&数字带宽（声音和视频）
+电脑速度和内存  \\
+\hline
+家庭用户&\:&\:\\
+\hline
+\end{tabular}
 
-因为有数据转换：初始填充课程参与者信息作为一个基本过程，所以 CFP=4.6
+22
 
-\begin{description}
-\tightlist
-\item[]
-ESFP = (64.6 + 20.8 + 9.2) + 4.6 = 94.6 + 4.6 = 99.2 SiFP
-\end{description}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multirow{10}{*}{45名学生的测试结果 }\\
+\hline
+A组(控制组)&17&14&24&20&24&23&16&15&24\\
+\hline
+B组(控制组)&21&23&13&19&13&19&20&21&16 \\
+\hline
+C组(赞赏组)&28&30&29&24&27&30&28&28&23\\
+\hline
+D组(责骂惩罚组)&19&28&26&26&19&24&24&23&22\\
+\hline
+E组(不理睬组)&21&14&13&19&15&15&10&18&20\\
+\hline
+\end{tabular}
 
-软件开发后的静态功能点： ASFPA = ASFPB + ADD - DEL = 131.4 + 64.6 - 9.2
-= 186.8 SiFP
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+表1&\multirow{4}{*}{头发颜色 }\\
+\hline
+眼睛颜色&黑&深褐&红&金\\
+\hline
+棕&68&119&26&7\\
+\hline
+蓝&20&84&17&94\\
+\hline
+淡绿褐&15&54&14&10\\
+\hline
+绿&5&29&14&16\\
+\hline
+\end{tabular}
+
+
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+表2&\multirow{5}{*}{头发颜色 }\\
+\hline
+眼睛颜色&黑&深褐&红&金&总计\\
+\hline
+棕&68&119&26&7&220\\
+\hline
+蓝&20&84&17&94&215\\
+\hline
+淡绿褐&15&54&14&10&93\\
+\hline
+绿&5&29&14&16&64\\
+\hline
+总计&108&286&71&127&592\\
+\hline
+\end{tabular}
+
+
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+表3&\multirow{8}{*}{头发颜色 }&\:\\
+\hline
+\:&\multirow{2}{*}{黑}&\multirow{2}{*}{深褐}&\multirow{2}{*}{红}&\multirow{2}{*}{金}&\:\\
+\hline
+眼睛颜色&Obs.&Exp.&Obs.&Exp.&Obs.&Exp.&Obs.&Exp.&Total\\
+\hline
+棕&68&40&119&106&26&26&7&47&220\\
+\hline
+蓝&20&39&84&104&17&26&94&46&215\\
+\hline
+淡绿褐&15&17&54&45&14&11&10&20&93\\
+\hline
+绿&5&12&29&31&14&8&16&14&64\\
+\hline
+总计&\multirow{2}{*}{108}&\multirow{2}{*}{286}&\multirow{2}{*}{71}&\multirow{2}{*}{127}&592\\
+\hline
+\end{tabular}
+
+
+\begin{tabular}{|c|c|}
+\hline
+步骤&上面实例 \\
+\hline
+\:&这些数字代表什么?什么单位（角度、还是距离）？ \\
+\hline
+策划收集数据&怎样取样？避免取样偏差 \\
+\hline
+确保数据质量&2.5米高女性？异常数据？ \\
+\hline
+初步数据分析（描述性)&平均值、四分位数(Q1、Q2、Q3)、柱状图、箱线图 \\
+\hline
+数据分析&如果能简单看出来有显著差异，便不需要用假设检验，或其他统计分析方法\\
+\hline
+解读、沟通结果&当我们读统计分析报告要小心，注意是否被骗 \\
+\hline
+\end{tabular}
+
+
+23
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multirow{5}{*}{男生 Males}&\multirow{5}{*}{女生 Females }\\
+\hline
+6&11&11&8&15&6&8&11&13&8\\
+\hline
+6&14&8&12&18&7&5&13&14&6\\
+\hline
+6&9&5&6&9&6&5&5&7&6\\
+\hline
+6&9&18&7&6&16&10&7&8&5\\
+\hline
+15&6&11&5&5&16&10&7&8&5\\
+\hline
+9&9&5&5&8&7&5&5&6&5\\
+\hline
+9&5&11&5&8&7&8&5&7&6\\
+\hline
+7&7&5&10&7&11&4&6&8&7\\
+\hline
+10&7&10&8&11&14&12&5&8&5\\
+\hline
+\end{tabular}
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+对象&1&2&3&4&5&6\\
+\hline
+前(X1)&210&235&208&190&172&244\\
+\hline
+后(X2)&190&170&210&188&173&228\\
+\hline
+(X1) - (X2)&20&65&-2&2&-1&16\\
+\hline
+\end{tabular}
+
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+布料供货商&1&2&3&4\\
+\hline
+随机样本拉力&18.5&26.3&20.6&25.4\\
+\hline
+\:&24.0&25.3&25.2&19.9\\
+\hline
+\:&17.2&24.0&20.8&22.6\\
+\hline
+\:&19.9&21.2&24.7&17.5\\
+\hline
+\:&18.0&24.5&22.9&20.4\\
+\hline
+样本均值&19.52&24.26&22.84&21.16\\
+\hline
+样本标准差&2.69&1.92&2.13&2.98\\
+\hline
+\end{tabular}
+
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+原因&自由度&离差平方和 (Sum of Squares)&(Mean Square)&F\\
+\hline
+组间&c - 1&SSA&MSA = SSA/(c-1)&MSA/MSW \\
+\hline
+组内&n - c&SSW&MSW = SSW /(n-c)&\:\\
+\hline
+总&n - 1&SST&\:&\:\\
+\hline
+\end{tabular}
+
+24
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Component 组件&1&2&3&4&5&6&7&8&9&10&11&12&13&14&15&16&17&18&19&20&21&Totals 总数\\
+\hline
+Defects 缺陷数&12&16&18&32&22&16&23&35&15&27&16&25&20&26&20&23&23&36&22&27&17&271\\
+\hline
+Defect Type 类型&\multirow{21}{*}{Number of Defects per Type per Component 缺陷数/类型*组件}&\:\\
+\hline
+Function 功能&3&5&4&4&4&3&3&20&4&11&2&3&3&5&3&7&4&5&5&15&2&115\\
+\hline
+Interface 接口&2&2&4&4&3&4&2&3&3&4&2&3&5&3&3&3&2&16&6&2&4&80\\
+\hline
+Timing 时序&1&1&0&1&1&0&2&1&0&0&2&0&1&1&1&1&1&0&1&0&0&15\\
+\hline
+Algorithm 算法&0&0&1&14&2&0&0&0&0&0&0&1&5&2&7&6&5&1&2&0&1&47\\
+\hline
+Checking 检验&1&1&5&1&7&1&1&2&0&1&6&3&1&12&1&0&2&4&3&5&2&59\\
+\hline
+Assignment 分派&0&2&0&4&1&2&1&3&2&3&2&8&1&0&2&1&2&1&0&1&1&37\\
+\hline
+Build/Pkg.构建&3&1&1&2&1&0&0&4&3&6&1&0&2&1&1&1&3&2&2&2&1&37\\
+\hline
+Document 文档&2&4&3&2&3&6&14&2&3&2&1&7&2&2&2&4&4&7&3&2&6&81\\
+\hline
+\end{tabular}
 
 \end{document}

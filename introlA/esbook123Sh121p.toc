@@ -1,0 +1,3 @@
+\contentsline {part}{I\hspace {1em}个人经验分享}{11}{part.1}% 
+\contentsline {part}{II\hspace {1em}再读 德鲁克 与 X-Y理论}{15}{part.2}% 
+\contentsline {part}{III\hspace {1em}量化敏捷开发案例}{19}{part.3}% 

@@ -1,0 +1,6 @@
+<math> E = \frac{(\mbox{行总数}\ row\ sum) * (\mbox{栋总数}\ column\ sum)} {\mbox{所有总数}\ grand\ total} </math>
+
+==2024.1.16==
+<math> \mbox{行总数} = Sigma^2 = \sigma ^2 </math>
+
+<math> (\mbox{行总}\  row \  sum)</math>

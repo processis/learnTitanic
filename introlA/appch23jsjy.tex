@@ -7,7 +7,7 @@
 \includegraphics[width=6cm]{CompareAB1Screenshot_2022-11-06_2119471.jpg}
 
 想比较A、B两组实验结果是否有显著差异。如果像上图，应该看到B明显比A高。\\
-但如果像下图，我就很难看得出来：\\
+但如果像下图，就很难看得出来：\\
 %\href{文件:CompareAB2Screenshot_2022-11-06_212036.1.jpg}{600px}
 
 \includegraphics[width=6cm]{CompareAB2Screenshot_2022-11-06_2120361.jpg}
@@ -52,7 +52,7 @@
 \end{description}
 \end{description}
 
-从下面样本钢丝折断力柱状图看到10个样本中有七个接近285,有3个是明显大于285，应如何判断是否有显著差异呢？
+从下面样本钢丝折断力柱状图看到10个样本中有7个接近285、有3个是明显大于285，应如何判断是否有显著差异呢？
 
 %\href{文件:1sigmaUnknownHistogram_of_strength.jpg}{500px}\\
 
@@ -110,7 +110,7 @@
 
 %\href{文件:TypeOneTwoErrorScreenshot_2022-07-23_151744.jpg}{thumb\textbar{}none\textbar{}500px\textbar{}图19}
 
-\includegraphics[width=6cm]{TypeOneTwoErrorScreenshot_2022-07-23_151744.jpg}
+\includegraphics[width=6cm]{TypeOneTwoErrorScreenshot_2022-07-23_151744-1.jpg}
 
 这两类错误α与β之间是有关系：\\
 如果α风险（概率从本来0.05 降低）下降， 便会引起
@@ -124,18 +124,42 @@
 \strut
 \end{minipage}}
 
-使用假设检验比较两组数据有没有显著差异的例子:
+使用假设检验比较两组数据有没有显著差异的例子。
 
 \hypertarget{ux6bd4ux8f83ux4e24ux4e2aux6b63ux6001ux603bux4f53ux7684ux5747ux503c}{%
 \subsection{比较两个正态总体的均值}\label{ux6bd4ux8f83ux4e24ux4e2aux6b63ux6001ux603bux4f53ux7684ux5747ux503c}}
 
-一名研究人员假设，大学为男生提供的运动项目的平均数量大于大学为女生提供的运动项目的平均数量。下表是对大学男女生提供的体育项目数量的随机抽样结果（各50位大学男女生数据分成两组，两组数据之间没有对应关系），设定临界概率为5\%
+一名研究人员假设大学为男生提供的运动项目的平均数量大于大学为女生提供的运动项目的平均数量。下表是对大学男女生提供的体育项目数量的随机抽样结果（各50位大学男女生数据分成两组，两组数据之间没有对应关系），设定临界概率为5\%
 （Alpha α=0.05），是否有足够的证据支持这种说法? （假设方差都一样，
 \(\sigma\) = 3.3）。
 
 %Screenshotfrom2023-11-1003-40-34.png
 
-\includegraphics[width=6cm]{Screenshotfrom2023-11-1003-40-34.png}
+%\includegraphics[width=6cm]{Screenshotfrom2023-11-1003-40-34.png}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multirow{5}{*}{男生 Males}&\multirow{5}{*}{女生 Females }\\
+\hline
+6&11&11&8&15&6&8&11&13&8\\
+\hline
+6&14&8&12&18&7&5&13&14&6\\
+\hline
+6&9&5&6&9&6&5&5&7&6\\
+\hline
+6&9&18&7&6&16&10&7&8&5\\
+\hline
+15&6&11&5&5&16&10&7&8&5\\
+\hline
+9&9&5&5&8&7&5&5&6&5\\
+\hline
+9&5&11&5&8&7&8&5&7&6\\
+\hline
+7&7&5&10&7&11&4&6&8&7\\
+\hline
+10&7&10&8&11&14&12&5&8&5\\
+\hline
+\end{tabular}
 
 \begin{enumerate}
 \tightlist
@@ -147,7 +171,7 @@
   （\(\mathbf{H}_1: {\mu}_1 > {\mu}_2\)）。
 \end{enumerate}
 
-男生的均值是 8.6，女生是 7.9，相差是 0.7。\\
+男生的均值是 8.6，女生的均值是 7.9，相差是 0.7。\\
 假定使用90\%置信区间:\\
 正态分布 \(\pm 1.65{\sigma}\)
 (标准差)内的面积是总面积的90\%，计算出检验统计量计算值为1.06，从下图看到1.06落在90\%置信区间之内，所以不能拒绝零假设。
@@ -168,12 +192,24 @@ T test)例子：
 \subsection{检验单个正态总体的均值,方差未知}\label{ux68c0ux9a8cux5355ux4e2aux6b63ux6001ux603bux4f53ux7684ux5747ux503cux65b9ux5deeux672aux77e5}}
 
 营养师正在观察如果每天饮食都添加某类矿物质，是否会改变人的胆固醇水平。对随机选取6位对象在实验之前进行了测试。然后对他们进行为期6周的测试，在他们的食物里添加矿物质补充，实验之后再测试，结果显示在下表
-(胆固醇水平以每分升毫克为单位)。能否得出结论，在α=
+(血清总胆固醇水平以毫克每分升（mg/dl）为单位)。能否得出结论，在α=
 0.1时，胆固醇水平是否发生了变化。
 
 %Screenshotfrom2023-11-1003-41-55.png
 
-\includegraphics[width=6cm]{Screenshotfrom2023-11-1003-41-55.png}
+%\includegraphics[width=6cm]{Screenshotfrom2023-11-2801-58-19.png}
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+对象&1&2&3&4&5&6\\
+\hline
+前(X1)&210&235&208&190&172&244\\
+\hline
+后(X2)&190&170&210&188&173&228\\
+\hline
+(X1) - (X2)&20&65&-2&2&-1&16\\
+\hline
+\end{tabular}
 
 \begin{enumerate}
 \tightlist
@@ -208,10 +244,10 @@ test)}\label{ux65b9ux5deeux5206ux6790-anova-test}}
 \hypertarget{ux4f8bux5b50ux4e00}{%
 \subsubsection{例子一}\label{ux4f8bux5b50ux4e00}}
 
-比较三种车型（小轿车，舒适型，豪华车）的省油系数有没有显著差异？\\
+比较3种车型（小轿车，舒适型，豪华车）的省油系数有没有显著差异？\\
 \href{文件:5anovaDataScreenshot_2022-07-24_105955.jpg}{文件:5anovaDataScreenshot
 2022-07-24 105955.jpg}\\
-用统计工具跑单因子方差分析，得出P值是0.0385，低于0.05，所以我们便可以拒绝零假设，三车型有显著差异。
+用统计工具跑单因子方差分析，得出P值是0.0385，低于0.05，所以我们便可以拒绝零假设，3车型有显著差异。
 
 %\href{文件:5anovaResultScreenshot_2022-07-24_104352.jpg}{400px}\\
 
@@ -232,14 +268,34 @@ Tukey-Kramer 做多组之间比较。
 某降落伞工厂想比较4家布料供货商的布料拉力（因拉力不足会影响使用者的性命安全）。\\
 下面是它们随机抽样的结果：
 
-\includegraphics[width=6cm]{Screenshotfrom2023-11-1003-44-15.png}
+%\includegraphics[width=6cm]{Screenshotfrom2023-11-2801-58-54.png}
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+布料供货商&1&2&3&4\\
+\hline
+随机样本拉力&18.5&26.3&20.6&25.4\\
+\hline
+\:&24.0&25.3&25.2&19.9\\
+\hline
+\:&17.2&24.0&20.8&22.6\\
+\hline
+\:&19.9&21.2&24.7&17.5\\
+\hline
+\:&18.0&24.5&22.9&20.4\\
+\hline
+样本均值&19.52&24.26&22.84&21.16\\
+\hline
+样本标准差&2.69&1.92&2.13&2.98\\
+\hline
+\end{tabular}
 
 用工具跑方差分析P值是0.042，少于0.05， 判断拒绝零假设。
 
 \begin{itemize}
 \tightlist
 \item
-  Minitab 出来方差分析结果表，与上面的总结表能一一对应；
+  Minitab 出来方差分析结果表，与上面的总结表能一一对应。
 \end{itemize}
 
 %\href{文件:AnovaParachutes807Screenshot_2022-08-07_124737.jpg}{400px}
@@ -290,8 +346,8 @@ Tukey-Kramer 做多组之间比较。
 用Tukey-Kramer
 相关方程式（详见附件），得出临界范围为4.47，所以判断只有供货商1与2之间的布料拉力是有显著差异。
 
-\hypertarget{ux5206ux7ec4ux5206ux7c7bux6570ux636e}{%
-\section{分组（分类）数据}\label{ux5206ux7ec4ux5206ux7c7bux6570ux636e}}
+\hypertarget{ux65b9ux5deeux5206ux6790-anova-test}{%
+\subsection{分组（分类）数据}\label{ux65b9ux5deeux5206ux6790-anova-test}}
 
 上面都是用于连续数据的例子，假设检验也可以用于分组（分类）数据。
 
@@ -300,7 +356,7 @@ Tukey-Kramer 做多组之间比较。
 test)}\label{ux5361ux65b9ux68c0ux9a8cchi-square-test}}
 
 研究三家医院(A、B、C) 在
-三类最终导致病人死亡感染的主因（外科手术Surgical Site、肺炎
+3类最终导致患者死亡感染的主因（外科手术Surgical Site、肺炎
 Pneumonia、血液 Bloodstream） 分布是否有显著差异？
 
 %\href{文件:4chiSquareDataScreenshot_2022-07-24_110053.jpg}{文件:4chiSquareDataScreenshot
@@ -387,13 +443,13 @@ CLT)}\label{ux4e2dux5fc3ux6781ux9650ux5b9aux7406-central-limit-theorem-clt}}
 \(Z_n = \cfrac{ \sqrt{n}(\overline{X_n} - \mu) }{\sigma}\)
 接近正态分布。\\
 
-（正态分布图形，详见25章控制图里的噪音还是信号）
+（正态分布图形，详见第25章控制图里的噪音还是信号）
 
 \hypertarget{ux68c0ux9a8cux5355ux4e2aux6b63ux6001ux6574ux4f53ux5747ux503cux76f8ux5173ux65b9ux7a0bux5f0f}{%
 \subsection{检验单个正态整体均值相关方程式}\label{ux68c0ux9a8cux5355ux4e2aux6b63ux6001ux6574ux4f53ux5747ux503cux76f8ux5173ux65b9ux7a0bux5f0f}}
 
 样本平均值分布的方差 = 样本方差 / n
-，并可以用以下方程式估算（如果样本数n 越大，样本均值的方差就越少)：
+，并可以用以下方程式估算（如果样本数n越大，样本均值的方差就越少)：
 
 \(Z_n = \cfrac{ \sqrt{n}(\overline{X_n} - \mu) }{\sigma}\)\\
 
@@ -419,7 +475,7 @@ CLT)}\label{ux4e2dux5fc3ux6781ux9650ux5b9aux7406-central-limit-theorem-clt}}
 \subsection{检验单个正态总体的均值,方差未知}\label{ux68c0ux9a8cux5355ux4e2aux6b63ux6001ux603bux4f53ux7684ux5747ux503cux65b9ux5deeux672aux77e5-1}}
 
 \(\overline{D} = \sum D / n = 100/6 = 16.7\)\\
-::(\(D = X_1 - X_2\) )\\
+(\(D = X_1 - X_2\) )\\
 \(\mathbf{H}_0\)的拒绝域为：\\
 \(\cfrac{ \sqrt{n}(\overline{D} - \mu _0) }{S_D}  > t_\alpha(n-1)\)\\
 
@@ -442,7 +498,7 @@ CLT)}\label{ux4e2dux5fc3ux6781ux9650ux5b9aux7406-central-limit-theorem-clt}}
 \end{itemize}
 
 \(t = \cfrac{ \sqrt{n}(\overline{D} - \mu _0) }{S_D} = \cfrac{ \sqrt{6}(16.7 - 0) }{25.4}\)\\
-:: = 1.61\\
+ = 1.61\\
 
 \hypertarget{tukey-kramer-ux76f8ux5173ux65b9ux7a0bux5f0f}{%
 \subsection{Tukey-Kramer
@@ -535,7 +591,20 @@ MSW，参考ANOVA方程式}\label{ux5982ux4f55ux8ba1ux7b97-mswux53c2ux8003anovau
 
 %Screenshotfrom2023-11-1003-46-42.png
 
-\includegraphics[width=6cm]{Screenshotfrom2023-11-1003-46-42.png}
+%\includegraphics[width=6cm]{Screenshotfrom2023-11-1003-46-42.png}
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+原因&自由度&离差平方和 (Sum of Squares)&(Mean Square)&F\\
+\hline
+组间&c - 1&SSA&MSA = SSA/(c-1)&MSA/MSW \\
+\hline
+组内&n - c&SSW&MSW = SSW /(n-c)&\:\\
+\hline
+总&n - 1&SST&\:&\:\\
+\hline
+\end{tabular}
+
 
 \textbf{相关方程式}\\
 * 总离差平方和\\
