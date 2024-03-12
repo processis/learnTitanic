@@ -1,0 +1,87 @@
+---
+title: "Learn Probability 1 Discrete"
+format: html
+editor: visual
+---
+
+### **简单例子**
+
+-   电话号码 (1.26)
+
+-   4个英文字母，共有多少种排序（字母不能重复）
+
+    -   k-permutation 排列例子：
+
+-   排列音乐CD光盘 (1.29)
+
+-   不同英文字母中，共有多少个组合（不区分顺序， ABC 与 BAC 没有去别）
+
+### **应用题**
+
+-   六个英文字母 TATTOO 随意排序，共能排出多少组？
+
+-   共有n个球，其中有m个红色。随机抽出k个球
+
+Q: 其中有i个红色球的概率是多少？(Pr61 p69)
+
+-   52張柏克牌,隨機抽出七張牌:(Pr 58 p69)
+
+1.  七張牌中，刚好有3張A的概率
+
+2.  七張牌中，剛好有2張大王的概率
+
+3.  七張牌中，包括剛好3張A或2張大王K或前面这两类的概率
+
+Pr24(p58):\
+監獄中有三位死囚，国王特赦，其中2位会被释放，但实际是那2位，大家都不知道。 因为其中一位囚犯本来想问管建官员，除了他自己以外，那位会被释放？
+
+但当他考虑下时他就犹豫：
+
+-   如果本来什么都不知道，被释放的概率是三分之二 (2/3)
+
+-   但问完后被释放的概率反而变成二分之一 (1/2)
+
+你觉得这分析出了什么问题？
+
+### **答案：简单例子**
+
+-   电话号码 (1.26)
+
+    $8 \cdot \underbrace{ 10 \cdot 10 \cdot 10 \cdot \cdot 10 }_{6 times} = 8 \cdot 10^6$
+
+-   4个英文字母，共有多少种排序（字母不能重复）
+
+    $\frac{n!}{(n - k)!} = \frac{26!} {22!} = 26 \cdot 25 \cdot 24 \cdot 23$
+
+-   排列音乐CD光盘 (1.29)
+
+    $3! \cdot \frac{n_1 !}{k_1 !} \cdot \frac{n_2 !}{k_2 !} \cdot \frac{n_3 !}{k_3 !}$
+
+-   不同英文字母中，共有多少个组合（不区分顺序， ABC 与 BAC 没有去别） 例如 4个英文字母$\frac{26 !}{4! (26 - 4) !}$n = 26, k = 4 通用方程式$\frac{n !}{k! (n - k) !} = \binom{n}{k}$
+
+```{r}
+library(gtools)
+factorial(6)
+xx <- c(2,3,4,5,6)
+factorial(xx)
+choose(8,4)
+Marx.Bros <- c("Groucho","Chico","Harpo","Zeppo")
+combn(Marx.Bros,2)
+combinations(4,2,v=Marx.Bros)
+permutations(4,2,v=Marx.Bros)
+combinations(4,2)
+nrow(combinations(4,2))
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+xx <- c(2,3,4,5,6)
+
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+``` r
+```

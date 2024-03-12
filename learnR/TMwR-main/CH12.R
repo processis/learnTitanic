@@ -1,0 +1,343 @@
+knitr::opts_chunk$set(fig.path = "figures/")
+library(tidymodels)
+library(patchwork)
+library(ggforce)
+library(doMC)
+registerDoMC(cores = parallel::detectCores())
+
+tidymodels_prefer()
+
+source("ames_snippets.R")
+
+data(two_class_dat)
+
+set.seed(91)
+split <- initial_split(two_class_dat)
+
+training_set <- training(split)
+testing_set  <-  testing(split)
+
+data_grid <- crossing(A = seq(0.4, 4, length = 200), B = seq(.14, 3.9, length = 200))
+
+## -----------------------------------------------------------------------------
+
+load("RData/search_examples.RData")
+
+ggplot(training_set, aes(x = A, y = B, color = Class, pch = Class)) + 
+  geom_point(alpha = 0.7) + 
+  coord_equal()  + 
+  labs(x = "Predictor A", y = "Predictor B", color = NULL, pch = NULL) +
+  scale_color_manual(values = c("#CC6677", "#88CCEE"))
+
+library(tidymodels)
+tidymodels_prefer()
+
+llhood <- function(...) {
+  logistic_reg() %>% 
+    set_engine("glm", ...) %>% 
+    fit(Class ~ ., data = training_set) %>% 
+    glance() %>% 
+    select(logLik)
+}
+
+bind_rows(
+  llhood(),
+  llhood(family = binomial(link = "probit")),
+  llhood(family = binomial(link = "cloglog"))
+) %>% 
+  mutate(link = c("logit", "probit", "c-log-log"))  %>% 
+  arrange(desc(logLik))
+
+
+
+set.seed(1201)
+rs <- vfold_cv(training_set, repeats = 10)
+
+# Return the individual resampled performance estimates:
+lloss <- function(...) {
+  perf_meas <- metric_set(roc_auc, mn_log_loss)
+  
+  logistic_reg() %>% 
+    set_engine("glm", ...) %>% 
+    fit_resamples(Class ~ A + B, rs, metrics = perf_meas) %>% 
+    collect_metrics(summarize = FALSE) %>%
+    select(id, id2, .metric, .estimate)
+}
+
+resampled_res <- 
+  bind_rows(
+    lloss()                                    %>% mutate(model = "logistic"),
+    lloss(family = binomial(link = "probit"))  %>% mutate(model = "probit"),
+    lloss(family = binomial(link = "cloglog")) %>% mutate(model = "c-log-log")     
+  ) %>%
+  # Convert log-loss to log-likelihood:
+  mutate(.estimate = ifelse(.metric == "mn_log_loss", -.estimate, .estimate)) %>% 
+  group_by(model, .metric) %>% 
+  summarize(
+    mean = mean(.estimate, na.rm = TRUE),
+    std_err = sd(.estimate, na.rm = TRUE) / sqrt(n()), 
+    .groups = "drop"
+  )
+
+resampled_res %>% 
+  filter(.metric == "mn_log_loss") %>% 
+  ggplot(aes(x = mean, y = model)) + 
+  geom_point() + 
+  geom_errorbar(aes(xmin = mean - 1.64 * std_err, xmax = mean + 1.64 * std_err),
+                width = .1) + 
+  labs(y = NULL, x = "log-likelihood")
+
+
+resampled_res %>% 
+  filter(.metric == "roc_auc") %>% 
+  ggplot(aes(x = mean, y = model)) + 
+  geom_point() + 
+  geom_errorbar(aes(xmin = mean - 1.64 * std_err, xmax = mean+ 1.64 * std_err),
+                width = .1) + 
+  labs(y = NULL, x = "area under the ROC curve")
+
+
+
+
+logit_pred <- 
+  logistic_reg() %>% 
+  set_engine("glm") %>% 
+  fit(Class ~ A + B, data = training_set) %>% 
+  predict(data_grid, type = "prob") %>% 
+  bind_cols(data_grid) %>% 
+  mutate(link = "logit")
+
+probit_pred <- 
+  logistic_reg() %>% 
+  set_engine("glm", family = binomial(link = "probit")) %>% 
+  fit(Class ~ A + B, data = training_set) %>% 
+  predict(data_grid, type = "prob") %>% 
+  bind_cols(data_grid) %>% 
+  mutate(link = "probit")
+
+cloglog_pred <- 
+  logistic_reg() %>% 
+  set_engine("glm", family = binomial(link = "cloglog")) %>% 
+  fit(Class ~ A + B, data = training_set) %>% 
+  predict(data_grid, type = "prob") %>% 
+  bind_cols(data_grid) %>% 
+  mutate(link = "c-log-log")
+
+link_grids <- 
+  bind_rows(logit_pred, probit_pred, cloglog_pred) %>% 
+  mutate(link = factor(link, levels = c("logit", "probit", "c-log-log")))
+
+link_grids %>% 
+  ggplot(aes(x = A, y = B)) + 
+  geom_point(data = testing_set, aes(color = Class, pch = Class), 
+             alpha = 0.7, show.legend = FALSE) + 
+  geom_contour(aes( z = .pred_Class1, lty = link), breaks = 0.5, color = "black") + 
+  scale_color_manual(values = c("#CC6677", "#88CCEE")) + 
+  coord_equal() + 
+  labs(x = "Predictor A", y = "Predictor B")
+
+
+
+
+
+two_class_rec <-
+  recipe(Class ~ ., data = two_class_dat) %>% 
+  step_normalize(all_numeric_predictors()) 
+
+mlp_mod <- 
+  mlp(hidden_units = tune(), epochs = 1000) %>% 
+  set_engine("nnet") %>%
+  set_mode("classification")
+
+mlp_wflow <- 
+  workflow() %>% 
+  add_recipe(two_class_rec) %>% 
+  add_model(mlp_mod)
+
+mlp_res <-
+  tibble(
+    hidden_units = 1:20,
+    train = NA_real_,
+    test = NA_real_,
+    model = vector(mode = "list", length = 20)
+  )
+
+for(i in 1:nrow(mlp_res)) {
+  set.seed(27)
+  tmp_mod <-
+    mlp_wflow %>% finalize_workflow(mlp_res %>% slice(i) %>% select(hidden_units)) %>%
+    fit(training_set)
+  mlp_res$train[i] <-
+    roc_auc_vec(training_set$Class, predict(tmp_mod, training_set, type = "prob")$.pred_Class1)
+  mlp_res$test[i]  <-
+    roc_auc_vec(testing_set$Class, predict(tmp_mod, testing_set, type = "prob")$.pred_Class1)
+  mlp_res$model[[i]] <- tmp_mod
+}
+
+
+
+te_plot <- 
+  mlp_res %>% 
+  slice(c(1, 4, 20)) %>% 
+  mutate(
+    probs = map(model, ~ bind_cols(data_grid, predict(.x, data_grid, type = "prob")))
+  ) %>% 
+  dplyr::select(hidden_units, probs) %>% 
+  unnest(cols = c(probs)) %>% 
+  mutate(
+    label = paste(format(hidden_units), "units"),
+    label = ifelse(label == " 1 units", " 1 unit", label)
+  ) %>% 
+  ggplot(aes(x = A, y = B)) + 
+  geom_point(data = testing_set, aes(color = Class, pch = Class), 
+             alpha = 0.5, show.legend = FALSE) + 
+  geom_contour(aes( z = .pred_Class1), breaks = 0.5, color = "black") + 
+  scale_color_manual(values = c("#CC6677", "#88CCEE")) + 
+  facet_wrap(~ label, nrow = 1) + 
+  coord_equal() + 
+  ggtitle("Test Set") + 
+  labs(x = "Predictor A", y = "Predictor B")
+
+tr_plot <- 
+  mlp_res %>% 
+  slice(c(1, 4, 20)) %>% 
+  mutate(
+    probs = map(model, ~ bind_cols(data_grid, predict(.x, data_grid, type = "prob")))
+  ) %>% 
+  dplyr::select(hidden_units, probs) %>% 
+  unnest(cols = c(probs)) %>% 
+  mutate(
+    label = paste(format(hidden_units), "units"),
+    label = ifelse(label == " 1 units", " 1 unit", label)
+  ) %>% 
+  ggplot(aes(x = A, y = B)) +
+  geom_point(data = training_set, aes(color = Class, pch = Class), 
+             alpha = 0.5, show.legend = FALSE) + 
+  geom_contour(aes( z = .pred_Class1), breaks = 0.5, color = "black") + 
+  scale_color_manual(values = c("#CC6677", "#88CCEE")) + 
+  facet_wrap(~ label, nrow = 1) + 
+  coord_equal() + 
+  ggtitle("Training Set") + 
+  labs(x = "Predictor A", y = "Predictor B")
+
+tr_plot / te_plot
+
+grid_plot <-
+  ggplot(sfd_grid, aes(x = x, y = y)) +
+  geom_point() +
+  lims(x = 0:1, y = 0:1) +
+  labs(x = "Parameter 1", y = "Parameter 2", title = "Space-Filling Grid") +
+  geom_contour(data = grid_contours,
+               aes(z = obj),
+               alpha = .3,
+               bins = 12) +
+  coord_equal() +
+  theme_bw() +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank())
+
+search_plot <-
+  ggplot(nm_res, aes(x = x, y = y)) +
+  geom_point(size = .7)  +
+  lims(x = 0:1, y = 0:1) +
+  labs(x = "Parameter 1", y = "Parameter 2", title = "Global Search") +
+  coord_equal()  +
+  geom_contour(data = grid_contours,
+               aes(x = x, y = y, z = obj),
+               alpha = .3,
+               bins = 12) +
+  theme_bw() +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank())
+
+grid_plot + search_plot
+
+
+rand_forest(trees = 2000, min_n = 10) %>%                   # <- main arguments
+  set_engine("ranger", regularization.factor = 0.5) 
+
+neural_net_spec <- 
+  mlp(hidden_units = tune()) %>%
+  set_mode("regression") %>%
+  set_engine("keras")
+
+tune()
+
+
+extract_parameter_set_dials(neural_net_spec)
+
+
+ames_rec <- 
+  recipe(Sale_Price ~ Neighborhood + Gr_Liv_Area + Year_Built + Bldg_Type + 
+           Latitude + Longitude, data = ames_train)  %>%
+  step_log(Gr_Liv_Area, base = 10) %>% 
+  step_other(Neighborhood, threshold = tune()) %>% 
+  step_dummy(all_nominal_predictors()) %>% 
+  step_interact( ~ Gr_Liv_Area:starts_with("Bldg_Type_") ) %>% 
+  step_ns(Longitude, deg_free = tune("longitude df")) %>% 
+  step_ns(Latitude,  deg_free = tune("latitude df"))
+
+recipes_param <- extract_parameter_set_dials(ames_rec)
+recipes_param
+
+
+wflow_param <- 
+  workflow() %>% 
+  add_recipe(ames_rec) %>% 
+  add_model(neural_net_spec) %>% 
+  extract_parameter_set_dials()
+wflow_param
+
+
+hidden_units()
+threshold()
+spline_degree()
+wflow_param %>% extract_parameter_dials("threshold")
+
+
+extract_parameter_set_dials(ames_rec) %>% 
+  update(threshold = threshold(c(0.8, 1.0)))
+
+rf_spec <- 
+  rand_forest(mtry = tune()) %>% 
+  set_engine("ranger", regularization.factor = tune("regularization")) %>%
+  set_mode("regression")
+
+rf_param <- extract_parameter_set_dials(rf_spec)
+rf_param
+
+
+rf_param %>% 
+  update(mtry = mtry(c(1, 70)))
+
+pca_rec <- 
+  recipe(Sale_Price ~ ., data = ames_train) %>% 
+  # Select the square-footage predictors and extract their PCA components:
+  step_normalize(contains("SF")) %>% 
+  # Select the number of components needed to capture 95% of
+  # the variance in the predictors. 
+  step_pca(contains("SF"), threshold = .95)
+
+updated_param <- 
+  workflow() %>% 
+  add_model(rf_spec) %>% 
+  add_recipe(pca_rec) %>% 
+  extract_parameter_set_dials() %>% 
+  finalize(ames_train)
+updated_param
+updated_param %>% extract_parameter_dials("mtry")
+
+
+rf_param
+regularization_factor()
+
+penalty()
+
+penalty(c(-1, 0)) %>% value_sample(1000) %>% summary()
+
+# incorrect:
+penalty(c(0.1, 1.0)) %>% value_sample(1000) %>% summary()
+
+penalty(trans = NULL, range = 10^c(-10, 0))
+
+
