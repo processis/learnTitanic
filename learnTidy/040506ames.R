@@ -1,3 +1,4 @@
+install.packages("tidyverse")
 library(tidyverse)
 library(modeldata) # This is also loaded by the tidymodels package
 data(ames)
@@ -26,7 +27,7 @@ ames_test  <-  testing(ames_split)
 dim(ames_train)
 #
 
-q# more code fr ch5
+# more code fr ch5
 sale_dens <- 
   density(ames$Sale_Price, n = 2^10) %>% 
   tidy() 
@@ -43,10 +44,19 @@ quart_plot <-
   labs(x = "Sale Price (log-10 USD)", y = NULL)
 quart_plot
 
-install.packages("tidyverse")
+#code snippets at the end of Ch 5
+library(tidymodels)
+data(ames)
+ames <- ames %>% mutate(Sale_Price = log10(Sale_Price))
+
+set.seed(502)
+ames_split <- initial_split(ames, prop = 0.80, strata = Sale_Price)
+ames_train <- training(ames_split)
+ames_test  <-  testing(ames_split)
+
 #continue Ch6  Fitting models
 library(tidymodels)
-library(kknn)
-library(kableExtra)
+#library(kknn)
+#library(kableExtra)
 library(tidyr)
 
