@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.551">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>GitHub-3.5</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="GitHub-3.5_files/libs/clipboard/clipboard.min.js"></script>
+<script src="GitHub-3.5_files/libs/quarto-html/quarto.js"></script>
+<script src="GitHub-3.5_files/libs/quarto-html/popper.min.js"></script>
+<script src="GitHub-3.5_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="GitHub-3.5_files/libs/quarto-html/anchor.min.js"></script>
+<link href="GitHub-3.5_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="GitHub-3.5_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="GitHub-3.5_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="GitHub-3.5_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="GitHub-3.5_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">GitHub-3.5</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="reason-2-branches-and-forks" class="level2">
+<h2 class="anchored" data-anchor-id="reason-2-branches-and-forks"><strong>Reason 2: <em>branches</em> and <em>forks</em></strong></h2>
+<table class="table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>原因2:将项目分割成多个分支应该是很容易的:可以独立处理的代码库副本。一段时间后，我们想要比较分支并将新添加的分支合并为一个分支。</td>
+</tr>
+</tbody>
+</table>
+<p>你可能做过的一件事:在添加图片之前创建一个名为presentation-with-pictures.ppt的presentation.ppt副本，如果它不起作用，你可以回到昨天的备份。</p>
+<p>这很好，但如果你的队友也制作了一份带有titlepage.ppt的演示文稿副本，并进行了修改，那该怎么办?在这种情况下，您已经并行创建了同一文件的两个分支，很难将这些更改合并回单个演示文稿(thisone -really.ppt)文件。</p>
+</section>
+<section id="reason-3-automation自动化" class="level2">
+<h2 class="anchored" data-anchor-id="reason-3-automation自动化"><strong>Reason 3: automation自动化</strong></h2>
+<p>原因3:Git是一个自动化平台，可以作为一种自动测试和审查变更、发布每周版本等等的机制。</p>
+<p>程序员喜欢把事情自动化，而git允许各种自动化。一开始，这可能是令人生畏的，你需要多年的经验来学习所有可能的技巧。把“变魔术”作为职业的人被称为DevOps工程师。在开始使用GitHub时不要太担心这个问题，如果需要的话可以向其他人寻求帮助。</p>
+<section id="automatic-testing自动化测试" class="level4">
+<h4 class="anchored" data-anchor-id="automatic-testing自动化测试"><strong>Automatic testing自动化测试</strong></h4>
+<p>虽然我们不建议您立即学习git自动化，但是您在为开源项目做贡献时可能会遇到自动测试。稍后会详细介绍!</p>
+</section>
+</section>
+<section id="our-first-contribution-documentation我们的第一个贡献文档" class="level2">
+<h2 class="anchored" data-anchor-id="our-first-contribution-documentation我们的第一个贡献文档"><strong>Our first contribution: <em>documentation</em></strong>我们的第一个贡献:文档</h2>
+<p>今天是为开源项目做贡献的开始!对包做出重大贡献的最简单方法是对文档进行改进。在我们今天的例子中，我们将看一下ClimateMARGO包。一个气候经济模型。</p>
+<p>这个包托管在GitHub上，这意味着所有代码和以前版本的代码都可以在github.com/ClimateMARGO/ClimateMARGO.jl上获得。作者还使用同一个GitHub站点来管理他们的待办事项——称为问题——并接受其他人的贡献——称为拉请求。今天，我们要做一个Pull Request!</p>
+<section id="what-is-a-pull-request什么是拉取请求" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-a-pull-request什么是拉取请求"><strong>What is a Pull Request?</strong>什么是拉取请求?</h3>
+<p>Julia包是开源的，这意味着允许(也鼓励)您制作自己的源代码副本(我们称之为fork)并对其进行修改。</p>
+<p>如果你在你的分支上做了一些好的改变，那么你可以通过提交你的代码作为Pull Request (PR)来建议对原始项目进行改变。这是GitHub内置的功能，也是大多数代码在线协作的方式。</p>
+</section>
+<section id="after-the-pull-request拉取请求后" class="level3">
+<h3 class="anchored" data-anchor-id="after-the-pull-request拉取请求后"><strong><em>After</em></strong> <strong>the Pull Request</strong>拉取请求后</h3>
+<p>提交拉取请求是一种很棒的感觉，但这不是最后一步!在您提交后，PR将由项目作者进行审查，并留下他们的反馈。PR通常不会被直接合并(接受)，但会要求您进行一些小的更改。</p>
+<p>这是可能的，因为拉取请求不是静态的-你可以在提交后对PR进行更改!记住PR是从一个分支到另一个分支。只需向from分支添加额外的提交，就可以对PR进行更改。</p>
+</section>
+</section>
+<section id="how-to-use-github怎么使用github" class="level1">
+<h1><strong>How to use GitHub怎么使用GitHub</strong></h1>
+<section id="需求" class="level3">
+<h3 class="anchored" data-anchor-id="需求">需求</h3>
+<p>要遵循这个介绍，您将需要:</p>
+<ul>
+<li><p>在github.com上创建一个帐户。添加一个友好的个人资料图片!</p></li>
+<li><p>对于Windows和MacOS用户，下载GitHub Desktop，这是一个图形化程序，可以轻松管理磁盘上的git存储库。Linux用户可以使用稍微高级一点的程序GitKraken。</p></li>
+<li><p>代码编辑器。如果你还没有代码编辑器，或者你正在使用记事本、gedit或notepad++，我们强烈推荐VS code，一个开源的、初学者友好的编程环境。它可能看起来像一些新东西，很难学习，但它很容易使用，因为它理解您正在编写的代码，它将帮助您作为一个初学者程序员。</p></li>
+</ul>
+<section id="remote-local" class="level4">
+<h4 class="anchored" data-anchor-id="remote-local">remote local</h4>
+<p>网上的版本，你可以在github.com上远程浏览。</p>
+<p>你电脑上有什么?使用pull, commit和push来与远程同步。Google Drive一直都是这么做的。</p>
+</section>
+<section id="fetch-pull" class="level4">
+<h4 class="anchored" data-anchor-id="fetch-pull">fetch pull</h4>
+<p>让本地git知道在线上的任何更改。经常这样做!</p>
+<p>将远程版本上的任何更改应用到本地副本。这将使两者同步。经常这样做!</p>
+</section>
+<section id="commit-push" class="level4">
+<h4 class="anchored" data-anchor-id="commit-push">commit push</h4>
+<p>创建文件更改的集合，准备推送。</p>
+<p>将任何本地提交发布到远程版本。</p>
+</section>
+</section>
+<section id="git-trouble" class="level2">
+<h2 class="anchored" data-anchor-id="git-trouble"><strong>Git trouble!</strong></h2>
+<p>你迟早会发现自己有麻烦。与Google Drive不同，同步可能需要人工干预，例如，git可能会说:</p>
+<section id="merge-conflict" class="level3">
+<h3 class="anchored" data-anchor-id="merge-conflict"><strong><code>merge conflict</code></strong></h3>
+<p>这意味着有人在你提交之前修改了一个文件。</p>
+</section>
+</section>
+<section id="fonsis-git-trouble-fix" class="level2">
+<h2 class="anchored" data-anchor-id="fonsis-git-trouble-fix"><strong>Fonsi’s Git Trouble Fix™</strong></h2>
+<p>许多git问题都有一个“官方”的解决方案，学习所有这些技术需要时间。与此同时，这里是我解决许多棘手的git情况的简单方法:</p>
+<section id="step-1" class="level3">
+<h3 class="anchored" data-anchor-id="step-1"><strong>Step 1</strong></h3>
+<p>使用GitHub Desktop来查找您更改的文件。这些变化重要吗?</p>
+</section>
+<section id="step-2" class="level3">
+<h3 class="anchored" data-anchor-id="step-2"><strong>Step 2</strong></h3>
+<p>把你想要保存的任何文件复制到另一个文件夹，比如你的桌面。</p>
+</section>
+<section id="step-3" class="level3">
+<h3 class="anchored" data-anchor-id="step-3"><strong>Step 3</strong></h3>
+<p>删除存储库的本地克隆，并将所有剩余文件移至回收站。</p>
+</section>
+<section id="step-4" class="level3">
+<h3 class="anchored" data-anchor-id="step-4"><strong>Step 4</strong></h3>
+<p>再次克隆存储库，并将文件复制回原始位置，覆盖克隆文件。</p>
+</section>
+</section>
+<section id="how-to-fork-and-contribute-code" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-fork-and-contribute-code"><strong>How to fork and contribute code</strong></h2>
+<section id="tests" class="level3">
+<h3 class="anchored" data-anchor-id="tests"><strong>Tests</strong></h3>
+<p>人们经常为他们的代码编写测试!作为代码库的一部分，将有一个测试文件夹，其中包含将导入项目并运行一些基本检查的脚本。</p>
+{{&lt; function double(x) x + x end &gt;}}
+<p>编写测试的一个原因是固定特定的行为，保护您以后不会意外地更改它。例如，如果您修复了double(2)返回40而不是4的错误，您还需要添加一个double(2) == 4的测试。几个月后，当您为另一个用例更改两倍时，旧的测试确保您不会意外地破坏曾经修复的东西。</p>
+<section id="running-tests" class="level4">
+<h4 class="anchored" data-anchor-id="running-tests"><strong>Running tests</strong></h4>
+<p>你可以通过打开Julia REPL来运行任何Julia包的测试，并输入:</p>
+<p>如前所述，许多项目使用github魔术在每次更改时自动在服务器上运行测试，并且您可以在线查看测试结果。一个重要的应用程序正在为每个Pull Request运行测试。这意味着包作者可以快速地检查您的更改，知道它不会破坏任何东西。</p>
+</section>
+</section>
+</section>
+</section>
+<section id="extra-tips" class="level1">
+<h1><strong>Extra tips</strong></h1>
+<p>贡献不仅仅意味着贡献代码!<a href="https://opensource.guide/how-to-contribute/" class="uri">https://opensource.guide/how-to-contribute/</a></p>
+<p>创建一个“测试”存储库!创建多个!</p>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

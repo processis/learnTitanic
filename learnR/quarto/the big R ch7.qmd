@@ -1,0 +1,260 @@
+---
+title: "the big R ch7"
+format: html
+editor: visual
+---
+
++--------------------------------------+
+| ## **7.2 Packages in the Tidyverse** |
++--------------------------------------+
+
+加载tidyverse将报告包含哪些包:
+
+```{r}
+library(tidyverse)
+```
+
++---------------------------------------+
+| ## **7.3 Working with the Tidyverse** |
++---------------------------------------+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ### 7.3.1 Tibbles                                                                                                                                                |
+|                                                                                                                                                                  |
+| 标题在很多方面都是一种特殊类型的数据帧。它们的作用与数据帧相同(即存储矩形数据)，但它们有一些优点。让我们开始并创建一个代码。比如我们想要表示正弦和余弦函数的和。 |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+```{r}
+x <- seq(from = 0, to = 2 * pi, length.out = 100)
+s <- sin(x)
+c <- cos(x)
+z <- s + c
+plot(x, z, type = "l",col="red", lwd=7)
+lines(x, c, col = "blue", lwd = 1.5)
+lines(x, s, col = "darkolivegreen", lwd = 1.5)
+```
+
+进一步想象一下，我们的目的不仅是绘制这些函数，还要在其他应用程序中使用它们。
+
+然后把它们放在一个数据框架中就有意义了。下面的代码使用数据帧完成了完全相同的工作。
+
+```{r}
+x <- seq(from = 0, to = 2 * pi, length.out = 100)
+#df <- as.data.frame((x))
+df <- rbind(as.data.frame((x)),cos(x),sin(x), cos(x) + sin(x))
+# plot etc.
+```
+
+```{r}
+library(tidyverse)
+x <- seq(from = 0, to = 2 * pi, length.out = 100)
+tb <- tibble(x, sin(x), cos(x), cos(x) + sin(x))
+```
+
+```{r}
+# Note how concise and relevant the output is:
+print(tb)
+## # A tibble: 100 x 4
+## x `sin(x)` `cos(x)` `cos(x) + sin(x)`
+## <dbl> <dbl> <dbl> <dbl>
+## 1 0 0 1 1
+## 2 0.0635 0.0634 0.998 1.06
+## 3 0.127 0.127 0.992 1.12
+## 4 0.190 0.189 0.982 1.17
+## 5 0.254 0.251 0.968 1.22
+## 6 0.317 0.312 0.950 1.26
+## 7 0.381 0.372 0.928 1.30
+## 8 0.444 0.430 0.903 1.33
+## 9 0.508 0.486 0.874 1.36
+## 10 0.571 0.541 0.841 1.38
+## # ... with 90 more rows
+# This does the same as for a data-frame:
+plot(tb)
+#Actually a tibble will still behave as a data frame:
+is.data.frame(tb)
+## [1] TRUE
+```
+
+|                                                                                                                                                                                                                                                                                                                                             |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 当代码报告自身时，请注意' sin(x) '中的反勾号。这当然是 因为在R中，变量名中不允许使用括号。但这是事实 允许列的名称不符合r的变量名称。为了解决这个专栏 通过名称，我们需要通过编号或使用反引号来引用列。 结核病美元“sin (x)”\[1\] \## \[1\] 0 这个约定并不特定于标题，它在整个R中都被使用(例如，相同的反引号) 都需要在ggplot2, tidyr, dyplr等) |
+
+类本身的名称并不容易混淆。其中函数print。data。frame() 潜在的可以是打印函数的特定方法对于一个数据帧，它也可以 是打印的具体方法。框架对象的数据函数。的名字 类标记不使用点，因此不会引起混淆。 为了说明其中的一些差异，请考虑以下代码:
+
+```{r}
+# -- data frame --
+df <- data.frame("value" = pi, "name" = "pi")
+df$na # partial matching of column names
+# automatic conversion to factor, plus data frame
+# accepts strings:
+df[,"name"]
+df[,c("name", "value")]
+# -- tibble --
+df <- tibble("value" = pi, "name" = "pi")
+df$name # column name
+df$nam # no partial matching but error msg
+df[,"name"] # this returns a tibble (no simplification
+df[,c("name", "value")] # no conversion to facto
+```
+
+这个部分匹配是R中一个更好的函数，对于 交互使用。然而，当在批处理模式下使用R时，这可能是危险的。部分匹配 在企业环境中尤其危险:数据集可能有数百列和 许多名称看起来很相似，例如BAL180801、BAL180802和BAL180803。直到某一点 使用部分匹配是安全的，因为只有当R确定它可以识别变量时，它才会起作用 独特的。但是，当您创建新行并突然使用其他人的代码时，这种情况是不可避免的 会停止工作。
+
+图块也是数据帧，大多数不知道图块的旧函数会这样做 工作得很好。然而，可能会发生某些功能无法工作的情况。如果发生这种情况，它就是 可以使用as.data.frame()函数将代码强制转换回数据帧
+
+```{r}
+tb <- tibble(c("a", "b", "c"), c(1,2,3), 9L,9)
+is.data.frame(tb)
+# Note also that tibble did no conversion to factors, and
+# note that the tibble also recycles the scalars:
+tb
+# Coerce the tibble to data-frame:
+as.data.frame(tb)
+# A tibble does not recycle shorter vectors, so this fails:
+#fail <- tibble(c("a", "b", "c"), c(1,2))
+```
+
++-------------------------+
+| ### 7.3.2 Piping with R |
++-------------------------+
+
+这一节不是关于创造优美的音乐，它解释了R中的参数传递系统。 与Linux中的管道类似，管道操作符\|，来自包磁力的操作符%\>% 允许将一行的输出传递给下一行函数的第一个参数。 在编写代码时，通常会在一个对象上工作一段时间。例如，当我们 需要导入数据，然后对该数据进行清理，添加列，删除一些，汇总 数据等。 首先，考虑一个简单的例子:
+
+```{r}
+t <- tibble("x" = runif(10))
+t <- within(t, y <- 2 * x + 4 + rnorm(10, mean=0,sd=0.5))
+```
+
+```{r}
+t <- tibble("x" = runif(10)) %>%
+within(y <- 2 * x + 4 + rnorm(10, mean=0,sd=0.5))
+```
+
++------------------------------------------------+
+| ### 7.3.3 Attention Points When Using the Pipe |
++------------------------------------------------+
+
+对于使用延迟求值的函数，这种构造会产生问题。惰性求值是 在R中引入的特性，使其在交互模式下更快。这意味着 函数只会在真正需要的时候计算它们的参数。当然有a 很好地解释了为什么这些函数有延迟求值，读者不会感到惊讶 它们不能在管道中使用。所以有很多函数使用延迟求值，但是大多数 值得注意的是错误处理程序。这些函数试图做一些事情，但是当出现错误时 抛出或生成警告消息，它们将把它移交给相关处理程序。考试——处理程序 例如try、tryCatch等。在本文的任何其他部分，我们都不会真正讨论错误处理 书，这里有一个快速入门。
+
+```{r}
+# f1
+# Dummy function that from which only the error throwing part
+# is shown.
+f1 <- function() {
+# Here goes the long code that might be doing something risky
+# (e.g. connecting to a database, uploading file, etc.)
+# and finally, if it goes wrong:
+stop("Early exit from f1!") # throw error
+}
+tryCatch(f1(), # the function to try
+error = function(e) {paste("_ERROR_:",e)},
+warning = function(w) {paste("_WARNING_:",w)},
+message = function(m) {paste("_MESSSAGE_:",m)},
+finally="Last command" # do at the end
+)
+```
+
+从上面的例子可以理解，错误处理程序不应该被评估，如果 F1不会抛出错误。这就是它们使用错误处理的原因。因此，以下操作将不起作用:
+
+```{r}
+# f1
+# Dummy function that from which only the error throwing part
+# is shown.
+f1 <- function() {
+# Here goes the long code that might be doing something risky
+# (e.g. connecting to a database, uploading file, etc.)
+# and finally, if it goes wrong:
+stop("Early exit from f1!") # something went wrong
+} %>%
+tryCatch(
+error = function(e) {paste("_ERROR_:",e)},
+warning = function(w) {paste("_WARNING_:",w)},
+message = function(m) {paste("_MESSSAGE_:",m)},
+finally="Last command" # do at the end
+)
+# Note that it fails in silence
+```
+
+### 7.3.4 Advanced Piping
+
+#### 7.3.4.1 The Dollar Pipe
+
+下面我们创建具有线性相关性的随机数据，并尝试在其上拟合线性模型
+
+```{r}
+# This will not work, because lm() is not designed for the pipe.
+#lm1 <- tibble("x" = runif(10)) %>%
+#within(y <- 2 * x + 4 + rnorm(10, mean=0, sd=0.5)) %>%
+#lm(y ~ x)
+```
+
+上述代码失败。这是因为R不会自动添加 Data = t，并使用定义的“t”直到前一行。函数lm()首先期望 参数为公式，pipe命令将把数据放在第一个参数中在那里，因此，magrittr提供了一个特殊的管道操作符，它基本上传递数据的变量 帧的前一行，以便它们可以直接寻址:%\$%。
+
+```{r}
+#The Tidyverse only makes the %>% pipe available. So, to use the
+# special pipes, we need to load magrittr
+library(magrittr)
+lm2 <- tibble("x" = runif(10)) %>%
+within(y <- 2 * x + 4 + rnorm(10, mean=0,sd=0.5)) %$%
+lm(y ~ x)
+summary(lm2)
+```
+
+```{r}
+coeff <- tibble("x" = runif(10)) %>%
+within(y <- 2 * x + 4 + rnorm(10, mean=0,sd=0.5)) %$%
+lm(y ~ x) %>%
+summary %>%
+coefficients
+coeff
+```
+
+#### 7.3.4.2 The T-Pipe
+
+这工作得很好，但是现在假设我们想保留“t”作为标题，但仍然在其上添加一些操作—例如绘制它。在这种情况下，有一个特殊的%T\>%“T-pipe”来代替 传递左边的表达式比传递右边的表达式。下面代码的输出是这个图
+
+```{r}
+library(magrittr)
+t <- tibble("x" = runif(100)) %>%
+within(y <- 2 * x + 4 + rnorm(10, mean=0, sd=0.5)) %T>%
+plot(col="red") # The function plot does not return anything
+# so we used the %T>% pipe.
+lm3 <- t %$%
+lm(y ~ x) %T>% # pass on the linear model
+summary %T>% # further pass on the linear mode
+  coefficients
+tcoef <- lm3 %>% coefficients # we anyhow need the coefficients
+# Add the model (the solid line) to the previous plot:
+abline(a = tcoef[1], b=tcoef[2], col="blue", lwd=3)
+```
+
+#### 7.3.4.3 The Assignment Pipe
+
+他的pipe操作符的最后一个变体允许我们简化第一行，通过提供一个带有特殊管道操作符的赋值。
+
+```{r}
+x <- c(1,2,3)
+# The following line:
+x <- x %>% mean
+# is equivalent with the following:
+x %<>% mean
+# Show x:
+x
+```
+
+### 7.3.5 Conclusion
+
+当你有编译语言的背景，它提供了精细的分级控制 内存管理(如C或c++)，您可能不会直接看到管道的需求 多。但是，它确实减少了需要输入的文本量并生成了代码 更具可读性。 实际上，管道操作符不会提供速度提升或内存优势，即使 我们会在每一行创建一个新变量。R有很好的内存管理 仅在列被真正修改时复制列。例如，仔细看看 后:
+
+```{r}
+library(pryr)
+x <- runif(100)
+object_size(x)
+
+y <- x
+# x and y together do not take more memory than only x.
+object_size(x,y)
+
+y <- y * 2
+# Now, they are different and are stored separately in memory.
+object_size(x,y)
+```
