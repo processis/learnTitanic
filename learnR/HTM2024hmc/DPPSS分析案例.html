@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.551">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>DPPSS分析案例</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+
+
+
+
+
+body { font-family: Verdana, Arial, sans-serif;
+      background-color: #ffffff;
+}
+#wrapper { background-color: #b3c7e6; 
+           color: #000066;
+           width: 100%;
+		   margin: auto;
+		   
+} 
+header { background-color: #CCCCFF; }
+h1 { margin-bottom: 0; } 
+#tag { padding-right: 20px;
+	   font-size: .80em;
+	   font-style: italic;
+	   text-align: right;
+	   color: #00005D;
+}	 
+nav { float: left;
+	   width: 300px;
+	   letter-spacing:0.1em;
+	   font-weight: bold;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+<script src="DPPSS分析案例_files/libs/clipboard/clipboard.min.js"></script>
+<script src="DPPSS分析案例_files/libs/quarto-html/quarto.js"></script>
+<script src="DPPSS分析案例_files/libs/quarto-html/popper.min.js"></script>
+<script src="DPPSS分析案例_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="DPPSS分析案例_files/libs/quarto-html/anchor.min.js"></script>
+<link href="DPPSS分析案例_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="DPPSS分析案例_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="DPPSS分析案例_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="DPPSS分析案例_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="DPPSS分析案例_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+
+
+
+ <nav>
+    
+    
+    
+        <li>
+            <span>
+              
+                  <a href="index.html">HOME</a>
+                
+            </span>
+          </li>
+    
+    
+     <li>
+            
+               <span>课件</span>
+              <ol>
+                <li>
+                  <a href="高成熟度概念概览MaHM Summary.html">高成熟度概念概览MaHM Summary</a>
+                </li>
+                <li>
+                  <a href="高成熟度重要概念.html">高成熟度重要概念</a>
+                </li>
+                <li>
+                  <a href="DPPSS分析案例.html">DPPSS分析案例</a>
+                </li>
+                <li>
+                  <a href="M3控制图CC.html">M3 控制图CC</a>
+                </li>
+                <li>
+                  <a href="MPMCAR高成熟度辅导.html">MPM CAR 高成熟度辅导</a>
+                </li>
+               
+              </ol>
+            
+          </li>
+    
+    
+    
+    
+    
+    <li>
+            <span>参考</span>
+            <ol>
+              <li><a href="假设检验Hypothesis Testing.html">假设检验 Hypothesis Testing</a></li>
+              <li>
+                <a href="控制图ControlChat.html">控制图 Control Chat</a>
+              </li>
+              <li>
+                <a href="R&Rstudio 如何安装.html">R&Rstudio 如何安装</a>
+              </li>
+            </ol>
+          </li>
+  
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">DPPSS分析案例</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="dppss-分类数据-r-分析" class="level2">
+<h2 class="anchored" data-anchor-id="dppss-分类数据-r-分析">DPPSS 分类数据 R 分析</h2>
+<p>之前我们使用进行了简单的一元线性回归分析，现在我们来看一下分组数据，并对分组数据进行下面五类分析:</p>
+<ol type="1">
+<li><p>斯皮尔曼秩序相关 Spearman Rank-Order correlation</p></li>
+<li><p>卡方 Chi-Square</p></li>
+<li><p>逻辑斯蒂回归 Logistic regression</p></li>
+<li><p>方差分析 ANOVA</p></li>
+<li><p>哑变量回归 Dummy Variable regression</p></li>
+</ol>
+<p>这些模型中有许多涉及不仅仅是连续数据，还有分组数据，除了传统的回归和方差分析 ANOVA 外，还需要使用其它分析方法。在本案例，我们需要确定哪些可控因素和约束会影响到:</p>
+<ol type="1">
+<li><p>交付风险 （<strong>Ship-Risk</strong>）</p></li>
+<li><p>在检验和测试中发现的缺陷类型 （<strong>Defects-Inspect</strong>）</p></li>
+<li><p>Pico新一代笔记本电脑的开发准时度（<strong>Sched Ontime</strong>）</p></li>
+<li><p>对Pico新一代笔记本电脑的客户满意度（<strong>CSat</strong>）</p></li>
+</ol>
+<ul>
+<li><p>shipping risk</p></li>
+<li><p>types of defects found during inspection and testing</p></li>
+<li><p>on-time development of the Pico next generation laptop</p></li>
+<li><p>customer satisfaction of the Pico next generation laptop</p>
+<p><img src="DPPSS_实例12.png" class="img-fluid"></p></li>
+</ul>
+<section id="现有模型预测的具体结果变量定义" class="level3">
+<h3 class="anchored" data-anchor-id="现有模型预测的具体结果变量定义"><strong>现有模型预测的具体结果（变量定义）</strong></h3>
+<p>Pico团队历史上收集了许多与产品开发相关的度量，以预测项目的以下结果:</p>
+<ol type="1">
+<li><p>交付风险:1 =低，2=中;3=高（Ship-Risk）</p></li>
+<li><p>顾客满意度:1 =不满意;2 =边际;3 =公平，4 =好;5=优秀（CSat）</p></li>
+<li><p>发布后产品的变化度:1 =低;2 =中等;3 =高，4 =很高（Field Volatility）</p></li>
+<li><p>发布后产品维护工作量:1 =低;2 =中等;3 =高;4 =非常高（Maint）</p></li>
+<li><p>检查发现的缺陷类型:外观、数据、算法、逻辑（Defects-Inspect）</p></li>
+<li><p>测试发现的缺陷类型:外观、数据、算法、一致性（Defects-Test）</p></li>
+<li><p>按进度计划完成:是/否 （Sched Ontime）</p></li>
+<li><p>交付缺陷密度:发布缺陷数/KSLOC (D/KSLOC)</p></li>
+<li><p>进度损失:是/否 (Schedule Achievement)</p></li>
+</ol>
+<p>The Pico team historically collected a number of measures related to product development to predict the following outcomes across projects:</p>
+<ol type="1">
+<li><p>shipping risk: 1 = low, 2= medium; 3-high</p></li>
+<li><p>customer satisfaction: 1 = unsatisfied; 2 = marginal; 3 = fair, 4 =good;= excellent</p></li>
+<li><p>volatility of fielded product: 1 =low; 2= medium; 3-high; 4 = very high</p></li>
+<li><p>maintenance effort of fielded product:1 =low; 2= medium; 3=high; 4= very high</p></li>
+<li><p>types of defects found by inspections: Cosmetic, Data, Algorithmic.Logical</p></li>
+<li><p>types of defects found by inspections: Cosmetic, Data, Algorithmic.cogical</p></li>
+<li><p>schedule achievement: Yes/No</p></li>
+<li><p>delivered defect density: Released Defects/KSLOC</p></li>
+<li><p>schedule loss: Yes/No</p></li>
+</ol>
+</section>
+<section id="关键参数驱动结果" class="level3">
+<h3 class="anchored" data-anchor-id="关键参数驱动结果"><strong>关键参数驱动结果</strong></h3>
+<p>Pico团队之前使用Y-x树来识别一些关键参数，这些参数可能会驱动性能结果，包括以下内容:</p>
+<ol type="1">
+<li><p>programming language 编程语言在产品中占主导地位:C、C++、Java (<strong>Language</strong>)</p></li>
+<li><p>average experience of the dev team 开发团队的平均经验水平:低、中、高 (<strong>Experience</strong>)</p></li>
+<li><p>employee turnover rate 员工流失率:团队的百分比。 (<strong>Turnover</strong>)</p></li>
+<li><p>requirements volatility during development 产品开发期间的需求变化度:在开发期间更改或添加的所有需求的百分比。 (<strong>Req Volatility%</strong>）</p></li>
+</ol>
+<p><img src="DPPSS_实例16.png" class="img-fluid"></p>
+<p>“客户的声音”(VoC)表明，客户的满意取决于产品的及时发布。现在，Pico团队将回顾几个历史的CMMI过程性能模型，以确认团队可否满足本项目这种超压缩的计划。此初步分析将有助于确定是否需要更详细的过程建模和仿真。通过回顾以往的过程性能模型，让管理层可更深入地了解哪些可控因素最重要</p>
+</section>
+</section>
+<section id="斯皮尔曼秩序相关-spearman-rank-order-correrlation" class="level2">
+<h2 class="anchored" data-anchor-id="斯皮尔曼秩序相关-spearman-rank-order-correrlation">斯皮尔曼秩序相关 Spearman Rank-Order correrlation</h2>
+<p>皮尔森 (Pearson) 相关性(在之前的课程中讲授)依赖于连续的数据，但对于有序的数据存在另一种选择:斯皮尔曼相关性。在我们的情况下，Pico团队感兴趣的相关性如下:</p>
+<ul>
+<li><p>交付风险 (Ship-risk)</p></li>
+<li><p>客户满意度 (CSat)</p></li>
+<li><p>已部署产品的变化度 (Fielded Volatility)</p></li>
+<li><p>已部署产品的维护工作量 (Maint)</p></li>
+</ul>
+<p>斯皮尔曼相关系数的解释与皮尔森相关系数的解释大致相同，但分析比较的是变量的排名顺序，而不是原始值。下面是minitab命令获得Spearman相关系数(因minitab里面没有Spearman，只有Pearson,所以要进行Spearman，需要先对数据进行排秩)。</p>
+<p><img src="微信截图_20240328103737.jpg" class="img-fluid"></p>
+<p><img src="微信截图_20240328103810.jpg" class="img-fluid"></p>
+<p><img src="DPPSS23.png" class="img-fluid"></p>
+<p>输出结果显示了spearman相关系数及其对每一对的重要性在这个例子中，显著相关是<br>
+“Fielded Volatility”与“CSat”呈负相关<br>
+“Maintenance”与“CSat”呈负相关<br>
+“Fielded Volatility”与“Maintenance”正相关</p>
+</section>
+<section id="卡方-chi-square" class="level2">
+<h2 class="anchored" data-anchor-id="卡方-chi-square">卡方 Chi-Square</h2>
+<p><img src="DPPSS27.png" class="img-fluid"></p>
+<p>交叉表或列联表的目的是通过检验和测试观察频率来确定变量之间的关系</p>
+<p>卡方测试：</p>
+<ul>
+<li><p>讨论属性或分类数据之间的任何明显差异</p></li>
+<li><p>是对两个或两个以上的稀疏变量的列联表数据执行的吗</p></li>
+<li><p>反映变量在每个单元格中出现的频率</p></li>
+<li><p>分析预期频率和实际频率</p></li>
+</ul>
+<p>卡方分析的类型包括以下几类:</p>
+<ul>
+<li><p>对名义数据进行卡方分析</p></li>
+<li><p>皮尔逊(Pearson) 卡方分析(最常用来确定列联表中的关联)</p></li>
+</ul>
+<p>卡方可能以两种常见的方式支持预测建模</p>
+<ol type="1">
+<li><p>卡方分析使我们能够看到，一个离散因素的知识在预测一个独立的离散结果时是否有用。</p></li>
+<li><p>通常使用卡方分析来验证数据是否符合一个或多个分布，从而达到预测建模的目的</p></li>
+</ol>
+<p><img src="DPPSS28.png" class="img-fluid"></p>
+<p><img src="DPPSS29.png" class="img-fluid"></p>
+<p><img src="DPPSS30-1.png" class="img-fluid"></p>
+<p><img src="DPPSS31.png" class="img-fluid"></p>
+<p><img src="DPPSS32.png" class="img-fluid"></p>
+</section>
+<section id="例1交付风险ship-risk-与-经验experience-是否相关" class="level2">
+<h2 class="anchored" data-anchor-id="例1交付风险ship-risk-与-经验experience-是否相关">例1：交付风险(Ship Risk) 与 经验(Experience) 是否相关</h2>
+<p><img src="微信截图_20240328103939.jpg" class="img-fluid"></p>
+<p><img src="DPPSS37.png" class="img-fluid"></p>
+<p><img src="DPPSS38.png" class="img-fluid"></p>
+<p><img src="DPPSS40.png" class="img-fluid"></p>
+<p>从以上 Pearson , Likelihood P值都很低，可判断 交付风险 Ship-Risk , 经验 Experience 之间有显著关系。 <strong>练习</strong></p>
+<ul>
+<li><p>交付风险 跟 开发语言是否相关？</p></li>
+<li><p>交付风险 跟 开发人员经验是否相关？</p></li>
+<li><p>Is shipping risk related to any particular programming language?</p></li>
+<li><p>Is shipping risk related to our programmers’ domain experience?</p></li>
+</ul>
+<p><img src="DPPSS41.png" class="img-fluid"></p>
+<p><img src="DPPSS42.png" class="img-fluid"></p>
+</section>
+<section id="例对名义级数据做卡方检验" class="level2">
+<h2 class="anchored" data-anchor-id="例对名义级数据做卡方检验">例：对名义级数据做卡方检验</h2>
+<ul>
+<li>评审缺陷类型 是否与 经验（高中低）相关</li>
+</ul>
+<p><img src="微信截图_20240328104230.jpg" class="img-fluid"></p>
+<p><img src="DPPSS44.png" class="img-fluid"></p>
+<p><img src="DPPSS45-1.png" class="img-fluid"></p>
+<p><img src="DPPSS46.png" class="img-fluid"></p>
+</section>
+<section id="逻辑回归" class="level2">
+<h2 class="anchored" data-anchor-id="逻辑回归">逻辑回归</h2>
+<p>不同于线性模型，逻辑斯蒂模型P(X)落在0-1之间，P(X)模型系数β0 β1是未知，必须通过有效的训练数据估计，其中β0越大，发生事件的概率越大</p>
+<p><img src="DPPSS51.png" class="img-fluid"></p>
+<p>逻辑回归的目的是使用连续的X因素来预测离散(分组)的Y结果。</p>
+<p>logistic回归分析包括:</p>
+<ul>
+<li><p>名义 (Nominal)：一个名义的Y被预测(e.q。，无次序的分类)</p></li>
+<li><p>顺序 (Ordinal)：预测一个序数Y(例如，有序的分类)</p></li>
+<li><p>二元 (Binary)：预测一个二元的Y(例如Y只有(0/1)两个可能值)</p></li>
+</ul>
+<p><img src="DPPSS52-1.png" class="img-fluid"></p>
+<p>Pico团队预测一个有序的结果：虽然前面的分析考虑了缺陷、员工离职和需求波动之间的关系，但是它只解释了变化的一部分。团队感兴趣的是，Requirements Volatilty%和Parts Availability%是否与客户满意度有直接关系，这些变量会直接影响进度。顾客满意度值:1=非常低，2=低，3=标准，4=高，5=很高</p>
+<p>Requirements Volatilty 和 Parts Avail 都是百分比。</p>
+<p>以下例子2：探讨 Parts 和 Reuse 对 CSat 的影响<br>
+开始模型中，y = CSat, x =Parts&nbsp;%Reused</p>
+<p><br>
+假设我们想要确定我们的进度成就是否依赖于我们拥有数据的各种因素。我们想要测试员工离职和需求波动对项目进度的影响。部件可用性也会被检查，因为它跨越子流程边界，这使得它成为流程流计时效果的一个很好的代理。</p>
+<ul>
+<li><p>按进度计划完成吗? 是/否</p></li>
+<li><p>员工流动率 有改变的团队（百分比）</p></li>
+<li><p>需求变更 需求的变化率（百分比）</p></li>
+<li><p>部分的可用性 零件转移到下一个过程或子过程的比例 （百分比）</p></li>
+</ul>
+<p>总结：分析显示，能否按进度计划完成交付 与员工流失率有关，但与需求变更波动或零件可用性无关。(注意:当你可以使用统计数据时，不要相信直觉。)</p>
+<p>这个例子展示了在回归设置中测试效果的一般方法:包括所有感兴趣的因素，然后迭代地丢弃不重要的因素。如果其余因子的显著性发生变化，那么x之间可能存在交互作用。尽管它超出了这个类的范围，但请记住，一个完全指定的模型还将包括交互，这可能会使解释变得复杂，但也可能非常有启发性。我们只看了主要的效果。</p>
+<p>= = = =</p>
+<p>逻辑回归基本步骤</p>
+<ol type="1">
+<li><p>确定Y和1+ X进行逻辑回归分析。</p></li>
+<li><p>进行logistic回归分析。</p></li>
+<li><p>根据相应的p值寻找重要因素。(参见层压工作辅助材料。)</p></li>
+<li><p>用平方来判断关系的强度。</p></li>
+<li><p>解释系数和比值比，解释基于1个单位的X因子变化对Y结果变化的比值的影响</p></li>
+</ol>
+<p><img src="DPPSS57-1.png" class="img-fluid"></p>
+<section id="例逻辑回归" class="level3">
+<h3 class="anchored" data-anchor-id="例逻辑回归"><strong>例：逻辑回归</strong></h3>
+<ul>
+<li>评审缺陷类型(Def-Inspect) 与 员工流失率(Turnover) 的关系 (名义）</li>
+</ul>
+<p><img src="DPPSS55.png" class="img-fluid"></p>
+<p><img src="DPPSS56-1.png" class="img-fluid"></p>
+<p><img src="微信截图_20240328104829.jpg" class="img-fluid"></p>
+<p><img src="DPPSS58.png" class="img-fluid"></p>
+<p><img src="DPPSS59.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="方差分析-anova" class="level2">
+<h2 class="anchored" data-anchor-id="方差分析-anova">方差分析 ANOVA</h2>
+<p><img src="DPPSS80.png" class="img-fluid"></p>
+<p><img src="DPPSS81.png" class="img-fluid"></p>
+<p><img src="DPPSS85.png" class="img-fluid"></p>
+<p><img src="DPPSS86.png" class="img-fluid"></p>
+<p><img src="DPPSS87.png" class="img-fluid"></p>
+<p><img src="DPPSS88.png" class="img-fluid"></p>
+<p><img src="微信截图_20240328105726.jpg" class="img-fluid"></p>
+<p><img src="DPPSS89.png" class="img-fluid"></p>
+<section id="例哑变量-回归" class="level3">
+<h3 class="anchored" data-anchor-id="例哑变量-回归"><strong>例：哑变量 回归</strong></h3>
+<ul>
+<li>缺陷密度(D / KLOC) 与 测试人员种类(Tester Type) 的关系</li>
+</ul>
+<p><img src="DPPSS90.png" class="img-fluid"></p>
+<p><img src="DPPSS92.png" class="img-fluid"></p>
+<p><img src="DPPSS93.png" class="img-fluid"></p>
+<p><img src="DPPSS94.png" class="img-fluid"></p>
+<p><img src="DPPSS95.png" class="img-fluid"></p>
+<p><img src="DPPSS96-1.png" class="img-fluid"></p>
+<p><img src="微信截图_20240328105846.jpg" class="img-fluid"></p>
+<p>有了ANOVA分析基础 发现确有关系 就可以做哑变量回归</p>
+</section>
+</section>
+<section id="哑变量回归-use-dummy-variable" class="level2">
+<h2 class="anchored" data-anchor-id="哑变量回归-use-dummy-variable">哑变量回归 Use Dummy Variable</h2>
+<p>公司需要了解产品遗漏缺陷密度，并开始进行后处理测试评审，以在产品发布前对产品进行改进，并确定公司测试方案的有效性。管理层为测试预发布产品(beta)花了很多钱，测试对象是三个不同的组:内部测试人员、用户组和专门从事软件和系统测试的专业咨询公司。为了确定支出是否对产品的缺陷有影响，我们想知道:</p>
+<ol type="1">
+<li><p>使用这些组进行测试有什么不同吗?</p></li>
+<li><p>能否预测各组的测试表现吗?</p></li>
+</ol>
+<p>最终，管理层想知道这些钱是否花得值得，未来的产品是否需要改进</p>
+<p>方差分析(ANOVA)是一种强大的统计技术，用于确定当我们有结果的连续数据和作为因素的离散数据时是否存在显著关系。但是一旦这种关系被证明是存在，我们如何利用这种信息建预测模型?</p>
+<p>首先，进行ANOVA分析，以确定交付的缺陷密度与参与测试过程的测试人员类型之间是否存在显著的关系。</p>
+<p>然后，我们将展示如何在工具中实现相同的模型，以扩展构建回归模型的结果。</p>
+<p>注意:在对变量没有透彻了解的情况下，不要随意建立虚拟回归模型。当考虑是否使用方差分析结果时，显著性和适合度(调整后的R - square)应该足够高，以达到我们的目的，使我们能够自信地使用数据来预测未来的结果。</p>
+<p><img src="DPPSS97.png" class="img-fluid"></p>
+<section id="例哑变量-连续数据-回归" class="level3">
+<h3 class="anchored" data-anchor-id="例哑变量-连续数据-回归"><strong>例：哑变量 + 连续数据 回归</strong></h3>
+<ul>
+<li>缺陷密度(D / KLOC) 与 测试人员种类(Tester Type) + 变更申请(ChangePriorityRequests) 的关系 (变更申请是一连续数据）</li>
+</ul>
+<p><img src="DPPSS99.png" class="img-fluid"></p>
+<p><img src="DPPSS100.png" class="img-fluid"></p>
+<p><img src="DPPSS101.png" class="img-fluid"></p>
+<p><img src="DPPSS102-1.png" class="img-fluid"></p>
+<p><img src="DPPSS103-1.png" class="img-fluid"></p>
+<p><img src="微信截图_20240328105949.jpg" class="img-fluid"></p>
+<p><img src="DPPSS106.png" class="img-fluid"></p>
+<p><img src="DPPSS108.png" class="img-fluid"></p>
+<p><img src="DPPSS112.png" class="img-fluid"></p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
