@@ -394,25 +394,31 @@
 \contentsline {section}{附件}{316}{section*.365}% 
 \contentsline {subsection}{Pixar 制作第一部电脑动漫：玩具总动员(Toy Story)}{316}{section*.366}% 
 \contentsline {section}{参考 References}{317}{section*.367}% 
-\contentsline {chapter}{\numberline {26}根与翼}{319}{chapter.26}% 
-\contentsline {subsection}{根}{321}{section*.368}% 
-\contentsline {subsection}{翼}{321}{section*.369}% 
-\contentsline {subsubsection}{飞行实验}{321}{section*.370}% 
-\contentsline {subsection}{TED演讲式总结}{323}{section*.371}% 
-\contentsline {section}{参考 References}{326}{section*.372}% 
-\contentsline {part}{IX\hspace {1em}附录}{327}{part.9}% 
-\contentsline {chapter}{\numberline {27}A:绅士俱乐部过程改进}{329}{chapter.27}% 
-\contentsline {subsubsection}{Esquire QC圈}{330}{section*.373}% 
-\contentsline {subsubsection}{用二八原则 （Pareto图） 识别主要源头}{330}{section*.374}% 
-\contentsline {subsubsection}{建立目标}{331}{section*.375}% 
-\contentsline {subsubsection}{根因分析 Root Cause analysis ( 鱼骨图分析 )}{331}{section*.376}% 
-\contentsline {subsubsection}{改进措施}{333}{section*.377}% 
-\contentsline {subsubsection}{改进效果}{334}{section*.378}% 
-\contentsline {subsubsection}{A3报告}{335}{section*.379}% 
-\contentsline {section}{参考 References}{335}{section*.380}% 
-\contentsline {chapter}{\numberline {28}B:分析迭代客户满意度调查数据}{337}{chapter.28}% 
-\contentsline {subsection}{案例背景}{337}{section*.381}% 
-\contentsline {subsection}{迭代数据}{337}{section*.382}% 
-\contentsline {subsection}{数据分析}{337}{section*.383}% 
-\contentsline {subsection}{改进措施}{338}{section*.384}% 
-\contentsline {subsection}{改进效果}{338}{section*.385}% 
+\contentsline {chapter}{\numberline {26}北京手记}{319}{chapter.26}% 
+\contentsline {subsubsection}{国家大剧院管弦乐团演奏马勒第三交响曲}{319}{section*.368}% 
+\contentsline {subsubsection}{话剧：进入黑夜的漫长旅程 (Long Day's Journey into Night)}{319}{section*.369}% 
+\contentsline {subsubsection}{话剧：完美陌生人}{320}{section*.370}% 
+\contentsline {subsection}{创新来源于生活}{320}{section*.371}% 
+\contentsline {subsubsection}{要实践与坚持}{321}{section*.372}% 
+\contentsline {chapter}{\numberline {27}根与翼}{323}{chapter.27}% 
+\contentsline {subsection}{根}{325}{section*.373}% 
+\contentsline {subsection}{翼}{325}{section*.374}% 
+\contentsline {subsubsection}{飞行实验}{325}{section*.375}% 
+\contentsline {subsection}{TED演讲式总结}{327}{section*.376}% 
+\contentsline {section}{参考 References}{330}{section*.377}% 
+\contentsline {part}{IX\hspace {1em}附录}{331}{part.9}% 
+\contentsline {chapter}{\numberline {28}A:绅士俱乐部过程改进}{333}{chapter.28}% 
+\contentsline {subsubsection}{Esquire QC圈}{334}{section*.378}% 
+\contentsline {subsubsection}{用二八原则 （Pareto图） 识别主要源头}{334}{section*.379}% 
+\contentsline {subsubsection}{建立目标}{335}{section*.380}% 
+\contentsline {subsubsection}{根因分析 Root Cause analysis ( 鱼骨图分析 )}{335}{section*.381}% 
+\contentsline {subsubsection}{改进措施}{337}{section*.382}% 
+\contentsline {subsubsection}{改进效果}{338}{section*.383}% 
+\contentsline {subsubsection}{A3报告}{339}{section*.384}% 
+\contentsline {section}{参考 References}{339}{section*.385}% 
+\contentsline {chapter}{\numberline {29}B:分析迭代客户满意度调查数据}{341}{chapter.29}% 
+\contentsline {subsection}{案例背景}{341}{section*.386}% 
+\contentsline {subsection}{迭代数据}{341}{section*.387}% 
+\contentsline {subsection}{数据分析}{341}{section*.388}% 
+\contentsline {subsection}{改进措施}{342}{section*.389}% 
+\contentsline {subsection}{改进效果}{342}{section*.390}% 
