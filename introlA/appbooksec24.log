@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  3 SEP 2024 01:58
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  3 SEP 2024 02:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1704,9 +1704,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--130
  []
 
 [47]
-\openout2 = `appch2rhrtd.aux'.
+\openout2 = `appch2rhctdks-sec.aux'.
 
- (./appch2rhrtd.tex [48
+ (./appch2rhctdks-sec.tex [48
 
 
 ]
@@ -1719,7 +1719,10 @@ File: 37页替换图片.jpg Graphic file (type bmp)
 <37页替换图片.jpg>
 File: 0A_Agile_stories_p3.jpg Graphic file (type bmp)
 <0A_Agile_stories_p3.jpg>
-[49]
+
+Underfull \vbox (badness 2351) has occurred while \output is active []
+
+ [49]
 Underfull \hbox (badness 10000) in paragraph at lines 66--74
 
  []
@@ -1733,6 +1736,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--106
 File: 0A_Agile_stories_p51.jpg Graphic file (type bmp)
 <0A_Agile_stories_p51.jpg>
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [51]
 Underfull \hbox (badness 10000) in paragraph at lines 118--121
 
  []
@@ -1742,17 +1748,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
-[51]
+[52]
 Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
-[52]
+[53]
 Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
-[53]
+[54]
 Underfull \hbox (badness 10000) in paragraph at lines 247--249
 
  []
@@ -1766,20 +1772,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--258
 
 File: 微信截图_20231025084623.png Graphic file (type bmp)
 <微信截图_20231025084623.png>
-[54]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [55]
 Underfull \hbox (badness 10000) in paragraph at lines 306--307
 
  []
 
-[55]
+[56]
 File: P335_4_room_apartment1.jpg Graphic file (type bmp)
 <P335_4_room_apartment1.jpg>
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [57]
 Underfull \hbox (badness 10000) in paragraph at lines 371--373
 
  []
 
-) [56]
+) [58]
 \openout2 = `appch3kftyz.aux'.
 
  (./appch3kftyz.tex
@@ -1801,7 +1813,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
-[57
+[59
 
 
 
@@ -1811,11 +1823,11 @@ File: 52页替换图片.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [58]
+ [60]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [59]
-[60]
+ [61]
+[62]
 Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
@@ -1829,23 +1841,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--183
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 192.
 
-[61]
+[63]
 Underfull \hbox (badness 10000) in paragraph at lines 278--279
 
  []
 
-) [62] [63
+) [64] [65
 
 
-] [64]
+] [66]
 Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
-[65]
+[67]
 \openout2 = `appch5lhgl.aux'.
 
- (./appch5lhgl.tex [66
+ (./appch5lhgl.tex [68
 
 
 ]
@@ -1854,13 +1866,13 @@ Chapter 4.
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 22.
 
-[67]
+[69]
 File: 74页替换图片.jpg Graphic file (type bmp)
 <74页替换图片.jpg>
 
 Underfull \vbox (badness 3291) has occurred while \output is active []
 
- [68]
+ [70]
 Underfull \hbox (badness 10000) in paragraph at lines 59--62
 
  []
@@ -1893,14 +1905,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [69]
+ [71]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [70]
+ [72]
 Overfull \vbox (39.56409pt too high) has occurred while \output is active []
 
 
-[71]
+[73]
 Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
@@ -1915,22 +1927,22 @@ un(0)/bx/n/10 所 有 \TU/lmr/m/n/10 Expected \TU/SimSun(0)/bx/n/10 范 围\TU/l
 File: PSPcalculate3wks95rangeScreenshot_2022-11-26_105325.png Graphic file (typ
 e bmp)
 <PSPcalculate3wks95rangeScreenshot_2022-11-26_105325.png>
-[72]
+[74]
 File: Psp手工时间表121.jpg Graphic file (type bmp)
 <Psp手工时间表121.jpg>
- [73] [74]
+ [75] [76]
 File: psp3.jpg Graphic file (type bmp)
 <psp3.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [75]
+ [77]
 File: psp11.jpg Graphic file (type bmp)
 <psp11.jpg>
 File: PSP3wksPlanScreenshot_2022-11-26_085813.jpg Graphic file (type bmp)
 <PSP3wksPlanScreenshot_2022-11-26_085813.jpg>
 
-[76]
+[78]
 File: PSPend2ndWkEvScreenshot_2022-11-26_091326.jpg Graphic file (type bmp)
 <PSPend2ndWkEvScreenshot_2022-11-26_091326.jpg>
 
@@ -1943,10 +1955,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 362--364
 
  []
 
-) [77]
+) [79]
 \openout2 = `appch6gsrjgm.aux'.
 
- (./appch6gsrjgm.tex [78
+ (./appch6gsrjgm.tex [80
 
 
 
@@ -1959,15 +1971,15 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [79]
-[80]
+ [81]
+[82]
 File: sifp_p50图.jpg Graphic file (type bmp)
 <sifp_p50图.jpg>
- [81]
+ [83]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [82]
-[83]
+ [84]
+[85]
 File: 功能点计数过程.jpg Graphic file (type bmp)
 <功能点计数过程.jpg>
 
@@ -1977,7 +1989,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 378--380
 
 File: 功能点计数P62-2.jpg Graphic file (type bmp)
 <功能点计数P62-2.jpg>
-[84] [85]
+[86] [87]
 Underfull \hbox (badness 10000) in paragraph at lines 466--469
 
  []
@@ -2007,31 +2019,31 @@ Overfull \hbox (587.55469pt too wide) in paragraph at lines 505--528
 [][] 
  []
 
-[86]
+[88]
 File: Screenshotfrom2023-11-1302-05-21.png Graphic file (type bmp)
 <Screenshotfrom2023-11-1302-05-21.png>
 
 Underfull \vbox (badness 2181) has occurred while \output is active []
 
- [87]
-[88] [89] [90]
+ [89]
+[90] [91] [92]
 File: Ex1SoluScreenshot_2022-04-05_115926-1.jpg Graphic file (type bmp)
 <Ex1SoluScreenshot_2022-04-05_115926-1.jpg>
 File: 微信截图_20220412130822.jpg Graphic file (type bmp)
 <微信截图_20220412130822.jpg>
- [91] [92]
+ [93] [94]
 File: Ex2XlsScreenshot_2022-04-05_143941.jpg Graphic file (type bmp)
 <Ex2XlsScreenshot_2022-04-05_143941.jpg>
 
 Underfull \vbox (badness 4492) has occurred while \output is active []
 
- [93]
+ [95]
 File: Ex2XlsPt2of2Screenshot_2022-04-05_143941.jpg Graphic file (type bmp)
 <Ex2XlsPt2of2Screenshot_2022-04-05_143941.jpg>
 
 Underfull \vbox (badness 3354) has occurred while \output is active []
 
- [94]
+ [96]
 File: 115页替换图片.jpg Graphic file (type bmp)
 <115页替换图片.jpg>
 File: FPA_S11.jpg Graphic file (type bmp)
@@ -2041,10 +2053,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 983--985
 
  []
 
-) [95]
+) [97]
 \openout2 = `appch7gsgzl.aux'.
 
- (./appch7gsgzl.tex [96
+ (./appch7gsgzl.tex [98
 
 
 
@@ -2066,7 +2078,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--23
 
  []
 
-[97]
+[99]
 File: 估算3-1.jpg Graphic file (type bmp)
 <估算3-1.jpg>
 File: ABC模型.jpg Graphic file (type bmp)
@@ -2094,16 +2106,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--70
 
 Underfull \vbox (badness 1221) has occurred while \output is active []
 
- [98]
+ [100]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [99]
+ [101]
 File: Google_Agile_stories_V12esFinal(engCh)v12-1.jpg Graphic file (type bmp)
 <Google_Agile_stories_V12esFinal(engCh)v12-1.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [100]
+ [102]
 File: 微信图片_20230105131327.jpg Graphic file (type bmp)
 <微信图片_20230105131327.jpg>
 
@@ -2111,29 +2123,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
-[101]
+[103]
 Underfull \hbox (badness 10000) in paragraph at lines 174--178
 
  []
 
 File: 敏捷非敏捷1.jpg Graphic file (type bmp)
 <敏捷非敏捷1.jpg>
-[102]
+[104]
 File: Lego1.jpg Graphic file (type bmp)
 <Lego1.jpg>
 File: Lego_2.png Graphic file (type bmp)
 <Lego_2.png>
- [103]
+ [105]
 File: Lego3.jpg Graphic file (type bmp)
 <Lego3.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [104]
-[105]
+ [106]
+[107]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [106]
+ [108]
 Overfull \hbox (165.14001pt too wide) in paragraph at lines 407--428
 [][] 
  []
@@ -2143,10 +2155,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 436--439
 
  []
 
-) [107]
+) [109]
 \openout2 = `appch4sdgs.aux'.
 
- (./appch4sdgs.tex [108
+ (./appch4sdgs.tex [110
 
 
 
@@ -2161,7 +2173,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--35
 
  []
 
-[109]
+[111]
 File: Screenshotfrom2023-11-1221-23-06.png Graphic file (type bmp)
 <Screenshotfrom2023-11-1221-23-06.png>
 
@@ -2181,12 +2193,12 @@ File: 64页替换图片.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [110]
+ [112]
 Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
-[111]
+[113]
 File: 67页替换图片.png Graphic file (type bmp)
 <67页替换图片.png>
 File: 10stepsPertScreenshot_2022-10-24_205007.jpg Graphic file (type bmp)
@@ -2196,7 +2208,7 @@ File: 微信图片_20240117093606.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [112]
+ [114]
 Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
@@ -2208,7 +2220,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--200
 
 File: 4_三点估算问与答1.jpg Graphic file (type bmp)
 <4_三点估算问与答1.jpg>
-[113]
+[115]
 File: 4_fig2a_2024-01-15_211344.jpg Graphic file (type bmp)
 <4_fig2a_2024-01-15_211344.jpg>
 
@@ -2218,18 +2230,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
 File: 4_三点估算问与答2.jpg Graphic file (type bmp)
 <4_三点估算问与答2.jpg>
-) [114] [115
+) [116] [117
 
 
-] [116]
+] [118]
 Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
 
-[117]
+[119]
 \openout2 = `appch8hqgczc.aux'.
 
- (./appch8hqgczc.tex [118
+ (./appch8hqgczc.tex [120
 
 
 ]
@@ -2248,7 +2260,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--25
 
  []
 
-[119]
+[121]
 Underfull \hbox (badness 10000) in paragraph at lines 35--37
 
  []
@@ -2273,7 +2285,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--55
 
 Underfull \vbox (badness 8113) has occurred while \output is active []
 
- [120]
+ [122]
 File: 138页替换图片.png Graphic file (type bmp)
 <138页替换图片.png>
 
@@ -2296,8 +2308,8 @@ File: 三角形.jpg Graphic file (type bmp)
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [121]
-[122]
+ [123]
+[124]
 \openout2 = `appch9xzgjjh.aux'.
 
  (./appch9xzgjjh.tex
@@ -2317,7 +2329,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--37
 
  []
 
-[123
+[125
 
 
 
@@ -2345,7 +2357,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--82
 
  []
 
-[124]
+[126]
 Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
@@ -2355,10 +2367,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
-[125]
+[127]
 File: 3个关键点图1.png Graphic file (type bmp)
 <3个关键点图1.png>
- [126]
+ [128]
 Underfull \hbox (badness 10000) in paragraph at lines 154--157
 
  []
@@ -2375,10 +2387,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--174
 
  []
 
-) [127] [128
+) [129] [130
 
 
-] [129] [130]
+] [131] [132]
 Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
@@ -2413,10 +2425,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--174
 
  []
 
-[131]
+[133]
 \openout2 = `appch10gyfx.aux'.
 
- (./appch10gyfx.tex [132
+ (./appch10gyfx.tex [134
 
 
 ]
@@ -2426,17 +2438,17 @@ File: 9_用户故事2.png Graphic file (type bmp)
 
 Underfull \vbox (badness 4531) has occurred while \output is active []
 
- [133]
+ [135]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 45.
 
 File: Diagram_20.png Graphic file (type bmp)
 <Diagram_20.png>
-[134]
+[136]
 File: ToolsParetoScreenshot_2023-06-02_191628.jpg Graphic file (type bmp)
 <ToolsParetoScreenshot_2023-06-02_191628.jpg>
- [135]
+ [137]
 File: 162页替换图片.png Graphic file (type bmp)
 <162页替换图片.png>
 File: AR1成本占比.jpg Graphic file (type bmp)
@@ -2446,17 +2458,17 @@ File: MGR_f11.jpg Graphic file (type bmp)
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [136]
-[137]
+ [138]
+[139]
 \openout2 = `appch11rhjd.aux'.
 
- (./appch11rhjd.tex [138
+ (./appch11rhjd.tex [140
 
 
 
 ]
 Chapter 11.
-[139]
+[141]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 26.
@@ -2471,12 +2483,12 @@ File: 178页替换图片.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [140]
+ [142]
 Underfull \hbox (badness 10000) in paragraph at lines 55--60
 
  []
 
-[141]
+[143]
 File: Screenshotfrom2024-07-2422-56-47.png Graphic file (type bmp)
 <Screenshotfrom2024-07-2422-56-47.png>
 File: Jalote_emm_71_10.png Graphic file (type bmp)
@@ -2488,7 +2500,7 @@ File: 198页替换图片.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 7851) has occurred while \output is active []
 
- [142]
+ [144]
 File: 1113corrDreScreenshot_2021-11-13_212509.png Graphic file (type bmp)
 <1113corrDreScreenshot_2021-11-13_212509.png>
 File: Jalote_emm_72-1.jpg Graphic file (type bmp)
@@ -2496,28 +2508,28 @@ File: Jalote_emm_72-1.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 1681) has occurred while \output is active []
 
- [143]
+ [145]
 File: Epg-car31-1.png Graphic file (type bmp)
 <Epg-car31-1.png>
 File: CRairportDelayScreenshot_2023-06-02_191306.jpg Graphic file (type bmp)
 <CRairportDelayScreenshot_2023-06-02_191306.jpg>
 
-[144] [145]
+[146] [147]
 File: 风险与机会1.png Graphic file (type bmp)
 <风险与机会1.png>
 File: 风险与机会2_FMEA.png Graphic file (type bmp)
 <风险与机会2_FMEA.png>
 File: 226页替换图片.jpg Graphic file (type bmp)
 <226页替换图片.jpg>
- [146]
+ [148]
 File: 风险与机会41.png Graphic file (type bmp)
 <风险与机会41.png>
 File: 风险与机会5_闹钟.png Graphic file (type bmp)
 <风险与机会5_闹钟.png>
-) [147]
+) [149]
 \openout2 = `appch12rhzhzb.aux'.
 
- (./appch12rhzhzb.tex [148
+ (./appch12rhzhzb.tex [150
 
 
 
@@ -2533,11 +2545,11 @@ File: Asch0Screenshot_2022-07-09_161023.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 3058) has occurred while \output is active []
 
- [149]
+ [151]
 File: !postItMarkerScreenshot_2023-10-27_205505.jpg Graphic file (type bmp)
 <!postItMarkerScreenshot_2023-10-27_205505.jpg>
 
-[150]
+[152]
 Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
@@ -2552,12 +2564,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
-[151]
+[153]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 107.
 
-[152]
+[154]
 File: Asch2Screenshot2.png Graphic file (type bmp)
 <Asch2Screenshot2.png>
 File: Asch3Screenshot_2022-07-08_2013411.png Graphic file (type bmp)
@@ -2565,11 +2577,11 @@ File: Asch3Screenshot_2022-07-08_2013411.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [153]
+ [155]
 File: Asch4Screenshot_2022-07-08_2015021.png Graphic file (type bmp)
 <Asch4Screenshot_2022-07-08_2015021.png>
 
-[154]
+[156]
 File: 205页替换图片.jpg Graphic file (type bmp)
 <205页替换图片.jpg>
 File: 206页替换图片.jpg Graphic file (type bmp)
@@ -2577,19 +2589,19 @@ File: 206页替换图片.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [155]
+ [157]
 File: 游戏1应与否1.png Graphic file (type bmp)
 <游戏1应与否1.png>
 
-[156]
+[158]
 File: 1498.png Graphic file (type bmp)
 <1498.png>
 File: 1499.png Graphic file (type bmp)
 <1499.png>
-) [157]
+) [159]
 \openout2 = `appch13ssywh.aux'.
 
- (./appch13ssywh.tex [158
+ (./appch13ssywh.tex [160
 
 
 
@@ -2599,10 +2611,10 @@ Chapter 13.
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 13.
 
-[159]
+[161]
 File: Screenshotfrom2024-08-1123-28-39.png Graphic file (type bmp)
 <Screenshotfrom2024-08-1123-28-39.png>
- [160]
+ [162]
 File: 微信截图_20230928135611.png Graphic file (type bmp)
 <微信截图_20230928135611.png>
 File: 微信截图_20230830093612.png Graphic file (type bmp)
@@ -2610,7 +2622,7 @@ File: 微信截图_20230830093612.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [161]
+ [163]
 File: CAR_辅导1-1.jpg Graphic file (type bmp)
 <CAR_辅导1-1.jpg>
 File: CAR_辅导4-1.jpg Graphic file (type bmp)
@@ -2620,18 +2632,18 @@ File: MTKL.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [162]
+ [164]
 File: 缺陷表41.jpg Graphic file (type bmp)
 <缺陷表41.jpg>
 
-[163] [164] [165]
+[165] [166] [167]
 Underfull \vbox (badness 4072) has occurred while \output is active []
 
- [166]
+ [168]
 File: Timeline.png Graphic file (type bmp)
 <Timeline.png>
 
-[167]
+[169]
 File: Color_Code_Dots.png Graphic file (type bmp)
 <Color_Code_Dots.png>
 File: 微信截图_20220316093044.jpg Graphic file (type bmp)
@@ -2641,7 +2653,7 @@ File: 2DreEstimateScreenshot_2021-12-01_2120491.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 2556) has occurred while \output is active []
 
- [168]
+ [170]
 File: Sjb-1-1.png Graphic file (type bmp)
 <Sjb-1-1.png>
 File: 4reworkByPhaseScreenshot_2021-12-01_2148381.jpg Graphic file (type bmp)
@@ -2651,7 +2663,7 @@ File: 微信截图_20231031153355.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [169]
+ [171]
 Underfull \hbox (badness 10000) in paragraph at lines 404--406
 
  []
@@ -2661,13 +2673,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 413--414
 
  []
 
-) [170] [171
+) [172] [173
 
 
-] [172] [173]
+] [174] [175]
 \openout2 = `appch14csqdkf.aux'.
 
- (./appch14csqdkf.tex [174
+ (./appch14csqdkf.tex [176
 
 
 ]
@@ -2678,25 +2690,25 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 
 File: 树莓派.jpg Graphic file (type bmp)
 <树莓派.jpg>
-[175] [176]
+[177] [178]
 Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
 
-[177] [178]
+[179] [180]
 File: PspLogScreenshot20211006174917.png Graphic file (type bmp)
 <PspLogScreenshot20211006174917.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [179]
+ [181]
 Underfull \vbox (badness 3179) has occurred while \output is active []
 
- [180])
-[181]
+ [182])
+[183]
 \openout2 = `appch15dmcg.aux'.
 
- (./appch15dmcg.tex [182
+ (./appch15dmcg.tex [184
 
 
 
@@ -2711,30 +2723,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--45
 
  []
 
-[183]
+[185]
 Underfull \hbox (badness 10000) in paragraph at lines 49--51
 
  []
 
 File: 环形图1.jpg Graphic file (type bmp)
 <环形图1.jpg>
-[184]
+[186]
 File: mindstorm_p51.jpg Graphic file (type bmp)
 <mindstorm_p51.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [185]
+ [187]
 File: mindstorm_p70.jpg Graphic file (type bmp)
 <mindstorm_p70.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [186]
+ [188]
 Overfull \vbox (86.39532pt too high) has occurred while \output is active []
 
 
-[187]
+[189]
 File: mindstorm_p71.jpg Graphic file (type bmp)
 <mindstorm_p71.jpg>
 File: mindstorm_p721.jpg Graphic file (type bmp)
@@ -2746,10 +2758,10 @@ File: mindstorm_p73.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [188]
+ [190]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [189]
+ [191]
 File: mindstorm_p951.jpg Graphic file (type bmp)
 <mindstorm_p951.jpg>
 File: mindstorm_p952.jpg Graphic file (type bmp)
@@ -2757,7 +2769,7 @@ File: mindstorm_p952.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 1383) has occurred while \output is active []
 
- [190]
+ [192]
 File: mindstorm_p96.jpg Graphic file (type bmp)
 <mindstorm_p96.jpg>
 File: mindstorm_p97.jpg Graphic file (type bmp)
@@ -2765,7 +2777,7 @@ File: mindstorm_p97.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [191]
+ [193]
 Underfull \hbox (badness 10000) in paragraph at lines 135--137
 
  []
@@ -2780,7 +2792,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
-) [192]
+) [194]
 \openout2 = `appch16cxjc.aux'.
 
  (./appch16cxjc.tex
@@ -2789,19 +2801,19 @@ Chapter 16.
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 6.
 
-[193
+[195
 
 
 
-] [194]
+] [196]
 File: !DeployPipelineScreenshot_2022-05-20_210104.jpg Graphic file (type bmp)
 <!DeployPipelineScreenshot_2022-05-20_210104.jpg>
- [195]
+ [197]
 Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
 
-[196] [197]
+[198] [199]
 Underfull \hbox (badness 10000) in paragraph at lines 258--260
 
  []
@@ -2817,10 +2829,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 264--267
 
  []
 
-[198]) [199]
+[200]) [201]
 \openout2 = `appch17jdbc.aux'.
 
- (./appch17jdbc.tex [200
+ (./appch17jdbc.tex [202
 
 
 
@@ -2831,7 +2843,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--44
 
  []
 
-[201]
+[203]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 46.
@@ -2841,7 +2853,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
 
-[202]
+[204]
 Underfull \hbox (badness 10000) in paragraph at lines 86--88
 
  []
@@ -2882,26 +2894,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--120
 
  []
 
-[203]
+[205]
 File: Acp3-131.png Graphic file (type bmp)
 <Acp3-131.png>
- [204]
+ [206]
 File: leip17.jpg Graphic file (type bmp)
 <leip17.jpg>
 File: leip18.jpg Graphic file (type bmp)
 <leip18.jpg>
 File: leip19.jpg Graphic file (type bmp)
 <leip19.jpg>
-) [205]
+) [207]
 \openout2 = `appch18rjxq.aux'.
 
- (./appch18rjxq.tex [206
+ (./appch18rjxq.tex [208
 
 
 
 ]
 Chapter 18.
-[207] [208]
+[209] [210]
 Underfull \hbox (badness 10000) in paragraph at lines 41--43
 
  []
@@ -2911,14 +2923,14 @@ File: 279页替换图片.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [209]
+ [211]
 File: langwall2-修改52.jpg Graphic file (type bmp)
 <langwall2-修改52.jpg>
 
-[210]
+[212]
 File: 长壁11.jpg Graphic file (type bmp)
 <长壁11.jpg>
- [211]
+ [213]
 Overfull \hbox (147.58002pt too wide) in paragraph at lines 111--128
 [][] 
  []
@@ -2936,11 +2948,11 @@ Overfull \hbox (168.58002pt too wide) in paragraph at lines 157--172
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [212]
-[213]
+ [214]
+[215]
 \openout2 = `appch19khcy.aux'.
 
- (./appch19khcy.tex [214
+ (./appch19khcy.tex [216
 
 
 
@@ -2950,12 +2962,12 @@ Chapter 19.
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 4.
 
-[215]
+[217]
 File: 9_用户故事1.png Graphic file (type bmp)
 <9_用户故事1.png>
 File: 9_用户故事2.png Graphic file (type bmp)
 <9_用户故事2.png>
- [216]
+ [218]
 Underfull \hbox (badness 10000) in paragraph at lines 106--108
 
  []
@@ -2964,7 +2976,7 @@ File: 9_用户故事3.png Graphic file (type bmp)
 <9_用户故事3.png>
 File: CI场景图.jpg Graphic file (type bmp)
 <CI场景图.jpg>
-[217]
+[219]
 Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
@@ -2977,13 +2989,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [218]
-[219]
+ [220]
+[221]
 Underfull \hbox (badness 10000) in paragraph at lines 264--265
 
  []
 
-[220]
+[222]
 Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
@@ -3005,7 +3017,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 320--321
 
 File: 296页替换图片.jpg Graphic file (type bmp)
 <296页替换图片.jpg>
-[221]
+[223]
 Overfull \hbox (140.98001pt too wide) in paragraph at lines 351--369
 [][] 
  []
@@ -3017,7 +3029,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 404--408
 
  []
 
-) [222]
+) [224]
 \openout2 = `appch20tdxz.aux'.
 
  (./appch20tdxz.tex
@@ -3036,7 +3048,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--27
 
  []
 
-[223
+[225
 
 
 
@@ -3053,10 +3065,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--30
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [224]
+ [226]
 Underfull \vbox (badness 1205) has occurred while \output is active []
 
- [225]
+ [227]
 Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
@@ -3076,8 +3088,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [226]
-[227]
+ [228]
+[229]
 Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
@@ -3090,23 +3102,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--92
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [228]
+ [230]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [229]
+ [231]
 Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
-[230]
+[232]
 Underfull \hbox (badness 10000) in paragraph at lines 157--159
 
  []
 
-) [231] [232
+) [233] [234
 
 
-] [233] [234]
+] [235] [236]
 Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
@@ -3126,10 +3138,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
-[235]
+[237]
 \openout2 = `appch21zwjdc.aux'.
 
- (./appch21zwjdc.tex [236
+ (./appch21zwjdc.tex [238
 
 
 ]
@@ -3148,7 +3160,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-[237]
+[239]
 File: 312页替换图片.jpg Graphic file (type bmp)
 <312页替换图片.jpg>
 
@@ -3161,19 +3173,19 @@ File: WeisbordP2191.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [238]
+ [240]
 Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
 File: tys51_101.jpg Graphic file (type bmp)
 <tys51_101.jpg>
-[239]
+[241]
 Underfull \hbox (badness 10000) in paragraph at lines 108--110
 
  []
 
-) [240]
+) [242]
 \openout2 = `appch22jxhtjfx.aux'.
 
  (./appch22jxhtjfx.tex
@@ -3197,7 +3209,7 @@ File: MA_FA2_101.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [241
+ [243
 
 
 
@@ -3213,14 +3225,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--42
 
  []
 
-[242]
+[244]
 Underfull \hbox (badness 10000) in paragraph at lines 85--88
 
  []
 
 File: 图片61-31.jpg Graphic file (type bmp)
 <图片61-31.jpg>
-[243]
+[245]
 Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
@@ -3242,7 +3254,7 @@ File: WW2Screenshot_2021-04-07_2220541.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 4328) has occurred while \output is active []
 
- [244]
+ [246]
 File: 儿童MA1.jpg Graphic file (type bmp)
 <儿童MA1.jpg>
 
@@ -3253,7 +3265,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 141--145
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [245]
+ [247]
 Underfull \hbox (badness 10000) in paragraph at lines 152--160
 
  []
@@ -3265,7 +3277,7 @@ File: AverageSalaryScreenshot_2021-07-31_1715021.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [246]
+ [248]
 Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
@@ -3287,7 +3299,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 210--213
 
  []
 
-[247]
+[249]
 Overfull \hbox (23.29002pt too wide) in paragraph at lines 265--284
 [][] 
  []
@@ -3295,19 +3307,19 @@ Overfull \hbox (23.29002pt too wide) in paragraph at lines 265--284
 
 Underfull \vbox (badness 1270) has occurred while \output is active []
 
- [248]
+ [250]
 Overfull \hbox (112.89pt too wide) in paragraph at lines 306--323
 [][] 
  []
 
 File: BoxWhiskerScreenshot_2021-08-02_2146031.jpg Graphic file (type bmp)
 <BoxWhiskerScreenshot_2021-08-02_2146031.jpg>
-[249]
+[251]
 Underfull \hbox (badness 10000) in paragraph at lines 380--383
 
  []
 
-) [250]
+) [252]
 \openout2 = `appch23jsjy.aux'.
 
  (./appch23jsjy.tex
@@ -3325,7 +3337,7 @@ File: CompareAB2Screenshot_2022-11-06_2120361.jpg Graphic file (type bmp)
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 18.
 
-[251
+[253
 
 
 
@@ -3344,7 +3356,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--88
 
 File: M4SingleMean1Screenshot_2022-09-11_201026.jpg Graphic file (type bmp)
 <M4SingleMean1Screenshot_2022-09-11_201026.jpg>
-[252]
+[254]
 File: TypeOneTwoErrorScreenshot_2022-07-23_151744-1.jpg Graphic file (type bmp)
 
 <TypeOneTwoErrorScreenshot_2022-07-23_151744-1.jpg>
@@ -3362,12 +3374,12 @@ Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
 
 Underfull \vbox (badness 6910) has occurred while \output is active []
 
- [253]
+ [255]
 File: M4twoPopulationScreenshot_2022-09-11_201946.jpg Graphic file (type bmp)
 <M4twoPopulationScreenshot_2022-09-11_201946.jpg>
 Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
 
-[254]
+[256]
 File: CholesterolEg2022-07-23_195121.jpg Graphic file (type bmp)
 <CholesterolEg2022-07-23_195121.jpg>
 File: 5anovaResultScreenshot_2022-07-24_104352.jpg Graphic file (type bmp)
@@ -3377,7 +3389,7 @@ File: 5anovaBoxplot_of_small_sedans_luxury-1.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [255]
+ [257]
 File: AnovaParachutes807Screenshot_2022-08-07_124737.jpg Graphic file (type bmp
 )
 <AnovaParachutes807Screenshot_2022-08-07_124737.jpg>
@@ -3386,13 +3398,13 @@ File: AnovaBoxplots807-1.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [256]
+ [258]
 File: Anova3inOneScreenshot_2022-08-07_125131-1.jpg Graphic file (type bmp)
 <Anova3inOneScreenshot_2022-08-07_125131-1.jpg>
 File: 4chiSquareDataScreenshot_2022-07-24_110053.jpg Graphic file (type bmp)
 <4chiSquareDataScreenshot_2022-07-24_110053.jpg>
 
-[257]
+[259]
 File: 6chiSquareTstResultScreenshot_2022-07-24_103606-1.jpg Graphic file (type 
 bmp)
 <6chiSquareTstResultScreenshot_2022-07-24_103606-1.jpg>
@@ -3411,7 +3423,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 442--445
 
  []
 
-[258]
+[260]
 Underfull \hbox (badness 10000) in paragraph at lines 454--455
 
  []
@@ -3451,7 +3463,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 491--493
 
  []
 
-[259]
+[261]
 Underfull \hbox (badness 10000) in paragraph at lines 500--502
 
  []
@@ -3481,7 +3493,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 629--630
 
  []
 
-[260]
+[262]
 Underfull \hbox (badness 10000) in paragraph at lines 646--647
 
  []
@@ -3493,12 +3505,12 @@ Overfull \hbox (18.53976pt too wide) detected at line 689
 ][][][]
  []
 
-[261]
+[263]
 Underfull \hbox (badness 10000) in paragraph at lines 708--713
 
  []
 
-) [262]
+) [264]
 \openout2 = `appch24kzt.aux'.
 
  (./appch24kzt.tex
@@ -3519,7 +3531,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 
 Underfull \vbox (badness 7064) has occurred while \output is active []
 
- [263
+ [265
 
 
 
@@ -3533,7 +3545,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--48
 
 File: NormalDistPicture1.jpg Graphic file (type bmp)
 <NormalDistPicture1.jpg>
-[264]
+[266]
 Underfull \hbox (badness 10000) in paragraph at lines 57--60
 
  []
@@ -3552,7 +3564,7 @@ File: 357替换图片.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [265]
+ [267]
 Underfull \hbox (badness 10000) in paragraph at lines 81--87
 
  []
@@ -3564,17 +3576,17 @@ File: P10CcScreenshot_2021-09-25_104057.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [266]
+ [268]
 Underfull \hbox (badness 10000) in paragraph at lines 92--95
 
  []
 
 File: M3_CC_figure1.jpg Graphic file (type bmp)
 <M3_CC_figure1.jpg>
-[267]
+[269]
 File: 控制图0.jpg Graphic file (type bmp)
 <控制图0.jpg>
- [268]
+ [270]
 Underfull \hbox (badness 10000) in paragraph at lines 257--259
 
  []
@@ -3584,13 +3596,13 @@ File: 微信截图_20210929131748.png Graphic file (type bmp)
 
 Underfull \vbox (badness 1127) has occurred while \output is active []
 
- [269]
+ [271]
 File: 微信截图_20210927084548.png Graphic file (type bmp)
 <微信截图_20210927084548.png>
 File: 微信截图_20210927084434.png Graphic file (type bmp)
 <微信截图_20210927084434.png>
 
-[270]
+[272]
 Underfull \hbox (badness 10000) in paragraph at lines 291--293
 
  []
@@ -3614,7 +3626,7 @@ File: 366页替换图片.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [271]
+ [273]
 Underfull \hbox (badness 10000) in paragraph at lines 325--326
 
  []
@@ -3631,25 +3643,25 @@ Overfull \hbox (545.05002pt too wide) in paragraph at lines 341--366
 
 Underfull \vbox (badness 5504) has occurred while \output is active []
 
- [272]
+ [274]
 Underfull \hbox (badness 10000) in paragraph at lines 368--370
 
  []
 
 File: DAD_p67.jpg Graphic file (type bmp)
 <DAD_p67.jpg>
-) [273] [274
+) [275] [276
 
 
-] [275] [276]
+] [277] [278]
 Underfull \hbox (badness 10000) in paragraph at lines 219--221
 
  []
 
-[277]
+[279]
 \openout2 = `appch25cgrdgs.aux'.
 
- (./appch25cgrdgs.tex [278
+ (./appch25cgrdgs.tex [280
 
 
 ]
@@ -3660,11 +3672,11 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 
 File: SlideRulerScreenshot_2023-12-06_194105.jpg Graphic file (type bmp)
 <SlideRulerScreenshot_2023-12-06_194105.jpg>
-[279]
+[281]
 Missing character: There is no ′ in font [lmroman10-regular]:mapping=tex-text;!
 File: 微信截图_20230724085408.png Graphic file (type bmp)
 <微信截图_20230724085408.png>
- [280]
+ [282]
 Missing character: There is no ′ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ″ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ′ in font [lmroman10-regular]:mapping=tex-text;!
@@ -3677,11 +3689,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [281]
-[282]
+ [283]
+[284]
 File: Liuct.png Graphic file (type bmp)
 <Liuct.png>
- [283] [284]
+ [285] [286]
 File: !ipodcutoutScreenshot_2023-12-06_201652.jpg Graphic file (type bmp)
 <!ipodcutoutScreenshot_2023-12-06_201652.jpg>
 File: IpodPackageScreenshot_2023-07-23_201312_labi.jpg Graphic file (type bmp)
@@ -3692,8 +3704,8 @@ File: AppleRiseFallDrawScreenshot_2023-12-06_211749.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [285]
-[286]
+ [287]
+[288]
 Underfull \hbox (badness 10000) in paragraph at lines 256--257
 
  []
@@ -3728,33 +3740,33 @@ File: 385页替换图片.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [287]
+ [289]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [288]
-[289] [290]
+ [290]
+[291] [292]
 File: mingyant.png Graphic file (type bmp)
 <mingyant.png>
- [291]
+ [293]
 File: R-C_副本.jpg Graphic file (type bmp)
 <R-C_副本.jpg>
- [292] [293]
+ [294] [295]
 Underfull \vbox (badness 2698) has occurred while \output is active []
 
- [294]
+ [296]
 Overfull \vbox (162.35565pt too high) has occurred while \output is active []
 
 
-[295] [296]) [297]
+[297] [298]) [299]
 \openout2 = `25Acxxbj.aux'.
 
- (./25Acxxbj.tex [298
+ (./25Acxxbj.tex [300
 
 
 
 ]
 Chapter 26.
-[299]
+[301]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 38.
@@ -3769,14 +3781,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
-[300]
+[302]
 File: 25A图1.jpg Graphic file (type bmp)
 <25A图1.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [301])
-[302]
+ [303])
+[304]
 \openout2 = `appch26gyy.aux'.
 
  (./appch26gyy.tex
@@ -3785,7 +3797,7 @@ Chapter 27.
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 13.
 
-[303
+[305
 
 
 
@@ -3795,32 +3807,32 @@ File: 404页替换图片.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [304]
+ [306]
 Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
-[305]
+[307]
 File: 26章三角图.jpg Graphic file (type bmp)
 <26章三角图.jpg>
 
 Underfull \vbox (badness 3009) has occurred while \output is active []
 
- [306]
+ [308]
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
- [307]
+ [309]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [308]
+ [310]
 Underfull \hbox (badness 10000) in paragraph at lines 218--233
 
  []
 
-[309]) [310] [311
+[311]) [312] [313
 
 
-] [312]
+] [314]
 \openout2 = `fjAssjlb.aux'.
 
  (./fjAssjlb.tex
@@ -3830,7 +3842,7 @@ File: Esquire2Screenshot2023-10-271322091.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 1596) has occurred while \output is active []
 
- [313
+ [315
 
 
 ]
@@ -3845,13 +3857,13 @@ File: club72.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 2600) has occurred while \output is active []
 
- [314]
+ [316]
 File: club81.jpg Graphic file (type bmp)
 <club81.jpg>
 File: club91.jpg Graphic file (type bmp)
 <club91.jpg>
 
-[315]
+[317]
 File: club111.png Graphic file (type bmp)
 <club111.png>
 File: 418页替换图片.jpg Graphic file (type bmp)
@@ -3863,11 +3875,11 @@ File: 419页替换图片.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [316]
+ [318]
 File: 420页替换图片.jpg Graphic file (type bmp)
 <420页替换图片.jpg>
 
-[317]
+[319]
 File: MA_FA1_10.png Graphic file (type bmp)
 <MA_FA1_10.png>
 File: club201.jpg Graphic file (type bmp)
@@ -3879,14 +3891,14 @@ File: club211.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 1960) has occurred while \output is active []
 
- [318]
+ [320]
 File: club221.jpg Graphic file (type bmp)
 <club221.jpg>
 )
-[319]
+[321]
 \openout2 = `fjBfxddkh.aux'.
 
- (./fjBfxddkh.tex [320
+ (./fjBfxddkh.tex [322
 
 
 
@@ -3898,17 +3910,17 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 
 File: Screenshotfrom2023-10-1223-17-39.png Graphic file (type bmp)
 <Screenshotfrom2023-10-1223-17-39.png>
-[321]
+[323]
 File: Screenshotfrom2023-10-1223-18-56.png Graphic file (type bmp)
 <Screenshotfrom2023-10-1223-18-56.png>
-) [322]
+) [324]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 238.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 238.
  (./appbooksec24.aux (./xgq.aux) (./xuzhang.aux) (./ganxie.aux)
-(./qianyan.aux) (./appch1rhgs-sec.aux) (./appch2rhrtd.aux) (./appch3kftyz.aux)
-(./appch5lhgl.aux) (./appch6gsrjgm.aux) (./appch7gsgzl.aux) (./appch4sdgs.aux)
-(./appch8hqgczc.aux) (./appch9xzgjjh.aux) (./appch10gyfx.aux)
-(./appch11rhjd.aux) (./appch12rhzhzb.aux) (./appch13ssywh.aux)
+(./qianyan.aux) (./appch1rhgs-sec.aux) (./appch2rhctdks-sec.aux)
+(./appch3kftyz.aux) (./appch5lhgl.aux) (./appch6gsrjgm.aux) (./appch7gsgzl.aux)
+(./appch4sdgs.aux) (./appch8hqgczc.aux) (./appch9xzgjjh.aux) (./appch10gyfx.aux
+) (./appch11rhjd.aux) (./appch12rhzhzb.aux) (./appch13ssywh.aux)
 (./appch14csqdkf.aux) (./appch15dmcg.aux) (./appch16cxjc.aux)
 (./appch17jdbc.aux) (./appch18rjxq.aux) (./appch19khcy.aux) (./appch20tdxz.aux)
 (./appch21zwjdc.aux) (./appch22jxhtjfx.aux) (./appch23jsjy.aux)
@@ -3927,12 +3939,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 30134 strings out of 494900
- 620376 string characters out of 6177140
+ 30135 strings out of 494900
+ 620417 string characters out of 6177140
  828544 words of memory out of 5000000
  33312 multiletter control sequences out of 15000+600000
  535938 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  57i,9n,115p,914b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on appbooksec24.pdf (322 pages).
+Output written on appbooksec24.pdf (324 pages).
