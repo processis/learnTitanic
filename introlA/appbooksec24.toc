@@ -10,9 +10,9 @@
 \contentsline {subsection}{如何改善}{24}{section*.12}% 
 \contentsline {subsection}{丰田故事}{25}{section*.13}% 
 \contentsline {subsection}{水面下的管理思路}{28}{section*.14}% 
-\contentsline {subsubsection}{容易实现的目标不是好目标}{29}{section*.15}% 
-\contentsline {paragraph}{标杆管理 (Benchmarking)}{30}{section*.16}% 
-\contentsline {subsubsection}{不以``我们公司''作主语}{31}{section*.17}% 
+\contentsline {subsubsection}{容易实现的目标不是好目标}{28}{section*.15}% 
+\contentsline {paragraph}{标杆管理 (Benchmarking)}{29}{section*.16}% 
+\contentsline {subsubsection}{不以``我们公司''作主语}{30}{section*.17}% 
 \contentsline {subsubsection}{重复五遍``为什么''(5 Why)}{31}{section*.18}% 
 \contentsline {subsubsection}{持续改善没有停止}{32}{section*.19}% 
 \contentsline {subsubsection}{成长比成功更重要}{32}{section*.20}% 
@@ -20,27 +20,27 @@
 \contentsline {subsubsection}{从心里相信``大家的力量''}{36}{section*.22}% 
 \contentsline {subsection}{改善质量}{37}{section*.23}% 
 \contentsline {subsection}{结束语}{39}{section*.24}% 
-\contentsline {section}{附件}{39}{section*.25}% 
-\contentsline {subsection}{现代汽车生产}{39}{section*.26}% 
-\contentsline {subsection}{XP}{40}{section*.27}% 
-\contentsline {subsubsection}{编码实践（Coding Practices）}{40}{section*.28}% 
-\contentsline {paragraph}{CP1:简单地编码和设计（Code and Design Simply ）}{40}{section*.29}% 
-\contentsline {paragraph}{CP2:无情地重构 （Refactor Mercilessly）}{40}{section*.30}% 
+\contentsline {section}{附件}{40}{section*.25}% 
+\contentsline {subsection}{现代汽车生产}{40}{section*.26}% 
+\contentsline {subsection}{XP}{41}{section*.27}% 
+\contentsline {subsubsection}{编码实践（Coding Practices）}{41}{section*.28}% 
+\contentsline {paragraph}{CP1:简单地编码和设计（Code and Design Simply ）}{41}{section*.29}% 
+\contentsline {paragraph}{CP2:无情地重构 （Refactor Mercilessly）}{41}{section*.30}% 
 \contentsline {paragraph}{CP3:制订编码标准 （Develop Coding Standards）}{41}{section*.31}% 
 \contentsline {paragraph}{CP4:共同的词汇 （Develop a Common Vocabulary）}{41}{section*.32}% 
 \contentsline {subsubsection}{开发实践（ Develop Practices）}{41}{section*.33}% 
 \contentsline {paragraph}{DP1:测试驱动开发TDD （Test-Driven-Development ）}{41}{section*.34}% 
-\contentsline {paragraph}{DP2:结对编程 （Pair Programming）}{41}{section*.35}% 
-\contentsline {paragraph}{DP3:集体负责写好代码(vs 只顾虑自己的代码) Collective Code Ownership (vs individual own code)}{41}{section*.36}% 
+\contentsline {paragraph}{DP2:结对编程 （Pair Programming）}{42}{section*.35}% 
+\contentsline {paragraph}{DP3:集体负责写好代码(vs 只顾虑自己的代码) Collective Code Ownership (vs individual own code)}{42}{section*.36}% 
 \contentsline {paragraph}{DP4:持续集成（ Integrate Continually）}{42}{section*.37}% 
 \contentsline {subsubsection}{商务实践 （Business Practices）}{42}{section*.38}% 
 \contentsline {paragraph}{BP1:将客户添加进团队（ Add a Customer to the Team ）}{42}{section*.39}% 
 \contentsline {paragraph}{BP2:计划游戏 （Play the Planning Game）}{42}{section*.40}% 
 \contentsline {paragraph}{BP3:定期发布 （Release Regularly）}{42}{section*.41}% 
-\contentsline {paragraph}{BP4:以可持久的速度工作 （Work at a Sustainable Pace）}{42}{section*.42}% 
-\contentsline {subsection}{`` 5 Why ''实例}{42}{section*.43}% 
+\contentsline {paragraph}{BP4:以可持久的速度工作 （Work at a Sustainable Pace）}{43}{section*.42}% 
+\contentsline {subsection}{`` 5 Why ''实例}{43}{section*.43}% 
 \contentsline {subsection}{5S法}{43}{section*.44}% 
-\contentsline {section}{参考 References}{43}{section*.45}% 
+\contentsline {section}{参考 References}{44}{section*.45}% 
 \contentsline {part}{II\hspace {1em}团队与自我改善基本功}{45}{part.2}% 
 \contentsline {chapter}{\numberline {2}改进从团队开始}{49}{chapter.2}% 
 \contentsline {subsection}{美国费城 Weisbord 故事}{49}{section*.46}% 
