@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  3 SEP 2024 22:40
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  4 SEP 2024 20:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -879,7 +879,7 @@ LaTeX Warning: Label `ux7b2cux4e00ux7248ux65b9ux6848ux4e66' multiply defined.
 
 LaTeX Warning: Label `ux603bux7ed3' multiply defined.
 
-) (./appch9xzgjjh.aux
+) (./appch9xzgjjh-sec.aux
 
 LaTeX Warning: Label `ux603bux7ed3' multiply defined.
 
@@ -2339,9 +2339,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [129]
 [130]
-\openout2 = `appch9xzgjjh.aux'.
+\openout2 = `appch9xzgjjh-sec.aux'.
 
- (./appch9xzgjjh.tex
+ (./appch9xzgjjh-sec.tex
 Chapter 9.
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--12
@@ -2412,14 +2412,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--167
 File: 000.jpg Graphic file (type bmp)
 <000.jpg>
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [135]
 Underfull \hbox (badness 10000) in paragraph at lines 170--174
 
  []
 
-) [135] [136
+) [136] [137
 
 
-] [137] [138]
+] [138]
 Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
@@ -2455,9 +2458,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--174
  []
 
 [139]
-\openout2 = `appch10gyfx.aux'.
+\openout2 = `appch10ebyz-sec.aux'.
 
- (./appch10gyfx.tex [140
+ (./appch10ebyz-sec.tex [140
 
 
 ]
@@ -2474,30 +2477,37 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 
 File: Diagram_20.png Graphic file (type bmp)
 <Diagram_20.png>
-[142]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [142]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [143]
 File: ToolsParetoScreenshot_2023-06-02_191628.jpg Graphic file (type bmp)
 <ToolsParetoScreenshot_2023-06-02_191628.jpg>
- [143]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [144]
 File: 162页替换图片.png Graphic file (type bmp)
 <162页替换图片.png>
 File: AR1成本占比.jpg Graphic file (type bmp)
 <AR1成本占比.jpg>
+
+[145]
 File: MGR_f11.jpg Graphic file (type bmp)
 <MGR_f11.jpg>
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [144]
-[145]
+) [146]
 \openout2 = `appch11rhjd.aux'.
 
- (./appch11rhjd.tex [146
+ (./appch11rhjd.tex
+Chapter 11.
+[147
 
 
 
 ]
-Chapter 11.
-[147]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 26.
@@ -3949,7 +3959,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 238.
 (./qianyan.aux) (./appch1rhgs-sec.aux) (./appch2rhctdks-sec.aux)
 (./appch3kftyz-sec.aux) (./appch5lhgl-sec.aux) (./appch6gsrjgm-sec.aux)
 (./appch7gsgzl-sec.aux) (./appch4sdgs-sec.aux) (./appch8hqgczc-sec.aux)
-(./appch9xzgjjh.aux) (./appch10gyfx.aux) (./appch11rhjd.aux)
+(./appch9xzgjjh-sec.aux) (./appch10ebyz-sec.aux) (./appch11rhjd.aux)
 (./appch12rhzhzb.aux) (./appch13ssywh.aux) (./appch14csqdkf.aux)
 (./appch15dmcg.aux) (./appch16cxjc.aux) (./appch17jdbc.aux) (./appch18rjxq.aux)
 (./appch19khcy.aux) (./appch20tdxz.aux) (./appch21zwjdc.aux)
@@ -3969,8 +3979,8 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 30130 strings out of 494900
- 620431 string characters out of 6177140
+ 30131 strings out of 494900
+ 620494 string characters out of 6177140
  828549 words of memory out of 5000000
  33309 multiletter control sequences out of 15000+600000
  535938 words of font info for 71 fonts, out of 8000000 for 9000

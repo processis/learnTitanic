@@ -175,10 +175,10 @@
 \contentsline {part}{V\hspace {1em}如何做好迭代回顾}{137}{part.5}% 
 \contentsline {chapter}{\numberline {10}二八原则}{141}{chapter.10}% 
 \contentsline {subsection}{怎样开始}{142}{section*.166}% 
-\contentsline {subsection}{附件}{143}{section*.167}% 
-\contentsline {subsection}{二八原则(80/20)}{143}{section*.168}% 
-\contentsline {subsection}{开发项目工作量（成本）分布}{144}{section*.169}% 
-\contentsline {subsection}{公司高层不一定关注质量}{145}{section*.170}% 
+\contentsline {subsection}{附件}{144}{section*.167}% 
+\contentsline {subsection}{二八原则(80/20)}{144}{section*.168}% 
+\contentsline {subsection}{开发项目工作量（成本）分布}{145}{section*.169}% 
+\contentsline {subsection}{公司高层不一定关注质量}{146}{section*.170}% 
 \contentsline {chapter}{\numberline {11}团队协作分析根因}{147}{chapter.11}% 
 \contentsline {subsection}{回顾流程}{148}{section*.171}% 
 \contentsline {subsection}{缺陷排除率}{150}{section*.172}% 
