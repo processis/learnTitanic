@@ -387,21 +387,23 @@
 \contentsline {subsection}{根}{335}{section*.356}% 
 \contentsline {subsection}{翼}{336}{section*.357}% 
 \contentsline {subsubsection}{飞行实验}{336}{section*.358}% 
-\contentsline {subsection}{TED演讲式总结}{340}{section*.359}% 
-\contentsline {section}{参考 References}{342}{section*.360}% 
-\contentsline {part}{IX\hspace {1em}附录}{343}{part.9}% 
-\contentsline {chapter}{\numberline {28}A:绅士俱乐部过程改进}{345}{chapter.28}% 
-\contentsline {subsubsection}{Esquire QC圈}{346}{section*.361}% 
-\contentsline {subsubsection}{用二八原则 （Pareto图） 识别主要源头}{346}{section*.362}% 
-\contentsline {subsubsection}{建立目标}{347}{section*.363}% 
-\contentsline {subsubsection}{根因分析 Root Cause analysis ( 鱼骨图分析 )}{347}{section*.364}% 
-\contentsline {subsubsection}{改进措施}{349}{section*.365}% 
-\contentsline {subsubsection}{改进效果}{350}{section*.366}% 
-\contentsline {subsubsection}{A3报告}{351}{section*.367}% 
-\contentsline {section}{参考 References}{351}{section*.368}% 
-\contentsline {chapter}{\numberline {29}B:分析迭代客户满意度调查数据}{353}{chapter.29}% 
-\contentsline {subsection}{案例背景}{353}{section*.369}% 
-\contentsline {subsection}{迭代数据}{353}{section*.370}% 
-\contentsline {subsection}{数据分析}{353}{section*.371}% 
-\contentsline {subsection}{改进措施}{354}{section*.372}% 
-\contentsline {subsection}{改进效果}{354}{section*.373}% 
+\contentsline {subsubsection}{`魔术师'乔布斯1997年重回苹果，13年后再把苹果带上高峰}{339}{section*.359}% 
+\contentsline {subsection}{共通点}{339}{section*.360}% 
+\contentsline {subsection}{TED演讲式总结}{341}{section*.361}% 
+\contentsline {section}{参考 References}{345}{section*.362}% 
+\contentsline {part}{IX\hspace {1em}附录}{347}{part.9}% 
+\contentsline {chapter}{\numberline {28}A:绅士俱乐部过程改进}{349}{chapter.28}% 
+\contentsline {subsubsection}{Esquire QC圈}{350}{section*.363}% 
+\contentsline {subsubsection}{用二八原则 （Pareto图） 识别主要源头}{350}{section*.364}% 
+\contentsline {subsubsection}{建立目标}{351}{section*.365}% 
+\contentsline {subsubsection}{根因分析 Root Cause analysis ( 鱼骨图分析 )}{351}{section*.366}% 
+\contentsline {subsubsection}{改进措施}{353}{section*.367}% 
+\contentsline {subsubsection}{改进效果}{354}{section*.368}% 
+\contentsline {subsubsection}{A3报告}{355}{section*.369}% 
+\contentsline {section}{参考 References}{355}{section*.370}% 
+\contentsline {chapter}{\numberline {29}B:分析迭代客户满意度调查数据}{357}{chapter.29}% 
+\contentsline {subsection}{案例背景}{357}{section*.371}% 
+\contentsline {subsection}{迭代数据}{357}{section*.372}% 
+\contentsline {subsection}{数据分析}{357}{section*.373}% 
+\contentsline {subsection}{改进措施}{358}{section*.374}% 
+\contentsline {subsection}{改进效果}{358}{section*.375}% 
