@@ -264,12 +264,12 @@
 \contentsline {subsubsection}{先用代码实例让学员了解当前编码的不足，提出以下改进目标}{218}{section*.245}% 
 \contentsline {subsubsection}{用小组互动练习，让学员体会以下原则}{219}{section*.246}% 
 \contentsline {subsubsection}{工具}{219}{section*.247}% 
-\contentsline {subsubsection}{不一定全程都是结对，可以与单独交替}{219}{section*.248}% 
+\contentsline {subsubsection}{不一定全程都是结对，可以与单独交替}{220}{section*.248}% 
 \contentsline {subsubsection}{不断替换}{220}{section*.249}% 
-\contentsline {subsubsection}{培训后的经验分享}{220}{section*.250}% 
-\contentsline {subsection}{结束语}{220}{section*.251}% 
-\contentsline {section}{附件}{221}{section*.252}% 
-\contentsline {subsection}{代码可读性例子}{221}{section*.253}% 
+\contentsline {subsubsection}{培训后的经验分享}{221}{section*.250}% 
+\contentsline {subsection}{结束语}{221}{section*.251}% 
+\contentsline {section}{附件}{222}{section*.252}% 
+\contentsline {subsection}{代码可读性例子}{222}{section*.253}% 
 \contentsline {chapter}{\numberline {18}软件需求}{223}{chapter.18}% 
 \contentsline {section}{附件}{225}{section*.254}% 
 \contentsline {subsection}{英国煤矿生产问题的研究}{225}{section*.255}% 

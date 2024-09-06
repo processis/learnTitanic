@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  5 SEP 2024 20:28
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  5 SEP 2024 20:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -940,7 +940,7 @@ LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
 
 LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
 
-) (./appch16cxjc.aux
+) (./appch16cxjc-sec.aux
 
 LaTeX Warning: Label `ux6301ux7eedux96c6ux6210' multiply defined.
 
@@ -2887,9 +2887,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 264--267
  []
 
 [214]) [215]
-\openout2 = `appch17jdbc.aux'.
+\openout2 = `appch17jdbcythps-sec.aux'.
 
- (./appch17jdbc.tex [216
+ (./appch17jdbcythps-sec.tex [216
 
 
 
@@ -2944,6 +2944,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--105
 
 File: leip382.png Graphic file (type bmp)
 <leip382.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [219]
 File: leip51.jpg Graphic file (type bmp)
 <leip51.jpg>
 
@@ -2951,26 +2955,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--120
 
  []
 
-[219]
 File: Acp3-131.png Graphic file (type bmp)
 <Acp3-131.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [220]
+[221]
 File: leip17.jpg Graphic file (type bmp)
 <leip17.jpg>
 File: leip18.jpg Graphic file (type bmp)
 <leip18.jpg>
 File: leip19.jpg Graphic file (type bmp)
 <leip19.jpg>
-) [221]
+) [222]
 \openout2 = `appch18rjxq.aux'.
 
- (./appch18rjxq.tex [222
-
-
-
-]
+ (./appch18rjxq.tex
 Chapter 18.
-[223] [224]
+[223
+
+
+
+] [224]
 Underfull \hbox (badness 10000) in paragraph at lines 41--43
 
  []
@@ -3979,7 +3986,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 239.
 (./appch6gsrjgm-sec.aux) (./appch7gsgzl-sec.aux) (./appch8hqgczc-sec.aux)
 (./appch9xzgjjh-sec.aux) (./appch10ebyz-sec.aux) (./appch11tdxzfxgy-sec.aux)
 (./appch12ryjs-sec.aux) (./appch13ctdsydcxgj-sec.aux) (./appch14csqdkf-sec.aux)
-(./appch15dmcg-sec.aux) (./appch16cxjc-sec.aux) (./appch17jdbc.aux)
+(./appch15dmcg-sec.aux) (./appch16cxjc-sec.aux) (./appch17jdbcythps-sec.aux)
 (./appch18rjxq.aux) (./appch19khcy.aux) (./appch20tdxz.aux) (./appch21zwjdc.aux
 ) (./appch22jxhtjfx.aux) (./appch23jsjy.aux) (./appch24kzt.aux)
 (./appch25cgrdgs.aux) (./25Acxxbj.aux) (./appch26gyy.aux) (./fjAssjlb.aux)
@@ -3998,7 +4005,7 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  30131 strings out of 494900
- 620741 string characters out of 6177140
+ 620798 string characters out of 6177140
  828556 words of memory out of 5000000
  33309 multiletter control sequences out of 15000+600000
  535938 words of font info for 71 fonts, out of 8000000 for 9000
