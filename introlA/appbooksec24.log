@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  5 SEP 2024 20:22
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  5 SEP 2024 20:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -933,7 +933,7 @@ LaTeX Warning: Label `ux7ed3ux675fux8bed' multiply defined.
 
 LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
 
-) (./appch15dmcg.aux
+) (./appch15dmcg-sec.aux
 
 LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
 
@@ -2850,9 +2850,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--140
  []
 
 ) [208]
-\openout2 = `appch16cxjc.aux'.
+\openout2 = `appch16cxjc-sec.aux'.
 
- (./appch16cxjc.tex
+ (./appch16cxjc-sec.tex
 Chapter 16.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
@@ -3979,7 +3979,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 239.
 (./appch6gsrjgm-sec.aux) (./appch7gsgzl-sec.aux) (./appch8hqgczc-sec.aux)
 (./appch9xzgjjh-sec.aux) (./appch10ebyz-sec.aux) (./appch11tdxzfxgy-sec.aux)
 (./appch12ryjs-sec.aux) (./appch13ctdsydcxgj-sec.aux) (./appch14csqdkf-sec.aux)
-(./appch15dmcg-sec.aux) (./appch16cxjc.aux) (./appch17jdbc.aux)
+(./appch15dmcg-sec.aux) (./appch16cxjc-sec.aux) (./appch17jdbc.aux)
 (./appch18rjxq.aux) (./appch19khcy.aux) (./appch20tdxz.aux) (./appch21zwjdc.aux
 ) (./appch22jxhtjfx.aux) (./appch23jsjy.aux) (./appch24kzt.aux)
 (./appch25cgrdgs.aux) (./25Acxxbj.aux) (./appch26gyy.aux) (./fjAssjlb.aux)
@@ -3998,7 +3998,7 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  30131 strings out of 494900
- 620709 string characters out of 6177140
+ 620741 string characters out of 6177140
  828556 words of memory out of 5000000
  33309 multiletter control sequences out of 15000+600000
  535938 words of font info for 71 fonts, out of 8000000 for 9000
