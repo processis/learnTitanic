@@ -311,97 +311,97 @@
 \contentsline {subsubsection}{20名学生在数学考试中的分数(满分为100分，按大小排序)}{263}{section*.286}% 
 \contentsline {subsubsection}{比较3种教学方法}{265}{section*.287}% 
 \contentsline {subsubsection}{20人一年内阅读月刊的数量}{266}{section*.288}% 
-\contentsline {subsubsection}{取样偏差 （Survivor's Bias）}{266}{section*.289}% 
-\contentsline {subsubsection}{20名妇女参加某种疾病研究，她们的身高(以米计)分别为：}{268}{section*.290}% 
-\contentsline {subsubsection}{美国中西部房价趋势图}{268}{section*.291}% 
-\contentsline {subsection}{分析例子：连续与分组数据}{269}{section*.292}% 
-\contentsline {subsubsection}{蚕豆植物 -- 双样本T检验}{269}{section*.293}% 
-\contentsline {subsubsection}{头发和眼睛颜色的不同组合}{270}{section*.294}% 
-\contentsline {subsection}{结束语}{271}{section*.295}% 
-\contentsline {section}{附件}{271}{section*.296}% 
-\contentsline {subsection}{如何画茎叶图(Stem and Leaf Plot)}{271}{section*.297}% 
-\contentsline {subsection}{箱线图 (Box and Whisker Plot)}{271}{section*.298}% 
-\contentsline {section}{参考References}{272}{section*.299}% 
-\contentsline {chapter}{\numberline {23}假设检验}{273}{chapter.23}% 
-\contentsline {subsection}{假设检验的步骤}{273}{section*.300}% 
-\contentsline {subsection}{检验单个正态总体的均值}{274}{section*.301}% 
-\contentsline {subsection}{比较两个正态总体的均值}{275}{section*.302}% 
-\contentsline {subsection}{检验单个正态总体的均值,方差未知}{276}{section*.303}% 
-\contentsline {subsection}{方差分析 (ANOVA test)}{277}{section*.304}% 
-\contentsline {subsubsection}{例子一}{277}{section*.305}% 
-\contentsline {subsubsection}{例子二}{278}{section*.306}% 
-\contentsline {subsubsection}{Tukey-Kramer 多组比较}{279}{section*.307}% 
-\contentsline {subsection}{分组（分类）数据}{279}{section*.308}% 
-\contentsline {subsubsection}{卡方检验(Chi Square test)}{279}{section*.309}% 
-\contentsline {section}{附件}{280}{section*.310}% 
-\contentsline {subsection}{中心极限定理 (Central Limit Theorem CLT)}{280}{section*.311}% 
-\contentsline {subsection}{检验单个正态整体均值相关方程式}{281}{section*.312}% 
-\contentsline {subsection}{比较两个正态总体的均值}{281}{section*.313}% 
-\contentsline {subsection}{检验单个正态总体的均值,方差未知}{281}{section*.314}% 
-\contentsline {subsection}{Tukey-Kramer 相关方程式}{282}{section*.315}% 
-\contentsline {subsubsection}{如何计算 MSW，参考ANOVA方程式}{282}{section*.316}% 
-\contentsline {chapter}{\numberline {24}控制图}{285}{chapter.24}% 
-\contentsline {subsection}{建立基线}{286}{section*.317}% 
-\contentsline {subsection}{噪音还是信号}{286}{section*.318}% 
-\contentsline {subsection}{控制图的应用}{289}{section*.319}% 
-\contentsline {subsubsection}{1. 基线}{290}{section*.320}% 
-\contentsline {subsubsection}{2. 过程能力(Process Capability)}{291}{section*.321}% 
-\contentsline {subsubsection}{3. 细分}{291}{section*.322}% 
-\contentsline {subsection}{结束语}{291}{section*.323}% 
-\contentsline {section}{附件}{291}{section*.324}% 
-\contentsline {subsection}{如何画ImR控制图}{291}{section*.325}% 
-\contentsline {subsection}{各种控制图}{292}{section*.326}% 
-\contentsline {subsection}{过程能力(Process Capability)}{293}{section*.327}% 
-\contentsline {subsection}{细分例子}{294}{section*.328}% 
-\contentsline {section}{参考 References}{295}{section*.329}% 
-\contentsline {part}{VIII\hspace {1em}总结}{297}{part.8}% 
-\contentsline {chapter}{\numberline {25}创新：从个人到公司}{301}{chapter.25}% 
-\contentsline {subsection}{引言}{301}{section*.330}% 
-\contentsline {subsection}{400年前的重大数学发明}{301}{section*.331}% 
-\contentsline {subsection}{创新 Creativity}{303}{section*.332}% 
-\contentsline {subsection}{原创精神 Spirit of Creating }{304}{section*.333}% 
-\contentsline {subsection}{公司如何创新}{306}{section*.334}% 
-\contentsline {subsection}{音乐播放器}{306}{section*.335}% 
-\contentsline {subsection}{iTunes 网上商店}{308}{section*.336}% 
-\contentsline {subsection}{万事起头难}{311}{section*.337}% 
-\contentsline {subsection}{从濒临破产变为回报最好的投资}{311}{section*.338}% 
-\contentsline {subsection}{公司创新成功要素}{312}{section*.339}% 
-\contentsline {subsubsection}{灵活、敏捷}{312}{section*.340}% 
-\contentsline {subsubsection}{专注(Focus)}{312}{section*.341}% 
-\contentsline {subsubsection}{A级团队成员}{313}{section*.342}% 
-\contentsline {subsubsection}{极高目标，要做大做强}{314}{section*.343}% 
-\contentsline {subsubsection}{有非常高的要求，用心做}{314}{section*.344}% 
-\contentsline {subsubsection}{领导决策、快速行动}{315}{section*.345}% 
-\contentsline {subsection}{结束语}{315}{section*.346}% 
-\contentsline {subsection}{个人经验教训}{317}{section*.347}% 
-\contentsline {section}{附件}{318}{section*.348}% 
-\contentsline {subsection}{Pixar 制作第一部电脑动漫：玩具总动员(Toy Story)}{318}{section*.349}% 
-\contentsline {section}{参考 References}{319}{section*.350}% 
-\contentsline {chapter}{\numberline {26}北京手记}{321}{chapter.26}% 
-\contentsline {subsubsection}{国家大剧院管弦乐团演奏马勒第三交响曲}{321}{section*.351}% 
-\contentsline {subsubsection}{话剧：进入黑夜的漫长旅程 (Long Day's Journey into Night)}{321}{section*.352}% 
-\contentsline {subsubsection}{话剧：完美陌生人}{322}{section*.353}% 
-\contentsline {subsection}{创新来源于生活}{322}{section*.354}% 
-\contentsline {subsubsection}{要实践与坚持}{323}{section*.355}% 
-\contentsline {chapter}{\numberline {27}根与翼}{325}{chapter.27}% 
-\contentsline {subsection}{根}{325}{section*.356}% 
-\contentsline {subsection}{翼}{326}{section*.357}% 
-\contentsline {subsubsection}{飞行实验}{326}{section*.358}% 
-\contentsline {subsection}{TED演讲式总结}{330}{section*.359}% 
-\contentsline {section}{参考 References}{332}{section*.360}% 
-\contentsline {part}{IX\hspace {1em}附录}{333}{part.9}% 
-\contentsline {chapter}{\numberline {28}A:绅士俱乐部过程改进}{335}{chapter.28}% 
-\contentsline {subsubsection}{Esquire QC圈}{336}{section*.361}% 
-\contentsline {subsubsection}{用二八原则 （Pareto图） 识别主要源头}{336}{section*.362}% 
-\contentsline {subsubsection}{建立目标}{337}{section*.363}% 
-\contentsline {subsubsection}{根因分析 Root Cause analysis ( 鱼骨图分析 )}{337}{section*.364}% 
-\contentsline {subsubsection}{改进措施}{339}{section*.365}% 
-\contentsline {subsubsection}{改进效果}{340}{section*.366}% 
-\contentsline {subsubsection}{A3报告}{341}{section*.367}% 
-\contentsline {section}{参考 References}{341}{section*.368}% 
-\contentsline {chapter}{\numberline {29}B:分析迭代客户满意度调查数据}{343}{chapter.29}% 
-\contentsline {subsection}{案例背景}{343}{section*.369}% 
-\contentsline {subsection}{迭代数据}{343}{section*.370}% 
-\contentsline {subsection}{数据分析}{343}{section*.371}% 
-\contentsline {subsection}{改进措施}{344}{section*.372}% 
-\contentsline {subsection}{改进效果}{344}{section*.373}% 
+\contentsline {subsubsection}{取样偏差 （Survivor's Bias）}{267}{section*.289}% 
+\contentsline {subsubsection}{20名妇女参加某种疾病研究，她们的身高(以米计)分别为：}{269}{section*.290}% 
+\contentsline {subsubsection}{美国中西部房价趋势图}{270}{section*.291}% 
+\contentsline {subsection}{分析例子：连续与分组数据}{271}{section*.292}% 
+\contentsline {subsubsection}{蚕豆植物 -- 双样本T检验}{271}{section*.293}% 
+\contentsline {subsubsection}{头发和眼睛颜色的不同组合}{272}{section*.294}% 
+\contentsline {subsection}{结束语}{273}{section*.295}% 
+\contentsline {section}{附件}{273}{section*.296}% 
+\contentsline {subsection}{如何画茎叶图(Stem and Leaf Plot)}{273}{section*.297}% 
+\contentsline {subsection}{箱线图 (Box and Whisker Plot)}{274}{section*.298}% 
+\contentsline {section}{参考References}{274}{section*.299}% 
+\contentsline {chapter}{\numberline {23}假设检验}{275}{chapter.23}% 
+\contentsline {subsection}{假设检验的步骤}{276}{section*.300}% 
+\contentsline {subsection}{检验单个正态总体的均值}{276}{section*.301}% 
+\contentsline {subsection}{比较两个正态总体的均值}{279}{section*.302}% 
+\contentsline {subsection}{检验单个正态总体的均值,方差未知}{280}{section*.303}% 
+\contentsline {subsection}{方差分析 (ANOVA test)}{280}{section*.304}% 
+\contentsline {subsubsection}{例子一}{280}{section*.305}% 
+\contentsline {subsubsection}{例子二}{281}{section*.306}% 
+\contentsline {subsubsection}{Tukey-Kramer 多组比较}{283}{section*.307}% 
+\contentsline {subsection}{分组（分类）数据}{283}{section*.308}% 
+\contentsline {subsubsection}{卡方检验(Chi Square test)}{283}{section*.309}% 
+\contentsline {section}{附件}{284}{section*.310}% 
+\contentsline {subsection}{中心极限定理 (Central Limit Theorem CLT)}{284}{section*.311}% 
+\contentsline {subsection}{检验单个正态整体均值相关方程式}{285}{section*.312}% 
+\contentsline {subsection}{比较两个正态总体的均值}{285}{section*.313}% 
+\contentsline {subsection}{检验单个正态总体的均值,方差未知}{285}{section*.314}% 
+\contentsline {subsection}{Tukey-Kramer 相关方程式}{286}{section*.315}% 
+\contentsline {subsubsection}{如何计算 MSW，参考ANOVA方程式}{286}{section*.316}% 
+\contentsline {chapter}{\numberline {24}控制图}{289}{chapter.24}% 
+\contentsline {subsection}{建立基线}{290}{section*.317}% 
+\contentsline {subsection}{噪音还是信号}{290}{section*.318}% 
+\contentsline {subsection}{控制图的应用}{293}{section*.319}% 
+\contentsline {subsubsection}{1. 基线}{294}{section*.320}% 
+\contentsline {subsubsection}{2. 过程能力(Process Capability)}{295}{section*.321}% 
+\contentsline {subsubsection}{3. 细分}{295}{section*.322}% 
+\contentsline {subsection}{结束语}{295}{section*.323}% 
+\contentsline {section}{附件}{295}{section*.324}% 
+\contentsline {subsection}{如何画ImR控制图}{295}{section*.325}% 
+\contentsline {subsection}{各种控制图}{296}{section*.326}% 
+\contentsline {subsection}{过程能力(Process Capability)}{297}{section*.327}% 
+\contentsline {subsection}{细分例子}{298}{section*.328}% 
+\contentsline {section}{参考 References}{299}{section*.329}% 
+\contentsline {part}{VIII\hspace {1em}总结}{301}{part.8}% 
+\contentsline {chapter}{\numberline {25}创新：从个人到公司}{305}{chapter.25}% 
+\contentsline {subsection}{引言}{305}{section*.330}% 
+\contentsline {subsection}{400年前的重大数学发明}{305}{section*.331}% 
+\contentsline {subsection}{创新 Creativity}{307}{section*.332}% 
+\contentsline {subsection}{原创精神 Spirit of Creating }{308}{section*.333}% 
+\contentsline {subsection}{公司如何创新}{310}{section*.334}% 
+\contentsline {subsection}{音乐播放器}{310}{section*.335}% 
+\contentsline {subsection}{iTunes 网上商店}{312}{section*.336}% 
+\contentsline {subsection}{万事起头难}{315}{section*.337}% 
+\contentsline {subsection}{从濒临破产变为回报最好的投资}{315}{section*.338}% 
+\contentsline {subsection}{公司创新成功要素}{316}{section*.339}% 
+\contentsline {subsubsection}{灵活、敏捷}{316}{section*.340}% 
+\contentsline {subsubsection}{专注(Focus)}{316}{section*.341}% 
+\contentsline {subsubsection}{A级团队成员}{317}{section*.342}% 
+\contentsline {subsubsection}{极高目标，要做大做强}{318}{section*.343}% 
+\contentsline {subsubsection}{有非常高的要求，用心做}{318}{section*.344}% 
+\contentsline {subsubsection}{领导决策、快速行动}{319}{section*.345}% 
+\contentsline {subsection}{结束语}{319}{section*.346}% 
+\contentsline {subsection}{个人经验教训}{321}{section*.347}% 
+\contentsline {section}{附件}{322}{section*.348}% 
+\contentsline {subsection}{Pixar 制作第一部电脑动漫：玩具总动员(Toy Story)}{322}{section*.349}% 
+\contentsline {section}{参考 References}{323}{section*.350}% 
+\contentsline {chapter}{\numberline {26}北京手记}{325}{chapter.26}% 
+\contentsline {subsubsection}{国家大剧院管弦乐团演奏马勒第三交响曲}{325}{section*.351}% 
+\contentsline {subsubsection}{话剧：进入黑夜的漫长旅程 (Long Day's Journey into Night)}{325}{section*.352}% 
+\contentsline {subsubsection}{话剧：完美陌生人}{326}{section*.353}% 
+\contentsline {subsection}{创新来源于生活}{326}{section*.354}% 
+\contentsline {subsubsection}{要实践与坚持}{327}{section*.355}% 
+\contentsline {chapter}{\numberline {27}根与翼}{329}{chapter.27}% 
+\contentsline {subsection}{根}{329}{section*.356}% 
+\contentsline {subsection}{翼}{330}{section*.357}% 
+\contentsline {subsubsection}{飞行实验}{330}{section*.358}% 
+\contentsline {subsection}{TED演讲式总结}{334}{section*.359}% 
+\contentsline {section}{参考 References}{336}{section*.360}% 
+\contentsline {part}{IX\hspace {1em}附录}{337}{part.9}% 
+\contentsline {chapter}{\numberline {28}A:绅士俱乐部过程改进}{339}{chapter.28}% 
+\contentsline {subsubsection}{Esquire QC圈}{340}{section*.361}% 
+\contentsline {subsubsection}{用二八原则 （Pareto图） 识别主要源头}{340}{section*.362}% 
+\contentsline {subsubsection}{建立目标}{341}{section*.363}% 
+\contentsline {subsubsection}{根因分析 Root Cause analysis ( 鱼骨图分析 )}{341}{section*.364}% 
+\contentsline {subsubsection}{改进措施}{343}{section*.365}% 
+\contentsline {subsubsection}{改进效果}{344}{section*.366}% 
+\contentsline {subsubsection}{A3报告}{345}{section*.367}% 
+\contentsline {section}{参考 References}{345}{section*.368}% 
+\contentsline {chapter}{\numberline {29}B:分析迭代客户满意度调查数据}{347}{chapter.29}% 
+\contentsline {subsection}{案例背景}{347}{section*.369}% 
+\contentsline {subsection}{迭代数据}{347}{section*.370}% 
+\contentsline {subsection}{数据分析}{347}{section*.371}% 
+\contentsline {subsection}{改进措施}{348}{section*.372}% 
+\contentsline {subsection}{改进效果}{348}{section*.373}% 
