@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  5 SEP 2024 21:11
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  5 SEP 2024 21:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2985,9 +2985,9 @@ File: leip18.jpg Graphic file (type bmp)
 File: leip19.jpg Graphic file (type bmp)
 <leip19.jpg>
 ) [224]
-\openout2 = `appch18rjxq.aux'.
+\openout2 = `appch18rjxq-sec.aux'.
 
- (./appch18rjxq.tex
+ (./appch18rjxq-sec.tex
 Chapter 18.
 [225
 
@@ -3007,10 +3007,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: langwall2-修改52.jpg Graphic file (type bmp)
 <langwall2-修改52.jpg>
 
-[228]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [228]
+[229]
 File: 长壁11.jpg Graphic file (type bmp)
 <长壁11.jpg>
- [229]
+ [230]
 Overfull \hbox (147.58002pt too wide) in paragraph at lines 111--128
 [][] 
  []
@@ -3025,11 +3028,7 @@ Overfull \hbox (168.58002pt too wide) in paragraph at lines 157--172
 [][] 
  []
 
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [230]
-[231]
+) [231]
 \openout2 = `appch19khcy.aux'.
 
  (./appch19khcy.tex [232
@@ -4003,10 +4002,10 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 239.
 (./appch9xzgjjh-sec.aux) (./appch10ebyz-sec.aux) (./appch11tdxzfxgy-sec.aux)
 (./appch12ryjs-sec.aux) (./appch13ctdsydcxgj-sec.aux) (./appch14csqdkf-sec.aux)
 (./appch15dmcg-sec.aux) (./appch16cxjc-sec.aux) (./appch17jdbcythps-sec.aux)
-(./appch18rjxq.aux) (./appch19khcy.aux) (./appch20tdxz.aux) (./appch21zwjdc.aux
-) (./appch22jxhtjfx.aux) (./appch23jsjy.aux) (./appch24kzt.aux)
-(./appch25cgrdgs.aux) (./25Acxxbj.aux) (./appch26gyy.aux) (./fjAssjlb.aux)
-(./fjBfxddkh.aux))
+(./appch18rjxq-sec.aux) (./appch19khcy.aux) (./appch20tdxz.aux)
+(./appch21zwjdc.aux) (./appch22jxhtjfx.aux) (./appch23jsjy.aux)
+(./appch24kzt.aux) (./appch25cgrdgs.aux) (./25Acxxbj.aux) (./appch26gyy.aux)
+(./fjAssjlb.aux) (./fjBfxddkh.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 239.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 239.
 Package rerunfilecheck Info: File `appbooksec24-0906.out' has not changed.
@@ -4020,9 +4019,9 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 30147 strings out of 494900
- 621021 string characters out of 6177140
- 828576 words of memory out of 5000000
+ 30148 strings out of 494900
+ 621052 string characters out of 6177140
+ 828593 words of memory out of 5000000
  33321 multiletter control sequences out of 15000+600000
  535938 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
