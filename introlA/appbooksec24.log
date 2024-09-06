@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  4 SEP 2024 21:34
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  5 SEP 2024 20:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2737,9 +2737,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 413--414
 
 
 ] [188] [189]
-\openout2 = `appch14csqdkf.aux'.
+\openout2 = `appch14csqdkf-sec.aux'.
 
- (./appch14csqdkf.tex [190
+ (./appch14csqdkf-sec.tex [190
 
 
 ]
@@ -2750,22 +2750,19 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 
 File: 树莓派.jpg Graphic file (type bmp)
 <树莓派.jpg>
-[191] [192]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [191]
+[192] [193]
 Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
 
-[193] [194]
+[194] [195]
 File: PspLogScreenshot20211006174917.png Graphic file (type bmp)
 <PspLogScreenshot20211006174917.png>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [195]
-Underfull \vbox (badness 3179) has occurred while \output is active []
-
- [196])
-[197]
+ [196]) [197]
 \openout2 = `appch15dmcg.aux'.
 
  (./appch15dmcg.tex [198
@@ -3981,7 +3978,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 239.
 (./appch3kftyz-sec.aux) (./appch4sdgs-sec.aux) (./appch5lhgl-sec.aux)
 (./appch6gsrjgm-sec.aux) (./appch7gsgzl-sec.aux) (./appch8hqgczc-sec.aux)
 (./appch9xzgjjh-sec.aux) (./appch10ebyz-sec.aux) (./appch11tdxzfxgy-sec.aux)
-(./appch12ryjs-sec.aux) (./appch13ctdsydcxgj-sec.aux) (./appch14csqdkf.aux)
+(./appch12ryjs-sec.aux) (./appch13ctdsydcxgj-sec.aux) (./appch14csqdkf-sec.aux)
 (./appch15dmcg.aux) (./appch16cxjc.aux) (./appch17jdbc.aux) (./appch18rjxq.aux)
 (./appch19khcy.aux) (./appch20tdxz.aux) (./appch21zwjdc.aux)
 (./appch22jxhtjfx.aux) (./appch23jsjy.aux) (./appch24kzt.aux)
@@ -4000,8 +3997,8 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 30130 strings out of 494900
- 620646 string characters out of 6177140
+ 30131 strings out of 494900
+ 620679 string characters out of 6177140
  828556 words of memory out of 5000000
  33309 multiletter control sequences out of 15000+600000
  535938 words of font info for 71 fonts, out of 8000000 for 9000

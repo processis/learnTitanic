@@ -225,9 +225,9 @@
 \contentsline {subsection}{为什么我们要测试驱动开发}{191}{section*.209}% 
 \contentsline {subsection}{每小步验证}{192}{section*.210}% 
 \contentsline {subsection}{用TDD开发程序}{193}{section*.211}% 
-\contentsline {subsubsection}{守 破 离}{193}{section*.212}% 
+\contentsline {subsubsection}{守 破 离}{194}{section*.212}% 
 \contentsline {subsection}{单元测试与TDD的好处}{194}{section*.213}% 
-\contentsline {subsection}{结束语}{194}{section*.214}% 
+\contentsline {subsection}{结束语}{195}{section*.214}% 
 \contentsline {section}{附件}{195}{section*.215}% 
 \contentsline {subsection}{从 MIT OCW 学写程序}{195}{section*.216}% 
 \contentsline {subsubsection}{记录时间}{196}{section*.217}% 
