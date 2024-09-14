@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  13 SEP 2024 23:30
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  14 SEP 2024 03:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1449,7 +1449,7 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (./appbooksec24-0906.toc
 
 LaTeX Font Warning: Font shape `TU/SimSun(0)/bx/n' undefined
-(Font)              using `TU/SimSun(0)/m/n' instead on input line 3.
+(Font)              using `TU/SimSun(0)/m/n' instead on input line 2.
 
 [5
 
@@ -3458,7 +3458,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 File: 404页替换图片.jpg Graphic file (type bmp)
 <404页替换图片.jpg>
  [344]
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
@@ -3466,7 +3466,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--79
 File: 26章三角图.jpg Graphic file (type bmp)
 <26章三角图.jpg>
  [346] [347] [348]
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 
  []
 
@@ -3475,22 +3475,22 @@ Overfull \vbox (63.64221pt too high) has occurred while \output is active []
 
 
 [350] [351]
-Underfull \hbox (badness 10000) in paragraph at lines 338--339
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
 
  []
 
 [352]
-Underfull \hbox (badness 10000) in paragraph at lines 357--360
+Underfull \hbox (badness 10000) in paragraph at lines 356--359
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--362
+Underfull \hbox (badness 10000) in paragraph at lines 359--361
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--363
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
 
  []
 
@@ -3579,15 +3579,9 @@ aux) (./appch1rhgs-sec.aux) (./appch2rhctdks-sec.aux)
 (./appch26gyy-sec.aux) (./fjAssjlb.aux) (./fjBfxddkh.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 258.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 258.
+Package rerunfilecheck Info: File `appbooksec24-0906.out' has not changed.
+(rerunfilecheck)             Checksum: 17D24B112E2A12D9AB4738E92BAD1CD0.
 
-
-Package rerunfilecheck Warning: File `appbooksec24-0906.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `appbooksec24-0906.out':
-(rerunfilecheck)             Before: FC6942C2ABF5E5E822FD6DD68C07BFC9
-(rerunfilecheck)             After:  17D24B112E2A12D9AB4738E92BAD1CD0.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3596,10 +3590,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 30166 strings out of 494900
- 622452 string characters out of 6177140
- 823281 words of memory out of 5000000
- 33340 multiletter control sequences out of 15000+600000
+ 30165 strings out of 494900
+ 622395 string characters out of 6177140
+ 822956 words of memory out of 5000000
+ 33339 multiletter control sequences out of 15000+600000
  535938 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  57i,10n,115p,922b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
