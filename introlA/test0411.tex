@@ -1,75 +1,146 @@
-% Options for packages loaded elsewhere
-\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
 \PassOptionsToPackage{hyphens}{url}
 %
-\documentclass[
-]{article}
-\usepackage{amsmath,amssymb}
+\documentclass{book}        % from not too short p76 pagestyle
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%ensure chapter section headngs in lower case
+%
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.png,.jpg}
+\usepackage{xeCJK}
+\setCJKmainfont{SimSun}
 \usepackage{lmodern}
-\usepackage{iftex}
-\ifPDFTeX
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
-  \usepackage{textcomp} % provide euro and other symbols
-\else % if luatex or xetex
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
   \usepackage{unicode-math}
-  \defaultfontfeatures{Scale=MatchLowercase}
-  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
 \fi
-% Use upquote if available, for straight quotes in verbatim environments
+% use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-\IfFileExists{microtype.sty}{% use microtype if available
-  \usepackage[]{microtype}
-  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\makeatletter
-\@ifundefined{KOMAClassName}{% if non-KOMA class
-  \IfFileExists{parskip.sty}{%
-    \usepackage{parskip}
-  }{% else
-    \setlength{\parindent}{0pt}
-    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
-}{% if KOMA class
-  \KOMAoptions{parskip=half}}
-\makeatother
-\usepackage{xcolor}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
 \hypersetup{
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
-\urlstyle{same} % disable monospaced font for URLs
-\setlength{\emergencystretch}{3em} % prevent overfull lines
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\usepackage{multirow} %for tabular combine multirow
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
-\ifLuaTeX
-  \usepackage{selnolig}  % disable illegal ligatures
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
 \fi
 
-\author{}
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
 \date{}
 
-\begin{document}
+\usepackage{graphicx}
 
-5月
 
-A公司一直专门为某电信公司提供针对客服、线上播放等业务。
-张工是公司的中层管理者，管理好几个开发团队，有5位项目经理向他汇报。
-他听说老同学的团队都开始用敏捷开发，很感兴趣，便参加了几次敏捷交流会，觉得可以解决很多开发团队的问题，尤其是可以快速交付给客户。
-他便提建议给部门经理推动敏捷开发，找咨询公司做相关培训，例如SCRUM Master
-内部培训，然后全面开展实施。
-开始时，部门经理有些怀疑，问：``听起来很吸引，但后面那些工程文档都不做，会不会影响质量和交付？客户都是专业做电信的，不缺钱，但是对质量要求很高。''
-张工解释说：``只要利用敏捷把过程变成迭代，快速交付、改善工程的问题不难，主要是人的问题。''
-部门经理听到敏捷可以比以前更快速交付，因之前客户经常抱怨项目延误，他也希望可以改变，就答应了。
-8月
-开发组长王工，三十出头，毕业后一直做开发，一年前晋升为组长。周五下班后与朋友喝酒，很开心地说：
-``太兴奋了。我们团队刚参加了两天SCRUM
-培训，并指出我们以前按传统瀑布式开发的种种问题。我们会两周一次迭代并割接上线，还会与用户代表定期交流，不再会像以前几个月交付后才发现开发出来的功能不合需求。
-现在团队合作不像以前只按工种工作，也会跟产品经理、业务方面更充分合作，给客户带来更高价值。
-工作方式也会改变，以前要写需求、规格说明书，现在简单化成产品需求卡片，以前我们要做详细项目计划和甘特图。现在会改成用燃烧图和``KANBAN''。
-每天用便利贴去写要开发什么内容贴在白板上面，我们会改成叫SCRUM
-Team。工作区周围都有SCRUM
-的海报，提醒我们SCRUM的重点。团队也没项目经理了，自己管理自己。部门经理会变成产品负责人，敏捷开发方式让我们团队自己做决策，不仅仅是技术方面，项目相关的也由我们项目组一起讨论决定。''
+\usepackage{amsmath}
+
+
+\raggedbottom
+
+\begin{document}               % plus the \end{document} command at the end.
+
+与成为有效过渡者的要素一样，企业、团队、个人要有效改善，必须有针对性，大部分企业没有利用数据、找根因、做改进。所以开始时应只针对缺陷排除和返工工时，每次迭代回顾时分析根因。
+
+``听你这样说，反观我们团队，我立马想到有很多地方需要改进，例如需求调研、开发流程、持续集成、测试自动化、配置管理等。为什么你提议只针对减少缺陷引起的返工做改进？''
+
+要理解背后的原因，先听听质量大师Dr Juran回顾过去质量改善的成功要素：
+
+\begin{itemize}
+\tightlist
+\item
+  All Improvement takes place Project by Project
+  所有改进只能按项目逐个进行
+\item
+  Backlog of Improvement projects is huge 潜在的改进项目非常多
+\item
+  Quality Improvement does not come Free 质量改进并非免费
+\item
+  Major gains come from the Vital few projects
+  主要效果（收益）来自少数重要项目
+\item
+  Quality improvement extends to All parameters 质量改进可扩展到各类参数
+  （如生产率、进度、安全性、环境等）
+\end{itemize}
+
+（以上源自 Juran 博士《 Juran Quality Handbook 》第五章质量改进。）
+
+所以如果开始时同时对4 -- 5
+个方向同时做改进，反而会失去聚焦，难以尽早看到改进的效果。
+
+但如果只针对降低缺陷引起的返工，目标明确不仅让大家容易接受，而且也容易扩展到各个过程，例如需求、开放、产品集成，甚至配置管理。
+
+因开始时能否引起高层对改进的兴趣很重要，与企业领导的首次见面，我也都会讲以下内容，说明团队如何分析迭代缺陷数据，开始定量管理。\\
+Ct (\(= Ct/2 + Ct/2\))
+
+
+\framebox{%
+\begin{minipage}[t]{0.97\columnwidth}\raggedright
+\(\cos \theta =  \cos \varphi _A \cos \varphi _B \cos\)(
+\(\lambda _A\) - \(\lambda _B\) ) +
+\(\sin \varphi _A \sin \varphi _B\)
+
+\begin{description}
+\item[]
+\begin{description}
+\tightlist
+\item[]
+\quad\,=\(\cos 39.905556^\circ \times  \cos48.8583^\circ \times \cos\)(\(116.424722^\circ  - 2.29451^\circ\)
+) \(+ \sin 39.905556^\circ \times  \sin48.8583 ^\circ\)
+\end{description}
+\end{description}
+
+\[= 0.767103 \times 0.657923 \times\]（\(-0.40881\)）\(+ 0.64152 \times 0.758084\)
+
+\[= 0.28\]
+
+\[\theta = 1.287\] (rad) AB 距离 = 地球的半径
+\(6,378KM \times 1.287 = 8,208KM\) （实际距离是 8,217KM）
+\strut
+\end{minipage}}
+
+\begin{equation}
+\begin{split}
+    V_{i,t+1} & =   w * V_{i,t} + c_1 * r_1 * (Pbest_{i,t} - X_{i,t}) \\
+    & + c_2 * r_2 * (Gbest_t - X_{i,t})
+\end{split}
+\end{equation}
+
+
+
 
 \end{document}

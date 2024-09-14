@@ -364,21 +364,21 @@
 \contentsline {subsection}{原创精神 Spirit of Creating }{316}{section*.335}% 
 \contentsline {subsection}{公司如何创新}{319}{section*.336}% 
 \contentsline {subsection}{音乐播放器}{319}{section*.337}% 
-\contentsline {subsection}{iTunes 网上商店}{321}{section*.338}% 
-\contentsline {subsection}{万事起头难}{324}{section*.339}% 
-\contentsline {subsection}{从濒临破产变为回报最好的投资}{325}{section*.340}% 
-\contentsline {subsection}{公司创新成功要素}{326}{section*.341}% 
-\contentsline {subsubsection}{灵活、敏捷}{326}{section*.342}% 
-\contentsline {subsubsection}{专注(Focus)}{326}{section*.343}% 
-\contentsline {subsubsection}{A级团队成员}{326}{section*.344}% 
-\contentsline {subsubsection}{极高目标，要做大做强}{328}{section*.345}% 
-\contentsline {subsubsection}{有非常高的要求，用心做}{328}{section*.346}% 
-\contentsline {subsubsection}{领导决策、快速行动}{329}{section*.347}% 
-\contentsline {subsection}{结束语}{329}{section*.348}% 
-\contentsline {subsection}{个人经验教训}{332}{section*.349}% 
-\contentsline {section}{附件}{333}{section*.350}% 
-\contentsline {subsection}{Pixar 制作第一部电脑动漫：玩具总动员(Toy Story)}{333}{section*.351}% 
-\contentsline {section}{参考 References}{335}{section*.352}% 
+\contentsline {subsection}{iTunes 网上商店}{322}{section*.338}% 
+\contentsline {subsection}{万事起头难}{325}{section*.339}% 
+\contentsline {subsection}{从濒临破产变为回报最好的投资}{326}{section*.340}% 
+\contentsline {subsection}{公司创新成功要素}{327}{section*.341}% 
+\contentsline {subsubsection}{灵活、敏捷}{327}{section*.342}% 
+\contentsline {subsubsection}{专注(Focus)}{327}{section*.343}% 
+\contentsline {subsubsection}{A级团队成员}{327}{section*.344}% 
+\contentsline {subsubsection}{极高目标，要做大做强}{329}{section*.345}% 
+\contentsline {subsubsection}{有非常高的要求，用心做}{329}{section*.346}% 
+\contentsline {subsubsection}{领导决策、快速行动}{330}{section*.347}% 
+\contentsline {subsection}{结束语}{330}{section*.348}% 
+\contentsline {subsection}{个人经验教训}{333}{section*.349}% 
+\contentsline {section}{附件}{334}{section*.350}% 
+\contentsline {subsection}{Pixar 制作第一部电脑动漫：玩具总动员(Toy Story)}{334}{section*.351}% 
+\contentsline {section}{参考 References}{336}{section*.352}% 
 \contentsline {chapter}{\numberline {26}北京手记}{337}{chapter.26}% 
 \contentsline {subsubsection}{国家大剧院管弦乐团演奏马勒第三交响曲}{337}{section*.353}% 
 \contentsline {subsubsection}{话剧：进入黑夜的漫长旅程 (Long Day's Journey into Night)}{337}{section*.354}% 
