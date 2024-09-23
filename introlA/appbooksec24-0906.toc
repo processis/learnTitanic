@@ -388,7 +388,7 @@
 \contentsline {subsection}{根}{343}{section*.358}% 
 \contentsline {subsection}{翼}{344}{section*.359}% 
 \contentsline {subsubsection}{飞行实验}{344}{section*.360}% 
-\contentsline {subsubsection}{`魔术师'乔布斯1997年重回苹果，13年后再把苹果带上高峰}{347}{section*.361}% 
+\contentsline {subsubsection}{“魔术师”乔布斯1997年重回苹果，13年后再把苹果带上高峰}{347}{section*.361}% 
 \contentsline {subsection}{共通点}{347}{section*.362}% 
 \contentsline {subsection}{TED演讲式总结}{349}{section*.363}% 
 \contentsline {section}{参考 References}{353}{section*.364}% 
