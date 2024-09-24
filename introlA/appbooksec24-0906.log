@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  23 SEP 2024 03:15
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  23 SEP 2024 23:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -885,7 +885,7 @@ LaTeX Warning: Label `ux603bux7ed3ux8bbfux8c08ux7684ux95eeux9898ux53d1ux73b0' m
 ultiply defined.
 
 
-LaTeX Warning: Label `ux603bux7ed3' multiply defined.
+LaTeX Warning: Label `ux7ed3ux675fux8bed' multiply defined.
 
 
 LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
@@ -1940,6 +1940,11 @@ Overfull \vbox (39.56409pt too high) has occurred while \output is active []
 
 
 [87]
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
@@ -3385,12 +3390,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--259
 
  []
 
-
+[325]
 Underfull \hbox (badness 10000) in paragraph at lines 260--261
 
  []
 
-[325]
+
 Underfull \hbox (badness 10000) in paragraph at lines 264--265
 
  []
@@ -3590,10 +3595,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 30165 strings out of 494900
- 622395 string characters out of 6177140
- 821956 words of memory out of 5000000
- 33339 multiletter control sequences out of 15000+600000
+ 30152 strings out of 494900
+ 621570 string characters out of 6177140
+ 822956 words of memory out of 5000000
+ 33326 multiletter control sequences out of 15000+600000
  535938 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  57i,10n,115p,922b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
