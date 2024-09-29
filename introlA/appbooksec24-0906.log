@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  23 SEP 2024 23:06
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  29 SEP 2024 03:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2416,89 +2416,85 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--100
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 107.
 
-[168]
-File: Asch2Screenshot2.png Graphic file (type bmp)
-<Asch2Screenshot2.png>
- [169]
+[168] [169]
 File: Asch3Screenshot_2022-07-08_2013411.png Graphic file (type bmp)
 <Asch3Screenshot_2022-07-08_2013411.png>
- [170]
 File: Asch4Screenshot_2022-07-08_2015021.png Graphic file (type bmp)
 <Asch4Screenshot_2022-07-08_2015021.png>
- [171] [172]
+ [170] [171]
 File: 205页替换图片.jpg Graphic file (type bmp)
 <205页替换图片.jpg>
 File: 206页替换图片.jpg Graphic file (type bmp)
 <206页替换图片.jpg>
- [173] [174]
+ [172] [173]
 File: 游戏1应与否1.png Graphic file (type bmp)
 <游戏1应与否1.png>
-) [175]
+) [174]
 \openout2 = `appch13ctdsydcxgj-sec.aux'.
 
  (./appch13ctdsydcxgj-sec.tex
-[176
+Chapter 13.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 11.
+
+[175
 
 
 
 ]
-Chapter 13.
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 13.
-
-[177]
 File: Screenshotfrom2024-08-1123-28-39.png Graphic file (type bmp)
 <Screenshotfrom2024-08-1123-28-39.png>
- [178]
+ [176]
 File: 微信截图_20230928135611.png Graphic file (type bmp)
 <微信截图_20230928135611.png>
+ [177]
 File: 微信截图_20230830093612-2.jpg Graphic file (type bmp)
 <微信截图_20230830093612-2.jpg>
- [179]
+ [178]
 File: CAR_辅导1-1.jpg Graphic file (type bmp)
 <CAR_辅导1-1.jpg>
 File: CAR_辅导4-1.jpg Graphic file (type bmp)
 <CAR_辅导4-1.jpg>
- [180]
+ [179]
 File: MTKL.png Graphic file (type bmp)
 <MTKL.png>
 File: 缺陷表41.jpg Graphic file (type bmp)
 <缺陷表41.jpg>
- [181] [182] [183] [184] [185]
+ [180] [181] [182] [183] [184]
 File: 泳道图1.jpg Graphic file (type bmp)
 <泳道图1.jpg>
- [186]
+ [185]
 File: 颜色点1.jpg Graphic file (type bmp)
 <颜色点1.jpg>
 File: 微信截图_20220316093044.jpg Graphic file (type bmp)
 <微信截图_20220316093044.jpg>
- [187]
+ [186]
 File: 2DreEstimateScreenshot_2021-12-01_2120491.jpg Graphic file (type bmp)
 <2DreEstimateScreenshot_2021-12-01_2120491.jpg>
- [188]
+
+[187]
 File: Sjb-1-1.png Graphic file (type bmp)
 <Sjb-1-1.png>
 File: 4reworkByPhaseScreenshot_2021-12-01_2148381.jpg Graphic file (type bmp)
 <4reworkByPhaseScreenshot_2021-12-01_2148381.jpg>
-
-[189]
+ [188]
 File: 微信截图_20231031153355.png Graphic file (type bmp)
 <微信截图_20231031153355.png>
- [190]
-Underfull \hbox (badness 10000) in paragraph at lines 409--411
+ [189]
+Underfull \hbox (badness 10000) in paragraph at lines 410--412
 
  []
 
-[191]
-Underfull \hbox (badness 10000) in paragraph at lines 418--419
+[190]
+Underfull \hbox (badness 10000) in paragraph at lines 419--420
 
  []
 
-) [192] [193
+) [191] [192
 
 
-] [194] [195]
+] [193] [194] [195]
 \openout2 = `appch14csqdkf-sec.aux'.
 
  (./appch14csqdkf-sec.tex [196
@@ -3485,17 +3481,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 337--338
  []
 
 [352]
-Underfull \hbox (badness 10000) in paragraph at lines 356--359
+Underfull \hbox (badness 10000) in paragraph at lines 385--388
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--361
+Underfull \hbox (badness 10000) in paragraph at lines 388--390
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--362
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
 
  []
 
@@ -3595,10 +3591,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 30152 strings out of 494900
- 621570 string characters out of 6177140
- 822956 words of memory out of 5000000
- 33326 multiletter control sequences out of 15000+600000
+ 30191 strings out of 494900
+ 624153 string characters out of 6177140
+ 821956 words of memory out of 5000000
+ 33366 multiletter control sequences out of 15000+600000
  535938 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  57i,10n,115p,922b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
