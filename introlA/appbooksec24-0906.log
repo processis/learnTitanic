@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  29 SEP 2024 03:55
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  29 SEP 2024 22:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3449,7 +3449,7 @@ File: 25A图1.jpg Graphic file (type bmp)
 Chapter 27.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 11.
+(hyperref)                than one, level fixed on input line 12.
 
 [343
 
@@ -3458,47 +3458,51 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 ]
 File: 404页替换图片.jpg Graphic file (type bmp)
 <404页替换图片.jpg>
- [344]
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
-
- []
-
-[345]
+ [344] [345]
 File: 26章三角图.jpg Graphic file (type bmp)
 <26章三角图.jpg>
- [346] [347] [348]
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
+ [346]
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
-[349]
-Overfull \vbox (63.64221pt too high) has occurred while \output is active []
+[347]
+Overfull \vbox (87.60315pt too high) has occurred while \output is active []
 
 
-[350] [351]
-Underfull \hbox (badness 10000) in paragraph at lines 337--338
-
- []
-
-[352]
-Underfull \hbox (badness 10000) in paragraph at lines 385--388
-
- []
+[348] [349] [350]
+Overfull \vbox (75.64221pt too high) has occurred while \output is active []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 388--390
+[351] [352]
+Underfull \hbox (badness 10000) in paragraph at lines 342--344
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--391
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 
  []
 
-) [353] [354
+[353]
+Underfull \hbox (badness 10000) in paragraph at lines 383--386
+
+ []
 
 
-] [355] [356]
+Underfull \hbox (badness 10000) in paragraph at lines 386--388
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--389
+
+ []
+
+) [354] [355
+
+
+] [356]
 \openout2 = `fjAssjlb.aux'.
 
  (./fjAssjlb.tex
@@ -3591,10 +3595,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 30191 strings out of 494900
- 624153 string characters out of 6177140
- 821956 words of memory out of 5000000
- 33366 multiletter control sequences out of 15000+600000
+ 30204 strings out of 494900
+ 624978 string characters out of 6177140
+ 822956 words of memory out of 5000000
+ 33379 multiletter control sequences out of 15000+600000
  535938 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  57i,10n,115p,922b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
