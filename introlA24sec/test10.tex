@@ -1,7 +1,15 @@
 \PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
 \PassOptionsToPackage{hyphens}{url}
 %
-\documentclass[]{article}
+\documentclass{book}        % from not too short p76 pagestyle
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%ensure chapter section headngs in lower case
+%
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.png,.jpg}
+\usepackage{xeCJK}
+\setCJKmainfont{SimSun}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -34,6 +42,7 @@
 \urlstyle{same}  % don't use monospace font for urls
 \usepackage{longtable,booktabs}
 % Fix footnotes in tables (requires footnote package)
+\usepackage{multirow} %for tabular combine multirow
 \IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
@@ -53,35 +62,32 @@
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
-
-
 \date{}
 
-\begin{document}
+\usepackage{graphicx}
 
-\begin{longtable}[]{@{}l@{}}
-\toprule
-\endhead
+\raggedbottom
+
+\begin{document}               % plus the \end{document} command at the end.
+
+\framebox{%
 \begin{minipage}[t]{0.97\columnwidth}\raggedright
-太太趁中秋长假邀请我跟她一起参加丽江香格里拉五天雨崩徒步旅行团。我们在丽江汇合后，晚上她就问我：``我的同事都说当你老公真辛苦，放假还要跟你徒步五天，没有休息。你朋友一般放假去哪里旅游？''
-我没有回应，只是微笑，但心里想：``其实我认识的老朋友大部分都是选择去日本泡温泉、观光名胜、吃当地美食等，没听过参加这种徒步团。''
-因为海拔高超过三千米，而且要赶早班飞机，早上四点钟就要起床，全程五天我身体都不舒服。最终还是能按行程走完。旅程结束，她回香港继续上班，我也继续飞石家庄在大陆出差。我回想今次经历：虽然身体不适，但过程中深深感受到伴侣间的理解、关怀、支持，甜在心中。旅程过后，身体慢慢恢复后，我反思：
-
-\begin{description}
-\tightlist
-\item[]
-\emph{头疼、反胃、呕吐不代表心里觉得痛苦；}
-
-\emph{快慰、舒适不一定觉得快乐。}
-\end{description}
-
-关键是如何选择面对，用心去克服困难，之后享受的喜悦更难能可贵，也帮助个人成长。
-
-如果大家幸运，公司高层理解不断改善的重要性，给团队资源，提供培训，也希望你和我一样能正面去面对过程中的遇到的各种困难，不仅是你的宝贵经历，也帮助你成长为A级队员。个人受益，公司也受益。\strut
 
 
-\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
+\includegraphics[width=10cm]{波波图20242.jpg}
+
+\strut
+\end{minipage}}
+
+
+
+在七八十年代，汽车公司开始引进自动化机器人提高生产效率。
+但大野先生对引进机器人是很慎重的，他觉得如果只是觉得机器人用起来很方便，可以替代工人去完成工作，就表示那家公司没有有效的使用机器人，要真正用好机器人，必须让它与工人的工作合拍，辅助工人才有意义。
+所以丰田不但要求人的工作和机器人的工作要明确分工，并且要2者能和谐的存在。例如丰田当要决定，最后在组装工序中引进机器人，他们工程师都会慎重考虑，要经过很长的一段时间做准备，里面分析如果人会采用什么方式去做？什么工作是机器人做得了，什么是机器人做不了。例如，哪些零件更适合用机器人装配。
+另一方面，回顾七八十年代的美国通用公司，它就花了很多钱用IT把生产自动化，但最后没有产生什么效果。估计就是因为没有想清楚，为什么要自动化，自动化怎么帮到人的工作并产生效果，只是相信用技术、高科技就能提供生产率。
+
+
+
+
 
 \end{document}
