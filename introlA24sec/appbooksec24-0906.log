@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  25 OCT 2024 01:04
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  27 OCT 2024 21:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -791,13 +791,7 @@ Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 (./appbooksec24-0906.aux (./xgq.aux) (./xu-sec.aux) (./ganxie.aux)
 (./qianyan.aux) (./appch1rhgs-sec.aux) (./appch2rhctdks-sec.aux
 
-LaTeX Warning: Label `ux7ed3ux675fux8bed' multiply defined.
-
-
-LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
-
-
-LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
+LaTeX Warning: Label `ux53c2ux8003-references' multiply defined.
 
 ) (./appch3kftyz-sec.aux
 
@@ -902,10 +896,7 @@ LaTeX Warning: Label `ux9999ux6e2fux5357ux4e2bux6d77ux96be' multiply defined.
 
 ) (./appch11tdxzfxgy-sec.aux
 
-LaTeX Warning: Label `ux6570ux636eux6536ux96c6ux9891ux7387' multiply defined.
-
-
-LaTeX Warning: Label `ux6570ux636eux6536ux96c6ux9891ux7387' multiply defined.
+LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
 
 ) (./appch12ryjs-sec.aux
 
@@ -1688,76 +1679,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 897--898
 Chapter 2.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 8.
+(hyperref)                than one, level fixed on input line 6.
 
-File: 37页替换图片.jpg Graphic file (type bmp)
-<37页替换图片.jpg>
-File: 0A_Agile_stories_p3.jpg Graphic file (type bmp)
-<0A_Agile_stories_p3.jpg>
 [51]
-Underfull \hbox (badness 10000) in paragraph at lines 66--74
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--106
+Underfull \hbox (badness 10000) in paragraph at lines 78--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--109
 
  []
 
 [52]
 File: 0A_Agile_stories_p51.jpg Graphic file (type bmp)
 <0A_Agile_stories_p51.jpg>
- [53]
-Underfull \hbox (badness 10000) in paragraph at lines 118--121
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--122
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
-
- []
-
-[54]
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
-
- []
-
-[55]
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
-
- []
-
-[56]
-Underfull \hbox (badness 10000) in paragraph at lines 247--249
-
- []
-
-File: IPM.jpg Graphic file (type bmp)
-<IPM.jpg>
-
-Underfull \hbox (badness 10000) in paragraph at lines 254--258
-
- []
-
+[53]
 File: 微信截图_20231025084623.png Graphic file (type bmp)
 <微信截图_20231025084623.png>
-[57]
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
+ [54]
+File: GoogleVsYahoo_Screenshot_2024-10-24_132145.jpg Graphic file (type bmp)
+<GoogleVsYahoo_Screenshot_2024-10-24_132145.jpg>
+ [55] [56] [57]
+Underfull \hbox (badness 10000) in paragraph at lines 386--388
 
  []
 
-[58]
-File: P335_4_room_apartment1.jpg Graphic file (type bmp)
-<P335_4_room_apartment1.jpg>
- [59]
-Underfull \hbox (badness 10000) in paragraph at lines 371--373
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
 
  []
 
-) [60]
+[58]) [59]
 \openout2 = `appch3kftyz-sec.aux'.
 
- (./appch3kftyz-sec.tex
+ (./appch3kftyz-sec.tex [60
+
+
+
+]
 Chapter 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
@@ -1771,11 +1746,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--16
 
 File: Screenshotfrom2023-10-1523-05-0011.jpg Graphic file (type bmp)
 <Screenshotfrom2023-10-1523-05-0011.jpg>
-[61
-
-
-
-]
+[61]
 Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
@@ -3695,15 +3666,9 @@ aux) (./appch1rhgs-sec.aux) (./appch2rhctdks-sec.aux)
 (./appch26gyy-sec.aux) (./fjAssjlb.aux) (./fjBfxddkh.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 258.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 258.
+Package rerunfilecheck Info: File `appbooksec24-0906.out' has not changed.
+(rerunfilecheck)             Checksum: FC5FACD02798842F5F0B5D5CD1959D54.
 
-
-Package rerunfilecheck Warning: File `appbooksec24-0906.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `appbooksec24-0906.out':
-(rerunfilecheck)             Before: DA59F546F648387D0AB6A1498EAE5ACB
-(rerunfilecheck)             After:  C470BD43EE36E8F9175AC50E121779E4.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3712,10 +3677,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 30158 strings out of 494900
- 622908 string characters out of 6177140
- 822545 words of memory out of 5000000
- 33334 multiletter control sequences out of 15000+600000
+ 30149 strings out of 494900
+ 623127 string characters out of 6177140
+ 822844 words of memory out of 5000000
+ 33328 multiletter control sequences out of 15000+600000
  535938 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  57i,10n,115p,922b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
