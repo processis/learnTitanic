@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  27 OCT 2024 21:20
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  28 OCT 2024 21:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2338,24 +2338,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--180
 
 ]
 Chapter 10.
-File: 9_用户故事2.png Graphic file (type bmp)
-<9_用户故事2.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--7
+
+ []
+
+Missing character: There is no 文 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 件 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 微 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 信 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 截 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 图 in font [lmroman10-regular]:mapping=tex-text;!
 [147]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 45.
+(hyperref)                than one, level fixed on input line 47.
 
 File: Diagram_20.png Graphic file (type bmp)
 <Diagram_20.png>
-[148] [149]
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--83
+
+ []
+
+[148]
+File: Juran_f519.jpg Graphic file (type bmp)
+<Juran_f519.jpg>
+ [149]
 File: ToolsParetoScreenshot_2023-06-02_191628.jpg Graphic file (type bmp)
 <ToolsParetoScreenshot_2023-06-02_191628.jpg>
  [150]
 File: 162页替换图片.png Graphic file (type bmp)
 <162页替换图片.png>
+File: 微信截图_20241023163129.jpg Graphic file (type bmp)
+<微信截图_20241023163129.jpg>
+File: 微信截图_20241023163423.jpg Graphic file (type bmp)
+<微信截图_20241023163423.jpg>
+ [151]
 File: AR1成本占比.jpg Graphic file (type bmp)
 <AR1成本占比.jpg>
- [151]
 File: MGR_f11.jpg Graphic file (type bmp)
 <MGR_f11.jpg>
 ) [152]
@@ -3666,9 +3687,15 @@ aux) (./appch1rhgs-sec.aux) (./appch2rhctdks-sec.aux)
 (./appch26gyy-sec.aux) (./fjAssjlb.aux) (./fjBfxddkh.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 258.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 258.
-Package rerunfilecheck Info: File `appbooksec24-0906.out' has not changed.
-(rerunfilecheck)             Checksum: FC5FACD02798842F5F0B5D5CD1959D54.
 
+
+Package rerunfilecheck Warning: File `appbooksec24-0906.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `appbooksec24-0906.out':
+(rerunfilecheck)             Before: FC5FACD02798842F5F0B5D5CD1959D54
+(rerunfilecheck)             After:  0CC179E5B7A152F55A2DB82F8FA2C82D.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3677,10 +3704,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 30149 strings out of 494900
- 623127 string characters out of 6177140
+ 30162 strings out of 494900
+ 623558 string characters out of 6177140
  822844 words of memory out of 5000000
- 33328 multiletter control sequences out of 15000+600000
+ 33339 multiletter control sequences out of 15000+600000
  535938 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  57i,10n,115p,922b,474s stack positions out of 5000i,500n,10000p,200000b,80000s

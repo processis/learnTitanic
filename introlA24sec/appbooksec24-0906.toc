@@ -167,9 +167,9 @@
 \contentsline {part}{V\hspace {1em}如何做好迭代回顾}{143}{part.5}% 
 \contentsline {chapter}{\numberline {10}二八原则}{147}{chapter.10}% 
 \contentsline {subsection}{怎样开始}{148}{section*.159}% 
-\contentsline {subsection}{附件}{150}{section*.160}% 
+\contentsline {section}{附件}{150}{section*.160}% 
 \contentsline {subsection}{二八原则(80/20)}{150}{section*.161}% 
-\contentsline {subsection}{开发项目工作量（成本）分布}{151}{section*.162}% 
+\contentsline {subsection}{开发项目工作量（成本）分布}{152}{section*.162}% 
 \contentsline {subsection}{公司高层不一定关注质量}{152}{section*.163}% 
 \contentsline {chapter}{\numberline {11}团队协作分析根因}{153}{chapter.11}% 
 \contentsline {subsection}{回顾流程}{154}{section*.164}% 
