@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  28 OCT 2024 21:19
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  29 OCT 2024 23:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1479,12 +1479,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 (hyperref)                than one, level fixed on input line 4.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--16
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--23
+Underfull \hbox (badness 10000) in paragraph at lines 21--27
 
  []
 
@@ -1492,175 +1487,145 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--23
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 35--47
+Underfull \hbox (badness 10000) in paragraph at lines 39--51
 
  []
 
 
 LaTeX Font Warning: Font shape `TU/SimSun(0)/m/sl' undefined
-(Font)              using `TU/SimSun(0)/m/n' instead on input line 47.
+(Font)              using `TU/SimSun(0)/m/n' instead on input line 51.
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 51--58
+Underfull \hbox (badness 10000) in paragraph at lines 55--80
 
  []
 
-File: Cleanagile_f18-11.jpg Graphic file (type bmp)
-<Cleanagile_f18-11.jpg>
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 74--76
+File: 敏捷开发实践汇总列表1-1.jpg Graphic file (type bmp)
+<敏捷开发实践汇总列表1-1.jpg>
+ [26]
+Overfull \vbox (68.98595pt too high) has occurred while \output is active []
+
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 106--115
 
  []
 
-File: 8页替换图片.jpg Graphic file (type bmp)
-<8页替换图片.jpg>
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
-
- []
-
-[26]
-File: 远景1.png Graphic file (type bmp)
-<远景1.png>
+File: T和G图1.jpg Graphic file (type bmp)
+<T和G图1.jpg>
+[28]
 File: FordModelT_2023-06-10_100431.jpg Graphic file (type bmp)
 <FordModelT_2023-06-10_100431.jpg>
- [27]
-Underfull \hbox (badness 10000) in paragraph at lines 201--203
+ [29]
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
  []
 
-File: Weisbord_P34.jpg Graphic file (type bmp)
-<Weisbord_P34.jpg>
-[28]
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
+
+ []
+
 File: 冰山.png Graphic file (type bmp)
 <冰山.png>
- [29]
-Underfull \hbox (badness 10000) in paragraph at lines 232--235
-
- []
-
+[31]
 
 Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 (xeCJK)                
 (xeCJK)                Try to use `\setCJKmonofont[...]{...}' to define it.
 
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 258.
-Missing character: There is no ① in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ② in font [lmroman10-regular]:mapping=tex-text;!
-[30]
-File: 15页替换图片.jpg Graphic file (type bmp)
-<15页替换图片.jpg>
- [31]
-Underfull \hbox (badness 10000) in paragraph at lines 324--325
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 261.
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 274--285
 
  []
 
-File: 16页替换图片.jpg Graphic file (type bmp)
-<16页替换图片.jpg>
-[32] [33]
 
-LaTeX Font Warning: Font shape `TU/SimSun(0)/m/it' undefined
-(Font)              using `TU/SimSun(0)/m/n' instead on input line 374.
+Underfull \hbox (badness 10000) in paragraph at lines 290--293
+
+ []
+
+[33]
+File: 15页替换图片.jpg Graphic file (type bmp)
+<15页替换图片.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--322
+
+ []
+
+[34] [35]
+Underfull \hbox (badness 10000) in paragraph at lines 366--368
+
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--401
+Underfull \hbox (badness 10000) in paragraph at lines 384--385
 
  []
 
 File: Ft_223111.jpg Graphic file (type bmp)
 <Ft_223111.jpg>
-[34] [35]
-Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
- [36] [37]
-Underfull \hbox (badness 10000) in paragraph at lines 509--511
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 418--419
+
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 450--452
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 512--513
+Underfull \hbox (badness 10000) in paragraph at lines 453--454
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--476
 
  []
 
 [38]
-Underfull \hbox (badness 10000) in paragraph at lines 569--570
+Underfull \hbox (badness 10000) in paragraph at lines 515--516
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 572--575
+Underfull \hbox (badness 10000) in paragraph at lines 526--527
 
  []
 
-File: JuranImprovementScreenshot_2022-10-23_211444-1.jpg Graphic file (type bmp
-)
-<JuranImprovementScreenshot_2022-10-23_211444-1.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 578--579
+Underfull \hbox (badness 10000) in paragraph at lines 529--533
 
  []
 
-[39] [40]
-Underfull \hbox (badness 10000) in paragraph at lines 612--613
+[39]
+File: 微信截图_20241028085712.jpg Graphic file (type bmp)
+<微信截图_20241028085712.jpg>
+ [40]
+Underfull \hbox (badness 10000) in paragraph at lines 566--574
 
  []
 
-File: TQM_12.png Graphic file (type bmp)
-<TQM_12.png>
+File: 敏捷开发实践汇总列表2-2.jpg Graphic file (type bmp)
+<敏捷开发实践汇总列表2-2.jpg>
 [41]
-File: NissanRobots-OIPh8UAC7FBjlaCmA_mBepJjQHaEi.jpg Graphic file (type bmp)
-<NissanRobots-OIPh8UAC7FBjlaCmA_mBepJjQHaEi.jpg>
-File: 微信图片_20240906090104.jpg Graphic file (type bmp)
-<微信图片_20240906090104.jpg>
-
-Underfull \hbox (badness 10000) in paragraph at lines 668--669
+Underfull \hbox (badness 10000) in paragraph at lines 580--595
 
  []
 
 [42]
-File: NissanProdLineOIPwJFmfMl7q2_V8JaQi4kQ8QHaE6.jpg Graphic file (type bmp)
-<NissanProdLineOIPwJFmfMl7q2_V8JaQi4kQ8QHaE6.jpg>
-
-Underfull \hbox (badness 10000) in paragraph at lines 675--676
-
- []
-
-[43]
-Underfull \hbox (badness 10000) in paragraph at lines 738--739
+File: 波波图20243.jpg Graphic file (type bmp)
+<波波图20243.jpg>
+ [43] [44]
+Underfull \hbox (badness 10000) in paragraph at lines 637--639
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 754--755
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 771--773
-
- []
-
-[44]
-Underfull \hbox (badness 10000) in paragraph at lines 833--834
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 868--869
-
- []
-
-[45]
-File: 5S_五常法_Screenshot_2023-08-03_211606.jpg Graphic file (type bmp)
-<5S_五常法_Screenshot_2023-08-03_211606.jpg>
-
-Underfull \hbox (badness 10000) in paragraph at lines 897--898
-
- []
-
-) [46] [47
+[45]) [46] [47
 
 
 ] [48] [49]
@@ -2528,9 +2493,14 @@ File: Asch4Screenshot_2022-07-08_2015021.png Graphic file (type bmp)
  [170] [171]
 File: 205页替换图片.jpg Graphic file (type bmp)
 <205页替换图片.jpg>
+
+
+LaTeX Font Warning: Font shape `TU/SimSun(0)/m/it' undefined
+(Font)              using `TU/SimSun(0)/m/n' instead on input line 262.
+
 File: 206页替换图片.jpg Graphic file (type bmp)
 <206页替换图片.jpg>
- [172] [173]
+[172] [173]
 File: 游戏1应与否1.png Graphic file (type bmp)
 <游戏1应与否1.png>
 ) [174]
@@ -3688,9 +3658,15 @@ aux) (./appch1rhgs-sec.aux) (./appch2rhctdks-sec.aux)
 (./appch26gyy-sec.aux) (./fjAssjlb.aux) (./fjBfxddkh.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 258.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 258.
-Package rerunfilecheck Info: File `appbooksec24-0906.out' has not changed.
-(rerunfilecheck)             Checksum: 0CC179E5B7A152F55A2DB82F8FA2C82D.
 
+
+Package rerunfilecheck Warning: File `appbooksec24-0906.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `appbooksec24-0906.out':
+(rerunfilecheck)             Before: 0CC179E5B7A152F55A2DB82F8FA2C82D
+(rerunfilecheck)             After:  25CF4FAF69994747E93E67F1CC41B29A.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3699,10 +3675,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 30168 strings out of 494900
- 623680 string characters out of 6177140
+ 30174 strings out of 494900
+ 624541 string characters out of 6177140
  822926 words of memory out of 5000000
- 33343 multiletter control sequences out of 15000+600000
+ 33355 multiletter control sequences out of 15000+600000
  535938 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  57i,10n,115p,922b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
