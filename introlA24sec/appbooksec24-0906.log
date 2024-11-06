@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  5 NOV 2024 20:31
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  5 NOV 2024 20:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1662,47 +1662,53 @@ Chapter 2.
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 6.
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
 [51]
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--82
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--109
+Underfull \hbox (badness 10000) in paragraph at lines 97--100
 
  []
 
 [52]
+Underfull \hbox (badness 10000) in paragraph at lines 101--105
+
+ []
+
 File: 0A_Agile_stories_p51.jpg Graphic file (type bmp)
 <0A_Agile_stories_p51.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--122
+Underfull \hbox (badness 10000) in paragraph at lines 116--118
 
  []
 
-[53]
-File: 微信截图_20231025084623.png Graphic file (type bmp)
-<微信截图_20231025084623.png>
- [54]
+[53] [54]
 File: GoogleVsYahoo_Screenshot_2024-10-24_132145.jpg Graphic file (type bmp)
 <GoogleVsYahoo_Screenshot_2024-10-24_132145.jpg>
  [55] [56] [57]
-Underfull \hbox (badness 10000) in paragraph at lines 386--388
+Underfull \hbox (badness 10000) in paragraph at lines 367--369
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 391--392
+Underfull \hbox (badness 10000) in paragraph at lines 372--373
 
  []
 
@@ -3733,8 +3739,8 @@ Package rerunfilecheck Warning: File `appbooksec24-0906.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `appbooksec24-0906.out':
-(rerunfilecheck)             Before: D488259823A160A6F4A4FA95F63A6277
-(rerunfilecheck)             After:  535BC718416A14F1CA8A40264FB8941B.
+(rerunfilecheck)             Before: 535BC718416A14F1CA8A40264FB8941B
+(rerunfilecheck)             After:  938ABAF2F33C122DB36B396391DFE66F.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3743,10 +3749,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 30135 strings out of 494900
- 621044 string characters out of 6177140
- 828318 words of memory out of 5000000
- 33312 multiletter control sequences out of 15000+600000
+ 30141 strings out of 494900
+ 621714 string characters out of 6177140
+ 828047 words of memory out of 5000000
+ 33319 multiletter control sequences out of 15000+600000
  535938 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  57i,8n,115p,922b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
