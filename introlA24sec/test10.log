@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  5 NOV 2024 01:38
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  5 NOV 2024 20:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1107,180 +1107,176 @@ LaTeX Info: Redefining \nameref on input line 72.
 \openout3 = `test10.out'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--130
+
+LaTeX Font Warning: Font shape `TU/SimSun(0)/bx/n' undefined
+(Font)              using `TU/SimSun(0)/m/n' instead on input line 75.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--98
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--122
 
  []
 
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
-
- []
-
-
-LaTeX Font Warning: Font shape `TU/SimSun(0)/bx/n' undefined
-(Font)              using `TU/SimSun(0)/m/n' instead on input line 143.
-
-File: EFFP_11-3.jpg Graphic file (type bmp)
-<EFFP_11-3.jpg>
-
-Underfull \hbox (badness 10000) in paragraph at lines 149--157
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--181
+Underfull \hbox (badness 10000) in paragraph at lines 126--151
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 194--197
+File: 敏捷开发实践汇总列表1-1.jpg Graphic file (type bmp)
+<敏捷开发实践汇总列表1-1.jpg>
+ [3]
+Overfull \vbox (68.98595pt too high) has occurred while \output is active []
+
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 161--163
 
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 217--220
-
- []
-
-File: 微信截图_20241105140006.jpg Graphic file (type bmp)
-<微信截图_20241105140006.jpg>
-
-Underfull \hbox (badness 10000) in paragraph at lines 223--227
-
- []
-
-File: 红花绿灯1.jpg Graphic file (type bmp)
-<红花绿灯1.jpg>
+File: T和G图1.jpg Graphic file (type bmp)
+<T和G图1.jpg>
+[5]
+File: FordModelT_2023-06-10_100431.jpg Graphic file (type bmp)
+<FordModelT_2023-06-10_100431.jpg>
 
 Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
  []
 
-File: 微信图片_20230105131327.jpg Graphic file (type bmp)
-<微信图片_20230105131327.jpg>
-[4]
-File: EFFP_11-9.jpg Graphic file (type bmp)
-<EFFP_11-9.jpg>
-File: EFFP_11-10.jpg Graphic file (type bmp)
-<EFFP_11-10.jpg>
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 328.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 328.
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 328.
-
- (/usr/share/texmf/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00015pt on input line 328.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.0001pt on input line 328.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 328.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99985pt on input line 328.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.9999pt on input line 328.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 328.
-LaTeX Font Info:    Try loading font information for U+msa on input line 328.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 328.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 401--404
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
 
  []
 
+File: 冰山.png Graphic file (type bmp)
+<冰山.png>
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 423--425
 
- []
+Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
+(xeCJK)                
+(xeCJK)                Try to use `\setCJKmonofont[...]{...}' to define it.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 425--427
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 427--428
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 436--438
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 438--442
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 442--444
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 452--454
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 454--456
-
- []
-
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 321.
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 456--459
+Underfull \hbox (badness 10000) in paragraph at lines 334--345
 
  []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 459--460
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 465--473
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 480--482
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 482--483
-
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 496.
-
-LaTeX Font Warning: Font shape `TU/SimSun(0)/m/sl' undefined
-(Font)              using `TU/SimSun(0)/m/n' instead on input line 496.
 
 [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 496.
+Underfull \hbox (badness 10000) in paragraph at lines 350--353
+
+ []
+
+File: 15页替换图片.jpg Graphic file (type bmp)
+<15页替换图片.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 426--432
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 448--449
+
+ []
+
+File: Ft_223111.jpg Graphic file (type bmp)
+<Ft_223111.jpg>
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 483--484
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 515--517
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--519
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 528--541
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 580--581
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 591--592
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 594--598
+
+ []
+
+File: 微信截图_20241104094040.jpg Graphic file (type bmp)
+<微信截图_20241104094040.jpg>
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 632--640
+
+ []
+
+File: 敏捷开发实践汇总列表2-2.jpg Graphic file (type bmp)
+<敏捷开发实践汇总列表2-2.jpg>
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 648--663
+
+ []
+
+[18]
+File: 波波图20245.jpg Graphic file (type bmp)
+<波波图20245.jpg>
+ [19]
+File: NissanRobots-OIPh8UAC7FBjlaCmA_mBepJjQHaEi.jpg Graphic file (type bmp)
+<NissanRobots-OIPh8UAC7FBjlaCmA_mBepJjQHaEi.jpg>
+ [20]
+File: 微信图片_20240906090104.jpg Graphic file (type bmp)
+<微信图片_20240906090104.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 709--711
+
+ []
+
+File: NissanProdLineOIPwJFmfMl7q2_V8JaQi4kQ8QHaE6.jpg Graphic file (type bmp)
+<NissanProdLineOIPwJFmfMl7q2_V8JaQi4kQ8QHaE6.jpg>
+
+LaTeX Font Warning: Font shape `TU/SimSun(0)/m/sl' undefined
+(Font)              using `TU/SimSun(0)/m/n' instead on input line 716.
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 739--740
+
+ []
+
+[22]
+File: Screenshot_2023-08-03_211606-1.png Graphic file (type bmp)
+<Screenshot_2023-08-03_211606-1.png>
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 752.
+ [23]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 752.
  (./test10.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 496.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 496.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 752.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 752.
 
 
 Package rerunfilecheck Warning: File `test10.out' has changed.
@@ -1288,8 +1284,8 @@ Package rerunfilecheck Warning: File `test10.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `test10.out':
-(rerunfilecheck)             Before: 46361536D9346E71B143229B0118D709
-(rerunfilecheck)             After:  76A70A21F8F86FE5ED01C5BFA969C7AB.
+(rerunfilecheck)             Before: 9B65D9290131DFEF617C9EA84FD29145
+(rerunfilecheck)             After:  DA9449A8B62E9F4B6DE96BBD7D68FAC5.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1298,12 +1294,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 27824 strings out of 494900
- 532895 string characters out of 6177140
- 752573 words of memory out of 5000000
- 31505 multiletter control sequences out of 15000+600000
- 535842 words of font info for 59 fonts, out of 8000000 for 9000
+ 27899 strings out of 494900
+ 539810 string characters out of 6177140
+ 768889 words of memory out of 5000000
+ 31606 multiletter control sequences out of 15000+600000
+ 533013 words of font info for 43 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 58i,7n,115p,838b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,5n,115p,838b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on test10.pdf (9 pages).
+Output written on test10.pdf (23 pages).
