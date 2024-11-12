@@ -22,7 +22,7 @@
 \hypertarget{ux4e3aux4ec0ux4e48ux4e0dux5e94ux7528ux4ee3ux7801ux884cux6570loc}{%
 \subsection{为什么不应用代码行数(LOC)}\label{ux4e3aux4ec0ux4e48ux4e0dux5e94ux7528ux4ee3ux7801ux884cux6570loc}}
 
-在1996年前,IBM一直使用代码行数估算规模。之前一直都使用近似机器语言的Assembly
+在1996年前, IBM一直使用代码行数估算规模。之前一直都使用近似机器语言的Assembly
 Lang，但为了提升效率，引入了高层语言PL/S，发现不能再用代码行数来估算规模，因PL/S只需要更少代码行数也能完成同样功能:
 
 \resizebox{\linewidth}{!}{
@@ -52,6 +52,8 @@ Lang，但为了提升效率，引入了高层语言PL/S，发现不能再用代
 \end{tabular}
 
 }
+
+表6-1
 
 上表是IBM（1968 \textasciitilde{} 1975）对两种编译器的统计:\\
 每个月PL/S产出代码行数(400)反比Assembly(583)少，但是如果用功能点数便能真正反映生产率的提升：\\
@@ -87,6 +89,7 @@ PL/S:8.00对比Assembly:3.33
 
 }
 
+表6-2
 
 \hypertarget{ux4e0eux529fux80fdux70b9ux6bd4ux8f83}{%
 \subsubsection{与功能点比较}\label{ux4e0eux529fux80fdux70b9ux6bd4ux8f83}}
@@ -209,6 +212,9 @@ PL/S:8.00对比Assembly:3.33
 
 \includegraphics[width=10cm]{6_网约车.jpg}
 
+ 	
+图6-1
+
 \begin{enumerate}
 \tightlist
 \item
@@ -302,7 +308,9 @@ PL/S:8.00对比Assembly:3.33
 
 %\href{文件:微信截图_20241023102406.jpg}{600px}
 
-\includegraphics[width=10cm]{微信截图_20241023102406.jpg}
+\includegraphics[width=10cm]{实体行为.jpg}
+
+图6-2
 
 \hypertarget{ux7b80ux5316ux529fux80fdux70b9ux4f30ux7b97ux6b65ux9aa4}{%
 \subsubsection{简化功能点估算步骤：}\label{ux7b80ux5316ux529fux80fdux70b9ux4f30ux7b97ux6b65ux9aa4}}
@@ -377,16 +385,16 @@ IFPUG 包括两类数据功能点 （因SiFP 是基于IFPUG 功能点）：
 
 \includegraphics[width=10cm]{微信截图_20241024151135.jpg}
 
-\begin{description}
-\tightlist
-\item[]
-= = = =
-\end{description}
+图6-3
+
+
 
 
 %\href{文件:微信截图_20241023102437.jpg}{600px}
 
 \includegraphics[width=10cm]{微信截图_20241023102437.jpg}
+
+图6-4
 
 计数范围由计数目的决定。它标识将被划分大小的系统、应用程序或应用程序的子集。它可以包括通过购买软件包来满足的功能；它可以包括所有将被外包的应用程序；它可以被限制为应用程序中执行特定目的的函数，例如报表。应用程序边界是被测量的应用程序与外部应用程序或用户域之间的边界。
 
@@ -729,6 +737,8 @@ EP)}\label{ux57faux672cux8fc7ux7a0b-elementary-process-ep}}
 
 }
 
+表6-3
+
 \textbf{分析能否满足所有 EP 识别规则，判断能否独立成为基本过程
 (EP),部分例子}
 
@@ -778,6 +788,8 @@ EP)}\label{ux57faux672cux8fc7ux7a0b-elementary-process-ep}}
 \end{enumerate}
 
 \includegraphics[width=10cm]{Screenshotfrom2023-11-1302-05-21.png}
+
+表6-4
 
 \hypertarget{ux6848ux4f8baux5f00ux53d1developmentux9879ux76ee}{%
 \subsection{案例A:开发(Development)项目}\label{ux6848ux4f8baux5f00ux53d1developmentux9879ux76ee}}
@@ -872,12 +884,17 @@ EP)}\label{ux57faux672cux8fc7ux7a0b-elementary-process-ep}}
 
 \includegraphics[width=3cm]{答案与解读11.jpg}
 
+ 	
+图6-5
+
 所以按简化功能点每个实体×7，每行为×4.6得出
 41.6(=2×7+6×4.6)简化功能点，详见下面列表：
 
 %\href{文件:微信截图_20241021091913.jpg}{500px}
 
 \includegraphics[width=3cm]{微信截图_20241021091913.jpg}
+
+表6-5
 
 \hypertarget{ux6848ux4f8bbux4f18ux5316ux7ef4ux62a4femux9879ux76ee}{%
 \subsection{案例B:优化维护（FEM）项目}\label{ux6848ux4f8bbux4f18ux5316ux7ef4ux62a4femux9879ux76ee}}
@@ -912,6 +929,8 @@ Mary Herron说她想要一份每周的逾期联系报告（详见下表），识
 %Screenshotfrom2024-10-2423-11-26.png
 
 \includegraphics[width=10cm]{Screenshotfrom2024-10-2423-11-26.png}
+
+表6-6
 
 \hypertarget{ux7b54ux6848ux4e0eux89e3ux8bfb-1}{%
 \subsection{答案与解读}\label{ux7b54ux6848ux4e0eux89e3ux8bfb-1}}
@@ -950,6 +969,8 @@ Mary Herron说她想要一份每周的逾期联系报告（详见下表），识
 
 \includegraphics[width=10cm]{微信截图_20241024094600.jpg}
 
+表6-7
+
 \hypertarget{ux4e0eux56fdux9645ux529fux80fdux70b9ifpugux7684ux504fux5dee}{%
 \subsection{与国际功能点(IFPUG)的偏差}\label{ux4e0eux56fdux9645ux529fux80fdux70b9ifpugux7684ux504fux5dee}}
 
@@ -974,7 +995,11 @@ Mary Herron说她想要一份每周的逾期联系报告（详见下表），识
 
 \includegraphics[width=10cm]{115页替换图片.jpg}
 
+表6-8
+
 \includegraphics[width=10cm]{微信截图_20241023163812.jpg}
+
+表6-9
 
 \begin{itemize}
 \tightlist
