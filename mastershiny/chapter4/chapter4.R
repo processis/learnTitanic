@@ -1,6 +1,7 @@
 library(shiny)
 library(vroom)
 library(tidyverse)
+library(ggplot2)
 
 #4.2 The data
 
@@ -10,19 +11,27 @@ download <- function(name) {
   url <- "https://github.com/hadley/mastering-shiny/raw/master/neiss/"
   download.file(paste0(url, name), paste0("neiss/", name), quiet = TRUE)
 }
-download("/media/user/娱乐/learnTitanic/master shiny/chapter4/injuries.tsv.gz")
+download("/media/user/娱乐/learnTitanic/mastershiny/chapter4/injuries.tsv.gz")
 
-download("/media/user/娱乐/learnTitanic/master shiny/chapter4/population.tsv")
-download("/media/user/娱乐/learnTitanic/master shiny/chapter4/products.tsv")
+download("/media/user/娱乐/learnTitanic/mastershiny/chapter4/population.tsv")
+download("/media/user/娱乐/learnTitanic/mastershiny/chapter4/products.tsv")
 
 injuries <- vroom::vroom("/home/user/learnTitanic/mastershiny/chapter4/injuries.tsv.gz")
 injuries
 
+injuries <- vroom("/media/user/娱乐/learnTitanic/mastershiny/chapter4/injuries.tsv.gz")
+injuries
 
 products <- vroom::vroom("/media/user/娱乐/learnTitanic/mastershiny/chapter4/products.tsv")
 products
 
+products <- vroom("/media/user/娱乐/learnTitanic/mastershiny/chapter4/products.tsv")
+products
+
 population <- vroom::vroom("/media/user/娱乐/learnTitanic/master shiny/chapter4/population.tsv")
+population
+
+population <- vroom:("/media/user/娱乐/learnTitanic/mastershiny/chapter4/population.tsv")
 population
 
 #4.3 Exploration
@@ -52,10 +61,7 @@ summary <- selected %>%
 
 summary
 
-summary %>% 
-  ggplot(aes(age, rate, colour = sex)) + 
-  geom_line(na.rm = TRUE) + 
-  labs(y = "Injuries per 10,000 people")
+
 
 selected %>% 
   sample_n(10) %>% 
