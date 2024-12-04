@@ -10,18 +10,19 @@ download <- function(name) {
   url <- "https://github.com/hadley/mastering-shiny/raw/master/neiss/"
   download.file(paste0(url, name), paste0("neiss/", name), quiet = TRUE)
 }
-download("injuries.tsv.gz")
-download("population.tsv")
-download("products.tsv")
+download("/media/user/娱乐/learnTitanic/master shiny/chapter4/injuries.tsv.gz")
 
-injuries <- vroom::vroom("/home/user/learnTitanic/master shiny/chapter4/injuries.tsv.gz")
+download("/media/user/娱乐/learnTitanic/master shiny/chapter4/population.tsv")
+download("/media/user/娱乐/learnTitanic/master shiny/chapter4/products.tsv")
+
+injuries <- vroom::vroom("/home/user/learnTitanic/mastershiny/chapter4/injuries.tsv.gz")
 injuries
 
 
-products <- vroom::vroom("/home/user/learnTitanic/master shiny/chapter4/products.tsv")
+products <- vroom::vroom("/media/user/娱乐/learnTitanic/mastershiny/chapter4/products.tsv")
 products
 
-population <- vroom::vroom("/home/user/learnTitanic/master shiny/chapter4/population.tsv")
+population <- vroom::vroom("/media/user/娱乐/learnTitanic/master shiny/chapter4/population.tsv")
 population
 
 #4.3 Exploration
