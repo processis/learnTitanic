@@ -1,0 +1,20 @@
+sliderInput01 <- function(id) {
+  sliderInput(id, label = id, min = 0, max = 1, value = 0.5, step = 0.1)
+}
+
+cat(as.character(sliderInput01("x")))
+
+
+test_that("sliderInput01() creates expected HTML", {
+  expect_equal(as.character(sliderInput01("x")), "<div class=\"form-group shiny-input-container\">\n  <label class=\"control-label\" id=\"x-label\" for=\"x\">x</label>\n  <input class=\"js-range-slider\" id=\"x\" data-skin=\"shiny\" data-min=\"0\" data-max=\"1\" data-from=\"0.5\" data-step=\"0.1\" data-grid=\"true\" data-grid-num=\"10\" data-grid-snap=\"false\" data-prettify-separator=\",\" data-prettify-enabled=\"true\" data-keyboard=\"true\" data-data-type=\"number\"/>\n</div>")
+})
+#> Test passed
+
+test_that("sliderInput01() creates expected HTML", {
+  expect_snapshot(sliderInput01("x"))
+})
+
+
+
+
+
