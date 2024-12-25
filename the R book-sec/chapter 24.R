@@ -134,6 +134,7 @@ spectrum(Lynx,main="",col="red")
 # 24.8 Multiple time series
 
 twoseries <- read.table("/media/user/娱乐/learnTitanic/the R book-sec/twoseries.txt",header=T)
+
 attach(twoseries)
 names(twoseries)
 
@@ -171,6 +172,9 @@ plot.ts(Y)
 acf(Y, main="")
 
 # 24.10 Time series models
+
+Lynx<- read.table("/media/user/娱乐/learnTitanic/the R book-sec/Lynx.txt",header=T)
+
 
 windows(7,4)
 par(mfrow=c(1,2))
