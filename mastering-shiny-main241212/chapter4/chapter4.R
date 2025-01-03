@@ -19,19 +19,19 @@ download("/media/user/娱乐/mastering-shiny-main/chapter4/products.tsv")
 injuries <- vroom::vroom("/media/user/娱乐/mastering-shiny-main/chapter4/injuries.tsv.gz")
 injuries
 
-injuries <- vroom("/media/user/娱乐/mastering-shiny-main/chapter4/injuries.tsv.gz")
+injuries <- vroom("/media/user/娱乐/learnTitanic/mastering-shiny-main241212/chapter4/injuries.tsv.gz")
 injuries
 
 products <- vroom::vroom("/media/user/娱乐/mastering-shiny-main/chapter4/products.tsv")
 products
 
-products <- vroom("/media/user/娱乐/learnTitanic/mastershiny/chapter4/products.tsv")
+products <- vroom("/media/user/娱乐/learnTitanic/mastering-shiny-main241212/chapter4/products.tsv")
 products
 
 population <- vroom::vroom("/media/user/娱乐/learnTitanic/master shiny/chapter4/population.tsv")
 population
 
-population <- vroom:("/media/user/娱乐/learnTitanic/mastershiny/chapter4/population.tsv")
+population <- vroom:("/media/user/娱乐/learnTitanic/mastering-shiny-main241212/chapter4/population.tsv")
 population
 
 #4.3 Exploration
