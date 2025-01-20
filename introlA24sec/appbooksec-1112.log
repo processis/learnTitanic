@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  13 NOV 2024 01:54
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  20 JAN 2025 00:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1046,28 +1046,7 @@ LaTeX Warning: Label `ux6539ux8fdbux63aaux65bd' multiply defined.
 
 LaTeX Warning: Label `ux6539ux8fdbux6548ux679c' multiply defined.
 
-) (./fjCrhydCMMI.aux
-
-LaTeX Warning: Label `plan-4.1-ux4f7fux7528ux7edfux8ba1ux4e0eux5176ux4ed6ux91cf
-ux5316ux6280ux672fux6765ux5f00ux53d1ux9879ux76eeux8fc7ux7a0bux5e76ux4fddux6301u
-x66f4ux65b0ux4ee5ux5b9eux73b0ux8d28ux91cfux4e0eux8fc7ux7a0bux6027ux80fdux76eeux
-6807' multiply defined.
-
-
-LaTeX Warning: Label `mpm-4.4-ux4f7fux7528ux7edfux8ba1ux4e0eux5176ux4ed6ux91cfu
-x5316ux6280ux672fux6765ux5efaux7acbux548cux5206ux6790ux8fc7ux7a0bux6027ux80fdux
-6a21ux578bux5e76ux4fddux6301ux66f4ux65b0' multiply defined.
-
-
-LaTeX Warning: Label `mpm-4.5-ux4f7fux7528ux7edfux8ba1ux4e0eux5176ux4ed6ux91cfu
-x5316ux6280ux672fux6765ux786eux5b9aux6216ux9884ux6d4bux8d28ux91cfux4e0eux8fc7ux
-7a0bux6027ux80fdux76eeux6807ux7684ux5b9eux73b0ux60c5ux51b5' multiply defined.
-
-
-LaTeX Warning: Label `car-2.1-ux9009ux62e9ux8981ux8fdbux884cux5206ux6790ux7684u
-x7ed3ux679c' multiply defined.
-
-))
+) (./fjCrhydCMMI.aux))
 \openout1 = `appbooksec-1112.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
@@ -1362,7 +1341,8 @@ Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of spacing.
 Package microtype Info: No adjustment of kerning.
- (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
 File: mt-LatinModernRoman.cfg 2013/03/13 v1.0 microtype config. file: Latin Mod
 ern Roman (RS)
 )
@@ -3815,15 +3795,9 @@ x) (./appch1rhgs-sec.aux)
 (./fjAssjlb.aux) (./fjBfxddkh.aux) (./fjCrhydCMMI.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 260.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 260.
+Package rerunfilecheck Info: File `appbooksec-1112.out' has not changed.
+(rerunfilecheck)             Checksum: 001C3B618A1FA0FF266F4D2EFEA78FC6.
 
-
-Package rerunfilecheck Warning: File `appbooksec-1112.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `appbooksec-1112.out':
-(rerunfilecheck)             Before: 133DC1630706D83211C7A5A0B58BA54E
-(rerunfilecheck)             After:  001C3B618A1FA0FF266F4D2EFEA78FC6.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3832,10 +3806,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 30188 strings out of 494900
- 626579 string characters out of 6177140
- 832339 words of memory out of 5000000
- 33359 multiletter control sequences out of 15000+600000
+ 30181 strings out of 494900
+ 625747 string characters out of 6177140
+ 831809 words of memory out of 5000000
+ 33352 multiletter control sequences out of 15000+600000
  535938 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  57i,8n,115p,920b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
