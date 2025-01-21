@@ -1,12 +1,12 @@
-name: demo_app
-title:
+name: upload
+title: upload
 username: shellyqinyu
 account: shellyqinyu
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
-appId: 13763783
-bundleId: 9676026
-url: https://shellyqinyu.shinyapps.io/demo_app/
+appId: 13764903
+bundleId: 9676473
+url: https://shellyqinyu.shinyapps.io/upload/
 version: 1
 asMultiple: FALSE
 asStatic: FALSE
