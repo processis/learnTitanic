@@ -1,0 +1,10 @@
+name: demo_app
+title:
+username: shellyqinyu
+account: shellyqinyu
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 13763783
+bundleId: 9675100
+url: https://shellyqinyu.shinyapps.io/demo_app/
+version: 1
