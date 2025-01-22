@@ -48,7 +48,86 @@ ui <- shinyUI(fluidPage(
                  plotOutput('MyPlot')
                )
              )
+    ),
+    
+    
+    
+    tabPanel("second Type",
+             pageWithSidebar(
+               headerPanel('My histogram'),
+               sidebarPanel(
+                 
+                 # "Empty inputs" - they will be updated after the data is uploaded
+                 selectInput('xcol2', 'X Variable', ""),
+                 selectInput('ycol2', 'Y Variable', "", selected = "")
+            
+                 
+              
+                 
+                 
+                 
+                 
+                 
+               ),
+               mainPanel(
+                 plotOutput('Myhistogram')
+               )
+             )
+    ),
+    
+    
+    
+    tabPanel("third Type",
+             pageWithSidebar(
+               headerPanel('My col'),
+               sidebarPanel(
+                 
+                 # "Empty inputs" - they will be updated after the data is uploaded
+                 selectInput('xcol3', 'X Variable', ""),
+                 selectInput('ycol3', 'Y Variable', "", selected = "")
+                 
+               ),
+               mainPanel(
+                 tableOutput('Mycol')
+               )
+             )
+    ),
+    
+    
+    
+    tabPanel("fouth Type",
+             pageWithSidebar(
+               headerPanel('My lm'),
+               sidebarPanel(
+                 
+                 # "Empty inputs" - they will be updated after the data is uploaded
+                 selectInput('xcol4', 'X Variable', ""),
+                 selectInput('ycol4', 'Y Variable', "", selected = "")
+                 
+               ),
+               mainPanel(
+                 tableOutput('Mylm')
+               )
+             )
     )
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
   )
 )

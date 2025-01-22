@@ -1,0 +1,12 @@
+name: uploaddate
+title: uploaddate
+username: shellyqinyu
+account: shellyqinyu
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 13774119
+bundleId: 9680675
+url: https://shellyqinyu.shinyapps.io/uploaddate/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
