@@ -1,25 +1,45 @@
-ibrary(shiny)
+library(shiny)
 library(ggplot2)
 
-# 创建Shiny应用程序界面
 ui <- fluidPage(
-  
-  sidebarLayout(
-    sidebarPanel(
-      # 在侧边栏中添加用户输入控件（如数据上传或选择）
-      # 这里省略了用户输入的部分
-      div(
-        fileInput("csvFile", "Choose defferential analysis result File",
-                  accept = c(
-                    "text/csv",
-                    "text/comma-separated-values,text/plain",
-                    ".csv")
-        )
-    ),
-    )
-    mainPanel(
-      # 在主面板中添加绘图输出
-      plotOutput("residualPlot")
-    )
-  )
-)
+  navbarPage("User Interface:",tabPanel("Upload",
+                                        titlePanel("Uploading Files"),
+                                        sidebarLayout(
+                                          sidebarPanel(
+                                            fileInput("file1", "Choose CSV File",
+                                                      multiple = TRUE,
+                                                      accept = c("text/csv",
+                                                                 "text/comma-separated-values,text/plain",
+                                                                 ".csv")),
+                                            tags$hr(),
+                                            checkboxInput("header", "Header", TRUE),
+                                            radioButtons("sep", "Separator",
+                                                         choices = c(Comma = ",",
+                                                                     Semicolon = ";",
+                                                                     Tab = "\t"),
+                                                         selected = ","),
+                                            tags$hr(),
+                                            radioButtons("disp", "Display",
+                                                         choices = c(Head = "head",
+                                                                     All = "all"),
+                                                         selected = "head"),
+                                            radioButtons("quote", "Quote",
+                                                         choices = c(None = "",
+                                                                     "Double Quote" = '"',
+                                                                     "Single Quote" = "'"),
+                                                         selected = '"')),
+                                          mainPanel(
+                                            verbatimTextOutput("summar"),
+                                            tableOutput("contents")
+                                          ))), 
+             tabPanel("Graphing",
+                      titlePanel("Plotting Graphs"),
+                      sidebarLayout(
+                        sidebarPanel( uiOutput("variable_x"),
+                                      uiOutput("variable_y")),
+                        mainPanel(
+                          h3(textOutput("caption")),
+                          plotOutput("plot")
+                        )
+                      ))
+  ))
