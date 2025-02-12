@@ -13,14 +13,14 @@ server <- shinyServer(function(input, output, session) {
     df <- read.csv(inFile$datapath, header = input$header, sep = input$sep,
                    quote = input$quote)
     
+
     
     
     
     
     
     
-    
-    
+   
     
     
     
@@ -91,7 +91,7 @@ server <- shinyServer(function(input, output, session) {
   output$contents <- renderTable({
     data()
     
-  })
+     })
   
   output$summar <- renderPrint({
     req(input$file1)
@@ -237,13 +237,13 @@ server <- shinyServer(function(input, output, session) {
     }
   )
   
+ 
   
   
   
   
   
-  
-  
+   
   
   
   

@@ -7,7 +7,7 @@ ui <- shinyUI(fluidPage(
     tabPanel("Upload File",
              titlePanel("Uploading Files"),
              sidebarLayout(
-               
+              
                
                sidebarPanel(
                  fileInput('file1', 'Choose CSV File',
@@ -30,10 +30,10 @@ ui <- shinyUI(fluidPage(
                                           "Single Quote" = "'"),
                               selected = '"'),
                  
-                 
-                 radioButtons('format', 'Document format', c('PDF', 'HTML', 'Word'),
+                
+                radioButtons('format', 'Document format', c('PDF', 'HTML', 'Word'),
                               inline = TRUE),
-                 downloadButton('downloadReport')
+                downloadButton('downloadReport')
                  
                  
                  
@@ -42,7 +42,7 @@ ui <- shinyUI(fluidPage(
                ),
                mainPanel(
                  verbatimTextOutput("summar"),
-                 tableOutput('contents')
+                tableOutput('contents')
                  
                  
                )
@@ -131,7 +131,7 @@ ui <- shinyUI(fluidPage(
     
     
     
-    
+  
     
     
     

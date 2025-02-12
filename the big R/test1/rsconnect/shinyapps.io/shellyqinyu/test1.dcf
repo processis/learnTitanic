@@ -1,0 +1,12 @@
+name: test1
+title: test1
+username: shellyqinyu
+account: shellyqinyu
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 13963071
+bundleId: 9779641
+url: https://shellyqinyu.shinyapps.io/test1/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
