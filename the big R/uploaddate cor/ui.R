@@ -113,18 +113,26 @@ ui <- shinyUI(fluidPage(
     
     
     
-    tabPanel("fouth Type",
+    
+    
+    
+    
+    tabPanel("fifth Type",
              pageWithSidebar(
-               headerPanel('My lm'),
+               headerPanel('My lm1'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
-                 selectInput('xcol4', 'X Variable', ""),
-                 selectInput('ycol4', 'Y Variable', "", selected = "")
+                 selectInput('xcol5', 'X Variable', ""),
+                 selectInput('ycol5', 'Y Variable', "", selected = "")
                  
                ),
                mainPanel(
-                 tableOutput('Mylm')
+                 actionButton("choice", "Define Regression Variables"),
+                 selectInput("independent", "Independent Variables:", choices = NULL, multiple = T),
+                 uiOutput("dependent1"),
+                 #tableOutput("Table_selected.col"),
+                 verbatimTextOutput("regTab")
                )
              )
     )

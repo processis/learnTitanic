@@ -81,7 +81,10 @@ server <- shinyServer(function(input, output, session) {
     updateSelectInput(session, inputId = 'ycol4', label = 'Y Variable',
                       choices = names(df), selected = names(df)[2])
     
-    
+    updateSelectInput(session, inputId = 'xcol5', label = 'X Variable',
+                      choices = names(df), selected = names(df))
+    updateSelectInput(session, inputId = 'ycol5', label = 'Y Variable',
+                      choices = names(df), selected = names(df)[2])
     
     
     
@@ -100,7 +103,7 @@ server <- shinyServer(function(input, output, session) {
   
   
   
-  
+  #dowmload  PDF
   
   regFormula <- reactive({
     as.formula(paste('mpg ~', input$x))
@@ -132,15 +135,7 @@ server <- shinyServer(function(input, output, session) {
   )
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
   
   
   
@@ -238,7 +233,48 @@ server <- shinyServer(function(input, output, session) {
   )
   
  
+  info <- eventReactive(input$choice, {
+    req(data())
+    f <- data()
+    f
+  })
   
+  observeEvent(input$choice, {  ## to update only when you click on the actionButton
+    req(info())
+    updateSelectInput(session,"independent", "Please Select independent Variable(s):", choices = names(info()) )
+  })
+  
+  
+  # output$Table_selected.col <- renderTable({
+  #   input$choice
+  #   req(info(),input$columns)
+  #   f = info()
+  #   f = subset(f, select = input$columns) #subsetting takes place here
+  #   head(f)
+  # })
+  
+  output$dependent1 = renderUI({
+    req(data(),input$independent)
+    radioButtons("dependent1", "Select a dependent Variable:",choices=names(data())[!names(data()) %in% input$independent])
+  })
+  
+  ###  need to build your formuila correctly; It will work with multiple independent variables
+  ###  model <- reactive({lm(reformulate(input$IndVar, input$DepVar), data = RegData)})
+  
+  runRegression <- reactive({
+    req(data(),input$independent,input$dependent1)
+    lm(reformulate(input$independent, input$dependent1), data=data())
+    # multinom(reformulate(input$independent, input$dependent1), data=mydf())  ### mulitnomial from nnet package
+  })
+  
+  output$regTab = renderPrint({
+    req(runRegression())
+    if(!is.null(input$independent)){
+      summary(runRegression())
+    } else {
+      print(data.frame(Warning="Please select Model Parameters."))
+    }
+  })
   
   
   
