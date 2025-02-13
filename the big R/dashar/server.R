@@ -151,7 +151,7 @@ server <- shinyServer(function(input, output, session) {
   
   
   
-  
+  #散点图
   
   output$MyPlot <- renderPlot({
     # for a histogram: remove the second variable (it has to be numeric as well):
@@ -172,7 +172,7 @@ server <- shinyServer(function(input, output, session) {
   })
   
   
-  #生成 hist
+  #生成 直方图
   # 动态生成列选择器
   output$column_selector2 <- renderUI({
     req(data())
@@ -280,6 +280,7 @@ server <- shinyServer(function(input, output, session) {
  #   }
 #  )
   
+  #回归分析
   
   info <- eventReactive(input$choice, {
     req(data())
@@ -328,18 +329,77 @@ server <- shinyServer(function(input, output, session) {
   
   
   
-  #####six
+  #热力图
   
  
 
-output$table_display <- renderTable({
-  f <- data()
-  f <- subset(f, select = input$columns) #subsetting takes place here
-  head(f)
-})
+  # 处理数据：移除非数值列（如果用户选择）
+  numeric_data <- reactive({
+    df <- data()
+    if (input$remove_non_numeric) {
+      df <- df[, sapply(df, is.numeric)]
+    }
+    df
+  })
+  
+  # 计算相关性矩阵
+  cor_matrix <- reactive({
+    cor(numeric_data(), use = "complete.obs")  # 忽略缺失值
+  })
+  
+  # 绘制相关性热力图
+  output$correlation_plot <- renderPlot({
+    req(numeric_data())
+    corrplot(cor_matrix(), method = "color", type = "upper", tl.col = "black", tl.srt = 45)
+  })
+
   
   
   
+  #岭回归方法
+  
+  # 动态生成响应变量选择器
+  output$response_selector <- renderUI({
+    req(data())
+    selectInput("response", "选择响应变量", choices = names(data()))
+  })
+  
+  # 动态生成预测变量选择器
+  output$predictor_selector <- renderUI({
+    req(data())
+    selectInput("predictors", "选择预测变量", choices = names(data()), multiple = TRUE)
+  })
+  
+  # 运行岭回归
+  ridge_model <- eventReactive(input$run, {
+    req(input$response, input$predictors)
+    response <- data()[[input$response]]
+    predictors <- as.matrix(data()[, input$predictors])
+    
+    # 岭回归
+    glmnet(predictors, response, alpha = 0, lambda = input$lambda)
+  })
+  
+  # 显示岭回归结果
+  output$summary <- renderPrint({
+    req(ridge_model())
+    print(ridge_model())
+  })
+  
+  # 绘制岭回归系数图
+  output$coef_plot <- renderPlot({
+    req(ridge_model())
+    coef_values <- coef(ridge_model())
+    coef_df <- data.frame(
+      Predictor = rownames(coef_values),
+      Coefficient = as.numeric(coef_values)
+    )
+    
+    ggplot(coef_df, aes(x = Predictor, y = Coefficient)) +
+      geom_bar(stat = "identity", fill = "blue") +
+      theme_minimal() +
+      labs(title = "岭回归系数图", x = "预测变量", y = "系数值")
+  })
   
   
   

@@ -46,8 +46,8 @@ View(deshaTrain)
 
  
 # Read Desharnais77 public dataset from promise uottawa repository
- desharnais <- read.table("deshRandomFrShelly1106.csv",
-                             +                          sep = ",", header = TRUE)
+ desharnais <- read.table("/media/user/娱乐/learnTitanic/the big R/dashar/deshRandomFrShelly1106.csv",
+                                                       sep = ",", header = TRUE)
 desha <- subset(desharnais,Project!=76)
 # continue to remove incomplete rows, bottom up, because not enough data in these projects
 desha <- subset(desha,Project!=67)
@@ -97,6 +97,8 @@ View(deshaTrain)
 library(lattice)
  ### Some initial plots of the data
 
+#sandiantu
+
 xyplot(swEngTrainY ~ swEngTrainX$Entities, type = c("p", "g"),
                    ylab = "Effort",
                    main = "(a)",
@@ -108,7 +110,8 @@ xyplot(swEngTrainY ~ swEngTrainX$Entities, type = c("p", "g"),
 library(caret)
  library(corrplot)
 #look at both X and Y variables, so look at deshaTrain instead of swEngTrainXtrans
- corrplot::corrplot(cor(deshaTrain), 
+
+  corrplot::corrplot(cor(deshaTrain), 
                                            order = "hclust", 
                                            tl.cex = .8)
 
@@ -168,7 +171,7 @@ ridgeTune <- train(x = swEngTrainXtrans, y = swEngTrainY,
 ridgeTune
 
 
-
+###########################################
 
 
 
@@ -176,7 +179,7 @@ print(update(plot(ridgeTune), xlab = "Penalty"))
  testResults$ridgeTune <- predict(ridgeTune, swEngTestXtrans)
  #ElasticNet
   enetGrid <- expand.grid(lambda = c(0, 0.01, .1), 
-                            +                         fraction = seq(.05, 1, length = 20))
+                                                     fraction = seq(.05, 1, length = 20))
 set.seed(100)
  enetTune <- train(x = swEngTrainXtrans, y = swEngTrainY,
                                        method = "enet",
