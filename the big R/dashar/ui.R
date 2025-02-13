@@ -1,5 +1,6 @@
 library(shiny)
 library(datasets)
+library(DT)
 
 ui <- shinyUI(fluidPage(
   titlePanel("Column Plot"),
@@ -84,7 +85,7 @@ ui <- shinyUI(fluidPage(
                  
                  
                  #fileInput("file", "上传CSV文件", accept = c(".csv")),
-                 uiOutput("column_selector")
+                 uiOutput("column_selector2")
                  
                  
                  
@@ -105,12 +106,12 @@ ui <- shinyUI(fluidPage(
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
-                 selectInput('xcol3', 'X Variable', ""),
-                 selectInput('ycol3', 'Y Variable', "", selected = "")
+                 uiOutput("column_selector3"),
+                 uiOutput("filter_selector3")
                  
                ),
                mainPanel(
-                 tableOutput('Mycol')
+                 DTOutput("filtered_table")
                )
              )
     ),
@@ -129,13 +130,17 @@ ui <- shinyUI(fluidPage(
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
-                 selectInput('xcol5', 'X Variable', ""),
-                 selectInput('ycol5', 'Y Variable', "", selected = "")
+                 #selectInput('xcol5', 'X Variable', ""),
+                 
+                 #selectInput('ycol5', 'Y Variable', "", selected = "")
+                 actionButton("choice", "Define Regression Variables"),
+                 selectInput("independent", "Independent Variables:", choices = NULL, multiple = T),
                  
                ),
                mainPanel(
-                 actionButton("choice", "Define Regression Variables"),
-                 selectInput("independent", "Independent Variables:", choices = NULL, multiple = T),
+                 #actionButton("choice", "Define Regression Variables"),
+                 #selectInput("independent", "Independent Variables:", choices = NULL, multiple = T),
+                 
                  uiOutput("dependent1"),
                  #tableOutput("Table_selected.col"),
                  verbatimTextOutput("regTab")
@@ -155,15 +160,16 @@ ui <- shinyUI(fluidPage(
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
-                 selectInput('xcol6', 'X Variable', ""),
-                 selectInput('ycol6', 'Y Variable', "", selected = ""),
+                # selectInput('xcol6', 'X Variable', ""),
+                # selectInput('ycol6', 'Y Variable', "", selected = ""),
+                 actionButton("choice", "incorporate external information"),
                  selectInput("columns", "Select Columns", choices = NULL), # no choices before uploading 
                  
                ),
                mainPanel(
                  actionButton("choice", "incorporate external information"),
                  
-                 selectInput("columns", "Select Columns", choices = NULL), # no choices before uploading 
+                 #selectInput("columns", "Select Columns", choices = NULL), # no choices before uploading 
                  
                  tableOutput("table_display")
                )

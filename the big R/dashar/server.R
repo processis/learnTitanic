@@ -172,9 +172,9 @@ server <- shinyServer(function(input, output, session) {
   })
   
   
-  
+  #生成 hist
   # 动态生成列选择器
-  output$column_selector <- renderUI({
+  output$column_selector2 <- renderUI({
     req(data())
     selectInput("column", "选择要绘制直方图的列", choices = names(data()))
   })
@@ -234,19 +234,37 @@ server <- shinyServer(function(input, output, session) {
     
   })
   
+  ################
   
+  # 动态生成列选择器
+  output$column_selector3 <- renderUI({
+    req(data())
+    selectInput("column", "选择要筛选的列", choices = names(data()))
+  })
   
-  output$Mycol <-renderTable(
-    {
-      #x <- data()[, c(input$xcol, input$ycol)]
-      x    <- data()[, input$xcol]
-      y<-data()[, input$ycol]
-      cor(x,y)
-      
-      #model<-lm(y~x)
-      #summary(model)
+  # 动态生成筛选条件选择器
+  output$filter_selector3 <- renderUI({
+    req(input$column)
+    column_data <- data()[[input$column]]
+    if (is.numeric(column_data)) {
+      sliderInput("filter", "选择数值范围", min = min(column_data), max = max(column_data), value = c(min(column_data), max(column_data)))
+    } else {
+      selectInput("filter", "选择类别", choices = unique(column_data), multiple = TRUE)
     }
-  )
+  })
+  
+  # 根据筛选条件显示部分数据表
+  output$filtered_table <- renderDT({
+    req(input$column, input$filter)
+    filtered_data <- data()
+    column_data <- filtered_data[[input$column]]
+    if (is.numeric(column_data)) {
+      filtered_data <- filtered_data[column_data >= input$filter[1] & column_data <= input$filter[2], ]
+    } else {
+      filtered_data <- filtered_data[column_data %in% input$filter, ]
+    }
+    datatable(filtered_data)
+  })
   
   
   

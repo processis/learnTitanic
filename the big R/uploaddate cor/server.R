@@ -3,7 +3,9 @@ server <- shinyServer(function(input, output, session) {
   
   #req(input$file1)
   
-  data <- reactive({ 
+  #duqushuju
+  
+  data <- eventReactive(input$choice, { 
     req(input$file1) ## ?req #  require that the input is available
     
     inFile <- input$file1
@@ -12,6 +14,12 @@ server <- shinyServer(function(input, output, session) {
     # and                              write.csv(iris, "iris.csv")
     df <- read.csv(inFile$datapath, header = input$header, sep = input$sep,
                    quote = input$quote)
+    
+    vars <- names(df)
+    # Update select input immediately after clicking on the action button. 
+    updateSelectInput(session, "columns","Select Columns", choices = vars)
+    
+    df
     
     
     
@@ -78,6 +86,8 @@ server <- shinyServer(function(input, output, session) {
     updateSelectInput(session, inputId = 'ycol3', label = 'Y Variable',
                       choices = names(df), selected = names(df)[2])
     
+    #    updateSelectInput(session, inputId = 'ycol4', label = 'Y Variable',
+    #                      choices = names(df), selected = names(df)[2])
     
     updateSelectInput(session, inputId = 'xcol5', label = 'X Variable',
                       choices = names(df), selected = names(df))
@@ -85,9 +95,17 @@ server <- shinyServer(function(input, output, session) {
                       choices = names(df), selected = names(df)[2])
     
     
+    updateSelectInput(session, inputId = 'xcol6', label = 'X Variable',
+                      choices = names(df), selected = names(df))
+    updateSelectInput(session, inputId = 'ycol6', label = 'Y Variable',
+                      choices = names(df), selected = names(df)[2])
+    
+    
     
     return(df)
   })
+  
+  #jichu shujufenxi
   
   output$contents <- renderTable({
     data()
@@ -136,7 +154,7 @@ server <- shinyServer(function(input, output, session) {
   
   
   
-  
+  #sandiantu
   
   
   output$MyPlot <- renderPlot({
@@ -158,14 +176,13 @@ server <- shinyServer(function(input, output, session) {
   })
   
   
-  #生成hist
-  
-  
+  #生成 hist
   # 动态生成列选择器
-  output$column_selector <- renderUI({
+  output$column_selector2 <- renderUI({
     req(data())
     selectInput("column", "选择要绘制直方图的列", choices = names(data()))
   })
+  
   
   
   output$Myhistogram <- renderPlot({
@@ -177,15 +194,19 @@ server <- shinyServer(function(input, output, session) {
     # Correct way:
     #x    <- data()[, input$xcol]
     #y    <- data()[, input$ycol]
+    #x    <- data()[, c(input$xcol, input$ycol)]
     #bins <- nrow(data())
-    #hist(x, breaks = bins, col = 'darkgray', border = 'white')
-    #hist(y, breaks = bins, col = 'darkgray', border = 'white')
+    #hist(x,  col = 'darkgray', border = 'white')
+    #hist(y,  col = 'darkgray', border = 'white')
     
     
     # I Since you have two inputs I decided to make a scatterplot
     #x <- data()[, c(input$xcol, input$ycol)]
     #plot(x)
+    #hist(x)
     
+    #data<-rnorm(input$n)
+    #ggplot(data.frame(x=data),aes(x=x))+geom_histogram()
     
     req(input$column)
     ggplot(data(), aes_string(x = input$column)) +
@@ -217,24 +238,54 @@ server <- shinyServer(function(input, output, session) {
     
   })
   
+  #xuanzeshuju
   
+  # 动态生成列选择器
+  output$column_selector3 <- renderUI({
+    req(data())
+    selectInput("column", "选择要筛选的列", choices = names(data()))
+  })
   
-  output$Mycol <-renderTable(
-    {
-      #x <- data()[, c(input$xcol, input$ycol)]
-      x    <- data()[, input$xcol]
-      y<-data()[, input$ycol]
-      cor(x,y)
-      
-      #model<-lm(y~x)
-      #summary(model)
+  # 动态生成筛选条件选择器
+  output$filter_selector3 <- renderUI({
+    req(input$column)
+    column_data <- data()[[input$column]]
+    if (is.numeric(column_data)) {
+      sliderInput("filter", "选择数值范围", min = min(column_data), max = max(column_data), value = c(min(column_data), max(column_data)))
+    } else {
+      selectInput("filter", "选择类别", choices = unique(column_data), multiple = TRUE)
     }
-  )
+  })
+  
+  # 根据筛选条件显示部分数据表
+  output$filtered_table <- renderDT({
+    req(input$column, input$filter)
+    filtered_data <- data()
+    column_data <- filtered_data[[input$column]]
+    if (is.numeric(column_data)) {
+      filtered_data <- filtered_data[column_data >= input$filter[1] & column_data <= input$filter[2], ]
+    } else {
+      filtered_data <- filtered_data[column_data %in% input$filter, ]
+    }
+    datatable(filtered_data)
+  })
   
   
   
   
- #lm  huigui
+  #  output$Mylm<-renderPrint(
+  #    {
+  #      x    <- data()[, input$xcol]
+  #      y<-data()[, input$ycol]
+  
+  
+  #      model<-lm(y~x)
+  #      summary(model())
+  #   }
+  #  )
+  
+  
+  #####huiguifenxi
   
   info <- eventReactive(input$choice, {
     req(data())
@@ -283,7 +334,15 @@ server <- shinyServer(function(input, output, session) {
   
   
   
+  #####six
   
+  
+  
+  output$table_display <- renderTable({
+    f <- data()
+    f <- subset(f, select = input$columns) #subsetting takes place here
+    head(f)
+  })
   
   
   
