@@ -76,11 +76,15 @@ ui <- shinyUI(fluidPage(
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
-                 selectInput('xcol2', 'X Variable', ""),
-                 selectInput('ycol2', 'Y Variable', "", selected = "")
+                 #selectInput('xcol2', 'X Variable', ""),
+                 #selectInput('ycol2', 'Y Variable', "", selected = "")
+                 
+                 #numericInput("n","NUmber of observations:",value=100),
+                 #submitButton("Update Plot")
                  
                  
-                 
+                 #fileInput("file", "上传CSV文件", accept = c(".csv")),
+                 uiOutput("column_selector")
                  
                  
                  
@@ -111,23 +115,6 @@ ui <- shinyUI(fluidPage(
              )
     ),
     
-    
-    
-    tabPanel("fouth Type",
-             pageWithSidebar(
-               headerPanel('My lm'),
-               sidebarPanel(
-                 
-                 # "Empty inputs" - they will be updated after the data is uploaded
-                 selectInput('xcol4', 'X Variable', ""),
-                 selectInput('ycol4', 'Y Variable', "", selected = "")
-                 
-               ),
-               mainPanel(
-                 tableOutput('Mylm')
-               )
-             )
-    ),
     
     
     

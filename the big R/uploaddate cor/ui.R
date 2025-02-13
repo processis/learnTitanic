@@ -76,10 +76,10 @@ ui <- shinyUI(fluidPage(
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
-                 selectInput('xcol2', 'X Variable', ""),
-                 selectInput('ycol2', 'Y Variable', "", selected = "")
+                 #selectInput('xcol2', 'X Variable', ""),
+                 #selectInput('ycol2', 'Y Variable', "", selected = "")
                  
-                 
+                 uiOutput("column_selector")
                  
                  
                  

@@ -84,8 +84,8 @@ server <- shinyServer(function(input, output, session) {
     updateSelectInput(session, inputId = 'ycol3', label = 'Y Variable',
                       choices = names(df), selected = names(df)[2])
     
-    updateSelectInput(session, inputId = 'ycol4', label = 'Y Variable',
-                      choices = names(df), selected = names(df)[2])
+#    updateSelectInput(session, inputId = 'ycol4', label = 'Y Variable',
+#                      choices = names(df), selected = names(df)[2])
     
     updateSelectInput(session, inputId = 'xcol5', label = 'X Variable',
                       choices = names(df), selected = names(df))
@@ -173,6 +173,13 @@ server <- shinyServer(function(input, output, session) {
   
   
   
+  # 动态生成列选择器
+  output$column_selector <- renderUI({
+    req(data())
+    selectInput("column", "选择要绘制直方图的列", choices = names(data()))
+  })
+  
+  
   
   output$Myhistogram <- renderPlot({
     # for a histogram: remove the second variable (it has to be numeric as well):
@@ -181,16 +188,27 @@ server <- shinyServer(function(input, output, session) {
     #hist(x, breaks = bins, col = 'darkgray', border = 'white')
     
     # Correct way:
-    x    <- data()[, input$xcol]
+    #x    <- data()[, input$xcol]
     #y    <- data()[, input$ycol]
-    bins <- nrow(data())
-    hist(x, breaks = bins, col = 'darkgray', border = 'white')
-    #hist(y, breaks = bins, col = 'darkgray', border = 'white')
+    #x    <- data()[, c(input$xcol, input$ycol)]
+    #bins <- nrow(data())
+    #hist(x,  col = 'darkgray', border = 'white')
+    #hist(y,  col = 'darkgray', border = 'white')
     
     
     # I Since you have two inputs I decided to make a scatterplot
     #x <- data()[, c(input$xcol, input$ycol)]
     #plot(x)
+    #hist(x)
+    
+    #data<-rnorm(input$n)
+    #ggplot(data.frame(x=data),aes(x=x))+geom_histogram()
+    
+    req(input$column)
+    ggplot(data(), aes_string(x = input$column)) +
+      geom_histogram(binwidth = 3, fill = "blue", color = "black") +
+      labs(title = paste("直方图 -", input$column), x = input$column, y = "频率")
+  
     
   })
   
@@ -233,16 +251,16 @@ server <- shinyServer(function(input, output, session) {
   
   
   
-  output$Mylm<-renderPrint(
-    {
-      x    <- data()[, input$xcol]
-      y<-data()[, input$ycol]
+#  output$Mylm<-renderPrint(
+#    {
+#      x    <- data()[, input$xcol]
+#      y<-data()[, input$ycol]
       
       
-      model<-lm(y~x)
-      summary(model())
-    }
-  )
+#      model<-lm(y~x)
+#      summary(model())
+ #   }
+#  )
   
   
   info <- eventReactive(input$choice, {

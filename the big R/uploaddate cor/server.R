@@ -158,6 +158,14 @@ server <- shinyServer(function(input, output, session) {
   })
   
   
+  #生成hist
+  
+  
+  # 动态生成列选择器
+  output$column_selector <- renderUI({
+    req(data())
+    selectInput("column", "选择要绘制直方图的列", choices = names(data()))
+  })
   
   
   output$Myhistogram <- renderPlot({
@@ -167,16 +175,23 @@ server <- shinyServer(function(input, output, session) {
     #hist(x, breaks = bins, col = 'darkgray', border = 'white')
     
     # Correct way:
-    x    <- data()[, input$xcol]
+    #x    <- data()[, input$xcol]
     #y    <- data()[, input$ycol]
-    bins <- nrow(data())
-    hist(x, breaks = bins, col = 'darkgray', border = 'white')
+    #bins <- nrow(data())
+    #hist(x, breaks = bins, col = 'darkgray', border = 'white')
     #hist(y, breaks = bins, col = 'darkgray', border = 'white')
     
     
     # I Since you have two inputs I decided to make a scatterplot
     #x <- data()[, c(input$xcol, input$ycol)]
     #plot(x)
+    
+    
+    req(input$column)
+    ggplot(data(), aes_string(x = input$column)) +
+      geom_histogram(binwidth = 3, fill = "blue", color = "black") +
+      labs(title = paste("直方图 -", input$column), x = input$column, y = "频率")
+    
     
   })
   
