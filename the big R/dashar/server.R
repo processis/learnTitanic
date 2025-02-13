@@ -3,7 +3,7 @@ server <- shinyServer(function(input, output, session) {
   
   #req(input$file1)
   
-  data <- reactive({ 
+  data <- eventReactive(input$choice, { 
     req(input$file1) ## ?req #  require that the input is available
     
     inFile <- input$file1
@@ -12,6 +12,12 @@ server <- shinyServer(function(input, output, session) {
     # and                              write.csv(iris, "iris.csv")
     df <- read.csv(inFile$datapath, header = input$header, sep = input$sep,
                    quote = input$quote)
+    
+    vars <- names(df)
+    # Update select input immediately after clicking on the action button. 
+    updateSelectInput(session, "columns","Select Columns", choices = vars)
+    
+    df
     
     
     
@@ -81,10 +87,16 @@ server <- shinyServer(function(input, output, session) {
     updateSelectInput(session, inputId = 'ycol4', label = 'Y Variable',
                       choices = names(df), selected = names(df)[2])
     
- #   updateSelectInput(session, inputId = 'xcol5', label = 'X Variable',
-#                      choices = names(df), selected = names(df))
- #   updateSelectInput(session, inputId = 'ycol5', label = 'Y Variable',
-  #                    choices = names(df), selected = names(df)[2])
+    updateSelectInput(session, inputId = 'xcol5', label = 'X Variable',
+                      choices = names(df), selected = names(df))
+    updateSelectInput(session, inputId = 'ycol5', label = 'Y Variable',
+                      choices = names(df), selected = names(df)[2])
+    
+    
+    updateSelectInput(session, inputId = 'xcol6', label = 'X Variable',
+                      choices = names(df), selected = names(df))
+    updateSelectInput(session, inputId = 'ycol6', label = 'Y Variable',
+                      choices = names(df), selected = names(df)[2])
     
     
     
@@ -279,22 +291,17 @@ server <- shinyServer(function(input, output, session) {
   
   
   
-  ######
   
-  # Changes in read.table 
-  f <- read.table(inFile$datapath, header = input$header, sep = input$sep, quote = input$quote)
-  vars <- names(f)
-  # Update select input immediately after clicking on the action button. 
-  updateSelectInput(session, "columns","Select Columns", choices = vars)
+  #####six
   
-  f
+ 
+
+output$table_display <- renderTable({
+  f <- data()
+  f <- subset(f, select = input$columns) #subsetting takes place here
+  head(f)
+})
   
-  
-  output$table_display <- renderTable({
-    f <- info()
-    f <- subset(f, select = input$columns) #subsetting takes place here
-    head(f)
-  })
   
   
   

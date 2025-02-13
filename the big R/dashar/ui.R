@@ -142,8 +142,8 @@ ui <- shinyUI(fluidPage(
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
-       #          selectInput('xcol5', 'X Variable', ""),
-       #          selectInput('ycol5', 'Y Variable', "", selected = "")
+                 selectInput('xcol5', 'X Variable', ""),
+                 selectInput('ycol5', 'Y Variable', "", selected = "")
                  
                ),
                mainPanel(
@@ -159,14 +159,18 @@ ui <- shinyUI(fluidPage(
     
     
     
+    
+    
+    
     tabPanel("sixth Type",
              pageWithSidebar(
-               headerPanel('My data1'),
+               headerPanel('My dd'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
-                 #          selectInput('xcol5', 'X Variable', ""),
-                 #          selectInput('ycol5', 'Y Variable', "", selected = "")
+                 selectInput('xcol6', 'X Variable', ""),
+                 selectInput('ycol6', 'Y Variable', "", selected = ""),
+                 selectInput("columns", "Select Columns", choices = NULL), # no choices before uploading 
                  
                ),
                mainPanel(
@@ -178,6 +182,9 @@ ui <- shinyUI(fluidPage(
                )
              )
     )
+    
+    
+    
     
     
     
