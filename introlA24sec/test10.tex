@@ -1,8 +1,80 @@
-\chapter{从团队实验到持续改善} % Introduction chapter suppressed from the table of contents
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass{book}        % from not too short p76 pagestyle
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%ensure chapter section headngs in lower case
+%
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.png,.jpg}
+\usepackage{xeCJK}
+\setCJKmainfont{SimSun}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
+\hypersetup{
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\usepackage{multirow} %for tabular combine multirow
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\date{}
+
+\usepackage{graphicx}
+
+\raggedbottom
 
 
+\begin{document}
 
-冲刺回顾是团队分析根因在下一轮冲刺改进的最佳时机，前面介绍了时间表(Timeline)，颜色点等方法收集团队“软”数据，这章会针对“硬”数据。如果团队了解改正(Correction)和 纠正措施(Corrective Action)的区别，和根因分析，便可用在回顾时分析数据，制定有效纠正措施，避免发生过的问题再发生。
+
+冲刺回顾是团队分析根因在下一轮冲刺改进的最佳时机，前面介绍了时间表(Timeline)，颜色点等方法收集团队``软''数据，这章会针对``硬''数据。如果团队了解改正(Correction)和
+纠正措施(Corrective
+Action)的区别，和根因分析，便可用在回顾时分析数据，制定有效纠正措施，避免发生过的问题再发生。
 
 \hypertarget{ux6536ux96c6ux54eaux4e9bux6570ux636e}{%
 \subsection{收集哪些数据}\label{ux6536ux96c6ux54eaux4e9bux6570ux636e}}
@@ -11,11 +83,8 @@
 \subsubsection{美国某家医院的故事}\label{ux7f8eux56fdux67d0ux5bb6ux533bux9662ux7684ux6545ux4e8b}}
 
 1996年，某家美国Cook
-County医院做了个试验。这家医院所在的地区比较穷困，很多市民没有买医疗保险，且医院床位紧张。因人口老化，也没有良好饮食习惯，这医院面对的最大问题是怎么判断病人有没有急性心脏病的危险？
-因为如果病人胸口痛，医生从他的背景、年龄、生活习惯判断有心脏病的危险，就要收他住院，但医院的床位有限。
-新来的院长Reilly很有经验，了解问题严重，首先要解决这个难题，因为针对心脏病的治疗的病床要花费2000美元一晚，一般心脏病要住3晚，而后面发现很多病人其实没有心脏病，浪费了医院的宝贵资源。
-他发现每个医生都会有自己的一套方式去判断病人是否需要住院，诊断的差异很大。每个医生要收集的数据也很多，心电图、血液、尿液、x光，还有病人的历史、习惯等。
-因为院长是从东岸名牌医院过来的。他认识专家专门研究怎么有效去判断病人的专家。这位专家Goldman用了两年时间，针对心脏病猝死的诊断，收集了很多数据和验证，发现只需要针对3个紧急的风险因素，就可以准确判断：
+County医院做了个试验。这家医院所在的地区比较穷困，很多市民没有买医疗保险，且医院床位紧张。因人口老化，也没有良好饮食习惯，这医院面对的最大问题是怎么判断病人有没有急性心脏病的危险？\\
+因为如果病人胸口痛，医生从他的背景、年龄、生活习惯判断有心脏病的危险，就要收他住院，但医院的床位有限。新来的院长Reilly很有经验，了解问题严重，首先要解决这个难题，因为针对心脏病的治疗的病床要花费2000美元一晚，一般心脏病要住3晚，而后面发现很多病人其实没有心脏病，浪费了医院的宝贵资源。他发现每个医生都会有自己的一套方式去判断病人是否需要住院，诊断的差异很大。每个医生要收集的数据也很多，心电图、血液、尿液、x光，还有病人的历史、习惯等。因为院长是从东岸名牌医院过来的。他认识专家专门研究怎么有效去判断病人的专家。这位专家Goldman用了两年时间，针对心脏病猝死的诊断，收集了很多数据和验证，发现只需要针对3个紧急的风险因素，就可以准确判断：
 
 \begin{enumerate}
 \tightlist
@@ -27,31 +96,23 @@ County医院做了个试验。这家医院所在的地区比较穷困，很多�
   病人是否感到心绞痛 (patient unstable angina)
 \end{enumerate}
 
-通过这样就可以判断病人是否需要住院。所以院长就依据这个做了实验。结果发现，平常用以前的方式，医生诊断准确度只有75\%-85\%，但用了这个准确度就超过95\%。\\
-很多人都误解度量分析必须像大数据分析一样，要有大量数据，用很多因子来求出一个漂亮的方程式，才算成功。其实是反过来，如果想要收集的数据量越大，变量越多，量化过程改进越难成功，开发人员越抵触。所以我们必须要针对想改进的重点收集对应数据。
-
-很多时候信息量多，但是没有针对性，反而不好。
-
+通过这样就可以判断病人是否需要住院。所以院长就依据这个做了实验。结果发现平常用以前的方式，医生诊断准确度只有75\%-85\%，但用了这个准确度就超过95\%。\\
+很多人都误解度量分析必须像大数据分析一样，要有大量数据，用很多因子来求出一个漂亮的方程式，才算成功。其实是反过来，如果想要收集的数据量越大变量越多，量化过程改进越难成功，开发人员越抵触。所以我们必须要针对想改进的重点收集对应数据。\\
+很多时候信息量多，但是没有针对性，反而不好。\\
 好比病人去医院，都必须抽血、验尿、做心电图，收集各类数据让医生诊断，但是否信息越多越齐全就越好。从上面美国Cook
-County医院的故事看到其实不是，
+County医院的故事看到其实不是。小时候看病，中医是用望闻问切的方式；西医就是用听诊器听心跳、呼吸，看舌头、口腔，然后也是听你的问题描述，便可以诊断开药了。现在去医院排队看病，医生第一件事就给你开四五张各类的检查单，通过这些检查报告做诊断。虽然我是外行，但我觉得小时候那种不超过十分钟诊断过程不会比现代的起码两个小时的诊断质量差。\\
 
-小时候看病，中医是用望闻问切的方式；西医就是用听诊器听心跳、呼吸，看舌头、口腔，然后也是听你的问题描述，便可以诊断开药了。现在去医院排队看病，医生第一件事就给你开四五张各类的检查单，通过这些检查报告做诊断。虽然我是外行，但我觉得小时候那种不超过十分钟诊断过程不会比现代的起码两个小时的诊断质量差。''\\
 \hypertarget{ux7f3aux9677ux6392ux9664ux7387}{%
 \subsection{如何建立并完善缺陷预测模型的例子}\label{ux7f3aux9677ux6392ux9664ux7387}}
-
 %===如何建立并完善缺陷预测模型的例子===
 公司度量分析人员展示了一个大表，上面密密麻麻有五、六十个项目变量，包括缺陷、进度、工作量等等。\\
 我问：为什么你们要收集这么多数据量？你们的改进目标是什么？\\
 度量分析人员：我们要提高生产率、减少进度偏差，也要降低最终的客户的缺陷密度。\\
 我问:
-如能尽早发现缺陷，加强前面的评审效率来减少遗漏到后面的缺陷，减少返工。如果大家都相信这可行，就应该专注这模型相关的度量，如每迭代的缺陷分布、与相关返工工作量等，让蒙地卡罗预测模型可以尽快跑起来。但如果对进度偏差，工作量偏差等都要收集，每轮可能要收集几十个变量，反而没有针对性。\\
-我们看看这预测缺陷模型，比如你们有什么不同的评审方式？效果有什么不同？\\
+如能尽早发现缺陷，加强前面的评审效率来减少遗漏到后面的缺陷，减少返工。如果大家都相信这可行，就应该专注这模型相关的度量，如每迭代的缺陷分布、与相关返工工作量等，让蒙地卡罗预测模型可以尽快跑起来。但如果对进度偏差，工作量偏差等都要收集，每轮可能要收集几十个变量，反而没有针对性。我们看看这预测缺陷模型，比如你们有什么不同的评审方式？效果有什么不同？\\
 度量分析人员：我们跟开发讨论过，确实有些区分，例如，如果我们在前期有做正式评审，质量都会好一些，但是如果没有的话，后面确实缺陷就多了。如果我们有明确需求，例如按活动、实体方式明确写出来，跟没有的话也会有质量的区分。有些项目有规定要静态扫描代码并记录缺陷，后期的缺陷数会较少。\\
-我总结说:
-所以如果可以估计各种方式的缺陷排除率/引入缺陷率,便可使用模型预测最终会遗漏多少缺陷。
-可利用这蒙地卡罗预测工具，帮你比较各种方法，制定缺陷数目标。团队开始时先参考上一轮迭代数据，估一下预测模型参数，并一起头脑风暴讨论有什么新方法可以做提升，加进模型，蒙地卡罗预测模型可比较不同的组合，看看对缺陷率，缺陷排除率和工作量等有什么影响，团队便可参考模型的建议，最终选择下一迭代的配搭。\\
-例如有些团队利用静态代码扫描预先找出代码缺陷，就可以做个实验，区分一下是否代码扫描后，系统测试缺陷会减少，排除缺陷的百分比是多少等。\\
-开始的时候可能数据量不多，慢慢项目多了数据也可以看是否稳定，便开始变成团队的基线。所以开始时不要太计较准不准，而是尽快利用这概念开始量化管理。\\
+我总结说:所以如果可以估计各种方式的缺陷排除率/引入缺陷率,便可使用模型预测最终会遗漏多少缺陷。
+可利用这蒙地卡罗预测工具，帮你比较各种方法，制定缺陷数目标。团队开始时先参考上一轮迭代数据，估一下预测模型参数，并一起头脑风暴讨论有什么新方法可以做提升，加进模型，蒙地卡罗预测模型可比较不同的组合，看看对缺陷率，缺陷排除率和工作量等有什么影响，团队便可参考模型的建议，最终选择下一迭代的配搭。例如有些团队利用静态代码扫描预先找出代码缺陷，就可以做个实验，区分一下是否代码扫描后，系统测试缺陷会减少，排除缺陷的百分比是多少等。开始的时候可能数据量不多，慢慢项目多了数据也可以看是否稳定，便开始变成团队的基线。所以开始时不要太计较准不准，而是尽快利用这概念开始量化管理。\\
 如果团队能尽早发现缺陷并修复，后面返工量便可倍数降低，生产率自然也会提升，进度偏差也会改善。所以建议只针对能如何尽早发现并解决缺陷，减少返工工作量设定目标，量化管理。
 
 \hypertarget{ux7f3aux9677ux6392ux9664ux7387}{%
@@ -62,13 +123,14 @@ County医院的故事看到其实不是，
 可用缺陷排除率(Defect Removal Efficiency DRE) 来判断每一个过程的质量：\\
 %\href{文件:jalote_emm_7.1-1.jpg}{500px}
 
-\includegraphics[width=10cm]{jalote_emm_71-1.jpg}
+
+\includegraphics[width=6cm]{jalote_emm_71-1.jpg}
 
 图13-1
 
 %\href{文件:Ma3_1.0.png}{文件:Ma3 1.0.png}
 
-\includegraphics[width=10cm]{Ma3_10.png}
+\includegraphics[width=6cm]{Ma3_10.png}
 
 如果要最终质量好，缺陷排除率就要高。但计算缺陷排除率，必须要等到整个开发完成才可以计算。
 
@@ -83,19 +145,19 @@ County医院的故事看到其实不是，
 
 %\url{文件:微信截图_20220316093044.jpg}
 
-\includegraphics[width=10cm]{微信截图_20220316093044.jpg}
+\includegraphics[width=6cm]{微信截图_20220316093044.jpg}
 
 图13-2
 
 A/按缺陷排除率(DRE)公式，计算出各个过程的缺陷排除率，并把参数输进水晶球模型。例如第一行Quality那行：在底栋填
 10 (共有10个缺陷是源自需求）；第二行：在第4栋填 10\%
-(需求评审缺陷排除率是10\%）。(本来迭代缺陷参数都标Infosys 识别。)
+(需求评审缺陷排除率是10\%）。(本来迭代缺陷参数都标Infosys 识别。)\\
+%\href{文件:2DreEstimateScreenshot_2021-12-01_212049.1.jpg}{文件:2DreEstimateScreenshot
+%2021-12-01 212049.1.jpg}\\
 
-
-\includegraphics[width=10cm]{2DreEstimateScreenshot_2021-12-01_2120491.jpg}
+\includegraphics[width=6cm]{2DreEstimateScreenshot_2021-12-01_2120491.jpg}
 
 图13-3
-
 
 B/ 按以上迭代回顾缺陷分析结果，按以下输入框位置输进模板
 
@@ -129,13 +191,13 @@ B/ 按以上迭代回顾缺陷分析结果，按以下输入框位置输进模�
 
 %\href{文件:sjb-1-1.png}{600px}
 
-\includegraphics[width=10cm]{Sjb-1-1.png}
+\includegraphics[width=6cm]{sjb-1-1.png}
 
 表13-1
 
 %\href{文件:4reworkByPhaseScreenshot_2021-12-01_214838.1.jpg}{450px}
 
-\includegraphics[width=10cm]{4reworkByPhaseScreenshot_2021-12-01_2148381.jpg}
+\includegraphics[width=6cm]{4reworkByPhaseScreenshot_2021-12-01_2148381.jpg}
 
 图13-4
 
@@ -145,8 +207,7 @@ C/从团队工时表估算各过程的缺陷返工工作量。例如最下面一
 
 %\href{文件:微信截图_20231031153355.png}{450px}
 
-
-\includegraphics[width=10cm]{微信截图_20231031153355.png}
+\includegraphics[width=6cm]{微信截图_20231031153355.png}
 
 图13-5
 
@@ -224,13 +285,12 @@ E/ 团队分析根因后，团队找出以下3条改进建议：
 
 %\href{文件:MTKL.png}{450px}
 
-\includegraphics[width=10cm]{MTKL.png}
+\includegraphics[width=6cm]{MTKL.png}
 
 图13-6
 
 \textbf{解读预测模型最佳搭配选择：}\\
 模型以总成本最低可以防止局部最优。例如需求评审没有选用排除率高的新方法，因为新方法会使用较大评审工作量。如果用质量最优（质量成本最低）便必然会读选用缺陷排除率最高的方法，但用总成本来比较便可以综合考虑工作量(Effort)和质量(Quality)，避免局部最优。\\
-
 由于不同项目甚至不同迭代冲刺的缺陷数和缺陷率各异，难以进行比较，但如果方法和团队人员相似，缺陷排除率应该是可比的。
 通过分析以往的缺陷数据，针对最薄弱的环节讨论根本原因，并在下一个迭代中进行改进，提升缺陷排除率，并可以预估各个阶段（如评审、测试等）的缺陷发现数。例如，如果需求评审的缺陷数远低于预期，就应立即进行纠正，而不是像以前那样仅仅提醒大家要重视评审工作。
 
@@ -247,7 +307,7 @@ E/ 团队分析根因后，团队找出以下3条改进建议：
 
 %\href{文件:微信截图_20230830093612-2.jpg}{500px}
 
-\includegraphics[width=10cm]{微信截图_20230830093612-2.jpg}
+\includegraphics[width=6cm]{微信截图_20230830093612-2.jpg}
 
 图13-7
 
@@ -264,12 +324,11 @@ E/ 团队分析根因后，团队找出以下3条改进建议：
 
 最有效项目数据的方法就是每次迭代回顾时，同时看看本迭代缺陷的相关数据，这样团队立马可分析本迭代收集的数据（而非团队收集数据，让公司数据专员做分析）。
 很多团队说"我们都有评审代码，但问题都直接改正了，没有记录。``\\
-后面便不知道有多少缺陷，无法量化分析。如果要求开发人员按系统测试缺陷记录方式，在缺陷管理系统里面一条一条记，大家会觉得太花时间不愿意做。
-可以利用工具帮助，例如可利用GIT做代码评审记录，也可以在GIT系统里面跟踪评审问题。不需要把问题另外记在系统测试缺陷跟踪系统，但每条问题在GIT系统里都有痕迹。开发就可以从中数出大概共有多少代码评审缺陷。如果平常也记录了每天所花的时间，他用来修改bug的工作量也有统计数据了。\\
+后面便不知道有多少缺陷，无法量化分析。如果要求开发人员按系统测试缺陷记录方式，在缺陷管理系统里面一条一条记，大家会觉得太花时间不愿意做。可以利用工具帮助，例如可利用GIT做代码评审记录，也可以在GIT系统里面跟踪评审问题。不需要把问题另外记在系统测试缺陷跟踪系统，但每条问题在GIT系统里都有痕迹。开发就可以从中数出大概共有多少代码评审缺陷。如果平常也记录了每天所花的时间，他用来修改bug的工作量也有统计数据了。\\
 \textbf{团队自己收集数据}：此外，团队成员应开始每天或每周自行统计返工的工作量（包括评审缺陷，所有数据均记录在缺陷管理系统中）。\\
 %\href{文件:缺陷表4.1.jpg}{500px}
 
-\includegraphics[width=10cm]{缺陷表41.jpg}
+\includegraphics[width=6cm]{缺陷表41.jpg}
 
 表13-2
 
@@ -282,11 +341,8 @@ E/ 团队分析根因后，团队找出以下3条改进建议：
 
 \framebox{%
 \begin{minipage}[t]{0.97\columnwidth}\raggedright
-
-深圳有一家公司专门从事内部 IT 服务，因为对质量要求严格，新版本在正式投产（发版）前必须通过测试验收。公司每两周进行一次发版，并对发版成功率进行统计。因为都做了很久，依据以往水平，要求发版成功率不会低于93%，并一直都监控这个百分比趋势。某月，发现成功率跌到了92%，这引发了质量改进组启动根因分析。他们首先确认是哪个部门的问题导致发版成功率下降。后来发现有两个部门的表现最差，于是针对这两个部门进行根因分析，也对一些原因实施了纠正措施，如培训和评审等。做以后发现确实那些问题解决了。通过这些措施，问题得以解决，发版成功率也提升了，到了96%。后面他们把这个作为新的基线下限，提升至一个新的水平。
-
-（如想更了解这案例的数据变化，详见第24章里‘控制图的应用’）
-
+深圳有一家公司专门从事内部 IT
+服务，因为对质量要求严格，新版本在正式投产（发版）前必须通过测试验收。公司每两周进行一次发版，并对发版成功率进行统计。因为都做了很久，依据以往水平，要求发版成功率不会低于93\%，并一直都监控这个百分比趋势。某月，发现成功率跌到了92\%，这引发了质量改进组启动根因分析。他们首先确认是哪个部门的问题导致发版成功率下降。后来发现有两个部门的表现最差，于是针对这两个部门进行根因分析，也对一些原因实施了纠正措施，如培训和评审等。做以后发现确实那些问题解决了。通过这些措施，问题得以解决，发版成功率也提升了，到了96\%。后面他们把这个作为新的基线下限，提升至一个新的水平。
 \strut
 \end{minipage}}
 
@@ -298,15 +354,9 @@ E/ 团队分析根因后，团队找出以下3条改进建议：
 \hypertarget{ux603bux7ed3}{%
 \subsection{总结}\label{ux603bux7ed3}}
 
-有数据才可以谈改进，但收集数据花精力，所以必须有针对性，二八原则可以帮助识别应针对哪方面入手。软件开发应，软件开发团队花最多工作量的不是编码本身，用于修复缺陷工作量最多。软件开发有个特点，缺陷越后暴露，返工工作量越多，例如如果缺陷在客户使用后才暴露，可能总共要花20\textasciitilde{}50人时修正，但如果缺陷能在前面评审或单元测试发现和改正，就不会超过1人时。但很多团队，大部分缺陷都是在系统测试或验收时才暴露，前面评审、单元测试发现的缺陷都很少。
-
-虽然很多团队的根因分析用了帕里拖图、鱼骨图的方式，这些都是基于主观判断的方式，没有真正利用基于事实的数据，而且很容易受从众心理影响，变成项目经理的一言堂，无法挖掘出真正原因，使用便利贴KJ方式可以帮团队，更好从事实总结出背后的主因。
-
+有数据才可以谈改进，但收集数据花精力，所以必须有针对性，二八原则可以帮助识别应针对哪方面入手。软件开发应，软件开发团队花最多工作量的不是编码本身，用于修复缺陷工作量最多。软件开发有个特点，缺陷越后暴露，返工工作量越多，例如如果缺陷在客户使用后才暴露，可能总共要花20\textasciitilde{}50人时修正，但如果缺陷能在前面评审或单元测试发现和改正，就不会超过1人时。但很多团队，大部分缺陷都是在系统测试或验收时才暴露，前面评审、单元测试发现的缺陷都很少。\\
+虽然很多团队的根因分析用了帕里拖图、鱼骨图的方式，这些都是基于主观判断的方式，没有真正利用基于事实的数据，而且很容易受从众心理影响，变成项目经理的一言堂，无法挖掘出真正原因，使用便利贴KJ方式可以帮团队，更好从事实总结出背后的主因。\\
 团队所有成员一起，包括需求、开发、测试、项目经理等一起分析迭代的缺陷数据，可以计算迭代的缺陷注入和缺陷排除率，利用蒙地卡洛预测模型就可以把本来只是定性的一个改进目标变成定量，也可以满足CMMI4级的主要实践（详见附件）。
-
-\hypertarget{ux9644ux4ef6}{%
-\section{附件}\label{ux9644ux4ef6}}
-
 
 \hypertarget{ux53c2ux8003-reference}{%
 \section{参考 Reference}\label{ux53c2ux8003-reference}}
@@ -319,3 +369,6 @@ E/ 团队分析根因后，团队找出以下3条改进建议：
   Gladwell, Malcolm. ''Blink: The Power of Thinking Without Thinking ''
 \end{enumerate}
 
+
+
+\end{document}

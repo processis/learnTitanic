@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  20 JAN 2025 00:12
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  14 FEB 2025 02:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2635,7 +2635,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 (hyperref)                than one, level fixed on input line 8.
 
 [189] [190]
-Underfull \hbox (badness 10000) in paragraph at lines 59--61
+Underfull \hbox (badness 10000) in paragraph at lines 62--64
 
  []
 
@@ -2644,7 +2644,7 @@ File: jalote_emm_71-1.jpg Graphic file (type bmp)
 File: Ma3_10.png Graphic file (type bmp)
 <Ma3_10.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
@@ -2662,14 +2662,14 @@ File: 4reworkByPhaseScreenshot_2021-12-01_2148381.jpg Graphic file (type bmp)
 File: 微信截图_20231031153355.png Graphic file (type bmp)
 <微信截图_20231031153355.png>
  [194] [195]
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
 
  []
 
 File: MTKL.png Graphic file (type bmp)
 <MTKL.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--230
+Underfull \hbox (badness 10000) in paragraph at lines 231--233
 
  []
 
@@ -2677,14 +2677,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--230
 File: 微信截图_20230830093612-2.jpg Graphic file (type bmp)
 <微信截图_20230830093612-2.jpg>
  [197]
-Underfull \hbox (badness 10000) in paragraph at lines 262--268
+Underfull \hbox (badness 10000) in paragraph at lines 265--271
 
  []
 
 File: 缺陷表41.jpg Graphic file (type bmp)
 <缺陷表41.jpg>
 [198]
-Underfull \hbox (badness 10000) in paragraph at lines 314--316
+Underfull \hbox (badness 10000) in paragraph at lines 317--319
 
  []
 
@@ -3795,9 +3795,15 @@ x) (./appch1rhgs-sec.aux)
 (./fjAssjlb.aux) (./fjBfxddkh.aux) (./fjCrhydCMMI.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 260.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 260.
-Package rerunfilecheck Info: File `appbooksec-1112.out' has not changed.
-(rerunfilecheck)             Checksum: 001C3B618A1FA0FF266F4D2EFEA78FC6.
 
+
+Package rerunfilecheck Warning: File `appbooksec-1112.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `appbooksec-1112.out':
+(rerunfilecheck)             Before: 001C3B618A1FA0FF266F4D2EFEA78FC6
+(rerunfilecheck)             After:  DFBFD8E84EFCB79BC80D11E16296BB0C.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
