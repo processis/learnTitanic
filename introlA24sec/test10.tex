@@ -1,346 +1,227 @@
-\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
-\PassOptionsToPackage{hyphens}{url}
-%
-\documentclass{book}        % from not too short p76 pagestyle
-%\usepackage{fancyhdr}
-%\pagestyle{fancy}
-%ensure chapter section headngs in lower case
-%
-\usepackage{graphicx}
-\DeclareGraphicsExtensions{.png,.jpg}
-\usepackage{xeCJK}
-\setCJKmainfont{SimSun}
-\usepackage{lmodern}
-\usepackage{amssymb,amsmath}
-\usepackage{ifxetex,ifluatex}
-\usepackage{fixltx2e} % provides \textsubscript
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
-  \usepackage[T1]{fontenc}
-  \usepackage[utf8]{inputenc}
-  \usepackage{textcomp} % provides euro and other symbols
-\else % if luatex or xelatex
-  \usepackage{unicode-math}
-  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
-\fi
-% use upquote if available, for straight quotes in verbatim environments
-\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-% use microtype if available
-\IfFileExists{microtype.sty}{%
-\usepackage[]{microtype}
-\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
-}{}
-\IfFileExists{parskip.sty}{%
-\usepackage{parskip}
-}{% else
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-}
-\usepackage{hyperref}
-\hypersetup{
-            pdfborder={0 0 0},
-            breaklinks=true}
-\urlstyle{same}  % don't use monospace font for urls
-\usepackage{longtable,booktabs}
-% Fix footnotes in tables (requires footnote package)
-\usepackage{multirow} %for tabular combine multirow
-\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{0}
-% Redefines (sub)paragraphs to behave more like sections
-\ifx\paragraph\undefined\else
-\let\oldparagraph\paragraph
-\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
-\fi
-\ifx\subparagraph\undefined\else
-\let\oldsubparagraph\subparagraph
-\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
-\fi
+\chapter{评审与结对编程} % Introduction chapter suppressed from the table of contents
 
-% set default figure placement to htbp
-\makeatletter
-\def\fps@figure{htbp}
-\makeatother
-\date{}
+客户：我们的客户以银行为主，他们很注重质量，所以一直很注重评审。他们对需求评审、代码走查等也很赞同，也能找到缺陷，对提升质量有作用。但他们最困惑的是通过设计评审很难发现缺陷。\\
+我：你听说过敏捷的结对编程吗？\\
+客户：听过，也给客户做过培训，但是一般管理层都接受不了用两个人干一个人的活，所以几乎都没有团队在实际工作中使用。\\
+我：单做培训确实难以推动并持续，必须按3步走，按部就班才有效果，让我分享一下。
 
-\usepackage{graphicx}
+\hypertarget{ux80ccux666f}{%
+\subsection{背景}\label{ux80ccux666f}}
 
-\raggedbottom
+\hypertarget{ux6708}{%
+\subsubsection{4月}\label{ux6708}}
 
+现场结对编程培训之前8个月，首次见这家客户的总监。他们想用一年时间改进软件开发质量。事后知道原来他们有个超过12月的大型项目，因为验收时质量不达标，不能通过风险的验收测试，被拒收。因为公司是老字号，不想影响声誉，请求客户给机会让他们重头再做，客户同意但估计产生的损失超过100万，所以高层下定决心必须改进软件质量，避免类似情况再发生。
 
-\begin{document}
+\hypertarget{ux6708-1}{%
+\subsubsection{7月}\label{ux6708-1}}
 
+与客户签了CMMI服务合同后首先做差距分析， 首先收集各领导的关注点。\\
+某部门经理最担心的是系统维护：如果有人员离职，新人要花很长时间才能上手。\\
+技术总监更担心是有些交付后的缺陷会很花工作量：如某系统交付后开始使用的时候很正常，但过了9个月，用户量和数据量都增加了，偶尔会出现有些报表出错，我们架构师、工程师等，花了3个半月才发现其中某接口的参数有问题。\\
+另外发现开发人员水平参差，也没有做好单元测试和代码评审，代码可读性低，其他程序员难以理解，在分析后的汇报里，建议利用TDD和面向对象的设计原则改善编码规范，并加强培训，推行结对编程培训，提高代码的可读性，方便日后维护。\\
+最后发现很多项目资源不足，没有充分的时间确保代码的质量。
 
-看完某研发部总监的缺陷分析报告后，我问：``你们什么时候做分析？''\\
-总监：``产品发版后。''他们最近一次发版是八月份，立项早在三月份已经开始。\\
-我：``如果你们分析的目的是之后做改进，发版后才分析的作用不大。要想有真正的效果，就必须让开发团队每次2-4周迭代后一起做回顾分析。''\\
-虽然总监说很赞同，但估计他心里想：``我们这几个月一直天天都很忙，中间怎么能腾出时间做回顾复盘！''\\
-一条原则应能改变他的思路，从2013年起，这原则一直驱动我每天每月做规划。
+\textbf{给管理层汇报}\\
+因缺陷绝大部分都是后期测试才发现、缺陷修改的总工作量很大（估计占项目总工作量30\%），建议加强开发单元测试。\\
+因代码都是个别程序员负责，建议团队用结对编程，除了能提高质量也防止一人离开其他人无法跟进的风险。\\
+也预警管理层开始时要预留15-25\%时间给开发团队，当后面返工量减少，以后的总工作量会降低（生产率提升）。\\
 
-\hypertarget{ux5e74}{%
-\subsection{2017年}\label{ux5e74}}
+\hypertarget{ux5929ux57f9ux8badux8bfe}{%
+\subsection{2天培训课}\label{ux5929ux57f9ux8badux8bfe}}
 
-我有一位拥有30多年电机工程经验的老同学李先生，他对Linux感兴趣并持续研究，这几年又开始玩树莓派，对此也非常精通。\\
-我找到他，希望在树莓派上安装Ipython、Jupyter
-Notebook等开源应用软件。一直以来，李先生的理念就是尽量用最简单、最轻易的方法去解决客户的问题，不浪费资源。
-2017年，我开始尝试建立WIKI服务器给客户使用，他推荐我用树莓派。\\
-他说：``树莓派不仅省电而且快，也不知道你这个概念是否持久，我不会浪费时间------在大型服务器上安装Linux
-+
-Mediawiki，如果你觉得这（树莓派）可以便继续用。如果觉得它性能不够，下一步我帮你换更大型的服务器。''\\
----直到现在，已经超过8年了，我们一直还是继续用树莓派来协助评估(树莓派从原来的Pi2(1G内存)，现在已经是P4(4G内存），服务的客户也超过了百家。这证明他的思路是对的。\\
-还有一个细节，当时他安装好Jupyter
-Notebook程序包后，一直没有后续工作。我问他什么原因？\\
-他说：``很简单，我不熟悉软件工程，也不懂如何测试。肯定要找你测试一下，我才知道有没有做错。这样可以避免无谓的返工。''
-所以我们就约好周日我回到办公室跟他远程测试。\\
-李先生打开树莓派后，我用VNC客户端进入他的树莓派，打一些最基本的Ipython指令，验证没问题。\\
-下一步我要跑一些比较复杂的、要用到Pandas包的Python程序，却发现还没有安装Pandas包。他马上到网上去找安装介质以及树莓派如何安装Pandas的方法。处理好后，我再跑对应的程序，包括之前的指令全部跑通。前后花了2小时，测试工作按原计划成功。\\
-资源有限、用最低投入达到客户要求，不多做。每当李先生做完一步，如果没有通过测试，就不会浪费时间走下一步。
-
-\hypertarget{ux6bcfux5c0fux6b65ux9a8cux8bc1}{%
-\subsection{每小步验证}\label{ux6bcfux5c0fux6b65ux9a8cux8bc1}}
-
-1983年，本科最后一年我做毕业项目。导师建议我们参考一些常用的语言发声算法，尝试在专门做信号处理的芯片上写程序，读出一些文字或句子（与现在不同，当时这项技术还没有成熟，很多大学还在研究），虽然我预计有不小的技术难度，但觉得这很先进，便与另一位同学合作，开始制订项目计划。\\
-我们全力投入，一边研究语言发声的算法，一边并行设计电子线路和软件等。我们用了2
-\textasciitilde{}
-3个月的时间做了整个电子线路板的硬件，同时还设计了整个软件架构，并使用计算机模拟，验证每个字实现算法后的发声效果。因为最后一年课程很多，时间过得很快，从9月开始用了6个月时间，软硬件的设计与开发终于都完成了。但是最终没有发出声音，更不要说能读出一些字和句子了，项目以失败告终。\\
-还有一次失败经历让我印象深刻。在大学的第三年我有幸进入大东电报局(Cable
-\&
-Wireless)电报业务运维部门实习，该部门当时在开发一套新的电脑系统以取代本来基于UNIVAC的电报系统，总工程师让我用半年时间，在一个微机上编程从那些电脑上收集重要信息，如果发现异常就警报。按照惯例我前3个月花精力做整个系统设计，还买了一些展示电子版，准备用来展示，但由于经验不足，半年后最终什么都没有展示出来。\\
-到了2000年，在我兼读软件工程硕士课程时，开始接触到敏捷开发，才意识到两次项目失败的主因：不应该花大量时间去追求前期完美的设计，而是应该逐步迭代，先做一些最基本的简单功能，每小步验证，逐步优化。例如，我的毕业项目中应该先做出最基本的硬件、软件，起码能够发出声音，因为整个项目是开创性的，从未有过成功的实验。\\
-敏捷大师Dave Thomas 先生在2015年演讲里提出敏捷软件开发的核心是：
+第一天讲面向对象设计原理，设计模式，测试驱动开发；\\
+第二天讲结对编程：
 
 \framebox{%
 \begin{minipage}[t]{0.97\columnwidth}\raggedright
-\begin{enumerate}
-\tightlist
-\item
-  向你的目标迈出一小步
-\item
-  从反馈调整你的理解
-\item
-  重复
-\end{enumerate}
+
+%\href{文件:Interview_Parnas_Screenshot_2025-01-21_162541.jpg}{400px}
+
+\includegraphics[width=10cm]{Interview_Parnas_Screenshot_2025-01-21_162541.jpg}
+
+问：在软件工程常被忽略的最大风险是什么？
+
+答：不称职的开发人员。据估计，美国需要的程序员数量超过20万。这完全是误导。这不是数量问题。我们有质量问题：一位糟糕的程序员一年内便很容易就会产生两个新岗位（的工作量）。如果我们有更多优秀的程序员，并且能够轻松识别他们，我们需要的就会减少，而不是增多。
+\strut
+\end{minipage}}
+
+``也有人说：``卓越的程序员比优秀的程序员，不仅是好一些，而是倍数级的差异。''\\
+请问你们觉得团队里程序员的水平也存在很大的差异？''\\
+培训开始，对应以上幻灯片，我问大家。
+
+你们是否觉得：
 
 \begin{itemize}
 \tightlist
 \item
-  当两种或以上选择的价值大致相同时，选一条让未来更容易修改（软件）的路径。
-\end{itemize}\strut
-\end{minipage}}
+  交付后的软件难以维护
+\item
+  其他人难以读懂其他人的代码，员工离职后其他成员难以跟进和维护
+\item
+  代码总体设计不好，如缺乏良好架构，不灵活
+\item
+  系统交付后，有些缺陷需要很长时间才能修复好
+\end{itemize}
 
-这些经历让我体会到为什么我们在写程序时，必须先想一下该怎么测试。\\
-每小步验证算是敏捷原则里``要频繁地交付''，但其实是精益（LEAN）的核心思路。\\
+如大家希望提高代码质量，必须从人入手。
 
-\hypertarget{ux7cbeux76ca-ux662fux654fux6377ux7684ux6982ux5ff5ux5417-ux4e3aux4ec0ux4e482001ux5e74ux63d0ux51faux7684ux654fux6377ux5ba3ux8a00ux548c12ux6761ux539fux5219ux90fdux6ca1ux6709ux63d0ux7cbeux76ca}{%
-\subsection{精益? 是敏捷的概念吗?
-为什么2001年提出的敏捷宣言和12条原则都没有提精益？}\label{ux7cbeux76ca-ux662fux654fux6377ux7684ux6982ux5ff5ux5417-ux4e3aux4ec0ux4e482001ux5e74ux63d0ux51faux7684ux654fux6377ux5ba3ux8a00ux548c12ux6761ux539fux5219ux90fdux6ca1ux6709ux63d0ux7cbeux76ca}}
+如果你们团队也有同样问题，有什么好的解决办法呢？培训？\\
+编码的最佳学习方式并非读书，而是动手做，所以单靠搞内部培训效果有限。有什么好方法帮助开发人员提升？
 
-很多敏捷团队使用``看板
-(Kanban)''，其实并非源自宣言或12条原则，而是来自丰田的Just-in-time------按客户订单拉动物料的采购。\\
-Mary
-Poppendieck具有多年编码经验，也为3M公司开发系统，完善生产流程，很了解精益的力量，2003-2010年间出版了3本著作，提出软件开发也可以使用精益做改善（详见参考）。\\
-精益强调：
+\hypertarget{ux4ee3ux7801ux8bc4ux5ba1}{%
+\subsection{代码评审}\label{ux4ee3ux7801ux8bc4ux5ba1}}
 
-\begin{enumerate}
+就算评审规范做得很好能帮助初级程序员提升吗？
+很难，因为代码都已经写完了。\\
+比如我跟另一位老师看团队的代码，他们都写了起码几千行。我们的结论就是：虽然代码的设计很有问题，但已经到了这个地步，除非重写，否则单靠修正部分代码并没有帮助。这也是代码评审常常难以做好的主要原因。而且大家都要面子，如果在评审里，直接说他设计有问题，也可能会影响到大家的关系，所以在设计评审时难以找出缺陷，这很正常。\\
+团队主管看程序员代码
+只能把关防止严重错误，对程序员提升没有作用，所以评审不能有效保证代码质量，也不能帮助团队能力提升。\\
+当写完了几千行代码后，就很难在评审时要求开发改动。程序员会觉得又不是不对，测试也跑得通，为什么要改。所以代码的质量问题应在写的时候就避免，这是结对编程的原理。你可以把结对编程看成是提高团队之间互相交流的培训方法。因为结对编程是在编码时针对具体问题集思广益进行解决，很容易落地，效果会比培训或评审好。\\
+两个人互相讨论写代码才就是有效的培训，不能单挑单靠设计和编码规范和指南。
+
+\hypertarget{ux57f9ux8badux8bbeux8ba1}{%
+\subsection{培训设计}\label{ux57f9ux8badux8bbeux8ba1}}
+
+有些人误以为：
+
+\begin{itemize}
 \tightlist
 \item
-  减少浪费
+  结对编程必须要找一位合适的搭档，人与人之间是否合得来最重要
 \item
-  确保质量、零缺陷
+  结对时只是在旁边看
 \item
-  快速交付
+  以为仅仅是教同伴应怎么做
 \item
-  不要过早下定论，尽量延后承诺
-\end{enumerate}
+  以为只是看，作为人手编译器，只看代码是否写对，能否通过编译
+\end{itemize}
 
-虽然策划重要，但不是死板地按计划执行，制定几个月的长期计划，要灵活按迭代交付后再优化策划。第二章里谷歌创始人Larry
-Page拒收CEO Eric
-Schmidt的商业计划书``芬兰计划''，请他先与谷歌工程师聊聊。这和包括频繁交付(Ship
-and iterate) 、管好失败 Fail well 、针对客户(Focus on the user)
-等谷歌文化，都属于精益。\\
-丰田专注零缺陷、零库存，都是精益。\\
-精益与敏捷是相对吗？
-敏捷宣言和12条原则主要是针对当时软件开发的各种不良现象；精益软件开发更强调整个系统的持续改善。两者是互补的，相互渗透，敏捷与精益之间的区分也逐渐模糊。所以敏捷开发演化至今已经包含了精益思路。PMI
-的ACP把敏捷归入精益其中：\\
-%\href{文件:Lean.2.jpg}{450px}
+我们针对这些重点设计一天培训。
 
-\includegraphics[width=10cm]{Lean2.jpg}
+\hypertarget{ux57f9ux8badux91cdux70b9}{%
+\subsection{培训重点}\label{ux57f9ux8badux91cdux70b9}}
 
-精益可以用于软件开发吗？完全可以但需要变通地理解。可以先从了解软件开发浪费开始。
-
-\hypertarget{ux6d6aux8d39-waste}{%
-\subsection{浪费 (Waste)}\label{ux6d6aux8d39-waste}}
-
-在软件开发，除了缺陷外还有哪些浪费？除了软件开发的缺陷（对应生产的不良品）外，其他6类生产浪费都能找到对应：
-
-
-
-
-
-
-
-\resizebox{\linewidth}{!}{
-
-\renewcommand{\arraystretch}{1.5}
-
-\begin{tabular}{|c|c|}
-\hline
-工业生产&软件开发\\
-\hline
-过程中库存 (In-Process Inventory) & 半成品（Partially Done Work）\\
-\hline
-动作 (Motion) & 任务替换 (Task Switching, Multi-tasking)\\
-\hline
-生产过多 (Over Production) & 多余的功能(Extra Features)\\
-\hline
-加工 (Extra Processing) & 重新学习 (Relearning)\\
-\hline
-搬运 (Transportation) & 交接 (Handovers)\\
-\hline
-等待 (Waiting) & 延误 (Delay)\\
-\hline
-\end{tabular}
-
-}
-
-
-
-除了缺陷，和多余的功能
-（会在后面软件需求里讨论），其他的浪费的说明如下：
-
-\hypertarget{ux534aux6210ux54c1}{%
-\subsubsection{半成品}\label{ux534aux6210ux54c1}}
-
-未完成的产出物包括：
-
-\begin{enumerate}
-\tightlist
-\item
-  没有对应软件代码的文档
-\item
-  没有测试过的代码
-\item
-  没有文档说明的代码
-\item
-  代码没有实际安装使用
-\end{enumerate}
-
-\hypertarget{ux4efbux52a1ux66ffux6362}{%
-\subsubsection{任务替换}\label{ux4efbux52a1ux66ffux6362}}
-
-原因可能是要同时处理几个开发任务，导致无法集中完成任务；过后想完成时要多花时间，引起返工。\\
-注意：请不要误以为不应同时做多个项目。例如，写文章或编程，如果没有思路无法进展，我会转做其他；生产率超高的作曲家舒伯特同时会创作多首作品。所以前提是策划任务时，要让每项任务有足够的时间``完成''。
-
-\hypertarget{ux5ef6ux8bef-delay}{%
-\subsubsection{延误 (Delay)}\label{ux5ef6ux8bef-delay}}
-
-在软件维护，引起延误的最大原因是什么？通常是系统或流程的问题，并非开发人员的质量水平。\\
-精益里有价值流(Value
-Stream)分析，可以区分哪些过程是产生价值，哪些是浪费。\\
-%\href{文件:Value_stream_CR_Screenshot_2024-12-29_204355.3.jpg}{800px}
-
-\includegraphics[width=10cm]{Value_stream_CR_Screenshot_2024-12-29_2043553.jpg}
-
-例如：从客户提出需求到最终完成修正、使用，前后共需要8小时，但对客户有价值的过程只占33\%（2.5小时）。\\
-如果能减少或省略无价值的过程，如发电邮到主管和组长等待审批，就能减少延误。
-
-\hypertarget{ux8f6fux4ef6ux4ea4ux63a5-handovers}{%
-\subsubsection{软件交接
-(Handovers)}\label{ux8f6fux4ef6ux4ea4ux63a5-handovers}}
-
-因为接受方不能完全理解，最终产生返工，导致浪费。例如开发完后交给其他人维护，如果他之前没有参与，便难以顺利交接。
-
-\hypertarget{ux91cdux65b0ux5b66ux4e60-relearning}{%
-\subsubsection{重新学习
-(Relearning)}\label{ux91cdux65b0ux5b66ux4e60-relearning}}
-
-开发是不断学习、创造的过程，因没有及时做记录，过后很多时候自己也忘记了，导致后面重复，引起浪费。\\
+要培训有效，必须利用练习，让学员动手动脑筋。
 
 \framebox{%
 \begin{minipage}[t]{0.97\columnwidth}\raggedright
-第二章里，Weisbord先生印刷公司的订单处理部门便是一例：，
-在开始团队制前，任务都是按业务流程分工，会产生以下浪费：
+结对编程和实践说明
+
+练习\#1和讨论：代码阅读\\
+结对编程说明\\
+练习\#2和讨论：设计和结对编程\\
+练习\#3和讨论：Code Review和Pair Programming\\
+练习\#4 怎样开始结对编程：10分钟结对编程\\
+讨论：10分钟正确结对编程\\
+练习\#5：队伍结对编程\\
+Pair-Solo Programming\\
+\strut
+\end{minipage}}
+
+练习一：用10条代码实例，每一条分A与B两种方式写，问学员那种更容易读懂，说明代码应怎样写才能让一般人容易读懂\\
+练习二：先自己按面向对象做总体设计
+然后两人结对分享设计做出最终设计学员讨论结对是否有效\\
+然后解释若要持久，必须轮流替换伙伴，也介绍各类结对方式的利弊，例如：
 
 \begin{description}
 \tightlist
 \item[]
-任务交接 -
-从输入订单，检查客户信用，发起内部生产订单等，各由专人负责，导致很多任务交接或任务替换。
-
-半成品 -
-从收到客户订单，到交付产品后，收到支票并内部对账，过程中的产出物需要等待下游处理。
+Public-private pair programming ; pair - solo programming
 \end{description}
 
-后面变成团队负责制，团队自己处理所有相关任务便能减少这些浪费，也能减少整个订单的处理时间。
+练习四：先2人试试结对\\
+练习五：六人为一队，轮流合作写程序，让学生体验交换。（详见附件）\\
 
-软件开发公司也类似，例如：\\
-专门开发游戏的公司，为了加快开发出新游戏的速度也会从原本按功能部门分工改成团队负责制，每个团队负责一款游戏，除了能更快速开发出新游戏外，也能减少浪费。
-\strut
-\end{minipage}}
+\hypertarget{ux7ecfux9a8cux5206ux4eab}{%
+\subsection{经验分享}\label{ux7ecfux9a8cux5206ux4eab}}
 
-\hypertarget{ux975eux5f00ux53d1ux4ebaux5458ux5982ux4f55ux5e94ux7528ux7cbeux76ca}{%
-\subsection{非开发人员如何应用精益}\label{ux975eux5f00ux53d1ux4ebaux5458ux5982ux4f55ux5e94ux7528ux7cbeux76ca}}
+结对编程需要2人对话沟通，例如某人写代码时，另外一个人提问题，有些不习惯编写代码边说话沟通，培训时，预先写好台词。如果想多了解结对编程如何沟通，可参考书的实例。\\
+有些程序员比较内向，不想说话，我们会用角色扮演：
+先写好台词，让他们展示在结对编程时如何沟通。
+帮助他们先打出一步，鼓励尝试。\\
+注：如果想了解结对编程如何沟通，可以参照Robert
+MARTIN先生的保龄球游戏实例（参考书里第6章），了解两个人如何从需求、总体类设计、按TDD写单元测试用例、然后写代码，让它通过，一步一步最终完成整个程序。\\
 
-大家都想尽量避免半完成的任务，避免浪费。所以精益的应用范围很广。随便在网上搜索``精益''，便能看到``精益管理''、``精益思想''、``精益创业''等各类应用。例如，如果今周每天都有培训安排，只有晚上能腾出2小时左右完善这本书，我会把时间用于哪些改动不大的章节，因从历史数据，如果某章就须要大规模重写，会起码要1
-- 2
-天才能完成，会尽量安排在周末做，尽量避免在零散的时间段里做，减少浪费。
+\hypertarget{ux603bux7ed3}{%
+\subsection{总结}\label{ux603bux7ed3}}
 
-例如金庸写长篇武侠小说都是每周在香港《明报》发布，最后累加成书。因每周每天可以腾出的时间有限，我自己也是使用精益思路写书：写完一章后先自己读一篇，修正错误；然后发到群里让朋友圈读，按反馈修正；尽量定期在CSDN发布，每2周发下一章，给自己压力尽早完成，但因之前已经印刷了2版，发现出现太多应可避免的错误，所以也不断提醒自己不能因进度而牺牲质量。
+培训开始时用例子说明结对编程除了能帮助团队知识分享和提高团队精神以外，更能：\\
+*提高代码质量和可读性（编码规范）
 
-\hypertarget{ux7cfbux7edfux5de5ux7a0b-v-ux6a21ux578b}{%
-\subsection{系统工程 V
-模型}\label{ux7cfbux7edfux5de5ux7a0b-v-ux6a21ux578b}}
+\begin{itemize}
+\tightlist
+\item
+  提高代码复用
+\item
+  加强测试驱动开发\\
+\end{itemize}
 
-从50年代开始出现编程语言，软件程序越来越庞大，越来越复杂，难以维护。是否可以用系统工程思路来改善呢？
-系统工程主要用于比如飞机、汽车等复杂系统，要设计新款飞机，先从需求开始，按V模型，验证确认后才可以最后交付。例如按系统工程的概念，我一个产品例如汽车，应该先有个产品分解的思路，汽车由车轮、引擎、油缸或者电池等各种组件组成，应先有总体设计，然后一层一层分下去，里面也可能包括一些软件组件。
+利用互动练习让学员亲身体验结对编程的原则：
 
-%\href{文件:VmodelScreenshot_2024-04-21_180054_3.jpg}{650px}
+\begin{enumerate}
+\tightlist
+\item
+  一边写代码一边说
+\item
+  提问，如：这方法是否归为这个类
+\item
+  每人带纸和笔（最好铅笔）
+\item
+  不断想复用
+\end{enumerate}
 
-\includegraphics[width=10cm]{VmodelScreenshot_2024-04-21_180054_3.jpg}
+\begin{description}
+\item[]
+\begin{description}
+\tightlist
+\item[]
+-\/-\/- *** === *** -\/-\/-\\
+\end{description}
+\end{description}
 
-虽然除了缺陷外，其它6类浪费也会有极大影响，但因这部分主要讨论软件工程，下章会从缺陷的角度，看看导致软件难以维护的原因与改善措施。
+客户：我猜你说的3步是：\\
+第一步，高层认同软件质量问题的严重性，为此交过学费，知道损失多大\\
+第二步，管理层不仅了解软件的质量问题和改善措施，更需要内部立项做培训和投入资源（人力），做过程改进\\
+第三步才是具体的培训课。因为缺乏第一步和第二步，所以之前做完了结对编程培训后，没有效果\\
+我：厉害，完全对。结对编程只是改进的一种方法，如果高层不关注、不立项、不投入资源，不会有改进效果。\\
+结对编程这方法在70年代已经开始，与TDD、代码重构已经都经过验证能有效改善质量减少返工。所以结对编程本身没问题，要解决的问题是总体质量改进。\\
+若要成功推行结对编程，必须先说服管理层，投入时间和资源，但投资会有好回报。\\
+结对只是一种有效的改进方法，团队必须有每个迭代回顾，持续提升的好习惯，不可能单靠管理层下命令来推行，更好是团队自己有改进的动力，选择使用结对编程来提升质量，减少返工。
 
 \textbf{本章最佳实践对应}：
 
 \begin{itemize}
 \tightlist
 \item
-  PMI、ACP
-
-  \begin{itemize}
-  \tightlist
-  \item
-    里面持续改善(Continuous Improvement)，价值驱动交付(Value Driven
-    Delivery)，策划(Adaptive Planning) 等领域都能对上精益思路
-  \end{itemize}
-\item
   CMMI
 
   \begin{itemize}
   \tightlist
   \item
-    虽然没有特定实践域包含持续改善，但PCM、CAR、MPM等实践域都支持精益的持续改善
+    单元测试：PR 2.X 3.X 所有实践
+  \end{itemize}
+\item
+  XP
+
+  \begin{itemize}
+  \tightlist
+  \item
+    结对编程，代码共同拥有 都是XP里的实践
   \end{itemize}
 \end{itemize}
 
-\hypertarget{ux53c2ux8003-references}{%
-\section{参考 References}\label{ux53c2ux8003-references}}
+\hypertarget{ux9644ux4ef6}{%
+\section{附件}\label{ux9644ux4ef6}}
 
-\begin{enumerate}
-\tightlist
-\item
-  Poppendieck, Mary, Poppendieck, Tom \emph{Lean Software Development}
-  (2003) Pearson Education\\
-\item
-  Poppendieck, Mary, Poppendieck, Tom \emph{Implementing Lean Software
-  Development: from concept to cash} (2007) Pearson Education\\
-\item
-  Poppendieck, Mary, Poppendieck, Tom \emph{Leading Lean Software
-  Development} (2010) Pearson Education\\
-\item
-  \emph{Agile Practice Guide} Project Management Institute(PMI) (2017)
-\end{enumerate}
+\hypertarget{ex-5}{%
+\subsection{Ex 5}\label{ex-5}}
+
+%Screenshotfrom2025-02-1620-57-07.png
 
 
-\end{document}
+\includegraphics[width=10cm]{Screenshotfrom2025-02-1620-57-07.png}
+
+
+
+
