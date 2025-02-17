@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  14 FEB 2025 02:17
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  16 FEB 2025 20:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -894,6 +894,9 @@ LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
 LaTeX Warning: Label `ux9644ux4ef6' multiply defined.
 
 ) (./appch13ctdsydcxgj-sec.aux
+
+LaTeX Warning: Label `ux7f3aux9677ux6392ux9664ux7387' multiply defined.
+
 
 LaTeX Warning: Label `ux600eux6837ux5f00ux59cb' multiply defined.
 
@@ -2701,19 +2704,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 317--319
 Chapter 14.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 9.
+(hyperref)                than one, level fixed on input line 10.
 
-File: 树莓派.jpg Graphic file (type bmp)
-<树莓派.jpg>
-[205] [206] [207]
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+[205]
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
 
  []
 
-[208] [209]
-File: PspLogScreenshot20211006174917.png Graphic file (type bmp)
-<PspLogScreenshot20211006174917.png>
- [210]) [211]
+[206]
+Underfull \hbox (badness 10000) in paragraph at lines 85--95
+
+ []
+
+File: Lean2.jpg Graphic file (type bmp)
+<Lean2.jpg>
+[207]
+Underfull \hbox (badness 10000) in paragraph at lines 166--170
+
+ []
+
+File: Value_stream_CR_Screenshot_2024-12-29_2043553.jpg Graphic file (type bmp)
+
+<Value_stream_CR_Screenshot_2024-12-29_2043553.jpg>
+[208]
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
+
+ []
+
+[209]
+File: VmodelScreenshot_2024-04-21_180054_3.jpg Graphic file (type bmp)
+<VmodelScreenshot_2024-04-21_180054_3.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--264
+
+ []
+
+[210]
+Underfull \hbox (badness 10000) in paragraph at lines 264--267
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--270
+
+ []
+
+) [211]
 \openout2 = `appch15dmcg-sec.aux'.
 
  (./appch15dmcg-sec.tex [212
@@ -3802,8 +3838,8 @@ Package rerunfilecheck Warning: File `appbooksec-1112.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `appbooksec-1112.out':
-(rerunfilecheck)             Before: 001C3B618A1FA0FF266F4D2EFEA78FC6
-(rerunfilecheck)             After:  DFBFD8E84EFCB79BC80D11E16296BB0C.
+(rerunfilecheck)             Before: DFBFD8E84EFCB79BC80D11E16296BB0C
+(rerunfilecheck)             After:  74209EA1B66970EE715B96A0DDD65BBB.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3812,10 +3848,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 30181 strings out of 494900
- 625747 string characters out of 6177140
- 831809 words of memory out of 5000000
- 33352 multiletter control sequences out of 15000+600000
+ 30218 strings out of 494900
+ 627896 string characters out of 6177140
+ 832004 words of memory out of 5000000
+ 33388 multiletter control sequences out of 15000+600000
  535938 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  57i,8n,115p,920b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
