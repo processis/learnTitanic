@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  16 FEB 2025 21:07
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2022.1.10)  17 FEB 2025 20:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1107,64 +1107,164 @@ LaTeX Info: Redefining \nameref on input line 72.
 \openout3 = `test10.out'.
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 75--81
+
+ []
+
 
 LaTeX Font Warning: Font shape `TU/SimSun(0)/bx/n' undefined
-(Font)              using `TU/SimSun(0)/m/n' instead on input line 78.
+(Font)              using `TU/SimSun(0)/m/n' instead on input line 83.
 
 [1
 
 ] [2]
-File: !DeployPipelineScreenshot_2022-05-20_210104.jpg Graphic file (type bmp)
-<!DeployPipelineScreenshot_2022-05-20_210104.jpg>
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--174
+
+ []
+
+File: Rotary_dial_phone_Screenshot_2025-02-11_091618.jpg Graphic file (type bmp
+)
+<Rotary_dial_phone_Screenshot_2025-02-11_091618.jpg>
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 222--224
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
-File: Acp3-131.png Graphic file (type bmp)
-<Acp3-131.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
+
+ []
+
 [4]
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
+
+ []
+
+File: 围棋1.jpg Graphic file (type bmp)
+<围棋1.jpg>
+[5]
+File: Et.jpg Graphic file (type bmp)
+<Et.jpg>
+ [6]
+Overfull \vbox (66.47305pt too high) has occurred while \output is active []
+
+
+[7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 311--313
+
+ []
+
+File: 煤矿图2.jpg Graphic file (type bmp)
+<煤矿图2.jpg>
 
 LaTeX Font Warning: Font shape `TU/SimSun(0)/m/sl' undefined
-(Font)              using `TU/SimSun(0)/m/n' instead on input line 303.
+(Font)              using `TU/SimSun(0)/m/n' instead on input line 316.
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 339--342
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 349--351
+[9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 337--340
 
  []
 
-
-Overfull \hbox (26.99203pt too wide) in paragraph at lines 351--354
-[]\TU/lmr/m/n/10 Shore, James. ”Continuous integration on a dollar a day” (www.
-jamesshore.com) 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 351--354
+File: 长壁.jpg Graphic file (type bmp)
+<长壁.jpg>
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 361--363
 
  []
 
+File: Screenshotfrom2025-02-1720-41-57.png Graphic file (type bmp)
+<Screenshotfrom2025-02-1720-41-57.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--355
+Underfull \hbox (badness 10000) in paragraph at lines 368--369
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 359.
-[7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 359.
+File: Screenshotfrom2025-02-1720-43-11.png Graphic file (type bmp)
+<Screenshotfrom2025-02-1720-43-11.png>
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
+
+ []
+
+File: Screenshotfrom2025-02-1720-43-42.png Graphic file (type bmp)
+<Screenshotfrom2025-02-1720-43-42.png>
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 416.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 416.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 416.
+
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00015pt on input line 416.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.0001pt on input line 416.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00008pt on input line 416.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99985pt on input line 416.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.9999pt on input line 416.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99992pt on input line 416.
+LaTeX Font Info:    Try loading font information for U+msa on input line 416.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 416.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+Underfull \hbox (badness 10000) in paragraph at lines 430--431
+
+ []
+
+File: 微信截图_20250208140421.jpg Graphic file (type bmp)
+<微信截图_20250208140421.jpg>
+[13]
+File: 微信截图_20250208140529.jpg Graphic file (type bmp)
+<微信截图_20250208140529.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 459--460
+
+ []
+
+File: Screenshotfrom2025-02-1720-47-07.png Graphic file (type bmp)
+<Screenshotfrom2025-02-1720-47-07.png>
+File: 微信截图_20250208140612.jpg Graphic file (type bmp)
+<微信截图_20250208140612.jpg>
+[14]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 506.
+ [15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 506.
  (./test10.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 359.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 359.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 506.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 506.
 
 
 Package rerunfilecheck Warning: File `test10.out' has changed.
@@ -1172,8 +1272,8 @@ Package rerunfilecheck Warning: File `test10.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `test10.out':
-(rerunfilecheck)             Before: 0374971A19C7325B0573107202E29518
-(rerunfilecheck)             After:  B01E856686E2CB193AB1693E9EEEE4D4.
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E
+(rerunfilecheck)             After:  25B0BDC67FE1E24D2A790328DC2452D3.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1182,12 +1282,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 27661 strings out of 494900
- 526686 string characters out of 6177140
- 751019 words of memory out of 5000000
- 31382 multiletter control sequences out of 15000+600000
- 533005 words of font info for 42 fonts, out of 8000000 for 9000
+ 27852 strings out of 494900
+ 535010 string characters out of 6177140
+ 753017 words of memory out of 5000000
+ 31526 multiletter control sequences out of 15000+600000
+ 535842 words of font info for 59 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 50i,5n,115p,838b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,7n,115p,838b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on test10.pdf (7 pages).
+Output written on test10.pdf (15 pages).
