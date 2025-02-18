@@ -1,0 +1,411 @@
+server <- shinyServer(function(input, output, session) {
+  # added "session" because updateSelectInput requires it
+  
+  #req(input$file1)
+  
+  data <- eventReactive(input$choice, { 
+    req(input$file1) ## ?req #  require that the input is available
+    
+    inFile <- input$file1
+    
+    # tested with a following dataset: write.csv(mtcars, "mtcars.csv")
+    # and                              write.csv(iris, "iris.csv")
+    df <- read.csv(inFile$datapath, header = input$header, sep = input$sep,
+                   quote = input$quote)
+    
+    vars <- names(df)
+    # Update select input immediately after clicking on the action button. 
+    updateSelectInput(session, "columns","Select Columns", choices = vars)
+    
+    df
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    # Update inputs (you could create an observer with both updateSel...)
+    # You can also constraint your choices. If you wanted select only numeric
+    # variables you could set "choices = sapply(df, is.numeric)"
+    # It depends on what do you want to do later on.
+    
+    #xia la kuang xuan xiang
+    #yu UI dui ying
+    
+    updateSelectInput(session, inputId = 'xcol', label = 'X Variable',
+                      choices = names(df), selected = names(df))
+    updateSelectInput(session, inputId = 'ycol', label = 'Y Variable',
+                      choices = names(df), selected = names(df)[2])
+    
+    
+    updateSelectInput(session, inputId = 'xcol2', label = 'X Variable',
+                      choices = names(df), selected = names(df))
+    updateSelectInput(session, inputId = 'ycol2', label = 'Y Variable',
+                      choices = names(df), selected = names(df)[2])
+    
+    
+    updateSelectInput(session, inputId = 'xcol3', label = 'X Variable',
+                      choices = names(df), selected = names(df))
+    updateSelectInput(session, inputId = 'ycol3', label = 'Y Variable',
+                      choices = names(df), selected = names(df)[2])
+    
+#    updateSelectInput(session, inputId = 'ycol4', label = 'Y Variable',
+#                      choices = names(df), selected = names(df)[2])
+    
+    updateSelectInput(session, inputId = 'xcol5', label = 'X Variable',
+                      choices = names(df), selected = names(df))
+    updateSelectInput(session, inputId = 'ycol5', label = 'Y Variable',
+                      choices = names(df), selected = names(df)[2])
+    
+    
+    updateSelectInput(session, inputId = 'xcol6', label = 'X Variable',
+                      choices = names(df), selected = names(df))
+    updateSelectInput(session, inputId = 'ycol6', label = 'Y Variable',
+                      choices = names(df), selected = names(df)[2])
+    
+    
+    
+    return(df)
+  })
+  
+  output$contents <- renderTable({
+    data()
+    
+  })
+  
+  output$summar <- renderPrint({
+    req(input$file1)
+    summary(data())
+  })
+  
+  
+  
+  #dowmload  PDF
+  
+  regFormula <- reactive({
+    as.formula(paste('mpg ~', input$x))
+  })
+  
+  output$downloadReport <- downloadHandler(
+    filename = function() {
+      paste('my-report', sep = '.', switch(
+        input$format, PDF = 'pdf', HTML = 'html', Word = 'docx'
+      ))
+    },
+    
+    content = function(file) {
+      src <- normalizePath('report.Rmd')
+      
+      # temporarily switch to the temp dir, in case you do not have write
+      # permission to the current working directory
+      owd <- setwd(tempdir())
+      on.exit(setwd(owd))
+      file.copy(src, 'report.Rmd', overwrite = TRUE)
+      
+      library(rmarkdown)
+      out <- render('report.Rmd', switch(
+        input$format,
+        PDF = pdf_document(), HTML = html_document(), Word = word_document()
+      ))
+      file.rename(out, file)
+    }
+  )
+  
+  
+  
+  
+  
+  
+  #散点图
+  
+  output$MyPlot <- renderPlot({
+    # for a histogram: remove the second variable (it has to be numeric as well):
+    # x    <- data()[, c(input$xcol, input$ycol)]
+    # bins <- nrow(data())
+    # hist(x, breaks = bins, col = 'darkgray', border = 'white')
+    
+    # Correct way:
+    # x    <- data()[, input$xcol]
+    # bins <- nrow(data())
+    # hist(x, breaks = bins, col = 'darkgray', border = 'white')
+    
+    
+    # I Since you have two inputs I decided to make a scatterplot
+    x <- data()[, c(input$xcol, input$ycol)]
+    plot(x)
+    
+  })
+  
+  
+  #生成 直方图
+  # 动态生成列选择器
+  output$column_selector2 <- renderUI({
+    req(data())
+    selectInput("column", "选择要绘制直方图的列", choices = names(data()))
+  })
+  
+  
+  
+  output$Myhistogram <- renderPlot({
+    # for a histogram: remove the second variable (it has to be numeric as well):
+    #x    <- data()[, c(input$xcol, input$ycol)]
+    #bins <- nrow(data())
+    #hist(x, breaks = bins, col = 'darkgray', border = 'white')
+    
+    # Correct way:
+    #x    <- data()[, input$xcol]
+    #y    <- data()[, input$ycol]
+    #x    <- data()[, c(input$xcol, input$ycol)]
+    #bins <- nrow(data())
+    #hist(x,  col = 'darkgray', border = 'white')
+    #hist(y,  col = 'darkgray', border = 'white')
+    
+    
+    # I Since you have two inputs I decided to make a scatterplot
+    #x <- data()[, c(input$xcol, input$ycol)]
+    #plot(x)
+    #hist(x)
+    
+    #data<-rnorm(input$n)
+    #ggplot(data.frame(x=data),aes(x=x))+geom_histogram()
+    
+    req(input$column)
+    ggplot(data(), aes_string(x = input$column)) +
+      geom_histogram(binwidth = 3, fill = "blue", color = "black") +
+      labs(title = paste("直方图 -", input$column), x = input$column, y = "频率")
+  
+    
+  })
+  
+  
+  
+  
+  
+  output$Mycol <- renderPlot({
+    # for a histogram: remove the second variable (it has to be numeric as well):
+    #x    <- data()[, c(input$xcol, input$ycol)]
+    #bins <- nrow(data())
+    #hist(x, breaks = bins, col = 'darkgray', border = 'white')
+    
+    # Correct way:
+    #x    <- data()[, input$xcol]
+    #bins <- nrow(data())
+    #hist(x, breaks = bins, col = 'darkgray', border = 'white')
+    
+    
+    # I Since you have two inputs I decided to make a scatterplot
+    x <- data()[, c(input$xcol, input$ycol)]
+    plot(x)
+    
+  })
+  
+  ################
+  
+  # 动态生成列选择器
+  output$column_selector3 <- renderUI({
+    req(data())
+    selectInput("column", "选择要筛选的列", choices = names(data()))
+  })
+  
+  # 动态生成筛选条件选择器
+  output$filter_selector3 <- renderUI({
+    req(input$column)
+    column_data <- data()[[input$column]]
+    if (is.numeric(column_data)) {
+      sliderInput("filter", "选择数值范围", min = min(column_data), max = max(column_data), value = c(min(column_data), max(column_data)))
+    } else {
+      selectInput("filter", "选择类别", choices = unique(column_data), multiple = TRUE)
+    }
+  })
+  
+  # 根据筛选条件显示部分数据表
+  output$filtered_table <- renderDT({
+    req(input$column, input$filter)
+    filtered_data <- data()
+    column_data <- filtered_data[[input$column]]
+    if (is.numeric(column_data)) {
+      filtered_data <- filtered_data[column_data >= input$filter[1] & column_data <= input$filter[2], ]
+    } else {
+      filtered_data <- filtered_data[column_data %in% input$filter, ]
+    }
+    datatable(filtered_data)
+  })
+  
+  
+  
+  
+#  output$Mylm<-renderPrint(
+#    {
+#      x    <- data()[, input$xcol]
+#      y<-data()[, input$ycol]
+      
+      
+#      model<-lm(y~x)
+#      summary(model())
+ #   }
+#  )
+  
+  #回归分析
+  
+  info <- eventReactive(input$choice, {
+    req(data())
+    f <- data()
+    f
+  })
+  
+  observeEvent(input$choice, {  ## to update only when you click on the actionButton
+    req(info())
+    updateSelectInput(session,"independent", "Please Select independent Variable(s):", choices = names(info()) )
+  })
+  
+  
+  # output$Table_selected.col <- renderTable({
+  #   input$choice
+  #   req(info(),input$columns)
+  #   f = info()
+  #   f = subset(f, select = input$columns) #subsetting takes place here
+  #   head(f)
+  # })
+  
+  output$dependent1 = renderUI({
+    req(data(),input$independent)
+    radioButtons("dependent1", "Select a dependent Variable:",choices=names(data())[!names(data()) %in% input$independent])
+  })
+  
+  ###  need to build your formuila correctly; It will work with multiple independent variables
+  ###  model <- reactive({lm(reformulate(input$IndVar, input$DepVar), data = RegData)})
+  
+  runRegression <- reactive({
+    req(data(),input$independent,input$dependent1)
+    lm(reformulate(input$independent, input$dependent1), data=data())
+    # multinom(reformulate(input$independent, input$dependent1), data=mydf())  ### mulitnomial from nnet package
+  })
+  
+  output$regTab = renderPrint({
+    req(runRegression())
+    if(!is.null(input$independent)){
+      summary(runRegression())
+    } else {
+      print(data.frame(Warning="Please select Model Parameters."))
+    }
+  })
+  
+  
+  
+  
+  
+  #热力图
+  
+ 
+
+  # 处理数据：移除非数值列（如果用户选择）
+  numeric_data <- reactive({
+    df <- data()
+    if (input$remove_non_numeric) {
+      df <- df[, sapply(df, is.numeric)]
+    }
+    df
+  })
+  
+  # 计算相关性矩阵
+  cor_matrix <- reactive({
+    cor(numeric_data(), use = "complete.obs")  # 忽略缺失值
+  })
+  
+  # 绘制相关性热力图
+  output$correlation_plot <- renderPlot({
+    req(numeric_data())
+    corrplot(cor_matrix(), method = "color", type = "upper", tl.col = "black", tl.srt = 45)
+  })
+
+  
+  
+  
+  #岭回归方法
+  
+  # 动态生成响应变量选择器
+  output$response_selector <- renderUI({
+    req(data())
+    selectInput("response", "选择响应变量", choices = names(data()))
+  })
+  
+  # 动态生成预测变量选择器
+  output$predictor_selector <- renderUI({
+    req(data())
+    selectInput("predictors", "选择预测变量", choices = names(data()), multiple = TRUE)
+  })
+  
+  # 运行岭回归
+  ridge_model <- eventReactive(input$run, {
+    req(input$response, input$predictors)
+    response <- data()[[input$response]]
+    predictors <- as.matrix(data()[, input$predictors])
+    
+    # 岭回归
+    glmnet(predictors, response, alpha = 0, lambda = input$lambda)
+  })
+  
+  # 显示岭回归结果
+  output$summary <- renderPrint({
+    req(ridge_model())
+    print(ridge_model())
+  })
+  
+  # 绘制岭回归系数图
+  output$coef_plot <- renderPlot({
+    req(ridge_model())
+    coef_values <- coef(ridge_model())
+    coef_df <- data.frame(
+      Predictor = rownames(coef_values),
+      Coefficient = as.numeric(coef_values)
+    )
+    
+    ggplot(coef_df, aes(x = Predictor, y = Coefficient)) +
+      geom_bar(stat = "identity", fill = "blue") +
+      theme_minimal() +
+      labs(title = "岭回归系数图", x = "预测变量", y = "系数值")
+  })
+  
+  
+  
+  
+  
+  
+  
+  
+})
