@@ -354,6 +354,23 @@ server <- shinyServer(function(input, output, session) {
   })
 
   
+  #热力图-xiangguan
+  # 动态生成变量选择控件
+  output$var_select <- renderUI({
+    req(data())
+    selectInput("vars", "选择变量", choices = names(data()), multiple = TRUE)
+  })
+  
+  # 进行相关性分析
+  observeEvent(input$analyze, {
+    req(input$vars)
+    selected_data <- data()[, input$vars, drop = FALSE]
+    cor_result <- cor(selected_data, use = "complete.obs")
+    output$correlation_result <- renderPrint({
+      cor_result
+    })
+  })
+  
   
   
   #岭回归方法

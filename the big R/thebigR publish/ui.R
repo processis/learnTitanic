@@ -106,7 +106,7 @@ ui <- shinyUI(fluidPage(
     
     tabPanel("third Type",
              pageWithSidebar(
-               headerPanel('My col'),
+               headerPanel('select data'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
@@ -168,10 +168,14 @@ ui <- shinyUI(fluidPage(
                 # selectInput('ycol6', 'Y Variable', "", selected = ""),
                 # actionButton("choice", "incorporate external information"),
                  #selectInput("columns", "Select Columns", choices = NULL), # no choices before uploading 
-                 checkboxInput("remove_non_numeric", "移除非数值列", value = TRUE)
-               ),
+                 checkboxInput("remove_non_numeric", "移除非数值列", value = TRUE),
+                 uiOutput("var_select"),
+                 actionButton("analyze", "分析")
+               
+                 ),
                mainPanel(
-                 plotOutput("correlation_plot")
+                 plotOutput("correlation_plot"),
+                 verbatimTextOutput("correlation_result")
                  
                  #selectInput("columns", "Select Columns", choices = NULL), # no choices before uploading 
                 
@@ -184,7 +188,7 @@ ui <- shinyUI(fluidPage(
     #岭回归分析
     tabPanel("senventh Type",
              pageWithSidebar(
-               headerPanel('回归分析'),
+               headerPanel('岭回归分析'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
