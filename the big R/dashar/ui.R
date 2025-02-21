@@ -5,6 +5,9 @@ library(ggplot2)
 library(reshape2)  # 用于数据重塑
 library(corrplot)  # 用于绘制相关性热力图
 library(glmnet)  # 用于岭回归分析
+library(e1071)
+library(pls)
+library(earth)
 
 ui <- shinyUI(fluidPage(
   titlePanel("Column Plot"),
@@ -59,7 +62,7 @@ ui <- shinyUI(fluidPage(
     #散点图
     tabPanel("First Type",
              pageWithSidebar(
-               headerPanel('散点图'),
+               headerPanel('Scatter plot 散点图'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
@@ -77,7 +80,7 @@ ui <- shinyUI(fluidPage(
     
     tabPanel("second Type",
              pageWithSidebar(
-               headerPanel('直方图'),
+               headerPanel('histogram 直方图'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
@@ -130,7 +133,7 @@ ui <- shinyUI(fluidPage(
     #回归分析
     tabPanel("fifth Type",
              pageWithSidebar(
-               headerPanel('回归分析'),
+               headerPanel('regression analysis 回归分析'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
@@ -156,11 +159,11 @@ ui <- shinyUI(fluidPage(
     
     
     
-    #热力图
+    #热力图 相关性分析
     
     tabPanel("sixth Type",
              pageWithSidebar(
-               headerPanel('热力图'),
+               headerPanel('Correlation Analysis‌ 相关性分析'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
@@ -188,7 +191,7 @@ ui <- shinyUI(fluidPage(
     #岭回归分析
     tabPanel("senventh Type",
              pageWithSidebar(
-               headerPanel('岭回归分析'),
+               headerPanel(' ridge regression 岭回归分析'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
@@ -208,7 +211,97 @@ ui <- shinyUI(fluidPage(
                  plotOutput("coef_plot")        # 绘制系数图
                )
              )
+    ),
+    
+    
+    
+    
+    #SVM
+    
+    #SVM预测
+    tabPanel("eighth Type",
+             pageWithSidebar(
+               headerPanel('SVM预测'),
+               sidebarPanel(
+                 
+                 # "Empty inputs" - they will be updated after the data is uploaded
+                 #selectInput('xcol5', 'X Variable', ""),
+                 
+                 #selectInput('ycol5', 'Y Variable', "", selected = "")
+                 actionButton("SVMpredict", "进行预测"),
+                 selectInput("x_axis8", "选择X轴变量", choices = NULL), # 选择X轴变量
+                 selectInput("y_axis8", "选择Y轴变量", choices = NULL)  # 选择Y轴变量
+               ),
+               mainPanel(
+                 #actionButton("choice", "Define Regression Variables"),
+                 #selectInput("independent", "Independent Variables:", choices = NULL, multiple = T),
+                 
+               
+                 verbatimTextOutput("SVMprediction"),# 显示预测结果
+                 plotOutput("SVMplot") # 显示绘图
+               )
+             )
+    ),
+    
+    #偏最小二乘回归分析
+    
+    tabPanel("ninth Type",
+             pageWithSidebar(
+               headerPanel('Partial Least Squares 偏最小二乘回归分析'),
+               sidebarPanel(
+                 
+                 # "Empty inputs" - they will be updated after the data is uploaded
+                 #selectInput('xcol5', 'X Variable', ""),
+                 
+                 #selectInput('ycol5', 'Y Variable', "", selected = "")
+                 selectInput("plsresponse", "选择因变量", choices = NULL),
+                 selectInput("plspredictors", "选择自变量", choices = NULL, multiple = TRUE),
+                 actionButton("runpls", "运行PLS回归")
+                 ),
+               mainPanel(
+                 #actionButton("choice", "Define Regression Variables"),
+                 #selectInput("independent", "Independent Variables:", choices = NULL, multiple = T),
+                 
+                 
+                 verbatimTextOutput("plssummary"),
+                 plotOutput("plsplot")
+               )
+             )
+    ),
+    
+    
+    #多元自适应回归样条分析 (MARS)
+    
+    
+    tabPanel("tenth Type",
+             pageWithSidebar(
+               headerPanel('MARS 多元自适应回归样条分析'),
+               sidebarPanel(
+                 
+                 # "Empty inputs" - they will be updated after the data is uploaded
+                 #selectInput('xcol5', 'X Variable', ""),
+                 
+                 #selectInput('ycol5', 'Y Variable', "", selected = "")
+                 selectInput("marsresponse", "选择因变量", choices = NULL),
+                 selectInput("marspredictors", "选择自变量", choices = NULL, multiple = TRUE),
+                 actionButton("marsrun", "运行MARS分析")
+               ),
+               mainPanel(
+                 #actionButton("choice", "Define Regression Variables"),
+                 #selectInput("independent", "Independent Variables:", choices = NULL, multiple = T),
+                 
+                 
+                 verbatimTextOutput("marssummary"),
+                 plotOutput("marsplot")
+               )
+             )
     )
+    
+    
+    
+    
+    
+    
     
     
     
