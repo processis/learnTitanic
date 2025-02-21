@@ -1,25 +1,53 @@
-library(earth)
 
-# 定义UI
+library(shiny)
+library(datasets)
+library(DT)
+library(ggplot2)
+library(reshape2)  # 用于数据重塑
+library(corrplot)  # 用于绘制相关性热力图
+library(glmnet)  # 用于岭回归分析
+library(e1071)
+library(pls)
+library(earth)
+library(dplyr)
+library(rmarkdown)
+library(knitr)
+
 ui <- fluidPage(
-  titlePanel("多元自适应回归样条分析 (MARS)"),
+  titlePanel("数据分析与PDF报告导出"),
   
   sidebarLayout(
     sidebarPanel(
       fileInput("file", "上传数据文件 (CSV)", accept = c(".csv")),
-      selectInput("marsresponse", "选择因变量", choices = NULL),
-      selectInput("marspredictors", "选择自变量", choices = NULL, multiple = TRUE),
-      actionButton("marsrun", "运行MARS分析")
+      selectInput("variable", "选择分析变量", choices = NULL),
+      actionButton("analyze", "分析数据"),
+      br(), br(),
+      downloadButton("downloadReport", "导出PDF报告")
     ),
     
     mainPanel(
-      verbatimTextOutput("marssummary"),
-      plotOutput("marsplot")
+      h3("数据摘要"),
+      verbatimTextOutput("summary"),
+      h3("数据分布图"),
+      plotOutput("plot")
     )
   )
 )
 
-# 定义服务器逻辑
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 server <- function(input, output, session) {
   
   # 读取上传的数据
@@ -28,31 +56,67 @@ server <- function(input, output, session) {
     read.csv(input$file$datapath)
   })
   
-  # 更新因变量和自变量的选择
+  # 更新变量选择
   observeEvent(data(), {
-    updateSelectInput(session, "marsresponse", choices = names(data()))
-    updateSelectInput(session, "marspredictors", choices = names(data()))
+    updateSelectInput(session, "variable", choices = names(data()))
   })
   
-  # 运行MARS分析
-  mars_model <- eventReactive(input$marsrun, {
-    req(input$marsresponse, input$marspredictors)
-    formula <- as.formula(paste(input$marsresponse, "~", paste(input$marspredictors, collapse = "+")))
-    earth(formula, data = data())
+  # 数据分析
+  analysis_results <- eventReactive(input$analyze, {
+    req(input$variable)
+    var <- data()[[input$variable]]
+    
+    # 描述性统计
+    summary_stats <- summary(var)
+    
+    # 绘图
+    plot <- ggplot(data(), aes(x = !!sym(input$variable))) +
+      geom_histogram(fill = "blue", bins = 30) +
+      labs(title = paste("Distribution of", input$variable))
+    
+    # 返回结果
+    list(summary = summary_stats, plot = plot)
   })
   
-  # 显示回归结果
-  output$marssummary <- renderPrint({
-    req(mars_model())
-    summary(mars_model())
+  # 显示数据摘要
+  output$summary <- renderPrint({
+    analysis_results()$summary
   })
   
-  # 绘制回归结果图
-  output$marsplot <- renderPlot({
-    req(mars_model())
-    plot(mars_model())
+  # 显示数据分布图
+  output$plot <- renderPlot({
+    analysis_results()$plot
   })
+  
+  # 生成并导出PDF报告
+  output$downloadReport <- downloadHandler(
+    filename = function() {
+      paste("analysis_report", Sys.Date(), ".pdf", sep = "")
+    },
+    content = function(file) {
+      # 创建临时R Markdown文件
+      tempReport <- file.path(tempdir(), "report.Rmd")
+      file.copy("report.Rmd", tempReport, overwrite = TRUE)
+      
+      # 提取分析结果
+      summary_stats <- analysis_results()$summary
+      plot <- analysis_results()$plot
+      
+      # 渲染报告为PDF
+      rmarkdown::render(
+        tempReport,
+        output_file = file,
+        output_format = "pdf_document",
+        params = list(
+          summary = summary_stats,
+          plot = plot,
+          variable = input$variable
+        )
+      )
+    }
+  )
 }
+
 
 # 运行Shiny应用程序
 shinyApp(ui = ui, server = server)
