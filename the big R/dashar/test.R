@@ -62,13 +62,13 @@ ui <- shinyUI(fluidPage(
     #散点图
     tabPanel("First Type",
              pageWithSidebar(
-               headerPanel('Scatter plot 散点图'),
+               headerPanel('Scatter plot'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
-                 selectInput("PLOTxvar", "选择X轴变量", choices = NULL),
-                 selectInput("PLOTyvar", "选择Y轴变量", choices = NULL),
-                 actionButton("plot", "绘制散点图")
+                 selectInput("PLOTxvar", "CHOOSE X", choices = NULL),
+                 selectInput("PLOTyvar", "CHOOSEY", choices = NULL),
+                 actionButton("plot", "PLOT scatterplot")
                ),
                mainPanel(
                  plotOutput("scatterplot"),
@@ -81,7 +81,7 @@ ui <- shinyUI(fluidPage(
     
     tabPanel("second Type",
              pageWithSidebar(
-               headerPanel('histogram 直方图'),
+               headerPanel('histogram '),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
@@ -134,7 +134,7 @@ ui <- shinyUI(fluidPage(
     #回归分析
     tabPanel("fifth Type",
              pageWithSidebar(
-               headerPanel('regression analysis 回归分析'),
+               headerPanel('regression analysis'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
@@ -164,7 +164,7 @@ ui <- shinyUI(fluidPage(
     
     tabPanel("sixth Type",
              pageWithSidebar(
-               headerPanel('Correlation Analysis相关性分析'),
+               headerPanel('Correlation Analysis'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
@@ -173,13 +173,13 @@ ui <- shinyUI(fluidPage(
                  # actionButton("choice", "incorporate external information"),
                  #selectInput("columns", "Select Columns", choices = NULL), # no choices before uploading 
                  uiOutput("variable_select"),  # 动态生成变量选择器
-                 actionButton("COLanalyze", "进行相关性分析")
+                 actionButton("COLanalyze", "CONDUCT correlation ")
                  
                ),
                mainPanel(
-                 h4("相关性矩阵"),
+                 h4("correlation matrix"),
                  tableOutput("correlation_matrix"),  # 显示相关性矩阵
-                 h4("热力图"),
+                 h4("THERMAL MAP"),
                  plotOutput("heatmap")  # 显示热力图
                  
                  #selectInput("columns", "Select Columns", choices = NULL), # no choices before uploading 
@@ -193,7 +193,7 @@ ui <- shinyUI(fluidPage(
     #岭回归分析
     tabPanel("senventh Type",
              pageWithSidebar(
-               headerPanel(' ridge regression 岭回归分析'),
+               headerPanel(' ridge regression '),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
@@ -202,8 +202,8 @@ ui <- shinyUI(fluidPage(
                  #selectInput('ycol5', 'Y Variable', "", selected = "")
                  uiOutput("response_selector"),  # 选择响应变量
                  uiOutput("predictor_selector"), # 选择预测变量
-                 sliderInput("lambda", "选择正则化参数 (lambda)", min = 0, max = 10, value = 1, step = 0.1),
-                 actionButton("run", "运行岭回归")
+                 sliderInput("lambda", "(lambda)", min = 0, max = 10, value = 1, step = 0.1),
+                 actionButton("run", "ridge regression")
                ),
                mainPanel(
                  #actionButton("choice", "Define Regression Variables"),
@@ -223,16 +223,16 @@ ui <- shinyUI(fluidPage(
     #SVM预测
     tabPanel("eighth Type",
              pageWithSidebar(
-               headerPanel('SVM预测'),
+               headerPanel('SVM'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
                  #selectInput('xcol5', 'X Variable', ""),
                  
                  #selectInput('ycol5', 'Y Variable', "", selected = "")
-                 actionButton("SVMpredict", "进行预测"),
-                 selectInput("x_axis8", "选择X轴变量", choices = NULL), # 选择X轴变量
-                 selectInput("y_axis8", "选择Y轴变量", choices = NULL)  # 选择Y轴变量
+                 actionButton("SVMpredict", "PREDICT"),
+                 selectInput("x_axis8", "CHOOSE X", choices = NULL), # 选择X轴变量
+                 selectInput("y_axis8", "CHOOSE Y", choices = NULL)  # 选择Y轴变量
                ),
                mainPanel(
                  #actionButton("choice", "Define Regression Variables"),
@@ -249,16 +249,16 @@ ui <- shinyUI(fluidPage(
     
     tabPanel("ninth Type",
              pageWithSidebar(
-               headerPanel('Partial Least Squares 偏最小二乘回归分析'),
+               headerPanel('Partial Least Squares '),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
                  #selectInput('xcol5', 'X Variable', ""),
                  
                  #selectInput('ycol5', 'Y Variable', "", selected = "")
-                 selectInput("plsresponse", "选择因变量", choices = NULL),
-                 selectInput("plspredictors", "选择自变量", choices = NULL, multiple = TRUE),
-                 actionButton("runpls", "运行PLS回归")
+                 selectInput("plsresponse", "CHOOSE X", choices = NULL),
+                 selectInput("plspredictors", "CHOOSE Y", choices = NULL, multiple = TRUE),
+                 actionButton("runpls", "RUN PLS")
                ),
                mainPanel(
                  #actionButton("choice", "Define Regression Variables"),
@@ -277,16 +277,16 @@ ui <- shinyUI(fluidPage(
     
     tabPanel("tenth Type",
              pageWithSidebar(
-               headerPanel('MARS 多元自适应回归样条分析'),
+               headerPanel('MARS'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
                  #selectInput('xcol5', 'X Variable', ""),
                  
                  #selectInput('ycol5', 'Y Variable', "", selected = "")
-                 selectInput("marsresponse", "选择因变量", choices = NULL),
-                 selectInput("marspredictors", "选择自变量", choices = NULL, multiple = TRUE),
-                 actionButton("marsrun", "运行MARS分析")
+                 selectInput("marsresponse", "CHOOSE X", choices = NULL),
+                 selectInput("marspredictors", "CHOOSE Y", choices = NULL, multiple = TRUE),
+                 actionButton("marsrun", "RUNMARS")
                ),
                mainPanel(
                  #actionButton("choice", "Define Regression Variables"),
@@ -304,16 +304,16 @@ ui <- shinyUI(fluidPage(
     
     tabPanel("eleventh Type",
              pageWithSidebar(
-               headerPanel('RESM分析'),
+               headerPanel('RESM'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
                  #selectInput('xcol5', 'X Variable', ""),
                  
                  #selectInput('ycol5', 'Y Variable', "", selected = "")
-                 selectInput("RESMxvar", "选择X变量", choices = NULL),
-                 selectInput("RESMyvar", "选择Y变量", choices = NULL),
-                 actionButton("RESManalyze", "进行分析")
+                 selectInput("RESMxvar", "CHOOSE X", choices = NULL),
+                 selectInput("RESMyvar", "CHOOSE Y", choices = NULL),
+                 actionButton("RESManalyze", "RUN RMSE")
                ),
                mainPanel(
                  #actionButton("choice", "Define Regression Variables"),
