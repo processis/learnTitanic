@@ -93,7 +93,9 @@ ui <- shinyUI(fluidPage(
                  
                  
                  #fileInput("file", "上传CSV文件", accept = c(".csv")),
-                 uiOutput("column_selector2")
+                 selectInput("column", "选择列", choices = NULL),
+                 sliderInput("binwidth", "直方图宽度", min = 0.1, max = 10, value = 1)
+                 
                  
                  
                  
@@ -101,7 +103,7 @@ ui <- shinyUI(fluidPage(
                  
                ),
                mainPanel(
-                 plotOutput('Myhistogram')
+                 plotOutput("histogram")
                )
              )
     ),

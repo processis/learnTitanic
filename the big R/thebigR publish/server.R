@@ -187,66 +187,20 @@ server <- shinyServer(function(input, output, session) {
   
   #生成 直方图
   # 动态生成列选择器
-  output$column_selector2 <- renderUI({
-    req(data())
-    selectInput("column", "选择要绘制直方图的列", choices = names(data()))
+  # 更新列选择器
+  observeEvent(data(), {
+    updateSelectInput(session, "column", choices = names(data()))
   })
   
-  
-  
-  output$Myhistogram <- renderPlot({
-    # for a histogram: remove the second variable (it has to be numeric as well):
-    #x    <- data()[, c(input$xcol, input$ycol)]
-    #bins <- nrow(data())
-    #hist(x, breaks = bins, col = 'darkgray', border = 'white')
-    
-    # Correct way:
-    #x    <- data()[, input$xcol]
-    #y    <- data()[, input$ycol]
-    #x    <- data()[, c(input$xcol, input$ycol)]
-    #bins <- nrow(data())
-    #hist(x,  col = 'darkgray', border = 'white')
-    #hist(y,  col = 'darkgray', border = 'white')
-    
-    
-    # I Since you have two inputs I decided to make a scatterplot
-    #x <- data()[, c(input$xcol, input$ycol)]
-    #plot(x)
-    #hist(x)
-    
-    #data<-rnorm(input$n)
-    #ggplot(data.frame(x=data),aes(x=x))+geom_histogram()
-    
+  # 绘制直方图
+  output$histogram <- renderPlot({
     req(input$column)
     ggplot(data(), aes_string(x = input$column)) +
-      geom_histogram(binwidth = 3, fill = "blue", color = "black") +
-      labs(title = paste("直方图 -", input$column), x = input$column, y = "频率")
-  
-    
+      geom_histogram(binwidth = input$binwidth, fill = "blue", color = "black") +
+      labs(title = paste("Histogram of", input$column),
+           x = input$column,
+           y = "Count")
   })
-  
-  
-  
-  
-  
-  output$Mycol <- renderPlot({
-    # for a histogram: remove the second variable (it has to be numeric as well):
-    #x    <- data()[, c(input$xcol, input$ycol)]
-    #bins <- nrow(data())
-    #hist(x, breaks = bins, col = 'darkgray', border = 'white')
-    
-    # Correct way:
-    #x    <- data()[, input$xcol]
-    #bins <- nrow(data())
-    #hist(x, breaks = bins, col = 'darkgray', border = 'white')
-    
-    
-    # I Since you have two inputs I decided to make a scatterplot
-    x <- data()[, c(input$xcol, input$ycol)]
-    plot(x)
-    
-  })
-  
   ################
   
   # 动态生成列选择器

@@ -1,19 +1,16 @@
 # 定义UI
 ui <- fluidPage(
-  titlePanel("相关性分析与热力图"),
+  titlePanel("上传数据并绘制直方图"),
   
   sidebarLayout(
     sidebarPanel(
       fileInput("file", "上传CSV文件", accept = c(".csv")),
-      uiOutput("variable_select"),  # 动态生成变量选择器
-      actionButton("analyze", "进行相关性分析")
+      selectInput("column", "选择列", choices = NULL),
+      sliderInput("binwidth", "直方图宽度", min = 0.1, max = 10, value = 1)
     ),
     
     mainPanel(
-      h4("相关性矩阵"),
-      tableOutput("correlation_matrix"),  # 显示相关性矩阵
-      h4("热力图"),
-      plotOutput("heatmap")  # 显示热力图
+      plotOutput("histogram")
     )
   )
 )
@@ -21,42 +18,25 @@ ui <- fluidPage(
 # 定义服务器逻辑
 server <- function(input, output, session) {
   
-  # 读取上传的数据
+  # 读取上传的文件
   data <- reactive({
     req(input$file)
     read.csv(input$file$datapath)
   })
   
-  # 动态生成变量选择器
-  output$variable_select <- renderUI({
-    req(data())
-    numeric_vars <- names(data())[sapply(data(), is.numeric)]  # 仅选择数值型变量
-    checkboxGroupInput("selected_vars", "选择变量进行相关性分析", choices = numeric_vars)
+  # 更新列选择器
+  observeEvent(data(), {
+    updateSelectInput(session, "column", choices = names(data()))
   })
   
-  # 计算相关性矩阵
-  correlation_matrix <- reactive({
-    req(input$selected_vars)
-    selected_data <- data()[, input$selected_vars, drop = FALSE]
-    cor(selected_data, use = "complete.obs")  # 计算相关性矩阵
-  })
-  
-  # 显示相关性矩阵
-  output$correlation_matrix <- renderTable({
-    req(correlation_matrix())
-    correlation_matrix()
-  }, rownames = TRUE)
-  
-  # 绘制热力图
-  output$heatmap <- renderPlot({
-    req(correlation_matrix())
-    melted_cormat <- melt(correlation_matrix())  # 将相关性矩阵转换为长格式
-    ggplot(melted_cormat, aes(x = Var1, y = Var2, fill = value)) +
-      geom_tile() +
-      scale_fill_gradient2(low = "blue", high = "red", mid = "white", midpoint = 0, limit = c(-1, 1)) +
-      theme_minimal() +
-      theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-      labs(x = "", y = "", fill = "Correlation")
+  # 绘制直方图
+  output$histogram <- renderPlot({
+    req(input$column)
+    ggplot(data(), aes_string(x = input$column)) +
+      geom_histogram(binwidth = input$binwidth, fill = "blue", color = "black") +
+      labs(title = paste("Histogram of", input$column),
+           x = input$column,
+           y = "Count")
   })
 }
 
