@@ -164,7 +164,7 @@ ui <- shinyUI(fluidPage(
     
     tabPanel("sixth Type",
              pageWithSidebar(
-               headerPanel('Correlation Analysis‌ 相关性分析'),
+               headerPanel('Correlation Analysis相关性分析'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
@@ -172,14 +172,15 @@ ui <- shinyUI(fluidPage(
                 # selectInput('ycol6', 'Y Variable', "", selected = ""),
                 # actionButton("choice", "incorporate external information"),
                  #selectInput("columns", "Select Columns", choices = NULL), # no choices before uploading 
-                 checkboxInput("remove_non_numeric", "移除非数值列", value = TRUE),
-                 uiOutput("var_select"),
-                 actionButton("analyze", "分析")
+                 uiOutput("variable_select"),  # 动态生成变量选择器
+                 actionButton("COLanalyze", "进行相关性分析")
                
                  ),
                mainPanel(
-                 plotOutput("correlation_plot"),
-                 verbatimTextOutput("correlation_result")
+                 h4("相关性矩阵"),
+                 tableOutput("correlation_matrix"),  # 显示相关性矩阵
+                 h4("热力图"),
+                 plotOutput("heatmap")  # 显示热力图
                  
                  #selectInput("columns", "Select Columns", choices = NULL), # no choices before uploading 
                 

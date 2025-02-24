@@ -62,7 +62,7 @@ ui <- shinyUI(fluidPage(
     #散点图
     tabPanel("First Type",
              pageWithSidebar(
-               headerPanel('Scatter plot'),
+               headerPanel('Scatter plot 散点图'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
@@ -81,7 +81,7 @@ ui <- shinyUI(fluidPage(
     
     tabPanel("second Type",
              pageWithSidebar(
-               headerPanel('histogram'),
+               headerPanel('histogram 直方图'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
@@ -134,7 +134,7 @@ ui <- shinyUI(fluidPage(
     #回归分析
     tabPanel("fifth Type",
              pageWithSidebar(
-               headerPanel('regression analysis'),
+               headerPanel('regression analysis 回归分析'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
@@ -164,7 +164,7 @@ ui <- shinyUI(fluidPage(
     
     tabPanel("sixth Type",
              pageWithSidebar(
-               headerPanel('Correlation Analysis'),
+               headerPanel('Correlation Analysis相关性分析'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
@@ -172,14 +172,15 @@ ui <- shinyUI(fluidPage(
                  # selectInput('ycol6', 'Y Variable', "", selected = ""),
                  # actionButton("choice", "incorporate external information"),
                  #selectInput("columns", "Select Columns", choices = NULL), # no choices before uploading 
-                 checkboxInput("remove_non_numeric", "移除非数值列", value = TRUE),
-                 uiOutput("var_select"),
-                 actionButton("analyze", "分析")
+                 uiOutput("variable_select"),  # 动态生成变量选择器
+                 actionButton("COLanalyze", "进行相关性分析")
                  
                ),
                mainPanel(
-                 plotOutput("correlation_plot"),
-                 verbatimTextOutput("correlation_result")
+                 h4("相关性矩阵"),
+                 tableOutput("correlation_matrix"),  # 显示相关性矩阵
+                 h4("热力图"),
+                 plotOutput("heatmap")  # 显示热力图
                  
                  #selectInput("columns", "Select Columns", choices = NULL), # no choices before uploading 
                  
@@ -192,7 +193,7 @@ ui <- shinyUI(fluidPage(
     #岭回归分析
     tabPanel("senventh Type",
              pageWithSidebar(
-               headerPanel(' ridge regression '),
+               headerPanel(' ridge regression 岭回归分析'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
@@ -222,7 +223,7 @@ ui <- shinyUI(fluidPage(
     #SVM预测
     tabPanel("eighth Type",
              pageWithSidebar(
-               headerPanel('SVM'),
+               headerPanel('SVM预测'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
@@ -248,7 +249,7 @@ ui <- shinyUI(fluidPage(
     
     tabPanel("ninth Type",
              pageWithSidebar(
-               headerPanel('Partial Least Squares '),
+               headerPanel('Partial Least Squares 偏最小二乘回归分析'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
@@ -276,7 +277,7 @@ ui <- shinyUI(fluidPage(
     
     tabPanel("tenth Type",
              pageWithSidebar(
-               headerPanel('MARS '),
+               headerPanel('MARS 多元自适应回归样条分析'),
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
@@ -363,6 +364,11 @@ ui <- shinyUI(fluidPage(
   )
 )
 )
+
+
+
+
+
 
 
 
@@ -715,44 +721,37 @@ server <- shinyServer(function(input, output, session) {
   
   
   
-  # 处理数据：移除非数值列（如果用户选择）
-  numeric_data <- reactive({
-    df <- data()
-    if (input$remove_non_numeric) {
-      df <- df[, sapply(df, is.numeric)]
-    }
-    df
+  # 动态生成变量选择器
+  output$variable_select <- renderUI({
+    req(data())
+    numeric_vars <- names(data())[sapply(data(), is.numeric)]  # 仅选择数值型变量
+    checkboxGroupInput("selected_vars", "选择变量进行相关性分析", choices = numeric_vars)
   })
   
   # 计算相关性矩阵
-  cor_matrix <- reactive({
-    cor(numeric_data(), use = "complete.obs")  # 忽略缺失值
+  correlation_matrix <- reactive({
+    req(input$selected_vars)
+    selected_data <- data()[, input$selected_vars, drop = FALSE]
+    cor(selected_data, use = "complete.obs")  # 计算相关性矩阵
   })
   
-  # 绘制相关性热力图
-  output$correlation_plot <- renderPlot({
-    req(numeric_data())
-    corrplot(cor_matrix(), method = "color", type = "upper", tl.col = "black", tl.srt = 45)
+  # 显示相关性矩阵
+  output$correlation_matrix <- renderTable({
+    req(correlation_matrix())
+    correlation_matrix()
+  }, rownames = TRUE)
+  
+  # 绘制热力图
+  output$heatmap <- renderPlot({
+    req(correlation_matrix())
+    melted_cormat <- melt(correlation_matrix())  # 将相关性矩阵转换为长格式
+    ggplot(melted_cormat, aes(x = Var1, y = Var2, fill = value)) +
+      geom_tile() +
+      scale_fill_gradient2(low = "blue", high = "red", mid = "white", midpoint = 0, limit = c(-1, 1)) +
+      theme_minimal() +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+      labs(x = "", y = "", fill = "Correlation")
   })
-  
-  
-  #热力图-xiangguan
-  # 动态生成变量选择控件
-  output$var_select <- renderUI({
-    req(data())
-    selectInput("vars", "选择变量", choices = names(data()), multiple = TRUE)
-  })
-  
-  # 进行相关性分析
-  observeEvent(input$analyze, {
-    req(input$vars)
-    selected_data <- data()[, input$vars, drop = FALSE]
-    cor_result <- cor(selected_data, use = "complete.obs")
-    output$correlation_result <- renderPrint({
-      cor_result
-    })
-  })
-  
   
   
   #岭回归方法
@@ -956,10 +955,6 @@ server <- shinyServer(function(input, output, session) {
   
   
 })
-
-
-
-
 
 
 

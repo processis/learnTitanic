@@ -346,44 +346,37 @@ server <- shinyServer(function(input, output, session) {
   
  
 
-  # 处理数据：移除非数值列（如果用户选择）
-  numeric_data <- reactive({
-    df <- data()
-    if (input$remove_non_numeric) {
-      df <- df[, sapply(df, is.numeric)]
-    }
-    df
+  # 动态生成变量选择器
+  output$variable_select <- renderUI({
+    req(data())
+    numeric_vars <- names(data())[sapply(data(), is.numeric)]  # 仅选择数值型变量
+    checkboxGroupInput("selected_vars", "选择变量进行相关性分析", choices = numeric_vars)
   })
   
   # 计算相关性矩阵
-  cor_matrix <- reactive({
-    cor(numeric_data(), use = "complete.obs")  # 忽略缺失值
+  correlation_matrix <- reactive({
+    req(input$selected_vars)
+    selected_data <- data()[, input$selected_vars, drop = FALSE]
+    cor(selected_data, use = "complete.obs")  # 计算相关性矩阵
   })
   
-  # 绘制相关性热力图
-  output$correlation_plot <- renderPlot({
-    req(numeric_data())
-    corrplot(cor_matrix(), method = "color", type = "upper", tl.col = "black", tl.srt = 45)
-  })
-
+  # 显示相关性矩阵
+  output$correlation_matrix <- renderTable({
+    req(correlation_matrix())
+    correlation_matrix()
+  }, rownames = TRUE)
   
-  #热力图-xiangguan
-  # 动态生成变量选择控件
-  output$var_select <- renderUI({
-    req(data())
-    selectInput("vars", "选择变量", choices = names(data()), multiple = TRUE)
+  # 绘制热力图
+  output$heatmap <- renderPlot({
+    req(correlation_matrix())
+    melted_cormat <- melt(correlation_matrix())  # 将相关性矩阵转换为长格式
+    ggplot(melted_cormat, aes(x = Var1, y = Var2, fill = value)) +
+      geom_tile() +
+      scale_fill_gradient2(low = "blue", high = "red", mid = "white", midpoint = 0, limit = c(-1, 1)) +
+      theme_minimal() +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+      labs(x = "", y = "", fill = "Correlation")
   })
-  
-  # 进行相关性分析
-  observeEvent(input$analyze, {
-    req(input$vars)
-    selected_data <- data()[, input$vars, drop = FALSE]
-    cor_result <- cor(selected_data, use = "complete.obs")
-    output$correlation_result <- renderPrint({
-      cor_result
-    })
-  })
-  
   
   
   #岭回归方法
