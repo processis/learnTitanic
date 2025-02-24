@@ -66,12 +66,13 @@ ui <- shinyUI(fluidPage(
                sidebarPanel(
                  
                  # "Empty inputs" - they will be updated after the data is uploaded
-                 selectInput('xcol', 'X Variable', ""),
-                 selectInput('ycol', 'Y Variable', "", selected = "")
-                 
+                 selectInput("PLOTxvar", "选择X轴变量", choices = NULL),
+                 selectInput("PLOTyvar", "选择Y轴变量", choices = NULL),
+                 actionButton("plot", "绘制散点图")
                ),
                mainPanel(
-                 plotOutput('MyPlot')
+                 plotOutput("scatterplot"),
+                 verbatimTextOutput("regression_equation")  # 显示回归方程
                )
              )
     ),
@@ -295,8 +296,34 @@ ui <- shinyUI(fluidPage(
                  plotOutput("marsplot")
                )
              )
-    )
+    ),
     
+    
+    #RESM分析
+    
+    tabPanel("eleventh Type",
+             pageWithSidebar(
+               headerPanel('RESM分析'),
+               sidebarPanel(
+                 
+                 # "Empty inputs" - they will be updated after the data is uploaded
+                 #selectInput('xcol5', 'X Variable', ""),
+                 
+                 #selectInput('ycol5', 'Y Variable', "", selected = "")
+                 selectInput("RESMxvar", "选择X变量", choices = NULL),
+                 selectInput("RESMyvar", "选择Y变量", choices = NULL),
+                 actionButton("RESManalyze", "进行分析")
+               ),
+               mainPanel(
+                 #actionButton("choice", "Define Regression Variables"),
+                 #selectInput("independent", "Independent Variables:", choices = NULL, multiple = T),
+                 
+                 
+                 plotOutput("RESMplot"),
+                 verbatimTextOutput("RESMsummary")
+               )
+             )
+    )
     
     
     

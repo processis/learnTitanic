@@ -153,23 +153,36 @@ server <- shinyServer(function(input, output, session) {
   
   #散点图
   
-  output$MyPlot <- renderPlot({
-    # for a histogram: remove the second variable (it has to be numeric as well):
-    # x    <- data()[, c(input$xcol, input$ycol)]
-    # bins <- nrow(data())
-    # hist(x, breaks = bins, col = 'darkgray', border = 'white')
-    
-    # Correct way:
-    # x    <- data()[, input$xcol]
-    # bins <- nrow(data())
-    # hist(x, breaks = bins, col = 'darkgray', border = 'white')
-    
-    
-    # I Since you have two inputs I decided to make a scatterplot
-    x <- data()[, c(input$xcol, input$ycol)]
-    plot(x)
-    
+  # 更新变量选择
+  observeEvent(data(), {
+    updateSelectInput(session, "PLOTxvar", choices = names(data()))
+    updateSelectInput(session, "PLOTyvar", choices = names(data()))
   })
+  
+  # 计算回归方程
+  regression_model <- reactive({
+    req(input$PLOTxvar, input$PLOTyvar)
+    lm(as.formula(paste(input$PLOTyvar, "~", input$PLOTxvar)), data = data())
+  })
+  
+  # 绘制散点图和回归线
+  output$scatterplot <- renderPlot({
+    req(input$PLOTxvar, input$PLOTyvar)
+    ggplot(data(), aes_string(x = input$PLOTxvar, y = input$PLOTyvar)) +
+      geom_point() +
+      geom_smooth(method = "lm", se = FALSE, color = "red") +
+      theme_minimal()
+  })
+  
+  # 显示回归方程
+  output$regression_equation <- renderPrint({
+    req(regression_model())
+    model <- regression_model()
+    intercept <- coef(model)[1]
+    slope <- coef(model)[2]
+    cat("回归方程:\n")
+    cat(paste(input$PLOTyvar, "=", round(slope, 2), "*", input$PLOTxvar, "+", round(intercept, 2))
+    )})
   
   
   #生成 直方图
@@ -516,9 +529,34 @@ server <- shinyServer(function(input, output, session) {
   })
   
   
+  #RESM分析
   
+  # 更新变量选择
+  observeEvent(data(), {
+    updateSelectInput(session, "RESMxvar", choices = names(data()))
+    updateSelectInput(session, "RESMyvar", choices = names(data()))
+  })
   
+  # 进行RESM分析（线性回归）
+  resm_model <- eventReactive(input$RESManalyze, {
+    req(input$RESMxvar, input$RESMyvar)
+    lm(as.formula(paste(input$RESMyvar, "~", input$RESMxvar)), data = data())
+  })
   
+  # 绘制图表
+  output$RESMplot <- renderPlot({
+    req(resm_model())
+    ggplot(data(), aes_string(x = input$RESMxvar, y = input$RESMyvar)) +
+      geom_point() +
+      geom_smooth(method = "lm", col = "red") +
+      ggtitle("线性回归拟合图")
+  })
+  
+  # 显示模型摘要
+  output$RESMsummary <- renderPrint({
+    req(resm_model())
+    summary(resm_model())
+  })
   
   
   
