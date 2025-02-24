@@ -21,8 +21,8 @@ theme_set(theme_bw())
 
 # ------------------------------------------------------------------------------
 
-load("../Data_Sets/Ischemic_Stroke/stroke_data.RData")
-load("interactions.RData")
+load("/media/user/娱乐/learnTitanic/FES-master/Data_Sets/Ischemic_Stroke/stroke_data.RData")
+load("/media/user/娱乐/learnTitanic/FES-master/02_Predicting_Risk_of_Ischemic_Stroke/interactions.RData")
 
 VC_preds <- 
   c("CALCVol", "CALCVolProp", "MATXVol", "MATXVolProp", "LRNCVol", 

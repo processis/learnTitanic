@@ -18,10 +18,7 @@ library(corrplot)
 
 load(
   file.path(
-    "..",
-    "Data_Sets",
-    "Ischemic_Stroke",
-    "stroke_data.RData"
+    "/media/user/娱乐/learnTitanic/FES-master/Data_Sets/Ischemic_Stroke/stroke_data.RData"
   )
 )
 

@@ -8,7 +8,7 @@ registerDoParallel(cl)
 # ------------------------------------------------------------------------------
 
 # Load pre-made data
-load("../../Data_Sets/Chicago_trains/chicago.RData")
+load("/media/user/娱乐/learnTitanic/FES-master/Data_Sets/Chicago_trains/chicago.RData")
 
 # ------------------------------------------------------------------------------
 
