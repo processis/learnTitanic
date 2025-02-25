@@ -24,8 +24,8 @@ l10_labels <- scales::trans_format("log10", scales::math_format(10^.x))
 
 # ------------------------------------------------------------------------------
 
-load(file.path("..", "Data_Sets", "Chicago_trains", "chicago.RData"))
-load(file.path("..", "Data_Sets", "Chicago_trains", "stations.RData"))
+load(file.path("/media/user/娱乐/learnTitanic/FES-master/Data_Sets/Chicago_trains/chicago.RData"))
+load(file.path("/media/user/娱乐/learnTitanic/FES-master/Data_Sets/Chicago_trains/stations.RData"))
 
 # ------------------------------------------------------------------------------
 
@@ -179,6 +179,8 @@ station_plot <- ggplot(box_stats, aes(x = index)) +
 
 # https://bookdown.org/max/FES/visualizations-for-numeric-data-exploring-train-ridership-data.html#fig:eda-rides-distribution
 station_plot <- ggiraph(code = print(station_plot))
+
+#station_plot <- girafe(code = print(station_plot))
 
 # ------------------------------------------------------------------------------
 

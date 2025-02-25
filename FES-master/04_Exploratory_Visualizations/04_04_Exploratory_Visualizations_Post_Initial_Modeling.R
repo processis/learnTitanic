@@ -20,8 +20,8 @@ theme_set(theme_bw())
 
 # ------------------------------------------------------------------------------
 
-load(file.path("..", "Data_Sets", "Chicago_trains", "chicago.RData"))
-load(file.path("..", "Data_Sets", "Chicago_trains", "stations.RData"))
+load(file.path("/media/user/娱乐/learnTitanic/FES-master/Data_Sets/Chicago_trains/chicago.RData"))
+load(file.path("/media/user/娱乐/learnTitanic/FES-master/Data_Sets/Chicago_trains/stations.RData"))
 
 # ------------------------------------------------------------------------------
 

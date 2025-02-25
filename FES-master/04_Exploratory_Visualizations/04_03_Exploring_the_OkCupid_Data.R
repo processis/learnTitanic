@@ -15,7 +15,7 @@ library(tidymodels)
 library(gridExtra)
 library(mgcv)
 library(scales)
-library(FactoMineR)
+library(FactoMineR)  #ERROR
 library(vcd)
 library(colorspace)
 
@@ -26,7 +26,7 @@ theme_set(theme_bw())
 
 # ------------------------------------------------------------------------------
 
-load(file.path("..", "Data_Sets", "OkCupid", "okc.RData"))
+load(file.path("/media/user/娱乐/learnTitanic/FES-master/Data_Sets/OkCupid/okc.RData"))
 
 # ------------------------------------------------------------------------------
 
