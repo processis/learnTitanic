@@ -1,5 +1,13 @@
 library(shiny)
 library(datasets)
+library(DT)
+library(ggplot2)
+library(reshape2)  # 用于数据重塑
+library(corrplot)  # 用于绘制相关性热力图
+library(glmnet)  # 用于岭回归分析
+library(e1071)
+library(pls)
+library(earth)
 
 ui <- shinyUI(fluidPage(
   titlePanel("基础数据分析"),
