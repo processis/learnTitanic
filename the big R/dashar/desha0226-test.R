@@ -8,9 +8,9 @@ desha <- subset(desha,Project!=67)
 desha <- subset(desha,Project!=45)
 desha <- subset(desha,Project!=40)
 
-#desha <- subset(desha,Language1==1)
-#desha <- subset(desha,Language2==1)
-desha <- subset(desha,Language3==1)
+desha <- subset(desha,Language1==1)
+desha <- subset(desha,Language2==1)
+#desha <- subset(desha,Language3==1)
 desha <- desha[,c(1:13)] 
 
 
