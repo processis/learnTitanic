@@ -1,13 +1,16 @@
 write.table(testResults,file="/home/user/Downloads/testResultsSvmRfCubist.csv",sep=",") # output testResults.csv
 # Read Desharnais77 public dataset from promise uottawa repository
 desharnais <- read.table("/media/user/娱乐/learnTitanic/the big R/dashar/desharnaisLogEffort77.csv",
-                                                  sep = ",", header = TRUE)
+                         sep = ",", header = TRUE)
 desha <- subset(desharnais,Project!=76)
 # continue to remove incomplete rows, bottom up, because not enough data in these projects
 desha <- subset(desha,Project!=67)
 desha <- subset(desha,Project!=45)
 desha <- subset(desha,Project!=40)
+
 #desha <- subset(desha,Language1==1)
+#desha <- subset(desha,Language2==1)
+desha <- subset(desha,Language3==1)
 desha <- desha[,c(1:13)] 
 
 
@@ -47,7 +50,7 @@ View(deshaTrain)
 
 # Read Desharnais77 public dataset from promise uottawa repository
 desharnais <- read.table("/media/user/娱乐/learnTitanic/the big R/dashar/desharnaisLogEffort77.csv",
-                                                  sep = ",", header = TRUE)
+                         sep = ",", header = TRUE)
 desha <- subset(desharnais,Project!=76)
 # continue to remove incomplete rows, bottom up, because not enough data in these projects
 desha <- subset(desha,Project!=67)
@@ -95,19 +98,19 @@ library(lattice)
 ### Some initial plots of the data
 
 xyplot(swEngTrainY ~ swEngTrainX$Entities, type = c("p", "g"),
-               ylab = "Effort",
-               main = "(a)",
-               xlab = "Entities")
+       ylab = "Effort",
+       main = "(a)",
+       xlab = "Entities")
 xyplot(swEngTrainY ~ swEngTrainX$Transactions, type = c("p", "g"),
-               ylab = "Effort",
-               xlab = "Trans")
+       ylab = "Effort",
+       xlab = "Trans")
 
 library(caret)
 library(corrplot)
 #look at both X and Y variables, so look at deshaTrain instead of swEngTrainXtrans
 corrplot::corrplot(cor(deshaTrain), 
-                                       order = "hclust", 
-                                       tl.cex = .8)
+                   order = "hclust", 
+                   tl.cex = .8)
 
 ### Section 6.2 Linear Regression
 ### Save the test set results in a data frame                 
@@ -125,14 +128,14 @@ set.seed(100)
 
 
 lmTune <- train(x = trainXfiltered, y = swEngTrainY,
-                                method = "lm",
-                                trControl = ctrl)
+                method = "lm",
+                trControl = ctrl)
 
 lmTune
 
 ### Save the test set results in a data frame                 
 testResults <- data.frame(obs = swEngTestY,
-                                                    Linear_Regression = predict(lmTune, testXfiltered))
+                          Linear_Regression = predict(lmTune, testXfiltered))
 testResults$lmTune <- predict(lmTune, swEngTestXtrans)
 ### no filter use all variables for regression
 set.seed(100)
@@ -140,8 +143,8 @@ indx <- createFolds(swEngTrainY, returnTrain = TRUE)
 ctrl <- trainControl(method = "cv", index = indx)
 set.seed(100)
 lmTune0 <- train(x = swEngTrainXtrans, y = swEngTrainY,
-                                  method = "lm",
-                                  trControl = ctrl)
+                 method = "lm",
+                 trControl = ctrl)
 
 lmTune0  
 
