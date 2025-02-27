@@ -304,3 +304,6 @@ cbImp
 
 testResults$CUBIST <- predict(cubistTune, swEngTestXtrans) #add result of CUBIST
 write.table(testResults,file="/home/user/Downloads/testResultsSvmRfCubist.csv",sep=",") # output testResults.csv
+
+
+
