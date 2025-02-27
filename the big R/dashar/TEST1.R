@@ -1,29 +1,23 @@
-# 加载ggplot2包
-library(ggplot2)
-
 # 读取数据
-#!desharnais123fillMedLog71TrainSet-loglength.csv
-data <- read.csv("/media/user/娱乐/learnTitanic/the big R/dashar/!desharnais123fillMedLog71TrainSet.csv")
+data <- read.csv("/media/user/娱乐/learnTitanic/the big R/dashar/!desharnais123fillMedLog71TrainSet-loglength.csv")
 
-hist(data$Length)
-hist(data$PointsAjust)
+# 计算Pearson相关性矩阵
+cor_matrix <- cor(data, method = "pearson", use = "complete.obs")
 
-# 绘制散点图
-ggplot(data, aes(x = data$LogPtsAjust, y = data$LogEffort, color = data$Language)) +
-  geom_point() +
-  labs(title = "Scatter plot of x vs y by group",
-       x = "X Variable",
-       y = "Y Variable",
-       color = "Group")
+# 打印相关性矩阵
+print(cor_matrix)
 
-data$Language<-as.factor(data$Language)
+# 可视化相关性矩阵
+library(corrplot)
+corrplot(cor_matrix, method = "circle")
 
-# 绘制散点图并指定颜色
-ggplot(data, aes(x = data$LogPtsAjust, y = data$LogEffort, color = data$Language)) +
-  geom_point(size = 3) +
-  scale_color_manual(values = c("1" = "red", "2" = "black", "3" = "green")) +
-  labs(title = "Scatter plot of LogPtsAjust vs LogEffort by Language",
-       x = "LogPtsAjust",
-       y = "LogEffort",
-       color = "Language") +
-  theme_minimal()
+# 计算特定变量之间的相关性
+correlation <- cor(data$LogLength, data$LogEffort, method = "pearson")
+print(correlation)
+
+# 计算相关性的显著性
+cor_test_result <- cor.test(data$var1, data$var2, method = "pearson")
+print(cor_test_result)
+
+# 保存相关性矩阵
+write.csv(cor_matrix, file = "correlation_matrix.csv")
