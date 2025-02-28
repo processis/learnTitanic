@@ -12,6 +12,10 @@ desharnais <- read.table("/media/user/娱乐/learnTitanic/the big R/dashar/desha
 # 加载ggplot2包
 library(ggplot2)
 
+
+hist(desharnais$Length)
+hist(desharnais$PointsAjust)
+
 # 读取数据
 #!desharnais123fillMedLog71TrainSet-loglength.csv
 data <- read.csv("/media/user/娱乐/learnTitanic/the big R/dashar/!desharnais123fillMedLog71TrainSet.csv")
