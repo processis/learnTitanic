@@ -215,6 +215,182 @@ server <- shinyServer(function(input, output, session) {
   })
   
   
+  #岭回归方法
+  
+  # 动态生成响应变量选择器
+  output$response_selector <- renderUI({
+    req(data())
+    selectInput("response", "选择响应变量", choices = names(data()))
+  })
+  
+  # 动态生成预测变量选择器
+  output$predictor_selector <- renderUI({
+    req(data())
+    selectInput("predictors", "选择预测变量", choices = names(data()), multiple = TRUE)
+  })
+  
+  # 运行岭回归
+  ridge_model <- eventReactive(input$run, {
+    req(input$response, input$predictors)
+    response <- data()[[input$response]]
+    predictors <- as.matrix(data()[, input$predictors])
+    
+    # 岭回归
+    glmnet(predictors, response, alpha = 0, lambda = input$lambda)
+  })
+  
+  # 显示岭回归结果
+  output$summary <- renderPrint({
+    req(ridge_model())
+    print(ridge_model())
+  })
+  
+  # 绘制岭回归系数图
+  output$coef_plot <- renderPlot({
+    req(ridge_model())
+    coef_values <- coef(ridge_model())
+    coef_df <- data.frame(
+      Predictor = rownames(coef_values),
+      Coefficient = as.numeric(coef_values)
+    )
+    
+    ggplot(coef_df, aes(x = Predictor, y = Coefficient)) +
+      geom_bar(stat = "identity", fill = "blue") +
+      theme_minimal() +
+      labs(title = "岭回归系数图", x = "预测变量", y = "系数值")
+  })
+  
+  
+  # 动态更新X轴和Y轴变量选择
+  observe({
+    df <- data()
+    updateSelectInput(session, "x_axis8", choices = colnames(df))
+    updateSelectInput(session, "y_axis8", choices = colnames(df))
+  })
+  
+  # 进行SVM预测
+  observeEvent(input$SVMpredict, {
+    df <- data()
+    
+    # 假设最后一列是标签，其余列是特征
+    features <- df[, -ncol(df)]
+    labels <- df[, ncol(df)]
+    
+    # 训练SVM模型
+    svm_model <- svm(features, labels, type = "C-classification")
+    
+    # 进行预测
+    SVMpredictions <- predict(svm_model, features)
+    
+    # 将预测结果添加到数据中
+    df$SVMPrediction <- SVMpredictions
+    
+    # 显示预测结果
+    output$SVMprediction <- renderPrint({
+      table(SVMPrediction = df$SVMPrediction, Actual = df[, ncol(df) - 1])
+    })
+    
+    # 绘制图形
+    output$plot <- renderPlot({
+      ggplot(df, aes(x = .data[[input$x_axis8]], y = .data[[input$y_axis8]], color = Prediction)) +
+        geom_point(size = 3) +
+        labs(title = "SVM预测结果", x = input$x_axis8, y = input$y_axis8) +
+        theme_minimal()
+    })
+  })
+  
+  
+  #偏最小二乘回归分析
+  
+  # 更新因变量和自变量的选择
+  observeEvent(data(), {
+    updateSelectInput(session, "plsresponse", choices = names(data()))
+    updateSelectInput(session, "plspredictors", choices = names(data()))
+  })
+  
+  # 运行PLS回归
+  pls_model <- eventReactive(input$runpls, {
+    req(input$plsresponse, input$plspredictors)
+    formula <- as.formula(paste(input$plsresponse, "~", paste(input$plspredictors, collapse = "+")))
+    plsr(formula, data = data(), validation = "CV")
+  })
+  
+  # 显示回归结果
+  output$plssummary <- renderPrint({
+    req(pls_model())
+    summary(pls_model())
+  })
+  
+  # 绘制回归结果图
+  output$plsplot <- renderPlot({
+    req(pls_model())
+    plot(pls_model())
+  })
+  
+  #多元自适应回归样条分析 (MARS)
+  
+  # 更新因变量和自变量的选择
+  observeEvent(data(), {
+    updateSelectInput(session, "marsresponse", choices = names(data()))
+    updateSelectInput(session, "marspredictors", choices = names(data()))
+  })
+  
+  # 运行MARS分析
+  mars_model <- eventReactive(input$marsrun, {
+    req(input$marsresponse, input$marspredictors)
+    formula <- as.formula(paste(input$marsresponse, "~", paste(input$marspredictors, collapse = "+")))
+    earth(formula, data = data())
+  })
+  
+  # 显示回归结果
+  output$marssummary <- renderPrint({
+    req(mars_model())
+    summary(mars_model())
+  })
+  
+  # 绘制回归结果图
+  output$marsplot <- renderPlot({
+    req(mars_model())
+    plot(mars_model())
+  })
+  
+  
+  #RESM分析
+  
+  # 更新变量选择
+  observeEvent(data(), {
+    updateSelectInput(session, "RESMxvar", choices = names(data()))
+    updateSelectInput(session, "RESMyvar", choices = names(data()))
+  })
+  
+  # 进行RESM分析（线性回归）
+  resm_model <- eventReactive(input$RESManalyze, {
+    req(input$RESMxvar, input$RESMyvar)
+    lm(as.formula(paste(input$RESMyvar, "~", input$RESMxvar)), data = data())
+  })
+  
+  # 绘制图表
+  output$RESMplot <- renderPlot({
+    req(resm_model())
+    ggplot(data(), aes_string(x = input$RESMxvar, y = input$RESMyvar)) +
+      geom_point() +
+      geom_smooth(method = "lm", col = "red") +
+      ggtitle("线性回归拟合图")
+  })
+  
+  # 显示模型摘要
+  output$RESMsummary <- renderPrint({
+    req(resm_model())
+    summary(resm_model())
+  })
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   

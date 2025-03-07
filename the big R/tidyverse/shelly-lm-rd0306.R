@@ -3,6 +3,8 @@ library(tidymodels)
 library(readr)
 library(dplyr)
 library(ranger)
+library(kernlab)  # 用于支持向量机 (SVM)
+library(nnet)     # 用于神经网络 (NNET)
 
 # 1. 读取数据
 data <- read_csv("/media/user/娱乐/learnTitanic/the big R/tidyverse/cleanDesharnais77.csv")
@@ -33,9 +35,27 @@ data <- data %>% mutate(PointsNonAdjust = log10(PointsNonAdjust))
            set_engine("ranger") %>%
            set_mode("regression")
          
+         
+         #创建svm模型
+         svm_model <- svm_rbf(cost = 1, rbf_sigma = 0.1) %>%
+           set_engine("kernlab") %>%
+           set_mode("regression")
+         
+         
+         #创建nnet模型
+         
+         nnet_model <- mlp(hidden_units = 5, epochs = 100) %>%
+           set_engine("nnet") %>%
+           set_mode("regression")
+         
+         
+         
+         
+         
+         
          # 6. 创建配方（recipe）
          # 假设目标变量是 `Effort`，其他变量是预测变量
-         recipe <- recipe(Effort ~ ., data = train_data)
+        # recipe <- recipe(Effort ~ ., data = train_data)
          
          #####
          
@@ -54,18 +74,32 @@ data <- data %>% mutate(PointsNonAdjust = log10(PointsNonAdjust))
            add_model(rf_model)
          
        
+         ##
          
+         svm_workflow <- workflow() %>%
+           add_recipe(recipe) %>%
+           add_model(svm_model)
+         
+         nnet_workflow <- workflow() %>%
+           add_recipe(recipe) %>%
+           add_model(nnet_model)
 
          
          # 8. 拟合模型
          lm_fit <- fit(lm_workflow, data = train_data)
          rf_fit <- fit(rf_workflow, data = train_data)
          
+         svm_fit <- fit(svm_workflow, data = train_data)
+         nnet_fit <- fit(nnet_workflow, data = train_data)
+         
          
          
          # 9. 预测
          lm_predictions <- predict(lm_fit, new_data = test_data)
          rf_predictions <- predict(rf_fit, new_data = test_data)
+         
+         svm_predictions <- predict(svm_fit, new_data = test_data)
+         nnet_predictions <- predict(nnet_fit, new_data = test_data)
          
          # 10. 评估模型
          lm_metrics <- lm_predictions %>%
@@ -76,6 +110,15 @@ data <- data %>% mutate(PointsNonAdjust = log10(PointsNonAdjust))
            bind_cols(test_data) %>%
            metrics(truth = Effort, estimate = .pred)
          
+         
+         svm_metrics <- svm_predictions %>%
+           bind_cols(test_data) %>%
+           metrics(truth = Effort, estimate = .pred)
+         
+         nnet_metrics <- nnet_predictions %>%
+           bind_cols(test_data) %>%
+           metrics(truth = Effort, estimate = .pred)
+         
          # 11. 提取 RMSE 和 R-squared
          lm_rmse <- lm_metrics %>% filter(.metric == "rmse") %>% pull(.estimate)
          lm_rsq <- lm_metrics %>% filter(.metric == "rsq") %>% pull(.estimate)
@@ -83,15 +126,26 @@ data <- data %>% mutate(PointsNonAdjust = log10(PointsNonAdjust))
          rf_rmse <- rf_metrics %>% filter(.metric == "rmse") %>% pull(.estimate)
          rf_rsq <- rf_metrics %>% filter(.metric == "rsq") %>% pull(.estimate)
          
+         svm_rmse <- svm_metrics %>% filter(.metric == "rmse") %>% pull(.estimate)
+         svm_rsq <- svm_metrics %>% filter(.metric == "rsq") %>% pull(.estimate)
+         
+         nnet_rmse <- nnet_metrics %>% filter(.metric == "rmse") %>% pull(.estimate)
+         nnet_rsq <- nnet_metrics %>% filter(.metric == "rsq") %>% pull(.estimate)
+         
+         
+         
          # 12. 保存结果到数据表
          results <- tibble(
-           Model = c("Linear Regression", "Random Forest"),
-           RMSE = c(lm_rmse, rf_rmse),
-           Rsquared = c(lm_rsq, rf_rsq)
+           Model = c("Linear Regression", "Random Forest","SVM", "Neural Network"),
+           RMSE = c(lm_rmse, rf_rmse,svm_rmse, nnet_rmse),
+           Rsquared = c(lm_rsq, rf_rsq,svm_rsq, nnet_rsq)
          )
          
+         
+         
+         
          # 13. 保存结果到 CSV 文件
-         write_csv(results, "model_results.csv")
+         write_csv(results, "/home/user/Downloads/model_results.csv")
          
          # 打印结果
          print(results)

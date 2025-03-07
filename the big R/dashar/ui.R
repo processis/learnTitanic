@@ -223,7 +223,7 @@ ui <- shinyUI(fluidPage(
     #SVM
     
     #SVM预测
-    tabPanel("eighth Type",
+    tabPanel("SVM预测",
              pageWithSidebar(
                headerPanel('SVM预测'),
                sidebarPanel(
@@ -249,7 +249,7 @@ ui <- shinyUI(fluidPage(
     
     #偏最小二乘回归分析
     
-    tabPanel("ninth Type",
+    tabPanel("偏最小二乘回归分析",
              pageWithSidebar(
                headerPanel('Partial Least Squares 偏最小二乘回归分析'),
                sidebarPanel(
@@ -277,7 +277,7 @@ ui <- shinyUI(fluidPage(
     #多元自适应回归样条分析 (MARS)
     
     
-    tabPanel("tenth Type",
+    tabPanel("MARS",
              pageWithSidebar(
                headerPanel('MARS 多元自适应回归样条分析'),
                sidebarPanel(
@@ -304,7 +304,7 @@ ui <- shinyUI(fluidPage(
     
     #RESM分析
     
-    tabPanel("eleventh Type",
+    tabPanel("RESM分析",
              pageWithSidebar(
                headerPanel('RESM分析'),
                sidebarPanel(
