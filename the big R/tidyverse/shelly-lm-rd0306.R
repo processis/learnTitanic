@@ -25,8 +25,8 @@ data<-data%>%
   mutate(across(everything(),~ifelse(.<0,NA,.)))
 
 # 使用 mutate 和 across 函数来替换 -1 值
-data <- data %>%
-  mutate(across(everything(), ~ ifelse(. == -1, cur_column() %>% str_remove("col") %>% as.numeric() + 1, .)))
+#data <- data %>%
+#  mutate(across(everything(), ~ ifelse(. == -1, cur_column() %>% str_remove("col") %>% as.numeric() + 1, .)))
 
 
 # 2. 处理空值
